@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Vidhostice" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+    <File fileId="6" filename="$data/shared/default_normal.dds"/>
+    <File fileId="2" filename="markerIcons_diffuse3.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="markerIcons_mat" materialId="6" alphaBlending="true">
+      <Emissivemap fileId="2"/>
+    </Material>
+    <Material name="warningStripes_mat" materialId="7">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+      <Glossmap fileId="5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="cesackasusarna.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="cesackasusarna" clipDistance="300" nodeId="22">
+        <TransformGroup name="IN" translation="9.33568 0.687385 6.3766" rotation="-180 0.356241 180" nodeId="23">
+          <Shape shapeId="1" name="exactFillRootNode" static="true" trigger="true" collisionMask="1073741824" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="aiUnloadingNode" translation="0 -0.176331 0" nodeId="25"/>
+          <TransformGroup name="markerUnloading" translation="0 0.0569428 0" nodeId="26"/>
+          <Shape shapeId="2" name="woodTrigger" translation="-1.25296 0.492596 0.746391" rotation="0 -1.192 0" static="true" trigger="true" collisionMask="1090521088" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="mazut" translation="64.1251 -0.153 28.808" rotation="180 -88.7868 -180" nodeId="28">
+            <Shape shapeId="3" name="unloadTrigger" translation="0.226 1.449 0.209" rotation="0 -90 0" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="aiUnloadingNode" translation="0 0.05 0" nodeId="30"/>
+            <TransformGroup name="markerUnloading" nodeId="31"/>
+          </TransformGroup>
+          <TransformGroup name="susarna" translation="13.7692 -0.0973226 6.458" rotation="-180 0.356241 180" nodeId="32">
+            <Shape shapeId="4" name="exactFillRootNode" translation="0 -0.64637 0" static="true" trigger="true" collisionMask="1073741824" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="iconWater" translation="1.8456 0.0783319 -6.84799e-09" rotation="-90 -0 0" scale="1.834 1.834 1" clipDistance="300" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="aiUnloadingNode" translation="0 -0.176331 0" nodeId="35"/>
+            <TransformGroup name="markerUnloading" translation="0 0.0569428 0" nodeId="36"/>
+          </TransformGroup>
+          <TransformGroup name="Trigers3" translation="67.5368 -0.687908 12.856" rotation="180 90 180" nodeId="37">
+            <Shape shapeId="6" name="unloadTrigger" rotation="-1.14824e-07 0 -1.38523e-09" static="true" trigger="true" collisionMask="1090521088" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerMarker" nodeId="39"/>
+            <TransformGroup name="palety" translation="-6.02812 -1.65533e-06 2.87359" rotation="-3.04985e-10 90 1.3656e-05" static="true" nodeId="40">
+              <Shape shapeId="7" name="1" rotation="0 -5.00896e-06 0" clipDistance="200" nodeId="41" materialIds="7" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="7" name="2" translation="5.735 -2.07977e-12 1.86879e-06" rotation="-7.42036e-13 -90 -2.0035e-11" clipDistance="200" nodeId="42" materialIds="7" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="7" name="3" translation="3.19102e-06 3.56651e-19 12.027" rotation="0 90 6.40378e-12" clipDistance="200" nodeId="43" materialIds="7" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="7" name="4" translation="5.735 -5.27675e-15 12.027" rotation="0 180 -2.23476e-13" clipDistance="200" nodeId="44" materialIds="7" receiveShadows="true" decalLayer="1"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="teleport" translation="19.5831 0.666959 5.3757" rotation="0 24.9773 0" nodeId="45"/>
+        <TransformGroup name="OUT" translation="8.16954 -2.23591 -10.5043" rotation="0 1.61282 0" nodeId="46">
+          <Shape shapeId="8" name="loadingTrigger" translation="0 2.324 0" rotation="0 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="aiLoadingNode" nodeId="48"/>
+          <TransformGroup name="loadingTriggerAINode" nodeId="49"/>
+          <TransformGroup name="loadingTriggerMarker" nodeId="50"/>
+          <TransformGroup name="dischargeEffect1" translation="-0.0126326 3.6741 -0.316033" nodeId="51">
+            <Shape shapeId="9" name="pipeEffect" translation="-3.50117e-09 2.53603 0.326699" clipDistance="300" nodeId="52" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="pipeEffectSmoke" translation="0 -2.808 0.407911" visibility="false" clipDistance="100" nodeId="53" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="8" name="loadingTrigger" translation="-38.7442 2.324 3.38713e-06" rotation="0 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="109" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" translation="4.96318 0.343 -5.37733" rotation="0 -1.70137 0" nodeId="54">
+          <Shape shapeId="11" name="playerTrigger" translation="1.25102 0.968 3.30346" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="56"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="12" name="infoTrigger" translation="-18.8487 3.317 -3.37144" rotation="0 1.8527 0" scale="3.13194 1 0.799087" static="true" trigger="true" collisionMask="3145728" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="visual" translation="-7.65153 0 4.70244" clipDistance="1000" nodeId="58">
+          <TransformGroup name="realLightsLow" nodeId="59">
+            <Light name="pointLightAnimals1" translation="11.2835 5.40613 -5.08083" rotation="0 2.69454 0" clipDistance="75" nodeId="60" type="point" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15"/>
+            <Light name="pointLightAnimals1" translation="5.43617 5.40613 -4.80564" rotation="0 2.69454 0" clipDistance="75" nodeId="61" type="point" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15"/>
+          </TransformGroup>
+          <TransformGroup name="realLightsHigh" nodeId="62">
+            <Light name="pointLightAnimals1" translation="11.2835 5.40613 -5.08083" rotation="0 2.69454 0" clipDistance="75" nodeId="63" type="point" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15"/>
+            <Light name="pointLightAnimals1" translation="5.43617 5.40613 -4.806" rotation="0 2.69454 0" clipDistance="75" nodeId="64" type="point" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="15"/>
+            <Light name="realLightsHigh1" translation="3.11969 8.7546 -9.96838" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="65" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="8.10049 8.68803 -9.98353" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="66" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="13.1113 8.68803 -9.98565" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="67" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="13.1056 8.73397 -1.67541" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="68" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="8.11177 8.73397 -1.70585" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="69" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="3.11445 8.73397 -1.65576" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="70" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="3.10728 10.4106 -5.84284" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="71" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="8.10092 10.4203 -5.84628" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="72" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+            <Light name="realLightsHigh1" translation="13.1114 10.4195 -5.84086" rotation="-90 -2.73153 2.30282e-07" clipDistance="75" nodeId="73" type="spot" color="0.905 0.925 0.827" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.005" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.02" depthMapResolution="512" shadowFarDistance="80" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" range="10" coneAngle="100" dropOff="4"/>
+          </TransformGroup>
+          <TransformGroup name="zarivka" translation="3.11098 9.78894 -9.97451" rotation="0 -0.833 0" nodeId="74"/>
+          <TransformGroup name="zarivka" translation="8.10244 9.75414 -9.98816" rotation="0 -0.833 0" nodeId="75"/>
+          <TransformGroup name="zarivka" translation="13.1102 9.73906 -9.98926" rotation="0 -0.833 0" nodeId="76"/>
+          <TransformGroup name="zarivka" translation="13.1051 9.79736 -1.67637" rotation="0 -0.833 0" nodeId="77"/>
+          <TransformGroup name="zarivka" translation="8.10856 9.79736 -1.70617" rotation="0 -0.833 0" nodeId="78"/>
+          <TransformGroup name="zarivka" translation="3.1123 9.79736 -1.65938" rotation="0 -0.833 0" nodeId="79"/>
+          <TransformGroup name="zarivka" translation="13.1154 11.5113 -5.84164" rotation="0 -0.833 0" nodeId="80"/>
+          <TransformGroup name="zarivka" translation="8.09845 11.4807 -5.84227" rotation="0 -0.833 0" nodeId="81"/>
+          <TransformGroup name="zarivka" translation="3.10507 11.466 -5.83832" rotation="0 -0.833 0" nodeId="82"/>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-0.617 0 -0.676226" nodeId="83">
+          <TransformGroup name="spawnSpace1start" translation="-50.9544 0.0912209 -13.2201" rotation="-180 0 -180" nodeId="84">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="85"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace2start" translation="-50.9544 0.0912213 -10.22" rotation="-180 0 -180" nodeId="86">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="87"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace3start" translation="-50.9544 0.0912213 -7.22" rotation="-180 0 -180" nodeId="88">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="89"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace4start" translation="-50.9544 0.0912213 -4.22" rotation="-180 0 -180" nodeId="90">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="91"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace5start" translation="-50.9544 0.0912213 -1.22" rotation="-180 0 -180" nodeId="92">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="93"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace5start" translation="-50.9544 0.0912213 2.22" rotation="-180 0 -180" nodeId="94">
+            <TransformGroup name="spawnSpace1end" translation="3.23993 0 0" nodeId="95"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="warningStripes" translation="-0.617 -0 -0.676" nodeId="96">
+          <TransformGroup name="palety" translation="-54.5163 -2.18545e-07 -13.5634" rotation="-2.93457e-11 1.279 1.36564e-05" static="true" nodeId="97">
+            <Shape shapeId="7" name="1" rotation="0 -5.00896e-06 0" clipDistance="200" nodeId="98" materialIds="7" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="7" name="2" translation="3.982 -1.44396e-12 1.29748e-06" rotation="-7.42036e-13 -90 -2.0035e-11" clipDistance="200" nodeId="99" materialIds="7" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="7" name="3" translation="3.19102e-06 3.56651e-19 15.501" rotation="0 90 6.40378e-12" clipDistance="200" nodeId="100" materialIds="7" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="7" name="4" translation="3.982 -5.27675e-15 15.501" rotation="0 180 -2.23476e-13" clipDistance="200" nodeId="101" materialIds="7" receiveShadows="true" decalLayer="1"/>
+            <Shape shapeId="13" name="iconWrench" translation="-3.48742 0 7.16804" rotation="-90 90 0" scale="1.834 1.834 1" clipDistance="300" nodeId="102" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="103">
+          <TransformGroup name="indoorArea1Start" translation="10.7532 0 -9.43046" nodeId="104">
+            <TransformGroup name="indoorArea1Width" translation="0.0366126 0 16.7267" nodeId="105"/>
+            <TransformGroup name="indoorArea1Height" translation="-20.7058 0 -0.00240597" nodeId="106"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

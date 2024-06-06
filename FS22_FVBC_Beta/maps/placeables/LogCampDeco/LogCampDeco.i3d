@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/maps/mapUS/textures/props/barricadeMedium_diffuse.png"/>
+    <File fileId="8" filename="$data/maps/mapUS/textures/props/barricadeMedium_normal.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/props/barricadeMedium_specular.png"/>
+    <File fileId="10" filename="$data/maps/mapUS/textures/props/barricadeSmall_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/props/barricadeSmall_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapUS/textures/props/barricadeSmall_specular.png"/>
+    <File fileId="13" filename="$data/maps/mapUS/textures/props/trafficChannelizer_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/mapUS/textures/props/trafficChannelizer_normal.png"/>
+    <File fileId="15" filename="$data/maps/mapUS/textures/props/trafficChannelizer_specular.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/props/trafficLightPortable_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/props/trafficLightPortable_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapUS/textures/props/trafficLightPortable_specular.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/props/lowerWoodenFence03_diffuse.png"/>
+    <File fileId="17" filename="$data/maps/textures/shared/props/lowerWoodenFence03_normal.png"/>
+    <File fileId="18" filename="$data/maps/textures/shared/props/lowerWoodenFence03_specular.png"/>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="barricadeMedium_mat" materialId="4" customShaderId="5">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="barricadeSmall_mat" materialId="5" customShaderId="5">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="lowerWoodenFence03_mat" materialId="7">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="trafficChannelizer_mat" materialId="8" customShaderId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="trafficLightPortable_mat" materialId="9" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="LogCampDeco.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="logDeco" nodeId="29">
+        <Shape shapeId="1" name="trafficLightPortable" lockedgroup="true" translation="-1681.04 29.6269 -939.609" rotation="-0.284846 -30.221 2.10709" static="true" density="0.0001" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="visual" clipDistance="130" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1693.59 30.0661 -944.997" rotation="2.11483e-06 -61.3127 -2.83975e-06" dynamic="true" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="barricadeSmall" lockedgroup="true" translation="-1701.68 29.7607 -975.75" rotation="1.78695e-06 -64.5652 -2.60375e-06" dynamic="true" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="barricadeSmall_vis" clipDistance="90" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="7" name="trafficChannelizer" lockedgroup="true" translation="-1695.68 30.0661 -949.378" rotation="1.01518e-06 -0 -9.84507e-07" static="true" density="0.0001" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="8" name="visual" clipDistance="80" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1692.24 30.0661 -942.293" rotation="2.13631e-06 -61.6274 -2.8642e-06" dynamic="true" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1690.7 30.0661 -939.412" rotation="2.2819e-06 -63.5841 -3.02815e-06" dynamic="true" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="43" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1702.32 30.0134 -972.704" rotation="180 -80.6009 -180" dynamic="true" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1702.52 30.0646 -969.315" rotation="180 -83.8719 -180" dynamic="true" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="3" name="barricadeMedium" lockedgroup="true" translation="-1702.63 30.0661 -966.524" rotation="7.57379e-06 -86.4549 -7.55434e-06" dynamic="true" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="4" name="barricadeMedium_vis" clipDistance="120" nodeId="49" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="barricadeSmall" lockedgroup="true" translation="-1694.8 30.0661 -948.32" rotation="7.67463e-07 0 -9.89998e-07" dynamic="true" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="barricadeSmall_vis" clipDistance="90" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1626.95 38.5202 -1134.58" rotation="169.056 -66.4614 -168.09" clipDistance="80" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1623.84 39.5905 -1141.87" rotation="162.766 -65.7614 -161.212" clipDistance="80" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1620.73 40.274 -1149.18" rotation="168.855 -66.4441 -167.87" clipDistance="80" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1615.05 40.5266 -1157.47" rotation="6.38267 -25.1599 -7.55395" clipDistance="80" nodeId="57" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="10" name="lowerWoodenFence03Corner" translation="-1616.8 40.7031 -1158.26" rotation="2.62811 -24.1545 -6.40035" clipDistance="80" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1617.61 40.7139 -1156.5" rotation="172.685 -66.7139 -172.044" clipDistance="80" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1043.05 100 -964.39" clipDistance="80" nodeId="60" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="lowerWoodenFence03_4M" translation="-1043.01 100 -963.543" scale="1 1.08912 1" clipDistance="80" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="lowerWoodenFence03Corner" translation="-1042.86 100 -962.508" clipDistance="80" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="lowerWoodenFence03_2M" translation="-1038.43 100 -963.557" clipDistance="80" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="lowerWoodenFence03Gate" translation="-1041.78 100 -961.478" clipDistance="80" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="14" name="lowerWoodenFence03GateOpenA" translation="0.0532544 0.603103 0.00591796" visibility="false" clipDistance="80" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="lowerWoodenFence03GateOpenB" translation="4.94675 0.603103 0.00591812" visibility="false" clipDistance="80" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </Shape>
+        <Shape shapeId="11" name="lowerWoodenFence03_4M" translation="-1607.88 39.5133 -1154.05" rotation="3.39837 -32.599 -6.28982" scale="1 1.08912 1" clipDistance="80" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1630.22 37.8873 -1127.37" rotation="8.50624 -34.5772 -11.4383" clipDistance="80" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1623.79 36.586 -1122.85" rotation="7.94794 -34.6942 -10.456" clipDistance="80" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="11" name="lowerWoodenFence03_4M" translation="-1617.36 35.3361 -1118.26" rotation="0.632216 -32.7509 -1.16852" scale="1 1.08912 1" clipDistance="80" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="9" name="lowerWoodenFence03_8M" translation="-1614.09 35.2978 -1116.12" rotation="14.4201 53.5831 7.19547" clipDistance="80" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="lowerWoodenFence03Pole" translation="-1609.3 35.8363 -1122.4" rotation="0 -39.1144 0" clipDistance="80" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="16" name="lowerWoodenFence03Pole" translation="-1604.58 39.0115 -1151.83" rotation="0 -29.9049 0" scale="1 1.22278 1" clipDistance="80" nodeId="73" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="5" name="barricadeSmall" lockedgroup="true" translation="-1688.82 29.8705 -936.509" rotation="8.51585e-07 -25.6813 -1.35905e-06" dynamic="true" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="barricadeSmall_vis" clipDistance="90" nodeId="75" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="barricadeSmall" lockedgroup="true" translation="-1695.05 29.77 -983.643" rotation="8.58363e-07 -26.6062 -1.37442e-06" dynamic="true" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="barricadeSmall_vis" clipDistance="90" nodeId="79" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

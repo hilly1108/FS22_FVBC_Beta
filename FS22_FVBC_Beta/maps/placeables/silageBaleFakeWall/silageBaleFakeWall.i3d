@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="roundbaleSilage_diffuse.dds"/>
+    <File fileId="2" filename="roundbaleSilage_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="roundbaleHay_mat" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="silageBaleFakeWall.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="SilageBaleWall" nodeId="184">
+        <TransformGroup name="SilageBaleStack01" nodeId="7">
+          <TransformGroup name="bale" nodeId="8">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="9" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="11" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="12">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="13" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="15" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="16">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="20">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="24">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="26" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="28">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="2.46943 2.10837 0" rotation="0 -0 180" nodeId="34">
+          <TransformGroup name="bale" nodeId="35">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="37" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="39">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="40" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="41" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="42" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="43">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="44" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="45" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="47">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="49" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="50" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="51">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="52" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="53" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="54" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="55">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="56" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="57" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="4.95514 0 0" nodeId="59">
+          <TransformGroup name="bale" nodeId="60">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="63" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="64">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="65" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="66" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="67" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="68">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="69" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="70" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="71" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="72">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="73" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="74" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="75" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="76">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="77" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="78" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="79" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="80">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="81" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="82" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="83" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="7.40759 2.10837 0" rotation="0 -0 180" nodeId="84">
+          <TransformGroup name="bale" nodeId="85">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="86" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="87" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="88" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="89">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="90" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="91" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="92" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="93">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="94" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="95" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="96" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="97">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="98" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="99" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="100" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="101">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="102" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="103" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="104" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="105">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="106" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="107" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="108" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="9.91881 0 0" nodeId="109">
+          <TransformGroup name="bale" nodeId="110">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="111" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="112" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="113" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="114">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="115" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="116" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="117" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="118">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="119" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="120" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="121" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="122">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="123" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="124" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="125" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="126">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="127" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="128" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="129" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="130">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="131" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="132" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="133" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="12.3736 2.10838 0" rotation="0 -0 180" nodeId="134">
+          <TransformGroup name="bale" nodeId="135">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="136" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="137" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="138" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="139">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="140" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="141" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="142" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="143">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="144" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="145" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="146" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="147">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="148" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="149" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="150" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="151">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="152" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="153" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="154" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="155">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="156" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="157" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="158" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="SilageBaleStack01" translation="14.8462 0 0" nodeId="159">
+          <TransformGroup name="bale" nodeId="160">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="161" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="162" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="163" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="1.25134 0 0" nodeId="164">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="165" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="166" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="167" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="168">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="169" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="170" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="171" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="172">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="173" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="174" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="175" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="176">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="177" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="178" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="179" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="180">
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="181" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="182" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="183" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

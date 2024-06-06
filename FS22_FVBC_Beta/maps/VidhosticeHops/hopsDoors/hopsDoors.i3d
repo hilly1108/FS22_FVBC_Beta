@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hopsDoors.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapAlpine/textures/doorsSET_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cesacka_vrata" materialId="5" specularColor="0.494118 1 0">
+      <Texture fileId="1"/>
+    </Material>
+    <Material name="lambert1" materialId="6">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hopsDoors.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="vrata" nodeId="18">
+        <TransformGroup name="Vratacesacka01" translation="-6.84902 0 12.0469" nodeId="19">
+          <Shape shapeId="1" name="vrataTrigger" kinematic="true" compound="true" trigger="true" collisionMask="1048576" clipDistance="1000" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="vrata_pul_L" translation="5.77839e-13 0.000205036 -2.429" rotation="-2.19555e-05 0 3.5571e-05" scale="1 1 1.034" nodeId="21" materialIds="5,5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="slidingDoorCol" translation="-0.064 5.66712e-13 2.07974e-08" rotation="0 90 -2.68193e-10" kinematic="true" clipDistance="300" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <Shape shapeId="4" name="vrata_pul_P" translation="-0.024 -2.67029e-05 2.70486" scale="1 1 1.034" nodeId="23" materialIds="5,5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="slidingDoorCol" translation="0.0287984 5.66712e-13 0.0386799" rotation="0 -90 0" kinematic="true" clipDistance="300" nodeId="24" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="Vratacesacka02" translation="10.6523 0 15.0898" rotation="0 -90 0" nodeId="25">
+          <Shape shapeId="5" name="vrataTrigger" translation="0.483996 0 0.274651" kinematic="true" compound="true" trigger="true" collisionMask="1048576" clipDistance="1000" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="6" name="vrata_cela" clipDistance="500" nodeId="27" materialIds="5,5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="7" name="slidingDoorCol" translation="-8.6265e-07 2.67951e-13 -2.64745" rotation="0 90 -2.68193e-10" kinematic="true" clipDistance="300" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="Vratacesacka03" translation="13.5549 0 12.178" nodeId="29">
+          <Shape shapeId="5" name="vrataTrigger" translation="0.483996 0 -0.428805" kinematic="true" compound="true" trigger="true" collisionMask="1048576" clipDistance="1000" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="8" name="vrata_cela" clipDistance="500" nodeId="31" materialIds="5,5" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="kliky" nodeId="32" materialIds="5,5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="slidingDoorCol" rotation="0 90 -2.68193e-10" kinematic="true" clipDistance="300" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

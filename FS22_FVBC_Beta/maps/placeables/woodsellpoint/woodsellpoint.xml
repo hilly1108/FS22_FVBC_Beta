@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Wood Sell Point</name>
+        <image>$l10n_station_us_sawmill</image>
+        <price>1000</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <vertexBufferMemoryUsage>1464</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>216</indexBufferMemoryUsage>
+        <textureMemoryUsage>174864</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/woodsellpoint/sawmillTriggers.i3d</filename>
+    </base>
+    
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+    
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadTriggerMarker" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="woodSellTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="EXCLAMATION_MARK" adjustToGround="true" />
+    </triggerMarkers>
+    
+     <sellingStation node="sellingStation" supportsExtension="false">
+            <unloadTrigger fillTypes="WOOD" aiNode="sellingStationAINode">
+                <woodTrigger triggerNode="woodTrigger" activationTriggerNode="woodSellTrigger" />
+            </unloadTrigger>
+     </sellingStation>
+        
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+
+     <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <i3dMappings>
+        <i3dMapping id="infoTrigger" node="0>0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>1|0|0" />
+        <i3dMapping id="sellingStation" node="0>3" />
+        <i3dMapping id="woodTrigger" node="0>3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>3|0|0" />
+        <i3dMapping id="woodSellTrigger" node="0>3|1" />
+        <i3dMapping id="woodSellTriggerMarker" node="0>3|1|0" />
+        <i3dMapping id="warningStripes_woodTrigger" node="0>3|2" />
+        <i3dMapping id="sellingStationAINode" node="0>3|3" />
+        <i3dMapping id="teleportNode" node="0>4" />
+        <i3dMapping id="loadTriggerMarker" node="0>3|1|0" />
+    </i3dMappings>
+</placeable>

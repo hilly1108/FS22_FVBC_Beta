@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="roundbaleSilage_diffuse.dds"/>
+    <File fileId="2" filename="roundbaleSilage_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="roundbaleHay_mat" materialId="5">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="silageBaleFake.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="SilageBaleStack01" nodeId="66">
+        <TransformGroup name="bale" nodeId="44">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="13" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="14" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="bale" translation="1.25134 0 0" nodeId="46">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="49" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="bale" translation="-1.26148 0 0" nodeId="50">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="bale" translation="-0.624708 1.0443 0.0182537" nodeId="54">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="bale" translation="0.63627 1.0443 0.0182537" nodeId="58">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="59" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="61" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="bale" translation="-0.0111834 2.09695 0.0182537" nodeId="62">
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 -0.879584" static="true" clipDistance="250" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 58.104" clipDistance="250" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="1" name="roundbale_vis" rotation="0 -0 120.716" clipDistance="250" nodeId="65" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

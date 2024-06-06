@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Train Pit Silo</name>
+        <image>$data/placeables/sellingStationGeneric/store_sellingStationGeneric.png</image>
+        <price>1</price>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <vertexBufferMemoryUsage>367104</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>36096</indexBufferMemoryUsage>
+        <textureMemoryUsage>2097152</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/sellingStationGeneric/sellingStationGeneric.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="largeImp" />
+        </sounds>
+    </placement>
+    
+       <hotspots>
+        <hotspot type="UNLOADING" linkNode="0>7" teleportNode="0>11"/>
+    </hotspots>
+
+    <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas></indoorAreas>
+    
+        <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+                <splines>
+            <spline node="0>12" />
+        </splines>
+    </ai>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="200000" fullPriceRecoverHours="48">
+        <unloadTrigger exactFillRootNode="0>3"  fillTypes="WHEAT BARLEY CANOLA SUNFLOWER SOYBEAN MAIZE OAT SORGHUM RYE"/>
+        <fillType name="wheat"            priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="barley"           priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="canola"           priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sunflower"        priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="soybean"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="maize"            priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="oat"            priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="sorghum"            priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="rye"            priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+    
+    <triggerMarkers>
+        <triggerMarker node="0>2" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+
+    </triggerMarkers>
+
+    <animatedObjects>
+        <animatedObject saveId="gate_01" >
+            <animation duration="3">
+                <part node="0>1">
+                    <keyFrame time="0.0" rotation="-99 0 0"/>
+                    <keyFrame time="1.0" rotation="0 0 0"/>
+                </part>
+            </animation>
+            <controls triggerNode="0>2" posAction="ACTIVATE_HANDTOOL" posText="action_closeGate" negText="action_openGate" />
+        </animatedObject>
+    </animatedObjects>
+    <i3dMappings>
+        <i3dMapping id="cap" node="0>1" />
+        <i3dMapping id="playerTrigger" node="0>2" />
+        <i3dMapping id="unloadTrigger" node="0>3" />
+        <i3dMapping id="aiNodeLeft" node="0>5" />
+        <i3dMapping id="aiNodeRight" node="0>6" />
+        
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>11" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>11|0" />
+    </i3dMappings>
+</placeable>

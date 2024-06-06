@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Mod Map FR" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shaders/psColorShader.xml"/>
+    <File fileId="1" filename="waterSplashParticle.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="632" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="waterSplashParticle_mat" materialId="1056" alphaBlending="true" customShaderId="2">
+      <Texture fileId="1"/>
+      <CustomParameter name="psColor" value="1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="waterfalls.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="waterVaporParticleSystem_emitter1Ref" dynamicId="3" type="sprite" rate="0.06" lifespan="1000" maxCount="100" speed="0.001" speedRandom="0" tangentSpeed="0.15" normalSpeed="1" spriteScaleX="0.8" spriteScaleY="0.8" spriteScaleXGain="0.005" spriteScaleYGain="0.005" blendFactor="0.5" blendInFactor="0.5" blendOutFactor="0.5" randomInitRotation="true" deltaRotateMax="0.000349066" textureAtlasSizeX="8">
+      <Gravity force="0 0 0"/>
+    </ParticleSystem>
+    <ParticleSystem name="waterfallParticleSystem_emitter1Ref" dynamicId="1" type="sprite" rate="0.1" lifespan="2100" maxCount="200" speed="0.008" speedRandom="0" tangentSpeed="0" normalSpeed="1" spriteScaleX="4" spriteScaleY="4" spriteScaleXGain="0.003" spriteScaleYGain="0.003" blendFactor="0.75" blendInFactor="0.2" blendOutFactor="0.75" randomInitRotation="true" deltaRotateMax="0.00314159" textureAtlasSizeX="8">
+      <Gravity force="0 -1.5 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+      <Dynamic dynamicId="1" emitterShapeNodeId="4842" name="creekWaterfallEmitter07" translation="848.395 113.376 -431.502" rotation="-0.453372 18.2563 -1.25702" scale="1.073 1.00004 0.314101" clipDistance="2000" objectMask="16711807" nodeId="4841" materialIds="1056" distanceBlending="false">
+        <Shape shapeId="2" name="waterfallParticleSystemAreaShape" rotation="0 0 90" scale="6 1 7" nodeId="4842" materialIds="632" nonRenderable="true"/>
+      </Dynamic>
+      <Dynamic dynamicId="3" emitterShapeNodeId="4845" name="creekWaterVaporEmitter07" translation="828.02 83.97 -424.195" rotation="6.21016e-07 18.5639 1.67843e-07" scale="1.07296 1 1.07296" clipDistance="150" objectMask="16711807" nodeId="4844" materialIds="1056" distanceBlending="false">
+        <Shape shapeId="4" name="waterVaporParticleSystemAreaShape" scale="6 1 22" nodeId="4845" materialIds="632" nonRenderable="true"/>
+      </Dynamic>
+  </Scene>
+
+</i3D>

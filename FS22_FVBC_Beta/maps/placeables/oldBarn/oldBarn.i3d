@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="oldBarn" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapUS/textures/oldBarn01_diffuse.png" />
+    <File fileId="2" filename="$data/maps/mapUS/textures/oldBarn01_normal.png" />
+    <File fileId="3" filename="$data/maps/mapUS/textures/oldBarn01_specular.png" />
+    <File fileId="12" filename="$data/maps/textures/shared/props/icicles_diffuse.png" />
+    <File fileId="13" filename="$data/maps/textures/shared/props/icicles_normal.png" />
+    <File fileId="14" filename="$data/maps/textures/shared/props/icicles_specular.png" />
+    <File fileId="7" filename="$data/maps/textures/shared/snow_diffuse.png" />
+    <File fileId="8" filename="$data/maps/textures/shared/snow_normal.png" />
+    <File fileId="9" filename="$data/maps/textures/shared/snow_specular.png" />
+    <File fileId="6" filename="$data/maps/mapUS/textures/oldBarn01_height.png" />
+    <File fileId="5" filename="$data/maps/mapUS/textures/oldBarn01_mask.png" />
+    <File fileId="4" filename="$data/shaders/buildingShader.xml" />
+    <File fileId="10" filename="$data/shaders/snowHeapShader.xml" />
+    <File fileId="11" filename="$data/shared/sparkles_normal.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="oldBarn01_mat" materialId="2" customShaderId="4" customShaderVariation="customParallax">
+      <CustomParameter name="dirtMossMix" value="1.0 1.0"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="6"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="snow_mat" materialId="3" customShaderId="10">
+      <Custommap name="mSparklesNormal" fileId="11"/>
+      <Texture fileId="7"/>
+      <Normalmap fileId="8" bumpDepth="0.5"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="icicles_mat" materialId="4" alphaBlending="true" customShaderId="10" customShaderVariation="icicle">
+      <Refractionmap type="planar" coeff="1" bumpScale="0.1"/>
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="oldBarn.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="oldBarn" clipDistance="700" nodeId="1">
+      <TransformGroup name="clearAreas" nodeId="2">
+        <TransformGroup name="clearArea1Start" translation="-12.7 0 -10.4" nodeId="3">
+          <TransformGroup name="clearArea1Width" translation="25 0 0" nodeId="4"/>
+          <TransformGroup name="clearArea1Height" translation="0 0 21" nodeId="5"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="levelAreas" nodeId="6">
+        <TransformGroup name="levelArea1Start" translation="-12.7 0 -10.4" nodeId="7">
+          <TransformGroup name="levelArea1Width" translation="25 0 0" nodeId="8"/>
+          <TransformGroup name="levelArea1Height" translation="0 0 21" nodeId="9"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="indoorAreas" nodeId="10">
+        <TransformGroup name="indoorArea1Start" translation="-12.7 0 -10.4" nodeId="11">
+          <TransformGroup name="indoorArea1Width" translation="25 0 -6.82121e-15" nodeId="12"/>
+          <TransformGroup name="indoorArea1Height" translation="2.27374e-15 0 21" nodeId="13"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="testAreas" nodeId="14">
+        <TransformGroup name="testArea1Start" translation="-12.0027 0 -9.78847" nodeId="15">
+          <TransformGroup name="testArea1End" translation="23.9953 10 19.8021" nodeId="16"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipOcclusionUpdateAreas" nodeId="17">
+        <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-15 0 -12" nodeId="18">
+          <TransformGroup name="tipOcclusionUpdateArea1End" translation="30 0 25" nodeId="19"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="tipCollision" nodeId="20">
+        <Shape name="tipCol" shapeId="1" static="true" collisionMask="524288" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="21"/>
+      </TransformGroup>
+      <TransformGroup name="visuals" nodeId="22">
+        <TransformGroup name="oldBarn01" lodDistance="0 120" collision="false" density="0" nodeId="23">
+          <TransformGroup name="LOD0" nodeId="24">
+            <Shape name="oldBarn01" translation="-6.0869 6.43804 -5.5" rotation="2.50448e-06 0 0" scale="1 1 1" shapeId="2" static="true" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="25"/>
+            <TransformGroup name="slidingDoors" rotation="2.50448e-06 0 0" scale="1 1 1" nodeId="26">
+              <Shape name="door01" translation="7.10321 1.99185 -10.0371" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="27"/>
+              <Shape name="door02" translation="-2.90762 1.99185 -10.0371" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="28"/>
+              <Shape name="door03" translation="-7.49948 1.85602 -10.0371" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="29"/>
+              <Shape name="door04" translation="-10.9784 1.85602 -10.0371" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="30"/>
+              <Shape name="door05" translation="-10.9784 1.85602 10.0347" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="31"/>
+              <Shape name="door08" translation="-7.02163 1.85602 10.0347" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="32"/>
+              <Shape name="door06" translation="-2.90762 1.99185 10.0347" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="33"/>
+              <Shape name="door07" translation="7.10321 1.99185 10.0545" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="34"/>
+            </TransformGroup>
+            <TransformGroup name="winter" collision="false" clipDistance="200" nodeId="35">
+              <Shape name="snow" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="200" nodeId="36" weatherRequiredMask="1024"/>
+              <Shape name="icicle" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="85" nodeId="37" weatherRequiredMask="1024"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="LOD1" nodeId="38">
+            <Shape name="oldBarn01_LOD" translation="0 -1.57772e-30 1.18329e-30" rotation="2.50448e-06 0 0" scale="1 1 1" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="500" nodeId="39"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

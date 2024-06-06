@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="fence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>fence singleton</name>
+        <functions>
+            <function>$l10n_function_decoration</function>
+        </functions>
+        <image>maps/VidhosticeHops/hops/store_hopsFence.dds</image>
+        <price>0</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>fences</category>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+
+        <brush>
+            <type>none</type>
+        </brush>
+    </storeData>
+
+    <base>
+        <filename>maps/VidhosticeHops/hops/hopsFence.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <sounds>
+            <place template="fenceWoodImp" />
+            <destroy template="destroyFence" />
+        </sounds>
+    </placement>
+
+    <fence maxVerticalAngle="50" maxCornerAngle="180" maxVerticalGateAngle="35" snapCheckDistance="1" snapDistance="1">
+        <gate node="0>0" length="7" triggerNode="2" />
+        <gate node="0>1" length="7" triggerNode="2" />
+        <poles node="1>" /> <!-- contains list of children each is a variant -->
+        <panels node="2>" length="12" /> <!-- contains list of children each is a variant -->
+<!--    <panels node="2>" length="12" fixedLength="true" />--> <!-- contains list of children each is a variant -->
+    </fence>
+
+    <clearAreas/>
+    <leveling/>
+    <indoorAreas/>
+    <ai><updateAreas/></ai>
+</placeable>

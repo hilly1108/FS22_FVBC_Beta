@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<motionPathEffects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../shared/xml/schema/mapMotionPathEffects.xsd">
+    <motionPathEffect effectClass="FertilizerMotionPathEffect" effectType="FERTILIZER" filename="maps/effects/fertilizer/fertilizer.i3d">
+        <effectGeneration rootNode="0|0"/>
+        <typeDefinition fillTypes="FERTILIZER LIME ROADSALT" speedScale="0.65"/>
+
+        <effectMeshes>
+            <effectMesh node="0|0|0" numRows="10" rowLength="24" skipPositions="1" numVariations="2" boundingBox="12 6 12" boundingBoxCenter="0 0 -6"/>
+            <effectMesh node="0|0|1" numRows="12" rowLength="24" skipPositions="1" numVariations="2" boundingBox="18 6 18" boundingBoxCenter="0 0 -8"/>
+            <effectMesh node="0|0|2" numRows="12" rowLength="32" skipPositions="1" numVariations="2" boundingBox="18 6 18" boundingBoxCenter="0 0 -8"/>
+            <effectMesh node="0|0|3" numRows="16" rowLength="32" skipPositions="1" numVariations="2" boundingBox="28 6 18" boundingBoxCenter="0 0 -8"/>
+            <effectMesh node="0|0|4" numRows="20" rowLength="32" skipPositions="1" numVariations="2" boundingBox="28 6 18" boundingBoxCenter="0 0 -8"/>
+            <effectMesh node="0|0|5" numRows="22" rowLength="32" skipPositions="1" numVariations="2" boundingBox="42 6 18" boundingBoxCenter="0 0 -8"/>
+        </effectMeshes>
+
+        <effectMaterials rootNode="0|1">
+            <effectMaterial node="0|1|0" fillTypes="FERTILIZER" />
+            <effectMaterial node="0|1|1" fillTypes="LIME" />
+            <effectMaterial node="0|1|2" fillTypes="ROADSALT" />
+        </effectMaterials>
+
+        <customShaderDefaults>
+            <customShaderVariation name="subUV_scaleByLife_cosOffsetY_alphaMap"/>
+            <customShaderParameter name="sizeScale" value="2.0 10.0 0.0 0.0"/>
+            <customShaderParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+        </customShaderDefaults>
+    </motionPathEffect>
+</motionPathEffects>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<greenhousePlant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/greenhousePlant.xsd">
+    <i3dFilename>maps/placeables/seedlinghouseLarge/seedlings/seedlings.i3d</i3dFilename>
+
+    <stages>
+        <growing node="0|0"/>
+        <growing node="0|1"/>
+		<growing node="0|2"/>
+		<growing node="0|3"/>
+        <withered node="0|4"/>
+    </stages>
+
+</greenhousePlant>

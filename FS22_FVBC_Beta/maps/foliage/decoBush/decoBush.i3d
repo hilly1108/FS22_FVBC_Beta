@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="decoBush" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="22" filename="$data/foliage/decoBush/decoBushBlueberryLOD1_alpha_H.png" />
+    <File fileId="20" filename="$data/foliage/decoBush/decoBushBlueberryLOD1_diffuse_H.png" />
+    <File fileId="21" filename="$data/foliage/decoBush/decoBushBlueberryLOD1_normal_H.png" />
+    <File fileId="19" filename="$data/foliage/decoBush/decoBushBlueberry_alpha.png" />
+    <File fileId="17" filename="$data/foliage/decoBush/decoBushBlueberry_diffuse.png" />
+    <File fileId="18" filename="$data/foliage/decoBush/decoBushBlueberry_normal.png" />
+    <File fileId="28" filename="$data/foliage/decoBush/decoBushBoxwoodLOD1_alpha_H.png" />
+    <File fileId="26" filename="$data/foliage/decoBush/decoBushBoxwoodLOD1_diffuse_H.png" />
+    <File fileId="27" filename="$data/foliage/decoBush/decoBushBoxwoodLOD1_normal_H.png" />
+    <File fileId="25" filename="$data/foliage/decoBush/decoBushBoxwood_alpha.png" />
+    <File fileId="23" filename="$data/foliage/decoBush/decoBushBoxwood_diffuse.png" />
+    <File fileId="24" filename="$data/foliage/decoBush/decoBushBoxwood_normal.png" />
+    <File fileId="34" filename="$data/foliage/decoBush/decoBushHazelnutLOD1_alpha_H.png" />
+    <File fileId="32" filename="$data/foliage/decoBush/decoBushHazelnutLOD1_diffuse_H.png" />
+    <File fileId="33" filename="$data/foliage/decoBush/decoBushHazelnutLOD1_normal_H.png" />
+    <File fileId="31" filename="$data/foliage/decoBush/decoBushHazelnut_alpha.png" />
+    <File fileId="29" filename="$data/foliage/decoBush/decoBushHazelnut_diffuse.png" />
+    <File fileId="30" filename="$data/foliage/decoBush/decoBushHazelnut_normal.png" />
+    <File fileId="7" filename="$data/foliage/decoBush/decoBushLOD01_alpha_H.png" />
+    <File fileId="5" filename="$data/foliage/decoBush/decoBushLOD01_diffuse_H.png" />
+    <File fileId="6" filename="$data/foliage/decoBush/decoBushLOD01_normal_H.png" />
+    <File fileId="10" filename="$data/foliage/decoBush/decoBushLOD02_alpha_H.png" />
+    <File fileId="8" filename="$data/foliage/decoBush/decoBushLOD02_diffuse_H.png" />
+    <File fileId="9" filename="$data/foliage/decoBush/decoBushLOD02_normal_H.png" />
+    <File fileId="13" filename="$data/foliage/decoBush/decoBushLOD03_alpha_H.png" />
+    <File fileId="11" filename="$data/foliage/decoBush/decoBushLOD03_diffuse_H.png" />
+    <File fileId="12" filename="$data/foliage/decoBush/decoBushLOD03_normal_H.png" />
+    <File fileId="16" filename="$data/foliage/decoBush/decoBushLOD04_alpha_H.png" />
+    <File fileId="14" filename="$data/foliage/decoBush/decoBushLOD04_diffuse_H.png" />
+    <File fileId="15" filename="$data/foliage/decoBush/decoBushLOD04_normal_H.png" />
+    <File fileId="4" filename="$data/foliage/decoBush/decoBush_alpha.png" />
+    <File fileId="1" filename="$data/foliage/decoBush/decoBush_diffuse.png" />
+    <File fileId="2" filename="$data/foliage/decoBush/decoBush_normal.png" />
+    <File fileId="3" filename="$data/shaders/fruitGrowthFoliageShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="decoBush_mat" materialId="1" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <Custommap name="alphaMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="decoBushLOD01_mat" materialId="15" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <Custommap name="alphaMap" fileId="7"/>
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="decoBushLOD02_mat" materialId="16" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="decoBushLOD03_mat" materialId="17" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="13"/>
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+    </Material>
+    <Material name="decoBushLOD04_mat" materialId="18" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.2"/>
+      <Custommap name="alphaMap" fileId="16"/>
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+    </Material>
+    <Material name="decoBushBlueberry_mat" materialId="5" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <Custommap name="alphaMap" fileId="19"/>
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+    </Material>
+    <Material name="decoBushBlueberryLOD1_mat" materialId="19" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <Custommap name="alphaMap" fileId="22"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="decoBushBoxwood_mat" materialId="9" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <Custommap name="alphaMap" fileId="25"/>
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+    </Material>
+    <Material name="decoBushBoxwoodLOD1_mat" materialId="23" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <Custommap name="alphaMap" fileId="28"/>
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+    </Material>
+    <Material name="decoBushHazelnut_mat" materialId="12" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <Custommap name="alphaMap" fileId="31"/>
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+    </Material>
+    <Material name="decoBushHazelnutLOD1_mat" materialId="26" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <Custommap name="alphaMap" fileId="34"/>
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+    </Material>
+    <Material name="decoBush_mat4" materialId="3" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="decoBush_mat5" materialId="2" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="decoBush_mat6" materialId="4" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.2"/>
+      <Custommap name="alphaMap" fileId="4"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="decoBushBlueberry_mat5" materialId="8" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.2"/>
+      <Custommap name="alphaMap" fileId="19"/>
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+    </Material>
+    <Material name="decoBushBlueberry_mat6" materialId="7" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="19"/>
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+    </Material>
+    <Material name="decoBushBlueberryLOD1_mat4" materialId="22" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.2"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="decoBushBlueberryLOD1_mat5" materialId="21" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="decoBushBlueberry_mat7" materialId="6" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="19"/>
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+    </Material>
+    <Material name="decoBushBlueberryLOD1_mat6" materialId="20" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="22"/>
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+    </Material>
+    <Material name="decoBushBoxwood_mat3" materialId="11" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="25"/>
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+    </Material>
+    <Material name="decoBushBoxwoodLOD1_mat3" materialId="25" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="28"/>
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+    </Material>
+    <Material name="decoBushBoxwoodLOD1_mat4" materialId="24" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.7"/>
+      <Custommap name="alphaMap" fileId="28"/>
+      <Texture fileId="26"/>
+      <Normalmap fileId="27"/>
+    </Material>
+    <Material name="decoBushBoxwood_mat4" materialId="10" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.7"/>
+      <Custommap name="alphaMap" fileId="25"/>
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+    </Material>
+    <Material name="decoBushHazelnutLOD1_mat3" materialId="28" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+    </Material>
+    <Material name="decoBushHazelnut_mat3" materialId="14" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.3"/>
+      <Custommap name="alphaMap" fileId="31"/>
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+    </Material>
+    <Material name="decoBushHazelnutLOD1_mat4" materialId="27" specularColor="0 0 0" customShaderId="3" customShaderVariation="BILLBOARD_SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <Texture fileId="32"/>
+      <Normalmap fileId="33"/>
+    </Material>
+    <Material name="decoBushHazelnut_mat4" materialId="13" specularColor="0 0 0" customShaderId="3" customShaderVariation="SEASONAL">
+      <CustomParameter name="windScale" value="0.5"/>
+      <Custommap name="alphaMap" fileId="31"/>
+      <Texture fileId="29"/>
+      <Normalmap fileId="30"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="decoBush.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="decoBush" nodeId="1">
+      <TransformGroup name="LOD0" nodeId="2">
+        <Shape name="decoBushSmall" translation="0 7.10543e-17 0" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" clipDistance="500" nodeId="3"/>
+        <Shape name="decoBushMedium" translation="0 7.10543e-17 0" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="500" nodeId="4"/>
+        <Shape name="decoBushBig" translation="0 -7.10543e-17 0" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="500" nodeId="5"/>
+        <Shape name="decoBushSuperBig" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="500" nodeId="6"/>
+        <Shape name="blueberryBushShort" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="500" nodeId="7"/>
+        <Shape name="blueberryBushSmall" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="500" nodeId="8"/>
+        <Shape name="blueberryBushMedium" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="500" nodeId="9"/>
+        <Shape name="blueberryBushWide" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="500" nodeId="10"/>
+        <Shape name="blueberryBushBig" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="8" clipDistance="500" nodeId="11"/>
+        <Shape name="boxwoodBushSmall" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="9" clipDistance="500" nodeId="12"/>
+        <Shape name="boxwoodBushMidA" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="10" clipDistance="500" nodeId="13"/>
+        <Shape name="boxwoodBushMidB" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="11" clipDistance="500" nodeId="14"/>
+        <Shape name="hazelnutBushSmall" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="12" clipDistance="500" nodeId="15"/>
+        <Shape name="hazelnutBushMid" shapeId="14" castsShadows="true" receiveShadows="true" materialIds="13" clipDistance="500" nodeId="16"/>
+        <Shape name="hazelnutBushBig" shapeId="15" castsShadows="true" receiveShadows="true" materialIds="14" clipDistance="500" nodeId="17"/>
+      </TransformGroup>
+      <TransformGroup name="LOD1" nodeId="18">
+        <Shape name="decoBushSmallLOD" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="15" clipDistance="500" nodeId="19"/>
+        <Shape name="decoBushMediumLOD" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="16" clipDistance="500" nodeId="20"/>
+        <Shape name="decoBushBigLOD" shapeId="18" castsShadows="true" receiveShadows="true" materialIds="17" clipDistance="500" nodeId="21"/>
+        <Shape name="decoBushSuperBigLOD" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="18" clipDistance="500" nodeId="22"/>
+        <Shape name="blueberryBushShortLOD" shapeId="20" castsShadows="true" receiveShadows="true" materialIds="19" clipDistance="500" nodeId="23"/>
+        <Shape name="blueberryBushSmallLOD" shapeId="21" castsShadows="true" receiveShadows="true" materialIds="19" clipDistance="500" nodeId="24"/>
+        <Shape name="blueberryBushMediumLOD" shapeId="22" castsShadows="true" receiveShadows="true" materialIds="20" clipDistance="500" nodeId="25"/>
+        <Shape name="blueberryBushWideLOD" shapeId="23" castsShadows="true" receiveShadows="true" materialIds="21" clipDistance="500" nodeId="26"/>
+        <Shape name="blueberryBushBigLOD" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="22" clipDistance="500" nodeId="27"/>
+        <Shape name="boxwoodBushSmallLOD" shapeId="25" castsShadows="true" receiveShadows="true" materialIds="23" clipDistance="500" nodeId="28"/>
+        <Shape name="boxwoodBushMidALOD" shapeId="26" castsShadows="true" receiveShadows="true" materialIds="24" clipDistance="500" nodeId="29"/>
+        <Shape name="boxwoodBushMidBLOD" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="25" clipDistance="500" nodeId="30"/>
+        <Shape name="hazelnutBushSmallLOD" shapeId="28" castsShadows="true" receiveShadows="true" materialIds="26" clipDistance="500" nodeId="31"/>
+        <Shape name="hazelnutBushMidLOD" shapeId="29" castsShadows="true" receiveShadows="true" materialIds="27" clipDistance="500" nodeId="32"/>
+        <Shape name="hazelnutBushBigLOD" shapeId="30" castsShadows="true" receiveShadows="true" materialIds="28" clipDistance="500" nodeId="33"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

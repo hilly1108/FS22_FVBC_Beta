@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Galpao" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.2"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/maps/mapAlpine/textures/props/neonLightSmall_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/mapAlpine/textures/props/neonLightSmall_normal.png"/>
+    <File fileId="4" filename="$data/maps/mapAlpine/textures/props/neonLightSmall_specular.png"/>
+    <File fileId="29" filename="$data/maps/mapFR/textures/bakeryGround_normal.dds"/>
+    <File fileId="28" filename="$data/maps/mapFR/textures/bridgeCanalWalls_diffuse.dds"/>
+    <File fileId="30" filename="$data/maps/mapFR/textures/bridgeCanalWalls_specular.dds"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/props/lightPoleSet_emissive.dds"/>
+    <File fileId="24" filename="$data/maps/textures/shared/snow_diffuse.dds"/>
+    <File fileId="25" filename="$data/maps/textures/shared/snow_normal.dds"/>
+    <File fileId="15" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="19" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="8" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="14" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="26" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="11" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch_diffuse.png"/>
+    <File fileId="12" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch_normal.png"/>
+    <File fileId="13" filename="$data/shared/assets/lights/rudolfHormann/powerSwitch_specular.png"/>
+    <File fileId="6" filename="$data/shared/default_normal.dds"/>
+    <File fileId="10" filename="$data/shared/materialHolders/defaultGlow_diffuse.png"/>
+    <File fileId="7" filename="$data/shared/window02_specular.dds"/>
+    <File fileId="16" filename="Texturas/shed_diffuse.dds"/>
+    <File fileId="17" filename="Texturas/shed_normal.dds"/>
+    <File fileId="18" filename="Texturas/shed_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="concrete_mat" materialId="4">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="MAT_Galp" materialId="6" diffuseColor="0 0 0 1">
+    </Material>
+    <Material name="MLshed_mat" materialId="7" customShaderId="19">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="neonLightSmall_mat" materialId="8">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="powerSwitch_mat" materialId="9" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="snow_mat" materialId="10" customShaderId="26">
+      <Texture fileId="24"/>
+      <Normalmap fileId="25"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="trigger_mat" materialId="11" diffuseColor="0.494118 0.494118 0.494118 0">
+    </Material>
+    <Material name="window_mat" materialId="12" alphaBlending="true" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="lightControl" value="10 0 0 0"/>
+    </Material>
+    <Material name="window_mat" materialId="13" alphaBlending="true">
+      <Texture fileId="10"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Shed2.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Shed2" clipDistance="500" nodeId="26">
+        <TransformGroup name="clearAreas" nodeId="27">
+          <TransformGroup name="clearArea1Start" translation="-13 0 -13" nodeId="28">
+            <TransformGroup name="clearArea1Width" translation="26 1.42109e-16 4.54747e-15" nodeId="29"/>
+            <TransformGroup name="clearArea1Height" translation="0 -7.10543e-17 26" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="31">
+          <TransformGroup name="levelArea1Start" translation="-13 0 -13" nodeId="32">
+            <TransformGroup name="levelArea1Width" translation="26 1.66533e-16 3.55271e-15" nodeId="33"/>
+            <TransformGroup name="levelArea1Height" translation="0 -5.55112e-17 26" nodeId="34"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="35">
+          <TransformGroup name="indoorArea1Start" translation="-10.836 0 -9.97569" nodeId="36">
+            <TransformGroup name="indoorArea1Width" translation="21.9592 0 0" nodeId="37"/>
+            <TransformGroup name="indoorArea1Height" translation="0 0 20.1288" nodeId="38"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="39">
+          <TransformGroup name="testArea1Start" translation="-13 -0 -13" nodeId="40">
+            <TransformGroup name="testArea1End" translation="26 10.695 26" nodeId="41"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="42">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-13 0 -13" nodeId="43">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="26 0 26" nodeId="44"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="0 -0.01 0" scale="1 0.8 1" nodeId="45">
+          <TransformGroup name="light" rotation="-0 -90 0" nodeId="46">
+            <Shape shapeId="1" name="trigger" translation="-2.16969 1.53961 -0.165" static="true" trigger="true" collisionMask="3145728" nodeId="47" materialIds="11" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="2" name="Light1" lockedgroup="true" translation="0.02 8.284 -5.58" clipDistance="70" nodeId="48" materialIds="8" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="illum1" translation="-0.022 0 -0.0164495" rotation="-5.00896e-06 90 0" visibility="false" nodeId="49">
+                <Shape shapeId="3" name="glass" translation="0.00524593 0 0" rotation="-7.83436e-13 8.14222e-13 -8.14222e-13" clipDistance="60" nodeId="50" materialIds="12" castsShadows="true" receiveShadows="true" renderInvisible="true"/>
+                <Light name="pointtLight01" translation="-8.39862e-15 -4.199 5.05501e-08" rotation="-90 8.14222e-13 -8.14222e-13" clipDistance="200" nodeId="51" type="point" color="0.6 0.5 0.4" emitDiffuse="true" emitSpecular="true" range="12" renderInvisible="true"/>
+              </TransformGroup>
+              <Shape shapeId="4" name="B" translation="-0.4 0.189119 0" nodeId="52" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="B" translation="0.399994 0.189117 0" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="glass" translation="-3.09212e-06 0 1.86265e-09" clipDistance="60" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true" renderInvisible="true"/>
+            </Shape>
+            <Shape shapeId="2" name="Light2" lockedgroup="true" translation="0.02 8.284 4.79461" clipDistance="70" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="illum2" translation="-0.0220026 0 -0.0167217" rotation="-5.00896e-06 90 0" visibility="false" nodeId="56">
+                <Shape shapeId="3" name="glass" translation="0.00524593 0 0" rotation="-7.83436e-13 8.14222e-13 -8.14222e-13" clipDistance="60" nodeId="57" materialIds="12" castsShadows="true" receiveShadows="true" renderInvisible="true"/>
+                <Light name="pointtLight01" translation="-8.39862e-15 -4.19869 5.05501e-08" rotation="-90 8.14222e-13 -8.14222e-13" clipDistance="200" nodeId="58" type="point" color="0.6 0.5 0.4" emitDiffuse="true" emitSpecular="true" range="12" renderInvisible="true"/>
+              </TransformGroup>
+              <Shape shapeId="4" name="B" translation="-0.4 0.189119 0" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="B" translation="0.399994 0.189117 0" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="glass" translation="-3.09212e-06 0 1.86265e-09" clipDistance="60" nodeId="61" materialIds="13" castsShadows="true" receiveShadows="true" renderInvisible="true"/>
+            </Shape>
+            <Shape shapeId="7" name="powerSwitch" translation="-2.98211 1.46097 -0.282276" rotation="-180 90 180" clipDistance="50" nodeId="62" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="8" name="Galpao2" clipDistance="1000" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="9" name="col" translation="0 4.64234 0" visibility="false" static="true" nodeId="64" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="snow" clipDistance="500" nodeId="65" materialIds="10" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+            <Shape shapeId="11" name="c1" translation="0.188 -0.05 6.5772" static="true" clipDistance="600" nodeId="66" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

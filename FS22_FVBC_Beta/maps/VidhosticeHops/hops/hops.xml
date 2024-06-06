@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="foliage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_shopItem_hops_vine</name>
+        <functions>
+            <function>$l10n_function_hopsOrchard</function>
+        </functions>
+        <image>maps/VidhosticeHops/hops/store_hops.dds</image>
+        <price>0.25</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>fences</category>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <brush>
+            <type>fence</type>
+            <category>production</category>
+            <tab>orchards</tab>
+            <parameters>
+                <parameter isFilename="true">maps/VidhosticeHops/hops/hopsSingleton.xml</parameter>
+                <parameter>false</parameter> <!-- is gate -->
+            </parameters>
+        </brush>
+
+        <storeIconRendering>
+            <settings cameraXRot="-15" cameraYRot="20" advancedBoundingBox="true" lightIntensity="2.5"/>
+        </storeIconRendering>
+    </storeData>
+
+    <base>
+        <filename>maps/VidhosticeHops/hops/hops.i3d</filename>
+    </base>
+
+</placeable>

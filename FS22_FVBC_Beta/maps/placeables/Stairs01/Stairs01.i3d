@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapUS/textures/woodenCatwalk_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/woodenCatwalk_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/woodenCatwalk_specular.png"/>
+    <File fileId="4" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="woodenCatwalk_mat" materialId="687" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="2"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Stairs01.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="Stairs01" nodeId="187398">
+        <TransformGroup name="pierStair_PREFAB" lockedgroup="true" translation="489.911 21.5024 726.894" rotation="180 64.369 180" nodeId="141996">
+          <Shape shapeId="1" name="fencePlanksStraightDiagonalA2m" lockedgroup="true" translation="0.999982 -0.5 -1.00006" rotation="180 0 -180" static="true" clipDistance="150" nodeId="141997" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="stairStraightA2m" lockedgroup="true" translation="2.38071e-05 -0.125 -0.999817" rotation="-180 0.00045603 -180" static="true" clipDistance="150" nodeId="141998" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="fencePlanksStraightDiagonalB2m" lockedgroup="true" translation="-1.00009 -0.500004 -1.00006" rotation="-180 -6.56269e-05 -180" static="true" clipDistance="150" nodeId="141999" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="pierCorner_PREFAB" lockedgroup="true" translation="487.967 21.4946 727.57" rotation="-180 -26 -180" scale="1 1 1.20922" nodeId="142000">
+          <Shape shapeId="4" name="plankSquareA2x2m" lockedgroup="true" translation="0 8.85126e-07 0" rotation="0 270 0" static="true" clipDistance="150" nodeId="142001" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="fencePlanksStraightB2m" lockedgroup="true" translation="1 -0.499999 -1" rotation="5.8284e-05 90 0" static="true" clipDistance="150" nodeId="142002" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="fencePlanksStraightB2m" lockedgroup="true" translation="-1 -0.5 -1" rotation="0 180 0" static="true" clipDistance="150" nodeId="142003" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="pierStair_PREFAB" lockedgroup="true" translation="491.712 20.5148 726.032" rotation="180 64.369 180" nodeId="142004">
+          <Shape shapeId="1" name="fencePlanksStraightDiagonalA2m" lockedgroup="true" translation="0.999982 -0.5 -1.00006" rotation="180 0.000351869 -180" static="true" clipDistance="150" nodeId="142005" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="stairStraightB2m" lockedgroup="true" translation="2.38071e-05 -0.125 -0.999817" rotation="-180 0 -180" static="true" clipDistance="150" nodeId="142006" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="fencePlanksStraightDiagonalB2m" lockedgroup="true" translation="-1.00009 -0.500004 -1.00006" rotation="-180 -6.56269e-05 -180" static="true" clipDistance="150" nodeId="142007" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="stand01" lockedgroup="true" translation="488.193 20.9638 726.237" rotation="-3.01006 5.742 -0.301444" nodeId="142008">
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="3.05176e-05 0 0" rotation="90.0546 17.3185 6.71515e-05" scale="1.125 1.5 1.125" static="true" clipDistance="150" nodeId="142009" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.665094 -3.26034 2.13249" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142010" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.0444545 -3.26034 0.204473" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142011" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="stand01" lockedgroup="true" translation="486.962 20.9953 726.839" rotation="-3.01006 5.742 -0.301444" nodeId="142012">
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="3.05176e-05 0 0" rotation="90.0546 17.3185 6.71515e-05" scale="1.125 1.5 1.125" static="true" clipDistance="150" nodeId="142013" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.665094 -3.26034 2.13249" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142014" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.0444545 -3.26034 0.204473" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142015" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="stand01" lockedgroup="true" translation="493.189 17.2578 726.721" rotation="178.916 43.8532 -0.750986" nodeId="142016">
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="3.05176e-05 0 0" rotation="90.0546 17.3185 6.71515e-05" scale="1.125 1.5 1.125" static="true" clipDistance="150" nodeId="142017" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.665094 -3.26034 2.13249" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142018" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.0444545 -3.26034 0.204473" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142019" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="stand01" lockedgroup="true" translation="488.521 19.2045 725.986" rotation="1.145 46.9038 -179.164" nodeId="142020">
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="3.05176e-05 0 0" rotation="90.0546 17.3185 6.71515e-05" scale="1.125 1.5 1.125" static="true" clipDistance="150" nodeId="142021" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.665094 -3.26034 2.13249" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142022" materialIds="687" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="fencePlanksPostC2m" lockedgroup="true" translation="0.0444545 -3.26034 0.204473" rotation="180 -15.3878 -180" scale="0.75 2 0.75" static="true" clipDistance="150" nodeId="142023" materialIds="687" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

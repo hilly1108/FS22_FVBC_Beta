@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="debrisCrusherLC.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_normal.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_specular.png"/>
+    <File fileId="5" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="debrisCrusher_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="default_mat" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="default_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.494118 1 0.494118">
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="debrisCrusherLC.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="debrisCrusherLC" nodeId="24" lodDistance="0 60">
+        <TransformGroup name="crusher" translation="-40 0 0" nodeId="25">
+          <TransformGroup name="clearAreas" translation="0 -0.1 0" nodeId="26">
+            <TransformGroup name="clearArea1Start" translation="-11.6983 -2.27374e-15 -2.87895" nodeId="27">
+              <TransformGroup name="clearArea1Width" translation="0 0 8.98832" nodeId="28"/>
+              <TransformGroup name="clearArea1Height" translation="18.4743 0 0" nodeId="29"/>
+            </TransformGroup>
+            <TransformGroup name="clearArea2Start" translation="0.914693 0 -4.67535" nodeId="30">
+              <TransformGroup name="clearArea2Width" translation="0 0 12.4048" nodeId="31"/>
+              <TransformGroup name="clearArea2Height" translation="9.59601 0 1.13687e-15" nodeId="32"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" translation="0 -0.1 0" nodeId="33">
+            <TransformGroup name="levelArea1Start" translation="-9.5486 0 -2.48074" nodeId="34">
+              <TransformGroup name="levelArea1Width" translation="0 0 8.95273" nodeId="35"/>
+              <TransformGroup name="levelArea1Height" translation="18.3839 0 0" nodeId="36"/>
+            </TransformGroup>
+            <TransformGroup name="levelArea2Start" translation="1.22383 1.13687e-15 -4.10149" nodeId="37">
+              <TransformGroup name="levelArea2Width" translation="0 0 8.45876" nodeId="38"/>
+              <TransformGroup name="levelArea2Height" translation="8.91825 0 -1.13687e-15" nodeId="39"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" translation="0 -0.1 0" nodeId="40">
+            <TransformGroup name="indoorArea1Start" translation="-9.72048 0 -2.06778" nodeId="41">
+              <TransformGroup name="indoorArea1Width" translation="0 0 8.48204" nodeId="42"/>
+              <TransformGroup name="indoorArea1Height" translation="17.2507 0 0" nodeId="43"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" translation="0 -0.1 0" nodeId="44">
+            <TransformGroup name="testArea1Start" translation="-5.77945 0 -2.43086" nodeId="45">
+              <TransformGroup name="testArea1End" translation="12.2717 3.75596 4.76798" nodeId="46"/>
+            </TransformGroup>
+            <TransformGroup name="testArea2Start" translation="5.9724 0 -3.28966" nodeId="47">
+              <TransformGroup name="testArea2End" translation="4.24242 2.42554 6.31865" nodeId="48"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="49">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-29.772 0 -65.2877" nodeId="50">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="123.506 0 96.9701" nodeId="51"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="1" name="infoTrigger" scale="1 2.76998 1" static="true" trigger="true" collisionMask="1048576" clipDistance="300" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="collisions" nodeId="53">
+            <Shape shapeId="2" name="collision" translation="-1.66886 1.03542 0" static="true" clipDistance="300" nodeId="54" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="tipCollision" clipDistance="300" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="sellingStation" nodeId="56">
+            <Shape shapeId="4" name="unloadTriggerUpper" translation="3.807 2.06204 0.0280737" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerUpperMarker" translation="3.84088 2.67498 0" nodeId="58"/>
+            <Shape shapeId="5" name="unloadTriggerLower" translation="71.5999 0.0682134 11.2549" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="59" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerLowerAINode" translation="71.6 0.0682134 11.2549" rotation="0 180 0" nodeId="60"/>
+            <TransformGroup name="unloadTriggerLowerMarker" translation="71.6 0.0682134 11.2549" nodeId="61"/>
+          </TransformGroup>
+          <TransformGroup name="teleportNode" translation="-1.2844 3.82127 -0.0657944" nodeId="62"/>
+          <TransformGroup name="visuals" nodeId="63">
+            <TransformGroup name="transform" nodeId="64"/>
+            <TransformGroup name="transform" nodeId="65"/>
+            <TransformGroup name="transform" nodeId="66"/>
+            <TransformGroup name="backPSNode" translation="-4.65901 1.33201 0.085139" clipDistance="300" nodeId="67"/>
+            <TransformGroup name="psNode" translation="3.80742 1.87364 0.0348387" clipDistance="300" nodeId="68"/>
+            <Shape shapeId="6" name="roll" translation="0 1.33402 0" clipDistance="300" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="effects" nodeId="70">
+            <Shape shapeId="7" name="effectSmoke" rotation="-2.36171e-06 90 0" clipDistance="300" nodeId="71" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="72"/>
+        <TransformGroup name="transform" nodeId="73"/>
+        <TransformGroup name="loadingStation" translation="-40 0 7.115" nodeId="74">
+          <TransformGroup name="loadingTriggers" translation="40.6301 11.281 18.2329" nodeId="75">
+            <Shape shapeId="8" name="loadingTrigger" static="true" trigger="true" collisionMask="1073741824" nodeId="76" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" nodeId="77"/>
+            <TransformGroup name="dischargeEffect" nodeId="78">
+              <Shape shapeId="9" name="pipeEffect" clipDistance="300" nodeId="79" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="pipeEffectSmoke" translation="0 -4.18134 0" visibility="false" clipDistance="100" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiNodeLoading" rotation="0 -90 0" nodeId="81"/>
+          </TransformGroup>
+          <TransformGroup name="loadingTriggers" translation="87.635 11.1206 -14.4067" nodeId="82">
+            <Shape shapeId="11" name="loadingTrigger" translation="0 0.49475 0" static="true" trigger="true" collisionMask="1073741824" nodeId="83" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" nodeId="84"/>
+            <TransformGroup name="dischargeEffect" nodeId="85">
+              <Shape shapeId="12" name="pipeEffect" rotation="90 0 0" clipDistance="300" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="10" name="pipeEffectSmoke" translation="0 -4.18134 0" visibility="false" clipDistance="100" nodeId="87" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiNodeLoading" rotation="0 -90 0" nodeId="88"/>
+          </TransformGroup>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="3.656 1.65604 -10.8763" rotation="85.664 86.1331 102.751" scale="1 1 1.91321" clipDistance="500" nodeId="89" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="20.649 6.89891 -10.7842" rotation="86.771 86.1339 103.662" scale="1 1 1.91321" clipDistance="500" nodeId="90" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="40.271 12.455 -10.8231" rotation="0.224 0.674466 0.0180794" scale="1 1 1.4" clipDistance="500" nodeId="91" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="40.424 12.4042 2.2065" rotation="0.224 0.674466 0.0180794" scale="1 1 1.6286" clipDistance="500" nodeId="92" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="40.076 12.338 -10.8206" rotation="167.184 85.2854 167.22" scale="1 1 1.4" clipDistance="500" nodeId="93" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="53.721 12.3567 -11.9177" rotation="167.184 85.2854 167.22" scale="1 1 1.4" clipDistance="500" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="13" name="pipeUnloadEffect" translation="67.226 12.3751 -13.0035" rotation="167.184 85.2854 167.22" scale="1 1 1.9567" clipDistance="500" nodeId="95" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="dischargeEffect" translation="0.164001 11.2034 -0.178" nodeId="96">
+            <Shape shapeId="13" name="pipeUnloadEffect" translation="7.532 -9.97666 -3.91942" rotation="3.152 2.603 -0.0360698" scale="1 1 1.24246" clipDistance="500" nodeId="97" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="pipeUnloadEffect" translation="11.804 -9.79004 37.4756" rotation="-1.941 79.2703 15.943" scale="1 1 2.152" clipDistance="500" nodeId="98" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="pipeUnloadEffect" translation="31.934 -3.19628 41.4429" rotation="-1.272 65.4642 1.95659" scale="1 1 2.15232" clipDistance="500" nodeId="99" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="pipeUnloadEffect" translation="51.252 -2.03153 50.2739" rotation="-1.514 65.4642 1.95659" scale="1 1 2.15232" clipDistance="500" nodeId="100" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="loadingTriggers" translation="51.119 -6.36132 39.8976" rotation="0 -90 0" nodeId="101">
+              <Shape shapeId="11" name="loadingTrigger" translation="0 0.49475 0" static="true" trigger="true" collisionMask="1073741824" nodeId="102" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="dischargeNode" nodeId="103"/>
+              <TransformGroup name="dischargeEffect" nodeId="104">
+                <Shape shapeId="12" name="pipeEffect" rotation="90 0 0" clipDistance="300" nodeId="105" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="10" name="pipeEffectSmoke" translation="0 -4.18134 0" visibility="false" clipDistance="100" nodeId="106" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="aiNodeLoading" rotation="0 -90 0" nodeId="107"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="productionPoint" translation="-41.8782 0 15.4641" nodeId="108">
+          <Shape shapeId="14" name="playerTrigger" translation="18.06 0.991775 -24.3652" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="109" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" translation="1 0 3" nodeId="110"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

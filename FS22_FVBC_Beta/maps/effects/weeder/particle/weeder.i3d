@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="particle_materialHolder" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.1"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/effects/weeder/particle/grass32x4_diffuse.png"/>
+    <File fileId="2" filename="$data/effects/weeder/particle/grass32x4_normal.png"/>
+    <File fileId="3" filename="$data/shaders/psSubUVShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="4" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="weeder32x4_mat" materialId="6" customShaderId="3" customShaderVariation="subUVHorizontal">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <CustomParameter name="colorAlpha" value="1 1 1 0"/>
+      <CustomParameter name="playScale" value="50 150 1 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="weeder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+    <ParticleSystem name="weederGrassEmitter" dynamicId="2" type="sprite" particleShapeId="1" rate="0.01" lifespan="1000" maxCount="500" speed="0.001" speedRandom="0.001" tangentSpeed="0.2" normalSpeed="1" spriteScaleX="0.1" spriteScaleY="0.1" blendFactor="1" blendInFactor="0" blendOutFactor="1" depthSort="true" randomInitRotation="true" deltaRotateMin="-0.0005236" deltaRotateMax="0.0005236" textureAtlasSizeX="32" textureAtlasSizeY="4">
+      <Gravity force="0 -0.8 0"/>
+    </ParticleSystem>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="weeder" nodeId="12">
+        <TransformGroup name="weederGrass" nodeId="13">
+          <Dynamic dynamicId="2" emitterShapeNodeId="16" name="weederGrassEmitter" clipDistance="100" nodeId="15" materialIds="6" castsShadows="true" receiveShadows="true" distanceBlending="false">
+            <Shape shapeId="3" name="emitShape" nodeId="16" materialIds="4" nonRenderable="true"/>
+          </Dynamic>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="15">
+      <Attribute name="fillType" type="string" value="unknown"/>
+      <Attribute name="onCreate" type="scriptCallback" value="MaterialUtil.onCreateParticleSystem"/>
+      <Attribute name="particleType" type="string" value="WEEDER"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

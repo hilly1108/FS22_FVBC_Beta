@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<animatedObjects>
+	<animatedObject index="VratacesackaA01">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+            <sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -87 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 93 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="VratacesackaA02">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 4.586"/>
+			</part>	
+		</animation>
+	</animatedObject>
+	<animatedObject index="VratacesackaA03">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 -4.996"/>
+			</part>	
+		</animation>
+	</animatedObject>
+		<animatedObject index="VratacesackaA04">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+            <sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -87 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 93 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="VratacesackaA05">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 4.586"/>
+			</part>	
+		</animation>
+	</animatedObject>
+	<animatedObject index="VratacesackaA06">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 -4.996"/>
+			</part>	
+		</animation>
+	</animatedObject>
+    		<animatedObject index="VratacesackaA07">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+            <sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -87 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 93 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="VratacesackaA08">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 4.586"/>
+			</part>	
+		</animation>
+	</animatedObject>
+	<animatedObject index="VratacesackaA09">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 -4.996"/>
+			</part>	
+		</animation>
+	</animatedObject>
+        		<animatedObject index="VratacesackaA10">
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+            <sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+            <part node="1"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 -87 0" />
+            </part>
+			 <part node="2"> <!-- node -> child index -->
+                <keyFrame time="0" rotation="0 0 0" /> <!-- translation, rotation, scale, visibility -->
+                <keyFrame time="1.00" rotation="0 93 0" />
+            </part>
+            <!-- you can add an unlimited number of parts here -->
+        </animation>
+    </animatedObject>
+	<animatedObject index="VratacesackaA11">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 4.586"/>
+			</part>	
+		</animation>
+	</animatedObject>
+	<animatedObject index="VratacesackaA12">
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+			<sounds>
+                <moving linkNode="0" template="metalDoorsLoop" />
+                <posEnd linkNode="0" template="metalDoorsOpen" />
+                <negEnd linkNode="0" template="metalDoorsClose" />
+            </sounds>
+			<animation initialTime="0" duration="2">
+			<part node="1">
+				<keyFrame time="0.00" translation="0 0 0"/>
+				<keyFrame time="0.95" translation="0 0 -4.996"/>
+			</part>	
+		</animation>
+	</animatedObject>
+		
+	
+	
+</animatedObjects>

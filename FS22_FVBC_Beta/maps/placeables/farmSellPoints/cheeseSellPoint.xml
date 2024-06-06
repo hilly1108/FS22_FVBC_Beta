@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>
+            <en>Cheese Shop Sell Point</en>
+
+	</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>$data/placeables/mapUS/farmBuildings/farmShed/store_farmShed.png</image>
+        <price>5000</price>
+        <dailyUpkeep>25</dailyUpkeep>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>sellingPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>sellingPoints</tab>
+        </brush>
+        <vertexBufferMemoryUsage>620544</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>69632</indexBufferMemoryUsage>
+        <textureMemoryUsage>4063232</textureMemoryUsage>
+        <audioMemoryUsage>0</audioMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/farmSellPoints/farmSellPoint.i3d</filename>
+                <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="0>0|1|0" endNode="0>0|1|0|0" />
+        </testAreas>
+    </placement>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="0>0|1|0" endNode="0>0|1|0|0" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="0>0|1|0" endNode="0>0|1|0|0" />
+        </updateAreas>
+    </ai>
+
+    <hotspots>
+        <hotspot type="UNLOADING" linkNode="unloadMarker" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+    </triggerMarkers>
+
+    <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48" >
+         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="BREAD SUNFLOWER_OIL OLIVE_OIL CANOLA_OIL STRAWBERRY GRAPEJUICE EGG RAISINS HONEY CHEESE WOOL CHOCOLATE SUNFLOWER"/>
+       
+        <fillType name="SUNFLOWER_OIL"  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="OLIVE_OIL"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STRAWBERRY"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+      <fillType name="CHOCOLATE"      priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="GRAPEJUICE"     priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="EGG"            priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="RAISINS"        priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BREAD"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="HONEY"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHEESE"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOOL"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+    </sellingStation>
+
+    <clearAreas>
+        <clearArea startNode="0>0|0|0" widthNode="0>0|0|0|0" heightNode="0>0|0|0|1"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="0>0|0|0" widthNode="0>0|0|0|0" heightNode="0>0|0|0|1" groundType="concrete"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="0>0|0|0" widthNode="0>0|0|0|0" heightNode="0>0|0|0|1" />
+    </indoorAreas>
+
+    <i3dMappings>
+   
+        <i3dMapping id="unloadTrigger" node="0>0|4" />
+        <i3dMapping id="baleTrigger" node="0>0|5" />
+        <i3dMapping id="unloadMarker" node="0>0|6" />
+        <i3dMapping id="hotspotNode" node="0>0|7" />
+        <i3dMapping id="teleportNode" node="0>0|8" />
+        <i3dMapping id="aiNode" node="0>0|9" />
+    </i3dMappings>
+</placeable>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/maps/mapUS/textures/props/trafficChannelizer_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/mapUS/textures/props/trafficChannelizer_normal.png"/>
+    <File fileId="7" filename="$data/maps/mapUS/textures/props/trafficChannelizer_specular.png"/>
+    <File fileId="1" filename="$data/maps/trees/pine/pineTrunk_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/trees/pine/pineTrunk_normal.png"/>
+    <File fileId="3" filename="$data/maps/trees/spruce/spruceBranch_specular.png"/>
+    <File fileId="8" filename="$data/shaders/placeableShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="Holzpolter" materialId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="trafficChannelizer_mat" materialId="6" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="LogPile01.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="LogPile01" nodeId="14">
+        <TransformGroup name="pine" nodeId="15">
+          <Shape shapeId="1" name="HolzpolterLarge" translation="-0.848331 -0.0347531 6" clipDistance="300" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="col" scale="5.85921 1 5.46447" visibility="false" static="true" clipDistance="10" nodeId="17" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="-5 0 6" clipDistance="300" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="19" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="1.70593 0 6" clipDistance="300" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="21" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="1" name="HolzpolterLarge" translation="5.84773 -0.035 6.07648" rotation="-180 0.654372 -180" clipDistance="300" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="col" scale="5.85921 1 5.46447" visibility="false" static="true" clipDistance="10" nodeId="23" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="pine" translation="1.43602 2.17699e-06 6.31346" rotation="-180 0 -180" nodeId="24">
+          <Shape shapeId="1" name="HolzpolterLarge" translation="-0.848331 -0.0347531 6" clipDistance="300" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="col" scale="5.85921 1 5.46447" visibility="false" static="true" clipDistance="10" nodeId="26" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="-5 0 6" clipDistance="300" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="28" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="1.70593 0 6" clipDistance="300" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="30" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="1" name="HolzpolterLarge" translation="5.84773 -0.034752 6.07648" rotation="-180 0.654372 -180" clipDistance="300" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="col" scale="5.85921 1 5.46447" visibility="false" static="true" clipDistance="10" nodeId="32" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="pine" translation="0 0 -11.4686" rotation="0 0 2.68889e-05" nodeId="33">
+          <Shape shapeId="1" name="HolzpolterLarge" translation="-0.848331 -0.0347531 6" clipDistance="300" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="2" name="col" scale="5.85921 1 5.46447" visibility="false" static="true" clipDistance="10" nodeId="35" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="-5 0 6" clipDistance="300" nodeId="36" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="37" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="3" name="HolzpolterSmall" translation="1.70593 0 6" clipDistance="300" nodeId="38" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="col" scale="3.13308 1 5.50927" visibility="false" static="true" clipDistance="10" nodeId="39" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+          </Shape>
+        </TransformGroup>
+        <Shape shapeId="5" name="trafficChannelizer" lockedgroup="true" translation="28.8527 5.03347e-07 -0.373394" rotation="1.1658e-05 -85.004 -1.25982e-05" static="true" density="0.0001" nodeId="40" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="visual" clipDistance="80" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="trafficChannelizer" lockedgroup="true" translation="29.9433 -4.125e-07 7.92054" rotation="2.65293e-05 -87.8068 -2.74944e-05" static="true" density="0.0001" nodeId="42" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="visual" clipDistance="80" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="trafficChannelizer" lockedgroup="true" translation="30.3703 -5.16838e-07 12.5406" rotation="1.06144e-06 -16.9776 -1.29444e-06" static="true" density="0.0001" nodeId="44" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="visual" clipDistance="80" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+        <Shape shapeId="5" name="trafficChannelizer" lockedgroup="true" translation="29.2012 -3.42335e-07 3.18467" rotation="1.01691e-06 3.34747 -9.25132e-07" static="true" density="0.0001" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="6" name="visual" clipDistance="80" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

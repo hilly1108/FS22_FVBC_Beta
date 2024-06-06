@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="workshop.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/textures/shared/warningStripes_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/warningStripes_normal.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/warningStripes_specular.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="warningStripes_mat" materialId="6">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="workshop.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="workshop" nodeId="26">
+        <TransformGroup name="workshop" nodeId="27">
+          <TransformGroup name="markerWrench" translation="-5.52093 0 6.05486" nodeId="28"/>
+          <Shape shapeId="1" name="warningStripes" translation="2.13554 0 3.46444" clipDistance="100" nodeId="29" materialIds="6" receiveShadows="true"/>
+          <Shape shapeId="2" name="vehicleTrigger" translation="9.13592 0 -7.52036" static="true" trigger="true" collisionMask="2097152" clipDistance="300" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="playerTrigger" translation="-5.57539 0 5.9471" static="true" trigger="true" collisionMask="3145728" clipDistance="300" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="1" name="warningStripes" translation="11.5 0 3.464" clipDistance="100" nodeId="64" materialIds="6" receiveShadows="true"/>
+          <Shape shapeId="1" name="warningStripes" translation="20.9277 0 3.464" clipDistance="100" nodeId="66" materialIds="6" receiveShadows="true"/>
+          <Shape shapeId="1" name="warningStripes" translation="30.3622 0 3.464" clipDistance="100" nodeId="67" materialIds="6" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="32">
+          <TransformGroup name="clearArea1Start" translation="7.39339 0 -5.03014" nodeId="33">
+            <TransformGroup name="clearArea1Width" translation="0 0 14.8672" nodeId="34"/>
+            <TransformGroup name="clearArea1Height" translation="-14.8561 0 0" nodeId="35"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="36">
+          <TransformGroup name="levelArea1Start" translation="-8.25 0 -5.95766" nodeId="37">
+            <TransformGroup name="levelArea1Width" translation="0 0 16.092" nodeId="38"/>
+            <TransformGroup name="levelArea1Height" translation="16.5 0 0" nodeId="39"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="40">
+          <TransformGroup name="indoorArea1Start" translation="7.33994 0 -4.94291" nodeId="41">
+            <TransformGroup name="indoorArea1Width" translation="0 0 9.97487" nodeId="42"/>
+            <TransformGroup name="indoorArea1Height" translation="-14.6976 0 0" nodeId="43"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="44">
+          <TransformGroup name="testArea1Start" translation="8.03774 -0 -5.42375" nodeId="45">
+            <TransformGroup name="testArea1End" translation="-16.169 6.11923 15.6511" nodeId="46"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="47">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-7.83806 0 -5.44015" nodeId="48">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="15.449 0 17.7954" nodeId="49"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipCollision" nodeId="50">
+          <Shape shapeId="4" name="tipCol" translation="-0.11028 0 4.57634" static="true" collisionMask="524288" nodeId="51" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

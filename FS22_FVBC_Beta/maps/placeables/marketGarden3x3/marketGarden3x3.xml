@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Nursery Bed 3x3</name>
+        <functions>
+            <function>$l10n_function_productionPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/greenhouses/greenhouseLarge/store_greenhouseLarge.png</image>
+        <price>10000</price>
+        <dailyUpkeep>100</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>placeableMisc</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>greenhouses</tab>
+        </brush>
+        <canBeSold>true</canBeSold>
+        <vertexBufferMemoryUsage>991744</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>149504</indexBufferMemoryUsage>
+        <textureMemoryUsage>5177344</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <storeIconRendering>
+            <settings cameraXRot="-20" cameraYRot="30" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/marketGarden3x3/marketGarden3x3.i3d</filename>
+		<boughtWithFarmland>true</boughtWithFarmland>
+        <canBeRenamed>true</canBeRenamed>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+
+        <sounds>
+            <place template="smallImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="1" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger" />
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerMarker" teleportNode="teleportNode" />
+    </hotspots>
+
+     <triggerMarkers>
+        <triggerMarker node="warningStripes" />
+        <triggerMarker node="playerTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="WATER"  adjustToGround="false" />
+		<triggerMarker node="unloadTriggerMarkerSeedlings" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+		<triggerMarker node="unloadTriggerMarkerSeeds" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+		<triggerMarker node="unloadTriggerMarkerManure" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+		<triggerMarker node="unloadTriggerMarkerLiqFert" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+		<triggerMarker node="unloadTriggerMarkerStraw" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+    </triggerMarkers>
+
+    <greenhouse>
+        <plants>
+              <plant fillType="WESTERN_HEMLOCK_HEDGE"     xmlFilename="maps/placeables/marketGarden/wh_hedge/wh_hedge.xml" />
+              <plant fillType="DESIGNER_PLANTS"     xmlFilename="maps/placeables/marketGarden/designer_plants2/designer_plants2.xml" />
+        </plants>
+
+        <plantSpaces>
+            <spacesParent node="plantNodes" useRandomYRot="true" />
+        </plantSpaces>
+
+        <sounds>
+            <watering template="DEFAULT_SPRAYER" linkNode="0>" loops="0"/>
+        </sounds>
+
+        <!--<effectNodes>-->
+            <!--<effectNode effectNode="0>4|1" materialType="smoke" materialTypeId="1" fadeTime="0.5" />-->
+        <!--</effectNodes>-->
+    </greenhouse>
+
+  <productionPoint>
+        <productions>
+            <production id="wh_hedge" name="WH HEDGE (Seedlings)" cyclesPerHour="20" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="5" />
+					<input fillType="SEEDLINGS" amount="1" />
+					<input fillType="MANURE" amount="3" />
+                    <input fillType="GRAVEL" amount="2" />
+					<input fillType="STRAW" amount="3" />	
+                </inputs>
+                <outputs>
+                    <output fillType="WESTERN_HEMLOCK_HEDGE" amount="10" />
+                </outputs>
+            </production>
+			
+			<production id="wh_hedge2" name="WH HEDGE (Seeds)" cyclesPerHour="20" costsPerActiveHour="0.1">
+                <inputs>
+                    <input fillType="WATER" amount="5" />
+					<input fillType="SEEDS" amount="1" />
+					<input fillType="MANURE" amount="3" />
+					<input fillType="LIQUIDFERTILIZER" amount="1" />
+                    <input fillType="GRAVEL" amount="2" />                    
+					<input fillType="STRAW" amount="3" />	
+                </inputs>
+                <outputs>
+                    <output fillType="WESTERN_HEMLOCK_HEDGE" amount="7" />
+                </outputs>
+            </production>
+            
+            <production id="designer_plants" name="Designer Plants" cyclesPerHour="15" costsPerActiveHour="0.2">
+                <inputs>
+                    <input fillType="WATER" amount="7" />
+					<input fillType="SEEDS" amount="2" />
+					<input fillType="MANURE" amount="4" />
+					<input fillType="LIQUIDFERTILIZER" amount="2" />
+                    <input fillType="GRAVEL" amount="3" />                    
+					<input fillType="STRAW" amount="4" />	
+                </inputs>
+                <outputs>
+                    <output fillType="DESIGNER_PLANTS" amount="10" />
+                </outputs>
+            </production>
+         
+          
+        </productions>
+
+        <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER" aiNode="unloadTriggerAINode" />
+			<unloadTrigger exactFillRootNode="unloadTriggerSeedlings" fillTypes="SEEDLINGS" aiNode="unloadTriggerAINode" />
+			<unloadTrigger exactFillRootNode="unloadTriggerSeeds" fillTypes="SEEDS" aiNode="unloadTriggerAINode" />
+			<unloadTrigger exactFillRootNode="unloadTriggerManure" fillTypes="MANURE" aiNode="unloadTriggerAINode02" />
+			<unloadTrigger exactFillRootNode="unloadTriggerLiqFert" fillTypes="LIQUIDFERTILIZER" aiNode="unloadTriggerAINode" />
+			<unloadTrigger exactFillRootNode="unloadTriggerStraw" fillTypes="STRAW" aiNode="unloadTriggerAINode" />
+            <unloadTrigger exactFillRootNode="unloadTriggerGravel" fillTypes="GRAVEL" aiNode="unloadTriggerAINode" />
+
+        </sellingStation>
+
+   <!--     <loadingStation fillTypes="WATER" supportsExtension="true" />-->
+
+        <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnPlace1Start" />
+            </spawnPlaces>
+        </palletSpawner>
+
+        <storage node="storage" isExtension="false" fillTypes="WATER SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW GRAVEL" fillLevelSyncThreshold="20" >
+            <capacity fillType="WATER"      capacity="10000" />
+			<capacity fillType="SEEDLINGS"      capacity="10000" />
+			<capacity fillType="SEEDS"      capacity="2000" />
+			<capacity fillType="MANURE"      capacity="10000" />
+			<capacity fillType="LIQUIDFERTILIZER"      capacity="2000" />
+			<capacity fillType="STRAW"      capacity="10000" />
+            <capacity fillType="GRAVEL"     capacity="10000" />
+            <capacity fillType="WESTERN_HEMLOCK_HEDGE"     capacity="2000" />
+            <capacity fillType="DESIGNER_PLANTS"     capacity="2000" />
+
+        </storage>
+
+        <playerTrigger node="playerTrigger" />
+    </productionPoint>
+
+    <i3dMappings>
+        <i3dMapping id="plantNodes" node="0>0|1" />
+        <i3dMapping id="sellingStation" node="0>0|3" />
+        <i3dMapping id="unloadTrigger" node="0>0|3|0" />
+        <i3dMapping id="unloadTriggerMarker" node="0>0|3|1" />	
+        <i3dMapping id="unloadTriggerAINode" node="0>0|3|2" />
+		<i3dMapping id="unloadTriggerMarkerSeedlings" node="0>0|3|3" />
+		<i3dMapping id="unloadTriggerMarkerSeeds" node="0>0|3|13" />
+        <i3dMapping id="unloadTriggerMarkerManure" node="0>0|3|4" />
+        <i3dMapping id="unloadTriggerMarkerLiqFert" node="0>0|3|5" />
+        <i3dMapping id="unloadTriggerMarkerStraw" node="0>0|3|6" />
+		<i3dMapping id="unloadTriggerSeedlings" node="0>0|3|7" />
+		<i3dMapping id="unloadTriggerSeeds" node="0>0|3|12" />
+        <i3dMapping id="unloadTriggerManure" node="0>0|3|8" />
+        <i3dMapping id="unloadTriggerLiqFert" node="0>0|3|9" />
+        <i3dMapping id="unloadTriggerStraw" node="0>0|3|10" />
+        <i3dMapping id="unloadTriggerGravel" node="0>0|3|14" />
+        <i3dMapping id="unloadTriggerMarkerGravel" node="0>0|3|15" />
+        <i3dMapping id="unloadTriggerAINode02" node="0>0|3|11" />
+        <i3dMapping id="storage" node="0>0|4" />
+        <i3dMapping id="playerTrigger" node="0>0|5" />
+        <i3dMapping id="playerTriggerMarker" node="0>0|6" />
+        <i3dMapping id="palletSpawner" node="0>0|7" />
+        <i3dMapping id="spawnPlace1Start" node="0>0|7|0" />
+        <i3dMapping id="spawnPlace1End" node="0>0|7|0|0" />
+        <i3dMapping id="clearArea1Start" node="0>2|0" />
+        <i3dMapping id="clearArea1Width" node="0>2|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>2|0|1" />
+        <i3dMapping id="levelArea1Start" node="0>3|0" />
+        <i3dMapping id="levelArea1Width" node="0>3|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>3|0|1" />
+        <i3dMapping id="indoorArea1Start" node="0>4|0" />
+        <i3dMapping id="indoorArea1Width" node="0>4|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>4|0|1" />
+        <i3dMapping id="testArea1Start" node="0>5|0" />
+        <i3dMapping id="testArea1End" node="0>5|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>6|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>6|0|0" />
+        <i3dMapping id="infoTrigger" node="0>7" />
+        <i3dMapping id="warningStripes" node="0>8" />
+        <i3dMapping id="teleportNode" node="0>11" />
+    </i3dMappings>
+</placeable>

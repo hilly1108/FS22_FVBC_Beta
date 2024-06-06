@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="80">
+    <author>HillyFarms</author>
+    <version>0.1.0.1</version>
+    <title>
+        <en>Fraser Valley BC (Beta)</en>
+    </title>
+    <description>
+        <en><![CDATA[Welcome <]]></en>
+        <de><![CDATA[Welcome <]]></de>
+    </description>
+    <iconFilename>icon_FVBC.png</iconFilename>
+    <multiplayer supported="true"/>
+
+    <maps>
+		<map id="FraserValleyBC" className="Mission00" filename="$dataS/scripts/missions/mission00.lua" configFilename="map.xml" defaultVehiclesXMLFilename="maps/xml/vehicles.xml" defaultPlaceablesXMLFilename="maps/xml/placeables.xml" defaultItemsXMLFilename="maps/xml/items.xml">            
+			<title>
+                <en>Fraser Valley BC (Beta)</en>
+            </title>
+            <description>
+                <en>Issues/Comments/Bugs use the Google Form/Sheets or Discord. Details in README. Thankyou!!</en>
+            </description>
+            <iconFilename>preview.png</iconFilename>
+        </map>
+    </maps>
+    
+    <dependencies>
+        <dependency>FS22_americanFermentingSilos</dependency>
+        <dependency>FS22_animalLimitIncreaser64</dependency>
+        <dependency>FS22_ArchedBuildingsPack</dependency>
+		<dependency>FS22_Autoload_Belt</dependency>
+		<dependency>FS22_BigChickenBarn</dependency>
+        <dependency>FS22_bunkerSiloMediumDirt</dependency>       
+		<dependency>FS22_chainLinkFence</dependency>
+		<dependency>FS22_ChickencoopEuropean</dependency>
+		<dependency>FS22_CowBarn_Set</dependency>
+		<dependency>FS22_CowFarmPack</dependency>
+		<dependency>FS22_CowShed42x22</dependency>
+		<dependency>FS22_FarmCowBarns</dependency>
+		<dependency>FS22_GrainStoragePack</dependency>
+		<dependency>FS22_Hops_Equipment</dependency>
+		<dependency>FS22_hugeAmericanFarmPack</dependency>
+		<dependency>FS22_Lizard_Silo_System</dependency>
+		<dependency>FS22_meadowFence_placeables</dependency>
+		<dependency>FS22_MeridianGrainBinPack</dependency>
+		<dependency>FS22_mhModVehicleShelters</dependency>
+		<dependency>FS22_MoreTrees</dependency>
+		<dependency>FS22_PackOfWorkshops</dependency>
+		<dependency>FS22_RedBarnPack</dependency>
+		<dependency>FS22_Sheep_Barn</dependency>
+		<dependency>FS22_Steel_Shed_Pack</dependency>
+	<!--FOR TESTING
+		<dependency>FS22_EasyDevControls</dependency>
+		<dependency>FS22_storeDeliveries</dependency>-->	
+    </dependencies>
+
+    <l10n finlenamePrefix="maps/translations/l10n"/>
+   
+</modDesc>

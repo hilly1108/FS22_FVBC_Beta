@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="garageSmallGate_animation" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml" />
+    <File fileId="1" filename="$data/placeables/rudolfHormann/garageDoors_diffuse.png" />
+    <File fileId="5" filename="$data/placeables/rudolfHormann/garageDoors_mask.png" />
+    <File fileId="2" filename="$data/placeables/rudolfHormann/garageDoors_normal.png" />
+    <File fileId="3" filename="$data/placeables/rudolfHormann/garageDoors_specular.png" />
+  </Files>
+
+  <Materials>
+    <Material name="garageDoors_mat" materialId="1" customShaderId="4" customShaderVariation="colorScale">
+      <CustomParameter name="colorScale0" value="0.0667 0.2588 0.1961 1"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12"/>
+      <CustomParameter name="dirtMossMix" value="1.0 1.0"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="garageSmallGate_animation.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="rollingDoor1" translation="-3.72656 0.0665003 7.26923" rotation="0 180 0" nodeId="1">
+      <Shape name="rollingDoor1Panel1" translation="0 1.77636e-17 0" clipDistance="300" nodeId="2" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" skinBindNodeIds="2 3 4 5 6">
+        <TransformGroup name="rollingDoor1Panel2" translation="4.48242e-05 0.8478 -0.0480697" collision="false" clipDistance="300" nodeId="3">
+          <TransformGroup name="rollingDoor1Panel3" translation="0 0.8912 0" collision="false" clipDistance="300" nodeId="4">
+            <TransformGroup name="rollingDoor1Panel4" translation="0 0.8913 0" collision="false" clipDistance="300" nodeId="5">
+              <TransformGroup name="rollingDoor1Panel5" translation="0 0.8913 0" collision="false" clipDistance="300" nodeId="6"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+      </Shape>
+    </TransformGroup>
+  </Scene>
+
+
+  <Animation externalAnimFile="garageSmallGate_animation.i3d.anim" />
+</i3D>

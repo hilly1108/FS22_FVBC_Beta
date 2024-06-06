@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CustomShader version="5">
+    <Parameters>
+        <Parameter name="uvScaleSpeed" target="uvScaleSpeed" group="base"  type="float4" defaultValue ="0.5 0.5 0.5 2.0"/>
+    </Parameters>
+    <UvUsages/>
+    <Textures>
+        <Texture name = "flowMap" group="flowMap" defaultColorProfile = "linearRGB"/>
+    </Textures>
+    <VertexAttributes>
+        <VertexAttribute name="uv1"   group="uv1"/>
+        <VertexAttribute name="color" group="vtxColor"/>
+    </VertexAttributes>
+    <Variations>
+        <Variation name = "secondUV" groups="base uv1">
+<![CDATA[
+    #define SECONDUV
+]]>
+        </Variation>
+        <Variation name = "vtxColor" groups="base vtxColor">
+<![CDATA[
+    #define VTXCOLOR
+]]>
+        </Variation>
+        <Variation name = "flowMap" groups="base flowMap vtxColor">
+<![CDATA[
+    #define FLOW_MAP
+    #define VTXCOLOR
+]]>
+        </Variation>
+    </Variations>
+    <LodLevel startDistance="0">
+        <CodeInjections>
+            <CodeInjection position="LIB_FUNCTION_VS">
+<![CDATA[
+// Custom vertex functions
+float fitRange(float mIn,float mOldMin,float mOldMax ,float mNewMin ,float mNewMax ){
+    return (mNewMin + (mIn - mOldMin) * (mNewMax  - mNewMin ) / (mOldMax  - mOldMin));
+}
+float3 getDeformedPos(VS_INPUT In, ObjectParameters& object, float mTime){
+    // WOBBLING
+    float3 mResultPosition = In.position.xyz;
+    float pi = 3.14159265359;
+    float scaler = 0.0;
+    #if defined( VTXCOLOR )
+        // In.color.g - intensity control
+        // In.position.xyz, In.color.g - sin phase offset
+        scaler = In.color.g;
+    #elif defined( SECONDUV )
+        // In.texCoords1.y - intensity control
+        // In.position.xyz, In.texCoords1.y - sin phase offset
+        float2 mIncomingUV = convertDefaultTexCoords(In, object, In.texCoords1.xy);
+        scaler = mIncomingUV.y;
+    #endif
+        float mMove = fitRange(sin(22.15*(mTime + scaler - 17.4*In.position.y + 17.8*In.position.x - 22.4*In.position.z) ),-1.0,1.0,0.0,0.1);
+        mResultPosition += In.normal.xyz * scaler * mMove;
+    return mResultPosition;
+}
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_POSITION_VS">
+<![CDATA[
+    return  getDeformedPos(In, object, cTime_s);
+]]>
+            </CodeInjection>
+            <CodeInjection position="GET_PREV_POSITION_VS">
+<![CDATA[
+    return  getDeformedPos(In, object, cPrevTime_s);
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_GET_WORLD_POSE_VS">
+<![CDATA[
+    prevWorldPosition = mul(object.prevModelMatrix, float4(prevPosition, 1));
+]]>
+            </CodeInjection>
+            <CodeInjection position="VS_OUTPUT">
+<![CDATA[
+    float2 albedoMapTexCoord2 : TEXCOORDn;
+#if defined( FLOW_MAP )
+    float2 flowMapTexCoords : TEXCOORDn;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_SET_TEXCOORDS_VS">
+<![CDATA[
+#if defined( FLOW_MAP )
+    Out.flowMapTexCoords = Out.defaultTexCoords;
+    Out.defaultTexCoords = object.uvScaleSpeed.xy*10.0*Out.defaultTexCoords;
+#elif defined( SECONDUV )
+    Out.albedoMapTexCoord2 = convertDefaultTexCoords( In, object, In.texCoords1.xy );
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="OBJECT_PARAMETERS">
+<![CDATA[
+    /*
+        #if defined( FLOW_MAP )
+        
+            flowMap mesh contain 0..1 textureCoords 
+            uvScaleSpeed.xy - uv scale
+            uvScaleSpeed.z  - flow speed
+            uvScaleSpeed.w  - distortion amount
+            all 4 parameters very interdependent, 
+            and they need to be adjusted in relation of the texture and uv's
+        
+        #else
+            
+            uvScaleSpeed.xy - uv scale 
+            uvScaleSpeed.xy - uv transalte 
+            
+        #endif
+    */
+    float4 uvScaleSpeed;
+]]>
+            </CodeInjection>
+            <CodeInjection position="SAMPLERS">
+<![CDATA[
+#if defined( FLOW_MAP )
+    sampler2D flowMap;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="LIB_FUNCTION_FS">
+<![CDATA[
+#if defined( FLOW_MAP )
+// flowMap code
+// assumption: sampler2D flowMap is always exists  
+float4 flowMapTex2D(FS_INPUT In, FS_GLOBALS globals, ObjectParameters& object, sampler2D anyMap){
+    // calculate time
+    // flow speed controlled via object.uvScaleSpeed.z, object.uvScaleSpeed.xy sensetive 
+    float mTimeA = cTime_s * object.uvScaleSpeed.z;
+    float mTimeB = 0.5 + cTime_s * object.uvScaleSpeed.z;
+    // load flowmap
+    float2 mFlowMap = 2.0 * tex2D( flowMap, In.vs.flowMapTexCoords).xy - 1.0; // bring it to -1..1 range 
+    // vertexColor example 
+    //float2 mFlowMap = 2.0*In.vs.vertexColor.rg - 1.0; 
+    mFlowMap *= -1;  // reverse it, otherwise dosen't work
+    mFlowMap *= object.uvScaleSpeed.w; // distortion intensity, also really sensetive to object.uvScaleSpeed.xyz
+    // frac it - bring it to 0..1 continuously
+    float2 mFlowMapA = mFlowMap.rg * ( mTimeA - floor( mTimeA ) );
+    float2 mFlowMapB = mFlowMap.rg * ( mTimeB - floor( mTimeB ) );
+    // defaultTexCoords scaled in vertex shader alredy 
+    float2 mUVa = mFlowMapA + In.vs.defaultTexCoords;
+    float2 mUVb = mFlowMapB + ( 2.0 + In.vs.defaultTexCoords );
+    // sample them twice 
+    float4 mMapA = tex2D(anyMap, float3(mUVa, 0)).xyzw;
+    float4 mMapB = tex2D(anyMap, float3(mUVb, 0)).xyzw;
+    // calculate time blend 
+    float mTime = abs( ( ( mTimeA - floor( mTimeA ) ) - 0.5 ) * 2.0 );
+    // lerp between samples 
+    float4 mResult = lerp( mMapA, mMapB, mTime );
+    return  mResult;
+}
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "FS_GLOBALS">
+<![CDATA[
+    float3 gFoamValue;
+    float  gAlphaValue;
+    float2 gUV;
+]]>
+            </CodeInjection>
+            <CodeInjection position = "START_FS">
+<![CDATA[
+    globals.gFoamValue  = float3(1.0,1.0,1.0);
+    globals.gAlphaValue = 1.0;
+    globals.gUV         = object.uvScaleSpeed.xy*In.vs.defaultTexCoords + cTime_s*object.uvScaleSpeed.zw;
+#if defined( ALBEDO_MAP )
+    float4 mBase = float4(0.0,0.0,0.0,0.0);
+    #if defined( FLOW_MAP )
+        mBase = flowMapTex2D(In, globals, object, baseMap);
+    #else
+        mBase = tex2D( baseMap, globals.gUV ).rgba;
+    #endif
+    #if defined( VTXCOLOR )
+        globals.gAlphaValue = saturate( mBase.a - (1-In.vs.vertexColor.r));
+    #elif defined( SECONDUV )
+        globals.gAlphaValue = saturate( mBase.a - (1-In.vs.albedoMapTexCoord2.y)*(1-In.vs.albedoMapTexCoord2.y) );
+    #endif
+    globals.gFoamValue  = mBase.rgb + globals.gAlphaValue;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position = "GET_UNNORMALIZED_TANGENT_SPACE_NORMAL_FS">
+<![CDATA[
+ #if defined( NORMAL_MAP )
+    #if defined( FLOW_MAP )
+        float3 mBase = flowMapTex2D(In, globals, object, normalMap).xyz - 0.5;
+    #else
+        float3 mBase = tex2D( normalMap, globals.gUV ).xyz -0.5;
+    #endif
+    return mBase;
+ #endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="POST_DIFFUSE_COLOR_FS">
+<![CDATA[
+#if defined( ALBEDO_MAP )
+    diffuseColor.rgb = globals.gFoamValue;
+#endif
+]]>
+            </CodeInjection>
+            <CodeInjection position="ALPHA_FS">
+<![CDATA[
+#if defined( ALPHA_BLENDED )
+    alpha = globals.gAlphaValue;
+    reflectingLightingScale = alpha;
+#endif
+]]>
+            </CodeInjection>
+        </CodeInjections>
+    </LodLevel>
+</CustomShader>

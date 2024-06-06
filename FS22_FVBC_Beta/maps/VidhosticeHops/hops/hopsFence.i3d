@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="hopsFence" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="2" filename="hops_diffuse.dds"/>
+    <File fileId="3" filename="hops_normal.dds"/>
+    <File fileId="4" filename="hops_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="hops_drat_mat" materialId="4" customShaderId="5" customShaderVariation="wind_vertexOffset">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="yOffset" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="hops_mat" materialId="5" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 0">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="hopsFence.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="gates" nodeId="17">
+        <TransformGroup name="endPole1" nodeId="18">
+          <Shape shapeId="1" name="Beton_Sloupek-kratky_col" visibility="false" static="true" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="Beton_Sloupek-kratky" clipDistance="200" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="gateTrigger" translation="0 -0.5 2.05" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="endPole2" nodeId="22">
+          <Shape shapeId="4" name="Beton_Sloupek-dlouhy_col" visibility="false" static="true" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="Beton_Sloupek-dlouhy" clipDistance="200" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="gateTrigger" translation="0 -0.5 2.05" visibility="false" static="true" trigger="true" collisionMask="1048576" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="poles" nodeId="26">
+        <TransformGroup name="pole01" nodeId="27">
+          <Shape shapeId="6" name="Drevo_Sloupek_col" visibility="false" static="true" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="7" name="Drevo_Sloupek" clipDistance="200" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="panels" nodeId="30">
+        <TransformGroup name="panel01" nodeId="31">
+          <Shape shapeId="8" name="Draty_Vrsky_col" visibility="false" static="true" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="9" name="Draty_Vrsky" clipDistance="150" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

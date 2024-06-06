@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="limePayStation.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="default_mat" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="limePayStation.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="clayStation" nodeId="13">
+        <TransformGroup name="buyingStation" nodeId="14">
+          <TransformGroup name="mapPosition" translation="0 0 3.5" nodeId="15"/>
+          <TransformGroup name="loadingStation" nodeId="16">
+            <Shape shapeId="1" name="loadingTrigger" translation="0 -0.70314 3.5" static="true" trigger="true" collisionMask="1073741824" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="0 3.4728 3.5712" nodeId="18"/>
+            <TransformGroup name="aiNodeLoading" translation="0 0 3.75054" rotation="0 -90 0" nodeId="19"/>
+            <TransformGroup name="dischargeEffect1" translation="-0.01187 3.46474 3.56998" nodeId="20">
+              <Shape shapeId="2" name="pipeEffect" rotation="90 0 0" clipDistance="300" nodeId="21" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="3" name="pipeEffectSmoke" translation="0 -5.73746 0" clipDistance="100" nodeId="22" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="clearAreas" nodeId="23">
+          <TransformGroup name="clearArea1Start" translation="-2 0 -1.5919" nodeId="24">
+            <TransformGroup name="clearArea1Width" translation="0 0 6.5919" nodeId="25"/>
+            <TransformGroup name="clearArea1Height" translation="4 0 -0" nodeId="26"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="27">
+          <TransformGroup name="levelArea1Start" translation="-2 0 -1.5919" nodeId="28">
+            <TransformGroup name="levelArea1Width" translation="0 0 6.5919" nodeId="29"/>
+            <TransformGroup name="levelArea1Height" translation="4 0 -0" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="31">
+          <TransformGroup name="testArea1Start" translation="-2 0 -1.55437" nodeId="32">
+            <TransformGroup name="testArea1End" translation="4 8.24985 6.55437" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="34">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-2.18243 0 -2.0616" nodeId="35">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="4.31072 0 7.22553" nodeId="36"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="markerLoading" translation="0 -2.17176 3.60886" nodeId="37"/>
+        <TransformGroup name="tipCollision" nodeId="38">
+          <Shape shapeId="4" name="tipCollision" translation="0 0.5 0" visibility="false" static="true" collisionMask="524288" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="40"/>
+        <TransformGroup name="collisions" nodeId="41">
+          <Shape shapeId="5" name="collision" translation="0 0.5 0" visibility="false" static="true" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="teleportNode" translation="-6.6899 2.04265 5.54541" rotation="0 -73.9381 0" nodeId="43"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

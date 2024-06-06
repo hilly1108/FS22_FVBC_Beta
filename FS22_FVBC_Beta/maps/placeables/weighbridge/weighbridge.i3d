@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="weighbridge.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/mapFR/textures/dumpPitFrame_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/mapFR/textures/dumpPitFrame_normal.png"/>
+    <File fileId="8" filename="$data/maps/mapFR/textures/dumpPitFrame_specular.png"/>
+    <File fileId="9" filename="$data/maps/mapFR/textures/dumpPitGrid_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/mapFR/textures/dumpPitGrid_normal.png"/>
+    <File fileId="11" filename="$data/maps/mapFR/textures/dumpPitGrid_specular.png"/>
+    <File fileId="19" filename="$data/maps/mapUS/textures/concreteUS01_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/weightDisplay_diffuse.dds"/>
+    <File fileId="3" filename="$data/maps/textures/shared/weightDisplay_normal.dds"/>
+    <File fileId="4" filename="$data/maps/textures/shared/weightDisplay_specular.dds"/>
+    <File fileId="12" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="15" filename="$data/shaders/vehicleShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="concreteUS01_mat" materialId="5">
+      <Texture fileId="19"/>
+    </Material>
+    <Material name="display_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="dumpPitFrame_mat" materialId="7">
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="dumpPitGrid_mat" materialId="8" alphaBlending="true" customShaderId="12">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10" bumpDepth="0.25"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="lambert1" materialId="9" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="shader" materialId="10" diffuseColor="0.8 0.8 0.8 1" specularColor="0.494118 1 0" customShaderId="15" customShaderVariation="colorMask">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="56" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="weighbridge.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="weighstn" nodeId="22">
+        <TransformGroup name="weighingStationSmall" nodeId="23">
+          <TransformGroup name="weighingStation" nodeId="24">
+            <Shape shapeId="1" name="weighingTrigger" translation="-0.501196 3.57204 -0.026646" rotation="-180 90 180" kinematic="true" compound="true" trigger="true" collisionMask="2097152" nodeId="25" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="2" name="display" translation="9.012 3.52784 -2.81091" rotation="0 -26.3478 9.77e-06" static="true" clipDistance="400" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true">
+              <TransformGroup name="displayNode1" translation="0.451112 -0.0982899 0.0305737" rotation="8.55561e-12 0 1.11499e-05" nodeId="27"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="clearAreas" nodeId="28">
+            <TransformGroup name="clearArea1Start" translation="-6.88609 0 -12.3137" nodeId="29">
+              <TransformGroup name="clearArea1Width" translation="0 0 24.593" nodeId="30"/>
+              <TransformGroup name="clearArea1Height" translation="6.58012 0 0" nodeId="31"/>
+            </TransformGroup>
+            <TransformGroup name="clearArea2Start" translation="-0.646883 0 -3.25019" nodeId="32">
+              <TransformGroup name="clearArea2Width" translation="0 0 6.4116" nodeId="33"/>
+              <TransformGroup name="clearArea2Height" translation="6.58094 0 -0" nodeId="34"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="35">
+            <TransformGroup name="levelArea1Start" translation="-6.88609 0 -12.3137" nodeId="36">
+              <TransformGroup name="levelArea1Width" translation="0 0 24.593" nodeId="37"/>
+              <TransformGroup name="levelArea1Height" translation="6.58012 0 0" nodeId="38"/>
+            </TransformGroup>
+            <TransformGroup name="levelArea2Start" translation="-0.646883 0 -3.25019" nodeId="39">
+              <TransformGroup name="levelArea2Width" translation="0 0 6.4116" nodeId="40"/>
+              <TransformGroup name="levelArea2Height" translation="6.58094 0 -0" nodeId="41"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="42">
+            <TransformGroup name="indoorArea1Start" translation="-7.10177 0 -12.5796" nodeId="43">
+              <TransformGroup name="indoorArea1Width" translation="7.30585 0 0" nodeId="44"/>
+              <TransformGroup name="indoorArea1Height" translation="0 0 25.3189" nodeId="45"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" nodeId="46">
+            <TransformGroup name="testArea1Start" translation="-6.86235 0 -12.3247" nodeId="47">
+              <TransformGroup name="testArea1End" translation="6.58655 1.02461 24.8222" nodeId="48"/>
+            </TransformGroup>
+            <TransformGroup name="testArea2Start" translation="-1.47706 0 -4.1396" nodeId="49">
+              <TransformGroup name="testArea2End" translation="8.27914 8.3126 8.18827" nodeId="50"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="51">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.99557 0 -12.6898" nodeId="52">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="13.4732 0 25.9103" nodeId="53"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="ai" nodeId="54">
+            <Shape shapeId="3" name="aiSpline" translation="-3.58852 0.614933 0.012816" rotation="-3.09108e-05 89.669 -7.18911e-05" visibility="false" nodeId="55"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" nodeId="57">
+            <TransformGroup name="weighbridge" nodeId="58">
+              <Shape shapeId="4" name="dumpPitFrame01" translation="-4.00227 0 0" clipDistance="100" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="dumpPitGrid" translation="3.3108e-07 0.407835 2.82231e-07" static="true" clipDistance="300" nodeId="60" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="4" name="dumpPitFrame01" translation="3.9451 0 0" clipDistance="100" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="5" name="dumpPitGrid" translation="3.3108e-07 0.407835 2.82231e-07" static="true" clipDistance="300" nodeId="62" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="7.26333 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="63" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="5.17677 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="64" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="3.11916 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="65" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="1.05169 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="66" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-0.999048 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="67" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-3.107 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="68" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-5.22295 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="69" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-7.29339 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="70" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-9.39273 -3.36941 2.16678" rotation="0 90 0" static="true" clipDistance="350" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-9.39273 -3.36941 -2.12152" rotation="0 90 0" static="true" clipDistance="350" nodeId="72" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-7.29339 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="73" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-5.22295 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="74" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-3.107 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="75" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="-0.999048 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="76" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="1.05169 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="77" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="3.11916 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="5.17677 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="79" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="metal_big_sidesOpen" translation="7.26333 -3.36941 -2.122" rotation="0 90 0" static="true" clipDistance="350" nodeId="80" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-7.44233 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-5.69538 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-4 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-2.3 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="84" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-0.6 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="85" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="1.1 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="86" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="2.8 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="87" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="4.5 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="88" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="6.2 0 0" scale="0.875 0.032 2.1145" clipDistance="160" nodeId="89" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="7.9 0 0" scale="0.875 0.0323984 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="90" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-7.44233 2.85511e-07 2.12377" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="91" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-3.23819 2.85511e-07 2.12377" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="92" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="1 2.85511e-07 2.12377" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="93" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="5.2 2.85511e-07 2.12377" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="94" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="8.29838 2.85511e-07 2.12377" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 1.00606" static="true" density="0.0001" clipDistance="160" nodeId="95" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="8.29838 1.66108e-06 -2.09781" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 1.00606" static="true" density="0.0001" clipDistance="160" nodeId="96" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="5.2 1.68094e-06 -2.098" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="97" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="1 1.65331e-06 -2.098" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="98" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-3.23819 2.85511e-07 -2.098" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="99" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-7.44233 2.85511e-07 -2.098" rotation="-90.0001 90 -90.0001" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="100" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-8.08724 -0.157782 -0.0011259" rotation="180 0 180" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="101" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="7.91558 -0.157784 -0.0011259" rotation="180 0 180" scale="0.102422 2.38289 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="102" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="9.2282 0.315854 0" rotation="0 -0 -4.40113" scale="1.23768 0.152044 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="103" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="concreteSquarePlain01" lockedgroup="true" translation="-9.17027 0.321545 0.014503" rotation="0 -0 4.38679" scale="1.23768 0.152044 2.1145" static="true" density="0.0001" clipDistance="160" nodeId="104" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="collisions" nodeId="105">
+            <Shape shapeId="8" name="tipCollision" translation="-0.494521 0.36198 3.16349" rotation="-1.09409e-14 -89.8198 3.93424e-10" static="true" collisionMask="524288" nodeId="106" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="transform" nodeId="107"/>
+            <TransformGroup name="transform" nodeId="108"/>
+            <Shape shapeId="9" name="occluder" clipDistance="300" nodeId="109" materialIds="9" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="55">
+      <Attribute name="maxWidth" type="float" value="5"/>
+      <Attribute name="speedLimit" type="float" value="15"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

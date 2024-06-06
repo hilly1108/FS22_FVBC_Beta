@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="boardsStackPallet" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/objects/pallets/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/objects/pallets/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/objects/pallets/euroPallet01_specular.png"/>
+    <File fileId="5" filename="pytel_diffuse.png"/>
+    <File fileId="6" filename="pytel_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="4">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="pytelChmel" materialId="6" specularColor="0.494118 1 0">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6" bumpDepth="0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="pytel.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="boardsStackPallet_component1" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" clipDistance="150" nodeId="89" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" clipDistance="100" nodeId="90" materialIds="4" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.09 0" kinematic="true" trigger="true" collisionMask="134217728" nodeId="91" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" translation="0 0.75 0" nodeId="92"/>
+          <TransformGroup name="content" nodeId="93">
+            <Shape shapeId="4" name="pytelChmel1" translation="0 0.151551 -0.510441" nodeId="94" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="95" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel2" translation="-0.521516 0.151551 -0.510441" nodeId="96" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="97" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel3" translation="-0.521516 0.650423 0.487069" rotation="0 90 0" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="99" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel4" translation="-0.521516 0.650423 -0.0106578" rotation="0 90 0" nodeId="100" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="101" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel5" translation="0 1.146 -0.510441" nodeId="102" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="103" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel6" translation="-0.521516 1.146 -0.510441" nodeId="104" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="105" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel7" translation="-0.521516 1.645 0.487069" rotation="0 90 0" nodeId="106" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="107" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+            <Shape shapeId="4" name="pytelChmel8" translation="-0.521516 1.645 -0.0106578" rotation="0 90 0" nodeId="108" materialIds="6" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="boardsStack1Tension" translation="0.246192 0.00633892 -0.249049" nodeId="109" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="110">
+            <Shape shapeId="6" name="floorCollision01" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="111" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="7" name="floorCollision02" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="112" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

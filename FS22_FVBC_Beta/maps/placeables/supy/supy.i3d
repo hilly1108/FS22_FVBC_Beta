@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="supy.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="supy.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="supermarket" translation="0 0.163536 0" nodeId="10">
+        <TransformGroup name="transform" nodeId="11"/>
+        <TransformGroup name="clearAreas" nodeId="12">
+          <TransformGroup name="clearArea1Start" translation="-7.74715 0 -7.41183" nodeId="13">
+            <TransformGroup name="clearArea1Width" translation="0 0 14.6424" nodeId="14"/>
+            <TransformGroup name="clearArea1Height" translation="17.9042 0 0" nodeId="15"/>
+          </TransformGroup>
+          <TransformGroup name="clearArea2Start" translation="-13.0426 0 -6.53828" nodeId="16">
+            <TransformGroup name="clearArea2Width" translation="0 0 6.90697" nodeId="17"/>
+            <TransformGroup name="clearArea2Height" translation="6.68729 0 0" nodeId="18"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="levelAreas" nodeId="19">
+          <TransformGroup name="levelArea1Start" translation="-7.94132 -4.54747e-15 -7.68614" nodeId="20">
+            <TransformGroup name="levelArea1Width" translation="0 0 15.2248" nodeId="21"/>
+            <TransformGroup name="levelArea1Height" translation="18.1632 0 0" nodeId="22"/>
+          </TransformGroup>
+          <TransformGroup name="levelArea2Start" translation="-13.1842 -4.54747e-15 -6.64811" nodeId="23">
+            <TransformGroup name="levelArea2Width" translation="0 0 7.19414" nodeId="24"/>
+            <TransformGroup name="levelArea2Height" translation="6.10866 0 0" nodeId="25"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="testAreas" nodeId="26">
+          <TransformGroup name="testArea1Start" translation="-7.80567 0 -7.29771" nodeId="27">
+            <TransformGroup name="testArea1End" translation="17.6464 5.61954 14.5882" nodeId="28"/>
+          </TransformGroup>
+          <TransformGroup name="testArea2Start" translation="-12.796 0 -6.34025" nodeId="29">
+            <TransformGroup name="testArea2End" translation="5.74732 3.47073 6.63943" nodeId="30"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="31">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-14.0533 4.54747e-15 -8.35363" nodeId="32">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="25.0204 0 18.1075" nodeId="33"/>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="1" name="infoTrigger" translation="0 1.83157 0" static="true" trigger="true" collisionMask="1048576" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="collisions" nodeId="35">
+          <TransformGroup name="transform" nodeId="36"/>
+          <Shape shapeId="2" name="tipCollision" static="true" collisionMask="524288" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </TransformGroup>
+        <TransformGroup name="lights" nodeId="38">
+          <TransformGroup name="realLights" visibility="false" nodeId="39">
+            <TransformGroup name="realLightsLow" nodeId="40">
+              <Light name="pointLightLow" clipDistance="75" nodeId="41" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="7"/>
+            </TransformGroup>
+            <TransformGroup name="realLightsHigh" nodeId="42">
+              <Light name="spotLightHigh" rotation="-90 0 0" clipDistance="75" nodeId="43" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="4"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="linkedLights" nodeId="44"/>
+          <TransformGroup name="lightSwitch" nodeId="45"/>
+        </TransformGroup>
+        <TransformGroup name="sellingStation" nodeId="46">
+          <Shape shapeId="3" name="unloadTrigger" translation="-9.81846 -0.261431 -2.95462" rotation="0 90 0" kinematic="true" compound="true" collisionMask="1073741824" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="unloadTriggerMarker" translation="0 1.05624 0" nodeId="48"/>
+          </Shape>
+          <TransformGroup name="unloadTriggerAINode" translation="-9.94246 -1.36424e-14 -3.11162" nodeId="49"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

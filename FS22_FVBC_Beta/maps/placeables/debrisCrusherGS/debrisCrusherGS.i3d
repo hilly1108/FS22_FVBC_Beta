@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="debrisCrusherGS.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="2" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_diffuse.png"/>
+    <File fileId="3" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_normal.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/sellingPoints/debrisCrusher/debrisCrusher_specular.png"/>
+    <File fileId="5" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="debrisCrusher_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="default_mat" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="default_mat" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1" specularColor="0.494118 1 0.494118">
+      <Normalmap fileId="5"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="debrisCrusherGS.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="debrisCrusherGS" nodeId="22" lodDistance="0 60">
+        <TransformGroup name="crusher" translation="-40 0 0" nodeId="23">
+          <TransformGroup name="clearAreas" translation="0 -0.1 0" nodeId="24">
+            <TransformGroup name="clearArea1Start" translation="-11.6983 -2.27374e-15 -2.87895" nodeId="25">
+              <TransformGroup name="clearArea1Width" translation="0 0 8.98832" nodeId="26"/>
+              <TransformGroup name="clearArea1Height" translation="18.4743 0 0" nodeId="27"/>
+            </TransformGroup>
+            <TransformGroup name="clearArea2Start" translation="0.914693 0 -4.67535" nodeId="28">
+              <TransformGroup name="clearArea2Width" translation="0 0 12.4048" nodeId="29"/>
+              <TransformGroup name="clearArea2Height" translation="9.59601 0 1.13687e-15" nodeId="30"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" translation="0 -0.1 0" nodeId="31">
+            <TransformGroup name="levelArea1Start" translation="-9.5486 0 -2.48074" nodeId="32">
+              <TransformGroup name="levelArea1Width" translation="0 0 8.95273" nodeId="33"/>
+              <TransformGroup name="levelArea1Height" translation="18.3839 0 0" nodeId="34"/>
+            </TransformGroup>
+            <TransformGroup name="levelArea2Start" translation="1.22383 1.13687e-15 -4.10149" nodeId="35">
+              <TransformGroup name="levelArea2Width" translation="0 0 8.45876" nodeId="36"/>
+              <TransformGroup name="levelArea2Height" translation="8.91825 0 -1.13687e-15" nodeId="37"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" translation="0 -0.1 0" nodeId="38">
+            <TransformGroup name="indoorArea1Start" translation="-9.72048 0 -2.06778" nodeId="39">
+              <TransformGroup name="indoorArea1Width" translation="0 0 8.48204" nodeId="40"/>
+              <TransformGroup name="indoorArea1Height" translation="17.2507 0 0" nodeId="41"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" translation="0 -0.1 0" nodeId="42">
+            <TransformGroup name="testArea1Start" translation="-5.77945 0 -2.43086" nodeId="43">
+              <TransformGroup name="testArea1End" translation="12.2717 3.75596 4.76798" nodeId="44"/>
+            </TransformGroup>
+            <TransformGroup name="testArea2Start" translation="5.9724 0 -3.28966" nodeId="45">
+              <TransformGroup name="testArea2End" translation="4.24242 2.42554 6.31865" nodeId="46"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="47">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-29.772 0 -65.2877" nodeId="48">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="123.506 0 96.9701" nodeId="49"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="1" name="infoTrigger" static="true" trigger="true" collisionMask="1048576" clipDistance="300" nodeId="50" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="collisions" nodeId="51">
+            <Shape shapeId="2" name="collision" translation="-1.66886 1.03542 0" static="true" clipDistance="300" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="tipCollision" clipDistance="300" nodeId="53" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="sellingStation" nodeId="54">
+            <Shape shapeId="4" name="unloadTriggerUpper" translation="3.807 2.06204 0.0280737" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="55" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerUpperMarker" translation="3.84088 2.67498 0" nodeId="56"/>
+            <Shape shapeId="5" name="unloadTriggerLower" translation="-3.644 0.840995 24.0228" static="true" trigger="true" collisionMask="1073741824" clipDistance="300" nodeId="57" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerLowerAINode" translation="-3.644 0.7539 30.6684" rotation="0 180 0" nodeId="58"/>
+            <TransformGroup name="unloadTriggerLowerMarker" translation="-3.644 0.7539 30.6684" nodeId="59"/>
+          </TransformGroup>
+          <TransformGroup name="teleportNode" translation="2.73135 0 -9.24664" nodeId="60"/>
+          <TransformGroup name="visuals" nodeId="61">
+            <TransformGroup name="transform" nodeId="62"/>
+            <TransformGroup name="transform" nodeId="63"/>
+            <TransformGroup name="transform" nodeId="64"/>
+            <TransformGroup name="backPSNode" translation="-4.65901 1.33201 0.085139" clipDistance="300" nodeId="65"/>
+            <TransformGroup name="psNode" translation="3.80742 1.87364 0.0348387" clipDistance="300" nodeId="66"/>
+            <Shape shapeId="6" name="roll" translation="0 1.33402 0" clipDistance="300" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="effects" nodeId="68">
+            <Shape shapeId="7" name="effectSmoke" rotation="-2.36171e-06 90 0" clipDistance="300" nodeId="69" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="70"/>
+        <TransformGroup name="productionPoint" translation="-28.135 1.1312 -16.191" nodeId="71">
+          <Shape shapeId="8" name="playerTrigger" translation="-4.69897 1.33133 0.934466" static="true" trigger="true" collisionMask="3145728" clipDistance="600" nodeId="72" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="73"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="loadingStation" translation="-40 0 0" nodeId="74">
+          <TransformGroup name="loadingTriggers" translation="32.1342 6.01962 -4.02796" nodeId="75">
+            <Shape shapeId="9" name="loadingTrigger" translation="10.2114 5.53741 19.2441" static="true" trigger="true" collisionMask="1073741824" nodeId="76" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="10.2251 5.53741 19.2441" nodeId="77"/>
+            <TransformGroup name="dischargeEffect" translation="10.2294 5.53741 19.2441" nodeId="78">
+              <Shape shapeId="10" name="pipeEffect" translation="0 -0.24916 -0.0139351" rotation="90 0 0" scale="0.6 0.6 3" clipDistance="300" nodeId="79" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="11" name="pipeEffectSmoke" translation="0 -4.18134 0" clipDistance="100" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiNodeLoading" translation="9.73556 -0.264891 19.2476" rotation="0 -90 0" nodeId="81"/>
+            <TransformGroup name="dischargeEffect" translation="-32.1342 5.18378 4.02796" nodeId="82">
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="8.474 -9.93101 1.28136" rotation="-0.007 1.468 -0.00040368" scale="1 1 1.112" clipDistance="500" nodeId="83" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="8.389 -9.75576 12.2499" rotation="-21.55 84.4038 -3.41211" scale="1 1 3.525" clipDistance="500" nodeId="84" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="loadingTriggers" translation="77.8735 6.49949 -35.6688" nodeId="85">
+            <Shape shapeId="9" name="loadingTrigger" translation="10.2114 5.53741 19.2441" static="true" trigger="true" collisionMask="1073741824" nodeId="86" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="dischargeNode" translation="10.2251 5.53741 19.2441" nodeId="87"/>
+            <TransformGroup name="dischargeEffect" translation="10.2294 5.53741 19.2441" nodeId="88">
+              <Shape shapeId="10" name="pipeEffect" translation="0 -0.666537 -0.0139351" rotation="90 0 0" scale="0.6 0.6 3" clipDistance="300" nodeId="89" materialIds="6" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="11" name="pipeEffectSmoke" translation="0 -4.18134 0" clipDistance="100" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+            <TransformGroup name="aiNodeLoading" translation="9.73556 -0.264891 19.2476" rotation="0 -90 0" nodeId="91"/>
+            <TransformGroup name="dischargeEffect" translation="-77.8735 4.70391 35.6688" nodeId="92">
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="8.474 -9.93101 1.28136" rotation="-0.007 1.468 -0.00040368" scale="1 1 1.112" clipDistance="500" nodeId="93" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="8.389 -9.75576 12.2499" rotation="-21.55 84.4038 -3.41211" scale="1 1 3.525" clipDistance="500" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="74.385 -1.29834 18.0897" rotation="174.378 21.7274 176.561" scale="1 1 3.6918" clipDistance="500" nodeId="95" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="12" name="pipeUnloadEffect" translation="41.576 1.44462 15.4861" rotation="-2.799 86.4237 -6.09859" scale="1 1 3.27474" clipDistance="500" nodeId="96" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="palletSpawner" translation="-45.742 4.3388 1.26717" nodeId="97">
+          <TransformGroup name="spawnSpace1start" translation="6.827 -3.42878 -19.9591" nodeId="98">
+            <TransformGroup name="spawnSpace1end" translation="-10.784 0 0" nodeId="99"/>
+          </TransformGroup>
+          <TransformGroup name="spawnSpace2start" translation="6.587 -3.52728 -22.8504" nodeId="100">
+            <TransformGroup name="spawnSpace2end" translation="-11.049 0 0" nodeId="101"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

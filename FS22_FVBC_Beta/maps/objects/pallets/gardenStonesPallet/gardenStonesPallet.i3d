@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="gardenStonesPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/maps/textures/shared/props/cageContainerNet_diffuse.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/props/cageContainerNet_normal.png"/>
+    <File fileId="9" filename="$data/maps/textures/shared/props/cageContainerNet_specular.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/cageContainer_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/cageContainer_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/cageContainer_specular.png"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/rocks_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/textures/shared/props/rocks_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cageContainer_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="cageContainerNet_mat" materialId="6" alphaBlending="true">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="rocks_mat" materialId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gardenStonesPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="GardenStonesPallet" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="250" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="cageContainer" lockedgroup="true" clipDistance="100" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="22"/>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="23">
+            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="rocks" translation="0 0.0177017 0" nodeId="26">
+            <Shape shapeId="5" name="rock09" translation="-0.362975 0.569196 0.205353" rotation="115.814 11.6802 -172.436" clipDistance="50" nodeId="27" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="rock09" translation="-0.750141 -0.432597 0.165288" rotation="-173.883 -31.1755 -89.4985" scale="1 1 0.667865" clipDistance="50" nodeId="28" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="rock11" translation="0.0945495 -0.317005 0.244376" rotation="95.9554 -17.5294 -27.8442" clipDistance="50" nodeId="29" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="rock09" translation="-0.434091 -0.0667182 0.0936314" rotation="8.50115 -31.1755 -89.4985" scale="1 1 0.667865" clipDistance="50" nodeId="30" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="6" name="rock11" translation="0.137026 0.686845 -0.0990591" rotation="23.4742 -62.3364 155.836" clipDistance="50" nodeId="31" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="rock09" translation="0.257403 0.0504137 -0.156046" rotation="45.5178 65.1393 -118.166" scale="0.589262 1 0.748177" clipDistance="50" nodeId="32" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="rock09" translation="0.147382 0.115149 0.369608" rotation="-74.1067 -64.7243 -172.792" clipDistance="50" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="7" name="rock12" translation="0.344674 0.52085 -0.198743" rotation="-180 45.8779 -180" clipDistance="50" nodeId="34" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="rock09" translation="-0.122887 -0.13899 -0.449456" rotation="-97.1782 -47.9625 10.3106" clipDistance="50" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="rock11" translation="0.255773 0.0243317 -0.244807" rotation="-69.5702 39.9317 128.622" clipDistance="50" nodeId="36" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="rock12" translation="0.449199 -0.0310921 -0.588955" rotation="-167.581 -3.41509e-06 2.53585e-06" clipDistance="50" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="rock11" translation="0.0461376 0.0212068 -0.404221" rotation="156.618 -1.19731 178.579" clipDistance="50" nodeId="38" materialIds="8" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="8" name="rock10" translation="-0.0209184 0.272635 -0.141964" clipDistance="50" nodeId="39" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="6" name="rock11" translation="0.433788 -0.058894 0.415336" rotation="1.01246e-07 -58.2686 -8.60469e-08" clipDistance="50" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="rock12" translation="-0.349952 -0.00496602 0.021173" clipDistance="50" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="rock09" translation="-0.361777 0.033315 0.348756" rotation="-180 -4.17298 -180" clipDistance="50" nodeId="42" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="rock10" translation="0.287935 -0.012754 0.201571" rotation="-46.5704 -0 -93.6996" clipDistance="50" nodeId="43" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="6" name="rock11" translation="-0.140673 0.072197 0.2894" rotation="94.4512 -44.6628 1.99724" clipDistance="50" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="rock12" translation="0.40596 0.033063 -0.021854" scale="1 1 0.885869" clipDistance="50" nodeId="45" materialIds="8" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="9" name="grid" translation="0.0209184 -0.272635 0.141964" clipDistance="100" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

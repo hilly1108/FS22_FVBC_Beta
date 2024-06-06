@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_construction_category_decoration</name>
+        <image>$data/placeables/mapUS/farmBuildings/farmShed/store_farmShed.png</image>
+        <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
+        <price>10</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/gate7BarWoodenPost_Double/gate7BarWoodenPost_Double.i3d</filename>
+                <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+		
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+    </placement>
+
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+        <levelAreas >
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <ai>
+        <updateAreas>
+           
+        </updateAreas>
+    </ai>
+	<animatedObjects>
+	<animatedObject index="doubleLatchGate_neg110">
+		<animation duration="6">
+			<part node="0"> <!--Left Gate-->
+				<keyFrame time="0.24" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 -110 0" />
+			</part>
+			<part node="1"> <!--Right Gate-->
+				<keyFrame time="0.24" rotation="0 0 0" />
+				<keyFrame time="1" rotation="0 90 0" />
+			</part>
+			<part node="1|2"> <!--Latch-->
+				<keyFrame time="0" rotation="0 0 0" />
+				<keyFrame time="0.24" rotation="176.8 0 0" />
+			</part>
+		</animation>
+		<controls triggerNode="1|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+		<sounds>
+			<moving linkNode="1|0" template="fenceMetalLoop" />
+			<posEnd linkNode="1|2" template="fenceMetalOpen" />
+			<negEnd linkNode="1|2" template="fenceMetalClose" />
+		</sounds>
+	</animatedObject>
+	</animatedObjects>
+</placeable>

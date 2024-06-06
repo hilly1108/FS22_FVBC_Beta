@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="palletOfPallets.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="6" filename="$data/maps/textures/shared/default_normal.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/euroPallet01_specular.png"/>
+    <File fileId="10" filename="$data/maps/textures/shared/props/industrialHatch_normal.dds"/>
+    <File fileId="9" filename="$data/maps/textures/shared/props/metalSheetPile_diffuse.dds"/>
+    <File fileId="5" filename="$data/maps/textures/shared/props/propsDecals_diffuse.png"/>
+    <File fileId="7" filename="$data/maps/textures/shared/props/propsDecals_specular.png"/>
+    <File fileId="8" filename="$data/shaders/decalShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="euroPallet01_mat" materialId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="propsDecals_mat" materialId="7" alphaBlending="true" customShaderId="8">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="8">
+      <Texture fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="palletOfPallets.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="PalletOfPallets" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="250" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="20"/>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="21">
+            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="22" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="pallets" translation="0 0.34 0" nodeId="24">
+            <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 2.19 -4.1384e-07" rotation="180 -0 180" static="true" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="6" name="decals" clipDistance="200" nodeId="26" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="27" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-2.56693e-08 0.17 -2.56693e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-5.13386e-08 0.34 -5.13386e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="33" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-7.70079e-08 0.51 -7.70079e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-1.02677e-07 0.68 -1.02677e-07" rotation="-8.14222e-13 -0 0" static="true" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.495847 -0.403995" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.705746 0.005" nodeId="40" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.846036 -0.00356368" rotation="-90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="41" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.494848 0.401269" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.700873 0.005" nodeId="42" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259973 0.142544 -0.00355551" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.818884 0.005" nodeId="43" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.288105 0.845052 -0.00356368" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="44" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.288105 0.14275 0.000482718" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.808422 0.005" nodeId="45" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.6 -0.791549 -0.0949275" rotation="-180 90 -180" scale="0.0250593 3.24 0.005" nodeId="46" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.286852 0.491877 -0.403995" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.701669 0.005" nodeId="47" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.600042 -0.793392 -0.092847" rotation="-180 90 -180" scale="0.0250593 3.24 0.005" nodeId="48" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.00102263 0.825628 -0.0932191" rotation="-90 90 -7.0082e-06" scale="0.0250593 1.20199 0.005" nodeId="49" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.00102352 -2.41207 -0.0932191" rotation="-90 90 -7.0082e-06" scale="0.0250593 1.20199 0.005" nodeId="50" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.600069 -0.791549 0.23885" rotation="-180 90 -180" scale="0.0250593 3.24 0.005" nodeId="51" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.0010226 0.825628 0.238209" rotation="-90 90 -7.0082e-06" scale="0.0250593 1.20199 0.005" nodeId="52" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.00102349 -2.41056 0.2379" rotation="-90 90 -7.0082e-06" scale="0.0250593 1.20199 0.005" nodeId="53" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.6 -0.793011 0.238202" rotation="-180 90 -180" scale="0.0250593 3.24 0.005" nodeId="54" materialIds="8" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 1.35 0" static="true" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="6" name="decals" clipDistance="200" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="2" name="euroPalletNewVis" static="true" clipDistance="100" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.34 0" static="true" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="59" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="60" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.17 0" static="true" nodeId="61" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.51 0" static="true" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="66" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.68 0" static="true" nodeId="67" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.506889 0.403995" scale="0.0250593 0.726321 0.005" nodeId="70" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.870454 0.00356355" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="71" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.506889 -0.398803" scale="0.0250593 0.726321 0.005" nodeId="72" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259973 0.142544 0.00356378" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="73" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.288105 0.870454 0.00356355" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="74" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.288105 0.14275 0.00356379" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="75" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.287926 0.506889 -0.398803" scale="0.0250593 0.726321 0.005" nodeId="76" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.286852 0.506889 0.403995" scale="0.0250593 0.726321 0.005" nodeId="77" materialIds="8" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.51 -1.57511e-07" rotation="180 -0 180" static="true" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="6" name="decals" clipDistance="200" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="80" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-2.56693e-08 0.17 -2.56693e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="81" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-5.13386e-08 0.34 -5.13386e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="85" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="86" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-7.70079e-08 0.51 -7.70079e-08" rotation="-8.14222e-13 -0 0" static="true" nodeId="87" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="88" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="89" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="-1.02677e-07 0.68 -1.02677e-07" rotation="-8.14222e-13 -0 0" static="true" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="91" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="92" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.506889 -0.403995" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.726321 0.005" nodeId="93" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.870454 -0.00356368" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="94" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259798 0.506889 0.398803" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.726321 0.005" nodeId="95" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.259973 0.142544 -0.0035638" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="96" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.288105 0.870454 -0.00356368" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="97" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.288105 0.14275 -0.00356381" rotation="90 -1.30633e-12 -180" scale="0.0250593 0.803847 0.005" nodeId="98" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.287926 0.50689 0.398803" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.726321 0.005" nodeId="99" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.286852 0.506889 -0.403995" rotation="-180 -1.30633e-12 -180" scale="0.0250593 0.726321 0.005" nodeId="100" materialIds="8" distanceBlending="false"/>
+            </Shape>
+            <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 -0.34 0" static="true" nodeId="101" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="6" name="decals" clipDistance="200" nodeId="102" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              <Shape shapeId="2" name="euroPalletNewVis" static="true" clipDistance="100" nodeId="103" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.34 0" static="true" nodeId="104" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="105" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="106" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.17 0" static="true" nodeId="107" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="108" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="109" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.51 0" static="true" nodeId="110" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="111" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="112" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="euroPalletNew" lockedgroup="true" translation="0 0.68 0" static="true" nodeId="113" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+                <Shape shapeId="6" name="decals" clipDistance="200" nodeId="114" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+                <Shape shapeId="2" name="euroPalletNewVis" kinematic="true" clipDistance="100" nodeId="115" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.506889 0.403995" scale="0.0250593 0.726321 0.005" nodeId="116" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.870454 0.00356355" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="117" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259798 0.506889 -0.398803" scale="0.0250593 0.726321 0.005" nodeId="118" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="0.259973 0.142544 0.00356378" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="119" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.288105 0.870454 0.00356355" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="120" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.288105 0.14275 0.00356379" rotation="-90 -0 0" scale="0.0250593 0.803847 0.005" nodeId="121" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.287926 0.506889 -0.398803" scale="0.0250593 0.726321 0.005" nodeId="122" materialIds="8" distanceBlending="false"/>
+              <Shape shapeId="7" name="cylinder" translation="-0.286852 0.506889 0.403995" scale="0.0250593 0.726321 0.005" nodeId="123" materialIds="8" distanceBlending="false"/>
+            </Shape>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

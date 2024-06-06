@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="iso-8859-1"?>
+<i3D name="ref.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+    <Asset>
+        <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+    </Asset>
+    <Files/>
+    <Materials>
+        <Material name="UnnamedMaterial" materialId="20" diffuseColor="1 1 1 1"/>
+    </Materials>
+    <Shapes externalShapesFile="ref.i3d.shapes"/>
+    <Dynamics/>
+    <Scene>
+        <TransformGroup name="navigationRootNode" nodeId="151">
+            <Shape shapeId="1" name="plane" translation="5.52553 0 -8.74579" scale="15.4378 1 7.30341" nodeId="152" materialIds="20" distanceBlending="false" buildNavMeshMask="254"/>
+            <Shape shapeId="1" name="plane" translation="-10.3254 0 13.1772" scale="32.9211 1 15.8394" nodeId="153" materialIds="20" distanceBlending="false" buildNavMeshMask="254"/>
+        </TransformGroup>
+    </Scene>
+</i3D>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="seedlingsPallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="17" filename="$data/foliage/soybean/soybeanStage01_alpha.png"/>
+    <File fileId="12" filename="$data/foliage/soybean/soybeanStage01_diffuse.png"/>
+    <File fileId="14" filename="$data/foliage/soybean/soybeanStage01_fmask.png"/>
+    <File fileId="13" filename="$data/foliage/soybean/soybeanStage01_normal.png"/>
+    <File fileId="5" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_normal.png"/>
+    <File fileId="7" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_specular.png"/>
+    <File fileId="11" filename="$data/maps/mapUS/textures/grassUS01_diffuse.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/euroPallet01_specular.png"/>
+    <File fileId="8" filename="$data/placeables/lizard/greenhouses/dirt_diffuse.png"/>
+    <File fileId="9" filename="$data/placeables/lizard/greenhouses/dirt_normal.png"/>
+    <File fileId="10" filename="$data/placeables/lizard/greenhouses/dirt_specular.png"/>
+    <File fileId="15" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dirt_mat" materialId="5">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="6">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="grassUS01_mat" materialId="7">
+      <Texture fileId="11"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="plasticBoxes01_mat" materialId="9">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="soybeanStage01_mat" materialId="10" customShaderId="15">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <Custommap name="alphaMap" fileId="17"/>
+      <CustomParameter name="windScale" value="0 0 0 0"/>
+      <CustomParameter name="snowScale" value="0.35 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="seedlingsPallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="seedingsPallet" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="250" nodeId="22" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" clipDistance="100" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="24" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="25"/>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="26">
+            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="27" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="28" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="content" scale="0.754714 4.29886 0.65558" nodeId="29">
+            <Shape shapeId="5" name="tray" translation="0 0.158381 0" rotation="-0 90 0" scale="1.94166 0.093 1.91749" clipDistance="250" nodeId="30" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBoxes01Vis" translation="0.00139126 0.0600643 -0.20291" scale="0.950314 0.67 0.478807" clipDistance="40" nodeId="31" materialIds="9" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="34" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="35" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="36" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="37" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="5" name="plasticBoxes01Vis" translation="0.00139126 0.0600643 0.194136" scale="0.950314 0.67 0.478807" clipDistance="40" nodeId="38" materialIds="9" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="41" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="42" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="43" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="44" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+            </Shape>
+            <Shape shapeId="5" name="tray" translation="0 0.118 0" rotation="-0 90 0" scale="1.94166 0.093 1.91749" clipDistance="250" nodeId="45" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBoxes01Vis" translation="0.00139126 0.0600643 0.194136" scale="0.950314 0.67 0.478807" clipDistance="40" nodeId="46" materialIds="9" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="48" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="49" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="50" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="51" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="52" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="6" name="dirt" translation="0.00139126 0.322462 -0.202151" rotation="-90 -0 0" scale="0.385774 0.261428 0.67" clipDistance="150" nodeId="53" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="grassSquarePlain01" translation="0.000440945 0.100889 -0.202548" scale="0.277462 0.84219 0.18748" clipDistance="160" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.121719 0.322462 -0.108425" rotation="-0 -90 0" scale="0.381077 0.484139 0.567984" clipDistance="500" nodeId="55" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.113908 0.322462 -0.108425" rotation="-0 90 0" scale="0.381077 0.546309 0.567984" clipDistance="500" nodeId="56" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.113908 0.322462 -0.289774" rotation="-0 90 0" scale="0.381077 0.46276 0.567984" clipDistance="500" nodeId="57" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.121719 0.322462 -0.279339" rotation="-0 -90 0" scale="0.381077 0.381736 0.567984" clipDistance="500" nodeId="58" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="tray" translation="0 0.077 0" rotation="-0 90 0" scale="1.94166 0.093 1.91749" clipDistance="250" nodeId="59" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBoxes01Vis" translation="0.00139126 0.0600643 0.194136" scale="0.950314 0.67 0.478807" clipDistance="40" nodeId="60" materialIds="9" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="61" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="63" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="64" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="65" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="66" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="69" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="70" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="71" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="72" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="tray" translation="9.23074e-08 0.035 0" rotation="-0 90 0" scale="1.94166 0.093 1.91749" clipDistance="250" nodeId="73" materialIds="9" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="5" name="plasticBoxes01Vis" translation="0.00139126 0.0600643 0.194136" scale="0.950314 0.67 0.478807" clipDistance="40" nodeId="74" materialIds="9" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="6" name="dirt" translation="0 0.391638 0.001586" rotation="-90 -0 0" scale="0.405944 0.546 1" clipDistance="150" nodeId="75" materialIds="5" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="grassSquarePlain01" translation="-0.001 0.0609325 0.000757178" scale="0.291969 1.257 0.391557" clipDistance="160" nodeId="76" materialIds="7" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 0.197336" rotation="-0 -90 0" scale="0.795888 0.722596 0.59768" clipDistance="500" nodeId="77" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 0.197336" rotation="-0 90 0" scale="0.795888 0.815386 0.59768" clipDistance="500" nodeId="78" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="0.1184 0.391638 -0.181416" rotation="-0 90 0" scale="0.795888 0.690687 0.59768" clipDistance="500" nodeId="79" materialIds="10" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="8" name="greenSmall" translation="-0.129547 0.391638 -0.159622" rotation="-0 -90 0" scale="0.795888 0.569756 0.59768" clipDistance="500" nodeId="80" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              </Shape>
+              <Shape shapeId="6" name="dirt" translation="0.00139131 0.322462 -0.202151" rotation="-90 -0 0" scale="0.385774 0.261429 0.67" clipDistance="150" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="grassSquarePlain01" translation="0.000440973 0.100889 -0.202548" scale="0.277462 0.84219 0.18748" clipDistance="160" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.121719 0.322462 -0.108425" rotation="-0 -90 0" scale="0.381077 0.484139 0.567984" clipDistance="500" nodeId="83" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.113908 0.322462 -0.108425" rotation="-0 90 0" scale="0.381077 0.546309 0.567984" clipDistance="500" nodeId="84" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="0.113908 0.322462 -0.289774" rotation="-0 90 0" scale="0.381077 0.462761 0.567984" clipDistance="500" nodeId="85" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="greenSmall" translation="-0.121719 0.322462 -0.279339" rotation="-0 -90 0" scale="0.381077 0.381736 0.567984" clipDistance="500" nodeId="86" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="map.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/mapAlpine/textures/windowsCurtains01_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAlpine/textures/windowsCurtains01_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAlpine/textures/windowsCurtains01_specular.png"/>
+    <File fileId="14" filename="$data/maps/mapAlpine/textures/windowsGlass01_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapAlpine/textures/windowsGlass01_specular.png"/>
+    <File fileId="19" filename="$data/maps/mapAlpine/textures/windowsRoomInteriorsDay_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapAlpine/textures/windowsRoomInteriorsNight_diffuse.png"/>
+    <File fileId="1" filename="$data/maps/mapUS/textures/residentialHouse01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/residentialHouse01_height.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/residentialHouse01_mask.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/residentialHouse01_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/residentialHouse01_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="18" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="13" filename="$data/shaders/translucencyShader.xml"/>
+    <File fileId="17" filename="$data/shared/default_normal.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="residentialHouse01_mat" materialId="4" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.15"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="windowsCurtains01_mat" materialId="5" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="translucencyAmount" value="0.5 0.12 0 0"/>
+      <CustomParameter name="mixAmount" value="0 0 0 0"/>
+      <CustomParameter name="col0" value="0.5 0.5 0.5 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="windowsGlass01_mat" materialId="6" alphaBlending="true">
+      <Texture fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="windowsRoomInteriorsNight_mat" materialId="7" customShaderId="18" customShaderVariation="alphaTestDisable_extraBaseMap">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Custommap name="mExtraBaseMap" fileId="19"/>
+      <CustomParameter name="lightControl" value="1 1 0 23"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="HouseWindow01.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="resHouse01OrielWindow" lockedgroup="true" rotation="1.00179e-05 0 -1.00179e-05" clipDistance="300" nodeId="16" lodDistance="0 100">
+        <TransformGroup name="LOD0" nodeId="17">
+          <Shape shapeId="1" name="resHouse01OrielWindow" clipDistance="300" nodeId="18" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="interior" nodeId="19">
+            <Shape shapeId="2" name="curtains" clipDistance="80" nodeId="20" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="windows" clipDistance="150" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="interiorDay" clipDistance="200" nodeId="22" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="1.5"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="LOD1" rotation="2.50448e-06 0 0" nodeId="23">
+          <Shape shapeId="5" name="resHouse01OrielWindow_LOD" static="true" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="interior" nodeId="25">
+            <Shape shapeId="6" name="windows_LOD" static="true" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="interiorDay_LOD" static="true" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true" visibleShaderParameter="1.5"/>
+          </TransformGroup>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

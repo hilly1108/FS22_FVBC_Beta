@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/maps/mapUS/textures/props/fenceThickTubesSet_diffuse.png"/>
+    <File fileId="8" filename="$data/maps/mapUS/textures/props/fenceThickTubesSet_normal.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/props/fenceThickTubesSet_specular.png"/>
+    <File fileId="10" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="4" filename="barbedFence_diffuse.dds"/>
+    <File fileId="5" filename="barbedFence_normal.dds"/>
+    <File fileId="6" filename="barbedFence_specular.dds"/>
+    <File fileId="1" filename="barbedFence_diffuse.dds"/>
+    <File fileId="2" filename="barbedFence_normal.dds"/>
+    <File fileId="3" filename="barbedFence_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="fenceThickTubesSet_mat" materialId="4" customShaderId="10">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="5" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="wood" materialId="6">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="wood" materialId="7">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="grazingFence.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="optionalGrazingYards2" nodeId="15">
+        <TransformGroup name="optionalGrazingYards2" translation="0 1 0" nodeId="16">
+          <TransformGroup name="optionalGrazingYards2" translation="-1.0248e-12 1.108 4.47954e-20" rotation="-2.64979e-11 90 2.64979e-11" kinematic="true" nodeId="17">
+            <Shape shapeId="1" name="woodWire1" translation="1.87404e-08 0.124112 -0.225498" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -0.229469" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="19" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52295e-08 -0.299542 -0.223694" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="20" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -0.132601" kinematic="true" clipDistance="270" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.658 -25.9602" rotation="-0.930363 -0 0" kinematic="true" clipDistance="80" nodeId="22" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87404e-08 0.124112 -4.21514" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="23" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52295e-08 -0.299542 -4.20643" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -4.21552" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="25" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -8.19151" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="26" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52295e-08 -0.299542 -8.19391" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="27" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87404e-08 0.124112 -8.20479" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87405e-08 0.124111 -12.1977" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="29" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52295e-08 -0.299542 -12.1893" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -12.1779" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="31" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -16.2386" kinematic="true" clipDistance="270" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87405e-08 0.124111 -16.3394" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52296e-08 -0.299541 -16.3298" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -16.3224" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="35" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13907e-08 -0.790882 -20.3034" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52296e-08 -0.299541 -20.2968" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87405e-08 0.124111 -20.2819" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87405e-08 0.12411 -24.2788" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52296e-08 -0.299541 -24.2732" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="40" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13906e-08 -0.790882 -24.2617" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13906e-08 -0.790881 -28.2624" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="42" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52296e-08 -0.299541 -28.2572" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="43" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87405e-08 0.12411 -28.2646" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -32.3253" kinematic="true" clipDistance="270" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.891 -40.3209" rotation="-0.317954 -0 0" kinematic="true" clipDistance="80" nodeId="46" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87406e-08 0.12411 -32.3932" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52296e-08 -0.299541 -32.3942" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="48" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13906e-08 -0.790881 -32.4029" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="49" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13906e-08 -0.790881 -36.3798" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52297e-08 -0.29954 -36.3749" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="51" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87406e-08 0.124109 -36.3705" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="52" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87406e-08 0.124109 -40.3362" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="53" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52297e-08 -0.29954 -40.3453" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13906e-08 -0.790881 -40.3607" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="55" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.790881 -44.3366" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="56" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52297e-08 -0.29954 -44.3174" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="57" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87406e-08 0.124109 -44.3245" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -48.3904" kinematic="true" clipDistance="270" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.76871 -8.266" rotation="1.52323 -0 0" kinematic="true" clipDistance="80" nodeId="60" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87407e-08 0.124108 -48.4645" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52297e-08 -0.29954 -48.4504" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="62" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.790881 -48.4695" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.79088 -52.449" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="64" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52297e-08 -0.299539 -52.4374" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87407e-08 0.124108 -52.4315" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="66" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87407e-08 0.124 -56.4095" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299539 -56.4177" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="68" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.79088 -56.4179" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87407e-08 0.124 -60.3468" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="70" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299539 -60.3561" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.79088 -60.396" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="72" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.7887 -57.9346" rotation="-0.317954 -0 0" kinematic="true" clipDistance="80" nodeId="73" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -64.4583" kinematic="true" clipDistance="270" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87407e-08 0.123999 -64.543" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="75" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299539 -64.5431" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="76" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.79088 -64.5567" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="77" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.791 -68.5279" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="78" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299539 -68.5372" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87408e-08 0.123999 -68.5275" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="80" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87408e-08 0.123999 -72.4528" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299538 -72.5096" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="82" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13905e-08 -0.791 -72.5162" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="83" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.791 -76.4965" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="84" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52298e-08 -0.299538 -76.4858" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="85" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87408e-08 0.123999 -76.4217" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="86" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.74391 -73.3224" rotation="2.29609 -0 0" kinematic="true" clipDistance="80" nodeId="87" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -80.5108" kinematic="true" clipDistance="270" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87408e-08 0.123998 -80.5994" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="89" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299538 -80.5883" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="90" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.791 -80.6004" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="91" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.791 -84.5573" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="92" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299538 -84.5585" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="93" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87408e-08 0.123998 -84.5554" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87409e-08 0.123998 -88.5309" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="95" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299538 -88.5409" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="96" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.790999 -88.5468" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="97" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.790999 -92.5073" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="98" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299537 -92.5173" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="99" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87409e-08 0.123997 -92.5067" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="100" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.79635 -90.9066" rotation="1.33858 -0 0" kinematic="true" clipDistance="80" nodeId="101" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -96.5884" kinematic="true" clipDistance="270" nodeId="102" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87409e-08 0.123997 -96.6928" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="103" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299537 -96.6787" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="104" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.790999 -96.688" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="105" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13904e-08 -0.790999 -100.678" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="106" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52299e-08 -0.299537 -100.652" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="107" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87409e-08 0.123996 -100.669" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="108" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.8741e-08 0.123996 -104.664" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="109" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299536 -104.638" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="110" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13903e-08 -0.790999 -104.66" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="111" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13903e-08 -0.790998 -108.644" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="112" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299536 -108.628" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="113" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.8741e-08 0.123996 -108.656" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="114" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.82242 -105.644" rotation="1.33858 -0 0" kinematic="true" clipDistance="80" nodeId="115" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -112.703" kinematic="true" clipDistance="270" nodeId="116" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.8741e-08 0.123995 -112.778" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="117" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299536 -112.78" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="118" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13903e-08 -0.790998 -112.799" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="119" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13903e-08 -0.790998 -116.791" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="120" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299536 -116.763" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="121" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.8741e-08 0.123995 -116.747" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="122" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.8741e-08 0.123995 -120.71" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="123" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299536 -120.753" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="124" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13903e-08 -0.790998 -120.767" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="125" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790998 -124.762" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="126" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790998 -124.762" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="127" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299535 -124.76" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="128" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87411e-08 0.123994 -124.691" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="129" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.81979 -138.145" rotation="-1.55524 -0 0" kinematic="true" clipDistance="80" nodeId="130" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -128.783" kinematic="true" clipDistance="270" nodeId="131" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87411e-08 0.123994 -128.852" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="132" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299535 -128.84" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="133" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790998 -128.882" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="134" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790997 -132.823" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="135" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.523e-08 -0.299535 -132.795" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="136" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87411e-08 0.123994 -132.85" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="137" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87411e-08 0.123993 -136.835" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="138" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299535 -136.779" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="139" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790997 -136.81" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="140" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13902e-08 -0.790997 -140.788" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="141" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299535 -140.764" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="142" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87411e-08 0.123993 -140.827" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="143" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -144.838" kinematic="true" clipDistance="270" nodeId="144" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87412e-08 0.123993 -144.902" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="145" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299535 -144.9" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="146" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13901e-08 -0.790997 -144.91" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="147" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13901e-08 -0.790997 -148.892" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="148" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299534 -148.873" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="149" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87412e-08 0.123993 -148.886" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="150" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87412e-08 0.123992 -152.871" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="151" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299534 -152.836" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="152" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13901e-08 -0.790996 -152.877" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="153" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.13901e-08 -0.790996 -156.874" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="154" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="4.52301e-08 -0.299534 -156.815" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="155" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="1.87412e-08 0.123992 -156.86" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="156" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-0.0304274 -1.78497 -153.934" rotation="0.71991 -0 0" kinematic="true" clipDistance="80" nodeId="157" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="0 -1.66 -160.914" kinematic="true" clipDistance="270" nodeId="158" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-0.0769754 -0.790996 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="159" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-0.0893155 -0.299534 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="160" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-0.0678024 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="161" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-4.05624 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="162" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-4.07039 -0.299533 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="163" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-4.06951 -0.790995 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="164" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-8.05643 -0.790994 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="165" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-8.06199 -0.299532 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="166" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-8.04251 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="167" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-12.0306 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="168" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-12.0565 -0.299531 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="169" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-12.0515 -0.790993 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="170" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-16.1222 -1.66 -160.914" kinematic="true" clipDistance="270" nodeId="171" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-8.40414 -1.69697 -160.937" rotation="0.71991 -0 0" kinematic="true" clipDistance="80" nodeId="172" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-16.2173 -0.790992 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="173" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-16.2001 -0.29953 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="174" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-16.2128 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="175" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-20.2001 -0.790991 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="176" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-20.1915 -0.299529 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="177" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-20.1888 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="178" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-24.166 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="179" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-24.1713 -0.299528 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="180" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-24.1799 -0.790991 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="181" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-28.1702 -0.79099 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="182" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-28.1564 -0.299527 -160.943" rotation="180 -90 180" kinematic="true" clipDistance="120" nodeId="183" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-28.1595 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="184" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-32.2179 -1.66 -160.914" kinematic="true" clipDistance="270" nodeId="185" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-25.2856 -1.8028 -160.939" rotation="0.719429 0.0263219 -2.09525" kinematic="true" clipDistance="80" nodeId="186" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-32.319 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="187" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-36.3085 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="188" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-37.9933 0.123992 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="189" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124108 -0.230107" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="190" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299539 -0.241634" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="191" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790879 -0.251197" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="192" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -0.154024" kinematic="true" clipDistance="270" nodeId="193" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124108 -4.20885" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="194" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299539 -4.19112" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="195" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790879 -4.19232" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="196" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790879 -8.13839" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="197" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299538 -8.17001" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="198" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124107 -8.1707" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="199" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124107 -12.1521" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="200" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299538 -12.149" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="201" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790878 -12.1195" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="202" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -16.1934" kinematic="true" clipDistance="270" nodeId="203" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.76871 -8.266" rotation="2.19857 -0 0" kinematic="true" clipDistance="80" nodeId="204" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124107 -16.2758" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="205" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299538 -16.2635" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="206" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790878 -16.2886" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="207" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790878 -20.2614" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="208" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299538 -20.2308" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="209" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124106 -20.2365" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="210" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124106 -24.2061" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="211" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299538 -24.1993" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="212" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790878 -24.2627" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="213" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790878 -28.2386" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="214" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299537 -28.1906" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="215" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124106 -28.1809" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="216" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -32.2813" kinematic="true" clipDistance="270" nodeId="217" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.71178 -24.8153" rotation="5.13447 -0 0" kinematic="true" clipDistance="80" nodeId="218" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124105 -32.343" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="219" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299537 -32.3502" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="220" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -32.3725" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="221" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -36.3192" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="222" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299537 -36.3259" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="223" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124105 -36.3124" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="224" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124105 -40.2669" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="225" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299537 -40.2894" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="226" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -40.2834" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="227" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -44.2388" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="228" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299536 -44.2588" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="229" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124104 -44.2381" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="230" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -48.2859" kinematic="true" clipDistance="270" nodeId="231" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.7039 -41.9859" rotation="0.969341 -0 0" kinematic="true" clipDistance="80" nodeId="232" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -48.3958" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="233" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299536 -48.3407" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="234" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124104 -48.3461" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="235" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124103 -52.2409" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="236" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299535 -52.3007" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="237" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -52.332" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="238" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790877 -56.3178" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="239" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790876 -60.2837" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="240" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299535 -56.274" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="241" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124103 -56.197" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="242" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124103 -64.2708" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="243" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299535 -60.2344" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="244" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -64.1963" kinematic="true" clipDistance="270" nodeId="245" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.78358 -57.072" rotation="-1.60191 -0 0" kinematic="true" clipDistance="80" nodeId="246" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124103 -60.1288" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="247" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124102 -68.2357" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="248" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124102 -72.2083" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="249" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124102 -76.1824" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="250" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299535 -64.2453" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="251" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299534 -68.2299" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="252" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299534 -72.1926" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="253" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299534 -76.1587" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="254" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790876 -64.257" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="255" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790876 -68.2163" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="256" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790876 -72.1974" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="257" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -76.1476" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="258" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -80.1905" kinematic="true" clipDistance="270" nodeId="259" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.74884 -71.8741" rotation="-5.57576 -0 0" kinematic="true" clipDistance="80" nodeId="260" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124101 -80.2352" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="261" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299534 -80.198" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="262" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -80.2314" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="263" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -84.1171" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="264" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -88.0655" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="265" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -92.0077" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="266" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299533 -84.1817" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="267" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299533 -88.1803" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="268" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299533 -92.1383" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="269" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124101 -84.1892" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="270" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.1241 -88.1375" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="271" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.1241 -92.1236" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="272" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -96.0637" kinematic="true" clipDistance="270" nodeId="273" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.81192 -89.9075" rotation="0.114351 -0 0" kinematic="true" clipDistance="80" nodeId="274" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.1241 -96.1387" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="275" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124099 -100.038" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="276" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124099 -103.969" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="277" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124099 -107.941" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="278" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299533 -96.1717" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="279" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299532 -100.075" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="280" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299532 -104.037" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="281" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299532 -108.013" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="282" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790875 -96.1413" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="283" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790874 -100.04" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="284" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790874 -103.99" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="285" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790874 -107.967" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="286" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -112.027" kinematic="true" clipDistance="270" nodeId="287" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.78118 -105.308" rotation="4.04663 -0 0" kinematic="true" clipDistance="80" nodeId="288" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790873 -112.124" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="289" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790873 -116.058" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="290" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790873 -119.997" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="291" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790873 -123.881" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="292" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299531 -112.078" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="293" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299531 -115.941" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="294" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299531 -119.771" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="295" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299531 -123.704" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="296" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124098 -112.108" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="297" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124098 -116.014" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="298" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124098 -119.928" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="299" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124097 -123.867" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="300" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -127.775" kinematic="true" clipDistance="270" nodeId="301" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="fenceThickTubesPole01" translation="-41.9173 -1.67952 -119.779" rotation="-5.82249 -0 0" kinematic="true" clipDistance="80" nodeId="302" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124097 -127.842" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="303" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124097 -131.766" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="304" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124096 -135.665" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="305" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124096 -139.557" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="306" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.29953 -127.84" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="307" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.29953 -131.795" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="308" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.29953 -135.786" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="309" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="woodWire3" translation="-41.8916 -0.299529 -139.703" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="310" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790872 -127.847" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="311" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790872 -131.776" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="312" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790872 -135.638" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="313" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="woodWire2" translation="-41.8948 -0.790872 -139.527" rotation="-180 0 -180" kinematic="true" clipDistance="120" nodeId="314" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9242 -1.66 -143.623" kinematic="true" clipDistance="270" nodeId="315" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124096 -143.692" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="316" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124095 -147.622" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="317" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124095 -151.584" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="318" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124095 -155.534" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="319" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 0.124095 -156.954" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="320" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.346233 -156.954" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="321" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.346232 -152.997" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="322" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.346232 -149.106" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="323" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.346232 -145.131" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="324" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.346232 -143.53" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="325" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.792754 -143.53" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="326" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.792754 -147.518" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="327" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.792755 -151.492" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="328" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.792755 -155.473" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="329" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-41.8934 -0.792755 -156.946" rotation="180 0 180" kinematic="true" clipDistance="120" nodeId="330" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="woodPost5" translation="-41.9244 -1.66 -160.914" kinematic="true" clipDistance="270" nodeId="331" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-37.9933 -0.348182 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="332" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-34.0462 -0.348182 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="333" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-32.2548 -0.348182 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="334" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-32.2548 -0.817512 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="335" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-36.2428 -0.817512 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="336" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="1" name="woodWire1" translation="-37.9127 -0.817512 -160.943" rotation="-180 -90 180" kinematic="true" clipDistance="120" nodeId="337" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="6" name="trigger" rotation="0 23.6676 2.47987e-12" scale="10.9482 11.3432 15.4669" static="true" trigger="true" collisionMask="3145728" nodeId="338" materialIds="5" nonRenderable="true" distanceBlending="false"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

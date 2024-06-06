@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType>
+    <!-- brwnDecoBush 01
+
+    0 1 2 3
+
+    1 0 0 0 - Small
+    0 1 0 0 - Medium
+    1 1 0 0 - Big
+    0 0 1 0 - Super Big
+
+
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="4" numBlocksPerUnit="0.5" shapeSource="brwnDecoBush.i3d">
+        <foliageStateDefaults distanceMapLayer="0" width="1.0" height="1.0" widthVariance="0.25" heightVariance="0.25" horizontalPositionVariance="0.75" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="30"  blendOutDistance="2" atlasSize="4" atlasOffset="0.25 0.0" texCoords="0 0 1 1"/>
+        <foliageLodDefaults lod="1" viewDistance="450" blendOutDistance="2" atlasSize="4" atlasOffset="0.25 0.0" texCoords="0 0 1 1"/>
+
+        <!-- 1 0 0 0 - Small -->
+        <foliageState name="Small" numBlocksPerUnit="0.75" >
+            <foliageShape>
+                <!-- - custom LOD distances -->
+                <foliageLod blockShape="0>0|0" />
+                <foliageLod blockShape="0>1|0" atlasOffset="0 0.25" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- 0 1 0 0 - Medium -->
+        <foliageState name="Medium" numBlocksPerUnit="0.55" >
+            <foliageShape>
+                <foliageLod blockShape="0>0|1" />
+                <foliageLod blockShape="0>1|1" atlasOffset="0 0.25" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- 1 1 0 0 - Big -->
+        <foliageState name="Big" numBlocksPerUnit="0.45" >
+            <foliageShape>
+                <foliageLod blockShape="0>0|2" />
+                <foliageLod blockShape="0>1|2" atlasOffset="0 0.25" />
+            </foliageShape>
+        </foliageState>
+
+        <!-- 0 0 1 0 - Super Big -->
+        <foliageState name="Super Big" numBlocksPerUnit="0.35" >
+            <foliageShape>
+                <foliageLod blockShape="0>0|3" />
+                <foliageLod blockShape="0>1|3" atlasOffset="0 0.25" />
+            </foliageShape>
+        </foliageState>
+
+
+        <!--  -->
+    </foliageLayer>
+</foliageType>

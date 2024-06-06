@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<foliageType>
+    <!-- bigBranches
+
+    0 1
+
+    0 0 = "invisible state"
+    1 0 = "small"
+    0 1 = "medium"
+    1 1 = "big"
+    -->
+    <foliageLayer cellSize="8" objectMask="16711935" decalLayer="0" densityMapChannelOffset="0" numDensityMapChannels="3" numBlocksPerUnit="1" shapeSource="bigBranches.i3d"><!--3,2-->
+        <foliageStateDefaults distanceMapLayer="1" width="1" height="1" widthVariance="0.2" heightVariance="0.2" horizontalPositionVariance="0.2" />
+        <!-- default LOD distances etc -->
+        <foliageLodDefaults lod="0" viewDistance="18"  blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+        <foliageLodDefaults lod="1" viewDistance="80"  blendOutDistance="2" atlasSize="1" atlasOffset="1 0" texCoords="0 0 1 1" />
+
+        <foliageState name="invisible" />
+        <!-- 0 1 - small -->
+        <foliageState name="skinny1and2">
+            
+				<foliageShape probability="0.50" >
+                <foliageLod blockShape="0>0|0|0"/>
+                <foliageLod blockShape="0>0|1|0"/>
+            </foliageShape>
+            
+				<foliageShape probability="0.50" >
+                <foliageLod blockShape="0>0|0|1"/>
+                <foliageLod blockShape="0>0|1|1"/>
+            </foliageShape>
+           
+			
+        </foliageState>
+        <!-- 1 0 - medium -->
+        <foliageState name="fat1">
+            
+			<foliageShape>
+                <foliageLod blockShape="0>0|0|2"/>
+                <foliageLod blockShape="0>0|1|2"/>
+            </foliageShape>
+
+            
+			
+        </foliageState>
+        <!-- 1 1 - big -->
+        <foliageState name="fat2">
+            <foliageShape>
+                <foliageLod blockShape="0>0|0|3"/>
+                <foliageLod blockShape="0>0|1|3"/>
+            </foliageShape>
+         
+        </foliageState>
+    </foliageLayer>
+</foliageType>

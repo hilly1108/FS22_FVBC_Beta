@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="oldOldBarn.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapUS/textures/oldBarn01_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/oldBarn01_height.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/oldBarn01_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/oldBarn01_specular.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/oldBarnRuin01_mask.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="16" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="10" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="12" filename="$data/shaders/snowHeapShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="icicles_mat" materialId="5" alphaBlending="true" customShaderId="12" customShaderVariation="icicle">
+      <Texture fileId="14"/>
+      <Normalmap fileId="15"/>
+      <Glossmap fileId="16"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="oldBarn01_mat" materialId="6" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+    </Material>
+    <Material name="snow_mat" materialId="7" customShaderId="12">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11" bumpDepth="0.5"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="oldOldBarn.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="oldBarnRuin01" nodeId="13" lodDistance="0 90">
+        <TransformGroup name="transform" translation="12.4907 0 -12.5105" nodeId="22"/>
+        <TransformGroup name="transform" translation="-13.2675 0 -12.5105" nodeId="25"/>
+        <TransformGroup name="transform" translation="-13.2675 0 11.499" nodeId="26"/>
+        <TransformGroup name="transform" translation="12.9726 0 11.499" nodeId="27"/>
+        <TransformGroup name="LOD0" nodeId="14">
+          <Shape shapeId="1" name="oldBarnRuin01" static="true" clipDistance="300" nodeId="15" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <TransformGroup name="winter" nodeId="16">
+            <Shape shapeId="2" name="snow" clipDistance="200" nodeId="17" materialIds="7" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+            <Shape shapeId="3" name="icicle" clipDistance="85" nodeId="18" materialIds="5" castsShadows="true" receiveShadows="true" weatherRequiredMask="1024"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="19">
+          <Shape shapeId="4" name="oldBarnRuin01_LOD" clipDistance="500" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

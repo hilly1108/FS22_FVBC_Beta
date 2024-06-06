@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="10" filename="$data/maps/mapAlpine/textures/windowsCurtains01_diffuse.png"/>
+    <File fileId="11" filename="$data/maps/mapAlpine/textures/windowsCurtains01_normal.png"/>
+    <File fileId="12" filename="$data/maps/mapAlpine/textures/windowsCurtains01_specular.png"/>
+    <File fileId="14" filename="$data/maps/mapAlpine/textures/windowsGlass01_diffuse.png"/>
+    <File fileId="15" filename="$data/maps/mapAlpine/textures/windowsGlass01_specular.png"/>
+    <File fileId="30" filename="$data/maps/mapAlpine/textures/windowsRoomInteriorsDay_diffuse.png"/>
+    <File fileId="27" filename="$data/maps/mapAlpine/textures/windowsRoomInteriorsNight_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/residentialHouse07_height.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/residentialHouse07_mask.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/residentialHouse07_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/residentialHouse07_specular.png"/>
+    <File fileId="16" filename="$data/maps/mapUS/textures/woodPorch_diffuse.png"/>
+    <File fileId="17" filename="$data/maps/mapUS/textures/woodPorch_normal.png"/>
+    <File fileId="18" filename="$data/maps/mapUS/textures/woodPorch_specular.png"/>
+    <File fileId="20" filename="$data/maps/textures/shared/props/icicles_diffuse.png"/>
+    <File fileId="21" filename="$data/maps/textures/shared/props/icicles_normal.png"/>
+    <File fileId="22" filename="$data/maps/textures/shared/props/icicles_specular.png"/>
+    <File fileId="25" filename="$data/maps/textures/shared/snow_diffuse.png"/>
+    <File fileId="26" filename="$data/maps/textures/shared/snow_normal.png"/>
+    <File fileId="8" filename="$data/maps/textures/shared/snow_specular.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="29" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="23" filename="$data/shaders/snowHeapShader.xml"/>
+    <File fileId="13" filename="$data/shaders/translucencyShader.xml"/>
+    <File fileId="28" filename="$data/shared/default_normal.png"/>
+    <File fileId="1" filename="residentialHouse07green_diffuseRed.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="icicles_mat" materialId="6" alphaBlending="true" customShaderId="23" customShaderVariation="icicle">
+      <Texture fileId="20"/>
+      <Normalmap fileId="21"/>
+      <Glossmap fileId="22"/>
+      <Refractionmap coeff="1" bumpScale="0.1"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="residentialHouse07_mat" materialId="8" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.75"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="snow_mat" materialId="9" customShaderId="23">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26" bumpDepth="0.5"/>
+      <Glossmap fileId="8"/>
+    </Material>
+    <Material name="windowsCurtains01_mat" materialId="10" customShaderId="13">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="12"/>
+      <CustomParameter name="translucencyAmount" value="0.5 0.12 0 0"/>
+      <CustomParameter name="mixAmount" value="0 0 0 0"/>
+      <CustomParameter name="col0" value="0.5 0.5 0.5 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+    <Material name="windowsGlass01_mat" materialId="11" alphaBlending="true">
+      <Texture fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="windowsRoomInteriorsNight_mat" materialId="12" customShaderId="29" customShaderVariation="alphaTestDisable_extraBaseMap">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Custommap name="mExtraBaseMap" fileId="30"/>
+      <CustomParameter name="lightControl" value="1 0 1 0"/>
+    </Material>
+    <Material name="woodPorch_mat" materialId="13" customShaderId="4">
+      <Texture fileId="16"/>
+      <Normalmap fileId="17"/>
+      <Glossmap fileId="18"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 23"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="House02Green.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="residentialHouse07_PLACE" nodeId="29">
+        <TransformGroup name="residentialHouse07" lockedgroup="true" translation="-1.52588e-05 -7.62939e-06 0" rotation="-8.14222e-13 0 6.10666e-13" clipDistance="500" nodeId="30" lodDistance="0 150">
+          <TransformGroup name="LOD0" nodeId="31">
+            <Shape shapeId="1" name="residentialHouse07" clipDistance="300" nodeId="32" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="2" name="curtains" nodeId="33" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="3" name="windows" clipDistance="150" nodeId="34" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="4" name="woodenPorch" clipDistance="300" nodeId="35" materialIds="13" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="5" name="extraCollision" static="true" clipDistance="100" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="winter" static="true" nodeId="40" weatherRequiredMask="1024">
+                <Shape shapeId="6" name="Icicles" clipDistance="150" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="7" name="snow" clipDistance="200" nodeId="42" materialIds="9" castsShadows="true" receiveShadows="true"/>
+              </TransformGroup>
+              <TransformGroup name="illum" nodeId="43">
+                <TransformGroup name="selfIllum" nodeId="44" weatherRequiredMask="64" renderInvisible="true">
+                  <Shape shapeId="8" name="interiorDay" translation="1.21331 3.32306 0.0119428" nodeId="45" materialIds="12" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+                </TransformGroup>
+                <TransformGroup name="realLights" nodeId="46" weatherRequiredMask="64">
+                  <Light name="pointLight1" translation="6.59194 4.32306 0.00363553" clipDistance="75" nodeId="47" type="point" color="0.03 0.03 0.02" emitDiffuse="true" emitSpecular="true" range="5"/>
+                  <Light name="pointLight2" translation="1.51573 2.06136 -3.86947" clipDistance="75" nodeId="48" type="point" color="0.03 0.03 0.02" emitDiffuse="true" emitSpecular="true" range="5"/>
+                  <Light name="pointLight3" translation="-0.0363863 4.67924 3.90731" clipDistance="75" nodeId="49" type="point" color="0.03 0.03 0.02" emitDiffuse="true" emitSpecular="true" range="5"/>
+                  <Light name="pointLight4" translation="-4.238 4.32306 0.00363553" clipDistance="75" nodeId="50" type="point" color="0.03 0.03 0.02" emitDiffuse="true" emitSpecular="true" range="5"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="LOD1" rotation="2.50448e-06 0 0" nodeId="51">
+            <Shape shapeId="9" name="residentialHouse07_LOD" static="true" nodeId="52" materialIds="8" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="10" name="windows_LOD" static="true" clipDistance="200" nodeId="53" materialIds="11" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="4" name="woodenPorch_LOD" static="true" clipDistance="500" nodeId="54" materialIds="13" castsShadows="true" receiveShadows="true"/>
+              <TransformGroup name="illum" nodeId="55">
+                <TransformGroup name="selfIllum" nodeId="56">
+                  <Shape shapeId="11" name="interiorDay_LOD" clipDistance="500" nodeId="57" materialIds="12" castsShadows="true" receiveShadows="true" weatherRequiredMask="64" renderInvisible="true"/>
+                </TransformGroup>
+              </TransformGroup>
+            </Shape>
+          </TransformGroup>
+          <Shape shapeId="12" name="occluderMesh" rotation="2.50448e-06 0 0" clipDistance="200" nodeId="58" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true" occluder="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

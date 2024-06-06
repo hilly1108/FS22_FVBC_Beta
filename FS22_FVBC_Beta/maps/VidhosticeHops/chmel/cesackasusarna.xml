@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+  <storeData>
+    <name>$l10n_storeItem_cesackasusarna</name>
+    <functions>
+      <function>$l10n_function_cesackasusarna</function>
+    </functions>
+    <image>$data/store/store_empty.png</image>
+    <price>141000</price>
+    <showInStore>false</showInStore>
+    <canBeSold>false</canBeSold>
+    <lifetime>1000</lifetime>
+    <rotation>0</rotation>
+    <brand>NONE</brand>
+    <species>placeable</species>
+    <category>productionPoints</category>
+    <brush>
+      <type>placeable</type>
+      <category>production</category>
+      <tab>factories</tab>
+    </brush>
+    </storeData>
+
+    <base>
+   	<filename>maps/VidhosticeHops/chmel/cesackasusarna.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
+        <canBeDeleted>false</canBeDeleted>
+    </base>
+  
+    <placement useRandomYRotation="false" useManualYRotation="true" />
+      <clearAreas></clearAreas>
+
+    <leveling></leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height"/>
+    </indoorAreas>
+
+	<ai>
+        <updateAreas></updateAreas>
+    </ai>
+ 
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"  />
+        <triggerMarker node="unloadTriggerMarker1" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker2" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="unloadTriggerMarker3" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true" />
+        <triggerMarker node="loadingTriggerMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" adjustToGround="true" />
+        <triggerMarker node="playerTriggerMarker"  filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+    </triggerMarkers>  
+ 
+    <hotspots>
+       <hotspot type="PRODUCTION_POINT" linkNode="teleportNode" teleportNode="teleportNode"/>
+    </hotspots>
+
+    <productionPoint>
+        <productions sharedThroughputCapacity="false">
+        <production id="cescka" name="%s" params="$l10n_fillType_cesackasus" cyclesPerHour="150" costsPerActiveHour="50">
+            <inputs>
+               <input fillType="CHMEL" amount="100" />
+            </inputs>
+            <outputs>
+               <output fillType="CHMELSIS" amount="20" />
+               <output fillType="CHMELINKA" amount="80" />
+            </outputs>
+        </production>
+		<production id="susarna" name="%s" params="$l10n_fillType_susarna" cyclesPerHour="100" costsPerActiveHour="20">
+                <inputs>
+                   <input fillType="CHMELSIS" amount="100" />
+                   <input fillType="MAZUT" amount="30" />
+                   <input fillType="PALLETS" amount="10" />
+            </inputs>
+                <outputs>
+                   <output fillType="CHMELSUS" amount="100" />
+            </outputs>
+        </production>
+        <production id="susarna1" name="%s" params="$l10n_fillType_susarna1" cyclesPerHour="100" costsPerActiveHour="20">
+                <inputs>
+                   <input fillType="CHMELSIS" amount="100" />
+                   <input fillType="PROPANE" amount="30" />
+                   <input fillType="PALLETS" amount="10" />
+            </inputs>
+                <outputs>
+                   <output fillType="CHMELSUS" amount="100" />
+            </outputs>
+        </production>            
+        </productions>
+   
+    <loadingStation>
+        <loadTrigger triggerNode="loadingTrigger" fillTypes="CHMELINKA" fillLitersPerSecond="230" infiniteCapacity="true" aiNode="aiNodeLoading">
+            <effectNode effectClass="PipeEffect" effectNode="pipeEffect"      materialType="pipe"           fadeTime="0.5" maxBending="0" shapeScaleSpread="0.2 0.8 0.2 0" controlPoint="2 0 0 0"/>
+            <effectNode                          effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />
+        </loadTrigger>
+		<loadTrigger triggerNode="loadingTrigger2" fillTypes="CHMELSIS" fillLitersPerSecond="230" infiniteCapacity="true" aiNode="aiNodeLoading"/>
+	</loadingStation>
+	
+	<sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false" allowMissions="false" hideFromPricesMenu="true">
+        <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="CHMEL" />
+		<unloadTrigger exactFillRootNode="unloadTrigger1" fillTypes="MAZUT PROPANE" />
+		<unloadTrigger exactFillRootNode="unloadTrigger2" fillTypes="CHMELSIS" />
+		<unloadTrigger fillTypes="CHMELSUS" >
+            <woodTrigger triggerNode="woodTrigger" />
+        </unloadTrigger>
+	    <unloadTrigger exactFillRootNode="unloadTrigger3"  fillTypes="PALLETS"/>
+	</sellingStation>
+	
+
+    <storage isExtension="false" fillLevelSyncThreshold="100">
+      <capacity fillType="CHMEL"  capacity="500000" />
+      <capacity fillType="MAZUT"  capacity="20000" />
+      <capacity fillType="PROPANE"  capacity="20000" />      
+      <capacity fillType="CHMELSUS"  capacity="500000" />
+      <capacity fillType="CHMELSIS"  capacity="500000" />
+      <capacity fillType="CHMELINKA"  capacity="500000" />
+      <capacity fillType="PALLETS"         capacity="300000" />
+    </storage>
+
+    <palletSpawner node="palletSpawner">
+        <spawnPlaces>
+            <spawnPlace startNode="spawnSpace1start" />
+			<spawnPlace startNode="spawnSpace2start" />
+			<spawnPlace startNode="spawnSpace3start" />
+			<spawnPlace startNode="spawnSpace4start" />
+			<spawnPlace startNode="spawnSpace5start" />
+			<spawnPlace startNode="spawnSpace6start" />
+        </spawnPlaces>
+    </palletSpawner>
+
+    <playerTrigger node="playerTrigger" />
+   
+    <sounds>
+		<active file="maps/VidhosticeHops/placeables/cesacka.wav" linkNode="playerTrigger" />
+	</sounds>
+    
+   </productionPoint>
+	
+	<lights>
+        <group weatherRequiredFlags="NIGHT" />
+
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight1" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight2" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight3" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight4" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight5" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight6" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight7" groupIndex="1"/>
+        <sharedLight filename="$data/shared/assets/lights/lizard/buildings/garageCeilingLamp.xml" linkNode="tubeLight8" groupIndex="1"/>
+        
+        <realLights>
+            <low>
+                <light node="realLightsLow" groupIndex="1"/>
+            </low>
+            <high>
+                <light node="realLightsHigh" groupIndex="1"/>
+            </high>
+        </realLights>
+    </lights>
+
+  <i3dMappings>
+    <i3dMapping id="sellingStation" node="0>0" />
+	<i3dMapping id="sellingStationAINode" node="0>0|0" />
+    <i3dMapping id="unloadTrigger" node="0>0|0" />
+	<i3dMapping id="woodTrigger" node="0>0|3" />
+	<i3dMapping id="unloadTrigger1" node="0>0|4|0" />
+    <i3dMapping id="unloadTrigger2" node="0>0|5|0" />
+	<i3dMapping id="unloadTrigger3" node="0>0|6|0" />
+	
+    <i3dMapping id="unloadTriggerMarker" node="0>0|2" />
+    <i3dMapping id="unloadTriggerMarker1" node="0>0|5|2" />
+    <i3dMapping id="unloadTriggerMarker2" node="0>0|4|2" />
+    <i3dMapping id="unloadTriggerMarker3" node="0>0|6|1" />
+    <i3dMapping id="teleportNode" node="0>1" />
+    <i3dMapping id="loadingTrigger" node="0>2|0" />
+	<i3dMapping id="loadingTrigger2" node="0>2|5" />
+    <i3dMapping id="aiNodeLoading" node="0>2|1" />
+    <i3dMapping id="loadingTriggerMarker" node="0>2|3" />
+    <i3dMapping id="pipeEffect" node="0>2|4|0" />
+    <i3dMapping id="pipeEffectSmoke" node="0>2|4|1" />
+    <i3dMapping id="playerTrigger" node="0>3|0" />
+    <i3dMapping id="playerTriggerMarker" node="0>3|0|0" />
+    <i3dMapping id="infoTrigger" node="0>4" />
+    <i3dMapping id="realLightsLow" node="0>5|0" />
+    <i3dMapping id="realLightsHigh" node="0>5|1" />
+ 	<i3dMapping id="tubeLight" node="0>5|2" />
+    <i3dMapping id="tubeLight1" node="0>5|3" />
+    <i3dMapping id="tubeLight2" node="0>5|4" />
+    <i3dMapping id="tubeLight3" node="0>5|5" />
+    <i3dMapping id="tubeLight4" node="0>5|6" />
+    <i3dMapping id="tubeLight5" node="0>5|7" />
+    <i3dMapping id="tubeLight6" node="0>5|8" />
+    <i3dMapping id="tubeLight7" node="0>5|9" />
+    <i3dMapping id="tubeLight8" node="0>5|10" />
+    <i3dMapping id="palletSpawner" node="0>6" />
+    <i3dMapping id="spawnSpace1start" node="0>6|0" />
+	<i3dMapping id="spawnSpace2start" node="0>6|1" />
+	<i3dMapping id="spawnSpace3start" node="0>6|2" />
+	<i3dMapping id="spawnSpace4start" node="0>6|3" />
+	<i3dMapping id="spawnSpace5start" node="0>6|4" />
+	<i3dMapping id="spawnSpace6start" node="0>6|5" />
+ 	<i3dMapping id="indoorArea1Start" node="0>8|0" />
+    <i3dMapping id="indoorArea1Width" node="0>8|0|0" />
+    <i3dMapping id="indoorArea1Height" node="0>8|0|1" />
+</i3dMappings>
+
+  
+</placeable>

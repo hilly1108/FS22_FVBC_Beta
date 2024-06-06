@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="$data/maps/mapUS/textures/residentialHouse10_diffuse.png"/>
+    <File fileId="9" filename="$data/maps/mapUS/textures/residentialHouse10_height.png"/>
+    <File fileId="2" filename="$data/maps/mapUS/textures/residentialHouse10_normal.png"/>
+    <File fileId="3" filename="$data/maps/mapUS/textures/residentialHouse10_specular.png"/>
+    <File fileId="5" filename="$data/maps/mapUS/textures/residentialHouse11_mask.png"/>
+    <File fileId="4" filename="$data/shaders/buildingShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="residentialHouse10_mat" materialId="4" customShaderId="4" customShaderVariation="customParallax">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="mMaskMap" fileId="5"/>
+      <Custommap name="mParallaxMap" fileId="9"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="HouseDoor01.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="HouseDoor01" lockedgroup="true" nodeId="8" lodDistance="0 150">
+        <TransformGroup name="LOD0" nodeId="9">
+          <Shape shapeId="1" name="resHouse11Door02" clipDistance="300" nodeId="10" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" rotation="2.50448e-06 0 0" nodeId="11">
+          <Shape shapeId="2" name="resHouse11Door02_LOD" static="true" clipDistance="250" nodeId="12" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>Crushed Limestone Production</name>
+        <functions>
+            <function>$l10n_function_sellingPoint</function>
+        </functions>
+        <image>$data/placeables/lizard/sellingPoints/debrisCrusher/store_debrisCrusher.png</image>
+        <price>50000</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>LIZARD</brand>
+        <species>placeable</species>
+        <category>productionPoints</category>
+        <brush>
+            <type>placeable</type>
+            <category>production</category>
+            <tab>factories</tab>
+        </brush>
+        <vertexBufferMemoryUsage>1080832</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>181504</indexBufferMemoryUsage>
+        <textureMemoryUsage>4194304</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+        <storeIconRendering>
+            <settings cameraXRot="-25" cameraYRot="30" advancedBoundingBox="true"/>
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/debrisCrusherLC/debrisCrusherLC.i3d</filename>
+        <canBeRenamed>true</canBeRenamed>
+                <boughtWithFarmland>false</boughtWithFarmland>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+        </testAreas>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="45" maxEdgeAngle="10" >
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="asphalt"/>
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="asphalt"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas/>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+    </ai>
+
+    <infoTrigger triggerNode="infoTrigger"/>
+
+    <triggerMarkers>
+        <triggerMarker node="unloadTriggerUpperMarker" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
+        <triggerMarker node="0>4|0|0" 	   filename="$data/shared/assets/marker/markerIcons.xml" id="WRENCH" adjustToGround="true" />
+       
+    </triggerMarkers>
+
+    <hotspots>
+        <hotspot type="PRODUCTION_POINT" linkNode="unloadTriggerUpperMarker" teleportNode="teleportNode" />
+    </hotspots>
+	
+	<productionPoint>
+		<productions sharedThroughputCapacity="false"> 
+			<production id="Limestone Crushing" name="Limestone Crushing" cyclesPerHour="100" costsPerActiveHour="2">
+                <inputs>
+                    <input fillType="LIMESTONE" amount="1000" />
+					
+                </inputs>
+                <outputs>
+                    <output fillType="LIMESTONECRUSHED" amount="1000" />
+                   
+                </outputs>
+            </production>          
+          
+            <production id="Lime Production" name="Lime Production" cyclesPerHour="10" costsPerActiveHour="200"><!--INCREASE THIS?-->
+                <inputs>
+                    <input fillType="LIMESTONECRUSHED" amount="1000" />
+					
+                </inputs>
+                <outputs>
+                    <output fillType="LIME" amount="1000" />
+                   
+                </outputs>
+            </production>          
+
+            <production id="Lime Production Direct" name="Lime Production Direct" cyclesPerHour="10" costsPerActiveHour="1000">
+                <inputs>
+                    <input fillType="LIMESTONE" amount="1000" />
+					
+                </inputs>
+                <outputs>
+                    <output fillType="LIME" amount="1000" />
+                   
+                </outputs>
+            </production>  
+
+	</productions>
+
+
+    <animationNodes>
+        <animationNode class="RotationAnimation" node="roll" rotSpeed="-20" rotAxis="1" />
+    </animationNodes>
+
+
+        <sellingStation appearsOnStats="true" node="0>0|7" supportsExtension="true" >
+            <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="LIMESTONE LIMESTONECRUSHED"/>  
+            <unloadTrigger exactFillRootNode="unloadTriggerLower" fillTypes="LIMESTONE LIMESTONECRUSHED" aiNode="unloadTriggerLowerAINode"/>
+            <fillType name="LIMESTONE"                  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+            <fillType name="LIMESTONECRUSHED"           priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+            <sounds>
+                <active template="debrisCrusherWork" linkNode="roll" />
+                <active template="DEFAULT_REFUEL_SOUND" linkNode="unloadTriggerUpper" />
+            </sounds>
+            <effectNodes>
+                <effectNode effectNode="effectSmoke" materialType="unloadingSmoke" />
+            </effectNodes>
+        </sellingStation>
+
+    <loadingStation node="loadingTrigger">
+        <loadTrigger triggerNode="loadingTrigger" fillLitersPerSecond="100" dischargeNode="dischargeNode" fillTypes="LIMESTONECRUSHED LIME" aiNode="aiLoadingNode">
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|2"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|3"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|4"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|5"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectNode="pipeEffect"      materialType="pipe" fadeTime="0.5" controlPoint="4.8 0 0 0"/>
+            <effectNode effectNode="pipeEffectSmoke" materialType="unloadingSmoke" fadeTime="0.5" />        
+            </loadTrigger>
+        <loadTrigger triggerNode="0>3|1|0" fillLitersPerSecond="100" dischargeNode="0>3|1|1" fillTypes="LIMESTONECRUSHED LIME" aiNode="aiLoadingNode">
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|2"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|3"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|6"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|7"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|8"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode  effectNode="0>3|1|2|0"      materialType="pipe" fadeTime="0.5" controlPoint="4.8 0 0 0"/>
+            <effectNode  effectNode="0>3|1|2|1" materialType="unloadingSmoke" fadeTime="0.5" />        
+            </loadTrigger>
+        <loadTrigger triggerNode="0>3|9|4|0" fillLitersPerSecond="100" dischargeNode="0>3|9|4|1" fillTypes="LIME" aiNode="aiLoadingNode">
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|9|0"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|9|1"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|9|2"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode effectClass="ShaderPlaneEffect" effectNode="0>3|9|3"      materialType="pipe"           fadeTime="0.5" maxBending="0" controlPoint="4.8 0 0 0" defaultFillType="LIMESTONECRUSHED" dynamicFillType="true"/>
+            <effectNode  effectNode="0>3|9|4|2|0"      materialType="pipe" fadeTime="1" controlPoint="4.8 0 0 0"/>
+            <effectNode  effectNode="0>3|9|4|2|1" materialType="unloadingSmoke" fadeTime="1" />        
+        </loadTrigger>
+    </loadingStation>
+    
+   <!--     <palletSpawner node="palletSpawner">
+            <spawnPlaces>
+                <spawnPlace startNode="spawnSpace1start" />
+            </spawnPlaces>
+        </palletSpawner>-->
+
+        <storage isExtension="false" fillLevelSyncThreshold="100">            
+			<capacity fillType="LIMESTONECRUSHED"     capacity="25000" />
+            <capacity fillType="LIMESTONE"            capacity="25000" />
+            <capacity fillType="LIME"            capacity="25000" />
+        </storage>
+	<playerTrigger node="0>4|0" />
+	
+	</productionPoint>	
+	
+            
+	<incomePerHour>0</incomePerHour>
+
+   <i3dMappings>
+
+		<!--unloading-->
+		<i3dMapping id="dischargeNode" node="0>3|0|1" />
+		<i3dMapping id="clearArea1Start" node="0>0|0|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|0|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|0|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>0|0|1" />
+        <i3dMapping id="clearArea2Width" node="0>0|0|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>0|0|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>0|1|0" />
+        <i3dMapping id="levelArea1Width" node="0>0|1|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>0|1|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>0|1|1" />
+        <i3dMapping id="levelArea2Width" node="0>0|1|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>0|1|1|1" />
+        <i3dMapping id="testArea1Start" node="0>0|3|0" />
+        <i3dMapping id="testArea1End" node="0>0|3|0|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|4|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|4|0|0" />
+        <i3dMapping id="unloadTriggerUpper" node="0>0|7|0" />
+        <i3dMapping id="unloadTriggerUpperMarker" node="0>0|7|1" />
+        <i3dMapping id="unloadTriggerLower" node="0>0|7|2" />
+        <i3dMapping id="unloadTriggerLowerAINode" node="0>0|7|3" />
+        <i3dMapping id="unloadTriggerLowerMarker" node="0>0|7|4" />
+        <i3dMapping id="teleportNode" node="0>0|8" />
+        <i3dMapping id="roll" node="0>0|9|5" />
+        <i3dMapping id="aiLoadingNode" node="0>3|0|3" />
+        <i3dMapping id="pipeEffect" node="0>3|0|2|0" />
+        <i3dMapping id="pipeEffectSmoke" node="0>3|0|2|1" />
+        <i3dMapping id="effectSmoke" node="0>0|10|0" />
+		<i3dMapping id="loadingTrigger" node="0>3|0|0" />
+        <i3dMapping id="aiNodeLoading" node="0>3|0|3" />
+        <i3dMapping id="infoTrigger" node="0>0|5" />
+
+   <!--      <i3dMapping id="palletSpawner" node="0>4" />
+        <i3dMapping id="spawnSpace1start" node="0>4|0" />
+        <i3dMapping id="spawnSpace1end" node="0>4|0|0" />-->
+    </i3dMappings>
+</placeable>

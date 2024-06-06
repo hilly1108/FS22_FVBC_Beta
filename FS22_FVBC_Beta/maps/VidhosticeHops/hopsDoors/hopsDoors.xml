@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="simplePlaceable" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_construction_category_decoration</name>
+        <image>$data/placeables/mapUS/farmBuildings/farmShed/store_farmShed.png</image>
+        <canBeSold>false</canBeSold>
+        <showInStore>false</showInStore>
+        <price>10</price>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>farmhouses</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>farmhouses</tab>
+        </brush>
+        <vertexBufferMemoryUsage>0</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>0</indexBufferMemoryUsage>
+        <textureMemoryUsage>0</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>VidhosticeHops/hopsDoors/hopsDoors.i3d</filename>
+        
+		
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+    </placement>
+
+
+    <tipOcclusionUpdateAreas>
+    </tipOcclusionUpdateAreas>
+
+    <clearAreas>
+    </clearAreas>
+
+    <leveling>
+        <levelAreas >
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+    </indoorAreas>
+
+    <ai>
+        <updateAreas>
+           
+        </updateAreas>
+    </ai>
+	<animatedObjects>
+	<animatedObject index="hd1">
+		<animation duration="6">
+			<part node="0>0|1"> <!--Left Gate-->
+				<keyFrame time="0.24" rotation="0 0.00020504 -2.4289999" />
+				<keyFrame time="1" rotation="180 -79.27374268 -179.99996948" />
+			</part>
+			<part node="0>0|2"> <!--Right Gate-->
+				<keyFrame time="0.24" rotation="-0.024 -0.0000267 2.70485997" />
+				<keyFrame time="1" rotation="-180 54.98331451 -179.99998474" />
+			</part>
+		</animation>
+		<controls triggerNode="0>0|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+		<sounds>
+			<moving linkNode="0>0|0" template="fenceMetalLoop" />
+			<posEnd linkNode="0>0|0" template="fenceMetalOpen" />
+			<negEnd linkNode="0>0|0" template="fenceMetalClose" />
+		</sounds>
+	</animatedObject>
+    	<animatedObject index="hd2">
+		<animation duration="6">
+			<part node="0>1|1"> <!--Slide-->
+				<keyFrame time="0.24" translation="0 0 0" />
+				<keyFrame time="1" translation="0 0 4.92950869" />
+			</part>
+
+		</animation>
+		<controls triggerNode="0>1|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+		<sounds>
+			<moving linkNode="0>1|0" template="fenceMetalLoop" />
+			<posEnd linkNode="0>1|0" template="fenceMetalOpen" />
+			<negEnd linkNode="0>1|0" template="fenceMetalClose" />
+		</sounds>
+	</animatedObject>
+    	<animatedObject index="hd3">
+		<animation duration="6">
+			<part node="0>2|1"> <!--Slide-->
+				<keyFrame time="0.24" translation="0 0 0" />
+				<keyFrame time="1" translation="0 0 -5.15569448" />
+			</part>
+
+		</animation>
+		<controls triggerNode="0>2|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+		<sounds>
+			<moving linkNode="0>2|0" template="fenceMetalLoop" />
+			<posEnd linkNode="0>2|0" template="fenceMetalOpen" />
+			<negEnd linkNode="0>2|0" template="fenceMetalClose" />
+		</sounds>
+	</animatedObject>
+	</animatedObjects>
+</placeable>

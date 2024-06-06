@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="tedder.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="4" filename="$data/effects/tedder/arrays/sharedTedderArrayLeft.png"/>
+    <File fileId="1" filename="$data/effects/tedder/fillTypes/dryGrass_windrow/dryGrass_windrow_diffuse.png"/>
+    <File fileId="7" filename="$data/effects/tedder/fillTypes/straw/straw_diffuse.png"/>
+    <File fileId="6" filename="$data/effects/tedder/shared/tedder_alpha.png"/>
+    <File fileId="2" filename="$data/effects/tedder/shared/tedder_normal.png"/>
+    <File fileId="3" filename="$data/shaders/motionPathShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="dryGrass_windrow_mat" materialId="6" customShaderId="3" customShaderVariation="subUV_scaleByLife_alphaMap">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="shapeArray" fileId="4"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="subUVelements" value="8 4 1 1"/>
+      <CustomParameter name="sizeScale" value="0.75 3.5 0 0"/>
+    </Material>
+    <Material name="straw_mat" materialId="7" customShaderId="3" customShaderVariation="subUV_scaleByLife_alphaMap">
+      <Texture fileId="7"/>
+      <Normalmap fileId="2"/>
+      <Custommap name="shapeArray" fileId="4"/>
+      <Custommap name="alphaMap" fileId="6"/>
+      <CustomParameter name="subUVelements" value="8 4 1 1"/>
+      <CustomParameter name="sizeScale" value="0.75 3.5 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="tedder.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="tedderEffects_particleMeshes" nodeId="26">
+        <TransformGroup name="tedderEffects_particleMeshes_meshes" nodeId="27">
+          <TransformGroup name="tedderEffects_particleMeshes_nr4_rl28_root" nodeId="28">
+            <Shape shapeId="1" name="tedderEffects_particleMeshes_nr4_rl28_v1" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="tedderEffects_particleMeshes_nr4_rl28_v2" nodeId="30" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="tedderEffects_particleMeshes_nr4_rl28_v3" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="tedderEffects_particleMeshes_nr4_rl28_v4" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="tedderEffects_particleMeshes_nr4_rl28_v5" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="tedderEffects_particleMeshes_nr4_rl28_v6" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="tedderEffects_particleMeshes_nr4_rl28_v7" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="tedderEffects_particleMeshes_nr4_rl28_v8" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="tedderEffects_particleMeshes_nr4_rl28_v9" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="10" name="tedderEffects_particleMeshes_nr4_rl28_v10" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="11" name="tedderEffects_particleMeshes_nr4_rl28_v11" nodeId="39" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="12" name="tedderEffects_particleMeshes_nr4_rl28_v12" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="13" name="tedderEffects_particleMeshes_nr4_rl28_v13" nodeId="41" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="14" name="tedderEffects_particleMeshes_nr4_rl28_v14" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="tedderEffects_particleMeshes_nr4_rl28_v15" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="tedderEffects_particleMeshes_nr4_rl28_v16" nodeId="44" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="tedderEffects_particleMeshes_materials" nodeId="45">
+          <Shape shapeId="17" name="dryGrass" static="true" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="straw" static="true" nodeId="47" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="squarebale240" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="7" filename="$data/objects/squarebales/squarebale240/squarebale240_alpha.png" />
+    <File fileId="2" filename="$data/objects/squarebales/squarebale240/squarebale240_normal.png" />
+    <File fileId="3" filename="$data/objects/squarebales/squarebale240/squarebale240_specular.png" />
+    <File fileId="1" filename="$data/objects/squarebales/squarebale240/squarebaleGrass240_diffuse.png" />
+    <File fileId="6" filename="$data/objects/squarebales/squarebaleWrapDefault_diffuse.png" />
+    <File fileId="5" filename="$data/objects/squarebales/squarebaleWrapDefault_normal.png" />
+    <File fileId="4" filename="$data/shaders/silageBaleShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.5 0.5 0.5 1">
+    </Material>
+    <Material name="squarebaleGrass240_mat" materialId="2" customShaderId="4">
+      <Custommap name="wrapNormalMap" fileId="5"/>
+      <Custommap name="wrapDiffuseMap" fileId="6"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="alpha_mat" materialId="3" customShaderId="4" customShaderVariation="alphaMesh">
+      <Custommap name="wrapNormalMap" fileId="5"/>
+      <Custommap name="wrapDiffuseMap" fileId="6"/>
+      <Custommap name="alphaMap" fileId="7"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2" bumpDepth="0.3"/>
+      <Glossmap fileId="3"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="squarebale240.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="squarebale240" shapeId="1" dynamic="true" compound="true" staticFriction="1.3" dynamicFriction="1.3" density="0.2" collisionMask="16781314" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="attacherTrigger" translation="-8.28536e-09 0 5.35671e-08" visibility="false" shapeId="2" kinematic="true" trigger="true" collisionMask="134217728" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="2"/>
+      <Shape name="squarebale240_vis" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="2" clipDistance="300" nodeId="3">
+        <Shape name="details" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="3" clipDistance="40" nodeId="4"/>
+      </Shape>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>

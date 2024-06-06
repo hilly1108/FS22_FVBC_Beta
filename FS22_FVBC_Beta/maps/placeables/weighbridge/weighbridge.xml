@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<placeable type="weighingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
+    <storeData>
+        <name>$l10n_storeItem_weighingStationSmall</name>
+        <functions>
+            <function>$l10n_function_weighingstation</function>
+        </functions>
+        <image>$data/placeables/lizard/weighingStation/weighingStationSmall/store_weighingStationSmall.png</image>
+        <price>6000</price>
+        <dailyUpkeep>40</dailyUpkeep>
+        <lifetime>1000</lifetime>
+        <rotation>0</rotation>
+        <brand>NONE</brand>
+        <species>placeable</species>
+        <category>silos</category>
+        <brush>
+            <type>placeable</type>
+            <category>buildings</category>
+            <tab>tools</tab>
+        </brush>
+        <vertexBufferMemoryUsage>161024</vertexBufferMemoryUsage>
+        <indexBufferMemoryUsage>24576</indexBufferMemoryUsage>
+        <textureMemoryUsage>3080192</textureMemoryUsage>
+        <instanceVertexBufferMemoryUsage>0</instanceVertexBufferMemoryUsage>
+        <instanceIndexBufferMemoryUsage>0</instanceIndexBufferMemoryUsage>
+
+        <storeIconRendering>
+            <settings cameraYRot="-120" />
+        </storeIconRendering>
+        <audioMemoryUsage>0</audioMemoryUsage>
+    </storeData>
+
+    <base>
+        <filename>maps/placeables/weighbridge/weighbridge.i3d</filename>
+    </base>
+
+    <placement useRandomYRotation="false" useManualYRotation="true" >
+        <testAreas>
+            <testArea startNode="testArea1Start" endNode="testArea1End" />
+            <testArea startNode="testArea2Start" endNode="testArea2End" />
+        </testAreas>
+
+        <sounds>
+            <place template="medImp" />
+        </sounds>
+    </placement>
+
+    <clearAreas>
+        <clearArea startNode="clearArea1Start" widthNode="clearArea1Width" heightNode="clearArea1Height"/>
+        <clearArea startNode="clearArea2Start" widthNode="clearArea2Width" heightNode="clearArea2Height"/>
+    </clearAreas>
+
+    <leveling requireLeveling="true" maxSmoothDistance="10" maxSlope="75" maxEdgeAngle="30">
+        <levelAreas>
+            <levelArea startNode="levelArea1Start" widthNode="levelArea1Width" heightNode="levelArea1Height" groundType="gravel"/>
+            <levelArea startNode="levelArea2Start" widthNode="levelArea2Width" heightNode="levelArea2Height" groundType="gravel"/>
+        </levelAreas>
+    </leveling>
+
+    <indoorAreas>
+        <indoorArea startNode="indoorArea1Start" widthNode="indoorArea1Width" heightNode="indoorArea1Height" />
+    </indoorAreas>
+
+    <tipOcclusionUpdateAreas>
+        <tipOcclusionUpdateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+    </tipOcclusionUpdateAreas>
+
+    <ai>
+        <updateAreas>
+            <updateArea startNode="tipOcclusionUpdateArea1Start" endNode="tipOcclusionUpdateArea1End" />
+        </updateAreas>
+        <splines>
+            <spline node="aiSpline" />
+        </splines>
+    </ai>
+
+    <weighingStation triggerNode="weighingTrigger">
+        <display node="displayNode1" font="DIGIT" mask="00000000.0" alignment="RIGHT" size="0.13" emissiveScale="1" color="0.6 0 0 1" hiddenColor="0.05 0.05 0.05 1"/>
+    </weighingStation>
+    
+
+
+    <i3dMappings>
+        <i3dMapping id="weighingTrigger" node="0>0|0|0" />
+        <i3dMapping id="displayNode1" node="0>0|0|1|0" />
+        <i3dMapping id="clearArea1Start" node="0>0|1|0" />
+        <i3dMapping id="clearArea1Width" node="0>0|1|0|0" />
+        <i3dMapping id="clearArea1Height" node="0>0|1|0|1" />
+        <i3dMapping id="clearArea2Start" node="0>0|1|1" />
+        <i3dMapping id="clearArea2Width" node="0>0|1|1|0" />
+        <i3dMapping id="clearArea2Height" node="0>0|1|1|1" />
+        <i3dMapping id="levelArea1Start" node="0>0|2|0" />
+        <i3dMapping id="levelArea1Width" node="0>0|2|0|0" />
+        <i3dMapping id="levelArea1Height" node="0>0|2|0|1" />
+        <i3dMapping id="levelArea2Start" node="0>0|2|1" />
+        <i3dMapping id="levelArea2Width" node="0>0|2|1|0" />
+        <i3dMapping id="levelArea2Height" node="0>0|2|1|1" />
+        <i3dMapping id="indoorArea1Start" node="0>0|3|0" />
+        <i3dMapping id="indoorArea1Width" node="0>0|3|0|0" />
+        <i3dMapping id="indoorArea1Height" node="0>0|3|0|1" />
+        <i3dMapping id="testArea1Start" node="0>0|4|0" />
+        <i3dMapping id="testArea1End" node="0>0|4|0|0" />
+        <i3dMapping id="testArea2Start" node="0>0|4|1" />
+        <i3dMapping id="testArea2End" node="0>0|4|1|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1Start" node="0>0|5|0" />
+        <i3dMapping id="tipOcclusionUpdateArea1End" node="0>0|5|0|0" />
+        <i3dMapping id="aiSpline" node="0>0|6|0" />
+
+        
+        
+    </i3dMappings>
+</placeable>

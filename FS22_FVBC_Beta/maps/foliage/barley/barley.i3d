@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="barley.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="30" filename="$data/foliage/barley/barleyStage01LOD1_alpha.png"/>
+    <File fileId="28" filename="$data/foliage/barley/barleyStage01LOD1_normal.png"/>
+    <File fileId="6" filename="$data/foliage/barley/barleyStage01_alpha.png"/>
+    <File fileId="3" filename="$data/foliage/barley/barleyStage01_fmask.png"/>
+    <File fileId="2" filename="$data/foliage/barley/barleyStage01_normal.png"/>
+    <File fileId="34" filename="$data/foliage/barley/barleyStage02LOD1_alpha.png"/>
+    <File fileId="32" filename="$data/foliage/barley/barleyStage02LOD1_normal.png"/>
+    <File fileId="10" filename="$data/foliage/barley/barleyStage02_alpha.png"/>
+    <File fileId="9" filename="$data/foliage/barley/barleyStage02_fmask.png"/>
+    <File fileId="8" filename="$data/foliage/barley/barleyStage02_normal.png"/>
+    <File fileId="38" filename="$data/foliage/barley/barleyStage03LOD1_alpha.png"/>
+    <File fileId="36" filename="$data/foliage/barley/barleyStage03LOD1_normal.png"/>
+    <File fileId="14" filename="$data/foliage/barley/barleyStage03_alpha.png"/>
+    <File fileId="13" filename="$data/foliage/barley/barleyStage03_fmask.png"/>
+    <File fileId="12" filename="$data/foliage/barley/barleyStage03_normal.png"/>
+    <File fileId="42" filename="$data/foliage/barley/barleyStage04LOD1_alpha.png"/>
+    <File fileId="40" filename="$data/foliage/barley/barleyStage04LOD1_normal.png"/>
+    <File fileId="18" filename="$data/foliage/barley/barleyStage04_alpha.png"/>
+    <File fileId="17" filename="$data/foliage/barley/barleyStage04_fmask.png"/>
+    <File fileId="16" filename="$data/foliage/barley/barleyStage04_normal.png"/>
+    <File fileId="46" filename="$data/foliage/barley/barleyStage05LOD1_alpha.png"/>
+    <File fileId="43" filename="$data/foliage/barley/barleyStage05LOD1_diffuse.png"/>
+    <File fileId="44" filename="$data/foliage/barley/barleyStage05LOD1_normal.png"/>
+    <File fileId="22" filename="$data/foliage/barley/barleyStage05_alpha.png"/>
+    <File fileId="19" filename="$data/foliage/barley/barleyStage05_diffuse.png"/>
+    <File fileId="21" filename="$data/foliage/barley/barleyStage05_fmask.png"/>
+    <File fileId="20" filename="$data/foliage/barley/barleyStage05_normal.png"/>
+    <File fileId="50" filename="$data/foliage/wheat/wheatStage06LOD1_alpha.png"/>
+    <File fileId="48" filename="$data/foliage/wheat/wheatStage06LOD1_normal.png"/>
+    <File fileId="26" filename="$data/foliage/wheat/wheatStage06_alpha.png"/>
+    <File fileId="25" filename="$data/foliage/wheat/wheatStage06_fmask.png"/>
+    <File fileId="24" filename="$data/foliage/wheat/wheatStage06_normal.png"/>
+    <File fileId="4" filename="$data/shaders/fruitGrowthFoliageShader.xml"/>
+    <File fileId="27" filename="barleyStage01LOD1_diffuse.png"/>
+    <File fileId="1" filename="barleyStage01_diffuse.png"/>
+    <File fileId="31" filename="barleyStage02LOD1_diffuse.png"/>
+    <File fileId="7" filename="barleyStage02_diffuse.png"/>
+    <File fileId="35" filename="barleyStage03LOD1_diffuse.png"/>
+    <File fileId="11" filename="barleyStage03_diffuse.png"/>
+    <File fileId="39" filename="barleyStage04LOD1_diffuse.png"/>
+    <File fileId="15" filename="barleyStage04_diffuse.png"/>
+    <File fileId="47" filename="barleyStage06LOD1_diffuse.png"/>
+    <File fileId="23" filename="barleyStage06_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="barleyStage01_mat" materialId="89" customShaderId="4">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+      <Glossmap fileId="3"/>
+      <Custommap name="alphaMap" fileId="6"/>
+    </Material>
+    <Material name="barleyStage01LOD1_mat" materialId="90" specularColor="0.14902 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="27"/>
+      <Normalmap fileId="28"/>
+      <Custommap name="alphaMap" fileId="30"/>
+      <CustomParameter name="snowScale" value="0.52 1 0 4"/>
+    </Material>
+    <Material name="barleyStage02_mat" materialId="91" customShaderId="4">
+      <Texture fileId="7"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+      <Custommap name="alphaMap" fileId="10"/>
+    </Material>
+    <Material name="barleyStage02LOD1_mat" materialId="92" specularColor="0.129412 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Custommap name="alphaMap" fileId="34"/>
+      <CustomParameter name="snowScale" value="0.52 1 0 4"/>
+    </Material>
+    <Material name="barleyStage03_mat" materialId="93" customShaderId="4">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <Custommap name="alphaMap" fileId="14"/>
+    </Material>
+    <Material name="barleyStage03LOD1_mat" materialId="94" specularColor="0.156863 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Custommap name="alphaMap" fileId="38"/>
+      <CustomParameter name="snowScale" value="0.48 1 0 4"/>
+    </Material>
+    <Material name="barleyStage04_mat" materialId="95" customShaderId="4">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+      <Custommap name="alphaMap" fileId="18"/>
+    </Material>
+    <Material name="barleyStage04LOD1_mat" materialId="96" specularColor="0.0941177 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="39"/>
+      <Normalmap fileId="40"/>
+      <Custommap name="alphaMap" fileId="42"/>
+      <CustomParameter name="snowScale" value="0.48 1 0 4"/>
+    </Material>
+    <Material name="barleyStage05_mat" materialId="97" customShaderId="4">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+      <Custommap name="alphaMap" fileId="22"/>
+    </Material>
+    <Material name="barleyStage05LOD1_mat" materialId="98" specularColor="0.101961 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="43"/>
+      <Normalmap fileId="44"/>
+      <Custommap name="alphaMap" fileId="46"/>
+      <CustomParameter name="snowScale" value="0.45 1 0 4"/>
+    </Material>
+    <Material name="barleyStage06_mat" materialId="99" customShaderId="4">
+      <Texture fileId="23"/>
+      <Normalmap fileId="24"/>
+      <Glossmap fileId="25"/>
+      <Custommap name="alphaMap" fileId="26"/>
+      <CustomParameter name="snowScale" value="0.3 0 0 0"/>
+    </Material>
+    <Material name="barleyStage06LOD1_mat" materialId="100" specularColor="0.0627451 1 0" customShaderId="4" customShaderVariation="BILLBOARD">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Custommap name="alphaMap" fileId="50"/>
+      <CustomParameter name="snowScale" value="0.22 1 0 4"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="barley.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="barley" static="true" nodeId="114">
+        <TransformGroup name="LOD0" static="true" nodeId="115">
+          <Shape shapeId="1" name="greenSmall" clipDistance="500" nodeId="116" materialIds="89" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="greenMiddle" clipDistance="500" nodeId="117" materialIds="91" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="greenBig" clipDistance="500" nodeId="118" materialIds="93" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="4" name="harvestReady" clipDistance="500" nodeId="119" materialIds="95" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="5" name="dead" clipDistance="500" nodeId="120" materialIds="97" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="6" name="cut" clipDistance="500" nodeId="121" materialIds="99" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="LOD1" nodeId="122">
+          <Shape shapeId="7" name="greenSmall" clipDistance="500" nodeId="123" materialIds="90" receiveShadows="true"/>
+          <Shape shapeId="8" name="greenMiddle" clipDistance="500" nodeId="124" materialIds="92" receiveShadows="true"/>
+          <Shape shapeId="9" name="greenBig" clipDistance="500" nodeId="125" materialIds="94" receiveShadows="true"/>
+          <Shape shapeId="10" name="harvestReady" clipDistance="500" nodeId="126" materialIds="96" receiveShadows="true"/>
+          <Shape shapeId="11" name="dead" clipDistance="500" nodeId="127" materialIds="98" receiveShadows="true"/>
+          <Shape shapeId="12" name="cut" clipDistance="500" nodeId="128" materialIds="100" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

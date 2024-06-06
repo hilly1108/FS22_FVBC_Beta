@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="whHedgePallet.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="15" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_diffuse.png"/>
+    <File fileId="16" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_normal.png"/>
+    <File fileId="17" filename="$data/maps/mapAlpine/textures/props/plasticBoxes01_specular.png"/>
+    <File fileId="2" filename="$data/maps/textures/shared/props/euroPallet01_diffuse.png"/>
+    <File fileId="3" filename="$data/maps/textures/shared/props/euroPallet01_normal.png"/>
+    <File fileId="4" filename="$data/maps/textures/shared/props/euroPallet01_specular.png"/>
+    <File fileId="13" filename="$data/maps/textures/shared/props/townPlants_diffuse.png"/>
+    <File fileId="14" filename="$data/maps/textures/shared/props/townPlants_normal.png"/>
+    <File fileId="9" filename="$data/maps/trees/cypress/cypressBranch_diffuse.png"/>
+    <File fileId="10" filename="$data/maps/trees/cypress/cypressBranch_normal.png"/>
+    <File fileId="11" filename="$data/maps/trees/cypress/cypressBranch_specular.png"/>
+    <File fileId="5" filename="$data/maps/trees/cypress/cypressTrunk_diffuse.png"/>
+    <File fileId="6" filename="$data/maps/trees/cypress/cypressTrunk_normal.png"/>
+    <File fileId="12" filename="$data/shaders/treeBranchShader.xml"/>
+    <File fileId="7" filename="$data/shaders/treeTrunkShader.xml"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="cypressBranch_mat" materialId="5" customShaderId="12">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="cypressTrunk_mat" materialId="6" customShaderId="7">
+      <Texture fileId="5"/>
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="euroPallet01_mat" materialId="7">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="8" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="plasticBoxes01_mat" materialId="9">
+      <Texture fileId="15"/>
+      <Normalmap fileId="16"/>
+      <Glossmap fileId="17"/>
+    </Material>
+    <Material name="townPlants_mat" materialId="10">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14" bumpDepth="0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="whHedgePallet.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="WhHedgePallet" dynamic="true" compound="true" collisionMask="2109442" staticFriction="1" dynamicFriction="1" density="0.0001" clipDistance="250" nodeId="20" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <Shape shapeId="2" name="pallet_vis" clipDistance="100" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="22" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="dischargeNode" nodeId="23"/>
+          <TransformGroup name="collisions" clipDistance="10" nodeId="24">
+            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="25" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="26" materialIds="8" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="content" rotation="0 90 0" nodeId="27">
+            <Shape shapeId="5" name="hedge" translation="-0.159412 0.300454 0.430372" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="28" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="29" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="30" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="0.213582 0.300454 0.431435" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="33" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="0.213582 0.300454 0.134462" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="35" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="36" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="0.213582 0.300454 -0.164684" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="38" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="39" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="0.213582 0.300454 -0.434645" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="41" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="42" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="-0.159412 0.300454 -0.433219" rotation="-0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="44" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="45" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="-0.159412 0.300454 -0.147647" rotation="-0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="48" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <Shape shapeId="5" name="hedge" translation="-0.159412 0.300454 0.137703" rotation="0 -90 0" scale="0.5 0.5 0.5" clipDistance="500" nodeId="49" materialIds="6" castsShadows="true" receiveShadows="true" splitType="13" splitUvs="0 0 0.5 0.125 1.15">
+              <Shape shapeId="6" name="LOD0Attachments" clipDistance="500" nodeId="50" materialIds="5" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="7" name="townPlant01_vis" translation="0.00663961 -0.251176 0.0582706" scale="1.77707 0.738525 2.21932" clipDistance="40" nodeId="51" materialIds="10" castsShadows="true" receiveShadows="true"/>
+              <Shape shapeId="8" name="plasticBoxes01Vis" translation="-0.275495 -0.290979 -0.317882" rotation="3.74169e-06 90 0" scale="2.5289 0.73189 2.92254" clipDistance="40" nodeId="52" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </Shape>
+      </Shape>
+  </Scene>
+
+</i3D>

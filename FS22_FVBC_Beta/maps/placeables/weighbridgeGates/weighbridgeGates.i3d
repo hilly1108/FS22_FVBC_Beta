@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="weighbridgeGates.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="12" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/shared/assets/assetLibraryDecals_diffuse.dds"/>
+    <File fileId="10" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
+    <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_vmask.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="zavora_decal" materialId="6" customShaderId="12">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="zavora_mat" materialId="7" diffuseColor="0.156863 0.239216 0.27451 1" specularColor="0.494118 1 0" customShaderId="5" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 6"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="weighbridgeGates.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="weighbridgeGates" clipDistance="300" nodeId="13">
+        <TransformGroup name="gateVis" translation="0 0 -2.19" nodeId="14">
+          <Shape shapeId="1" name="playerTrigger" static="true" trigger="true" collisionMask="1048576" nodeId="15" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="zavora" translation="-1.949 1.21356 -21.0321" rotation="-180 -5.10745e-05 85.5346" kinematic="true" clipDistance="300" nodeId="16" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="2" name="zavora" translation="2.586 1.19231 0.102733" rotation="4.20621e-06 7.35487e-07 180" kinematic="true" clipDistance="300" nodeId="17" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="sloupek" translation="2.567 0.305451 -0.0956067" rotation="-6.83019e-06 0 0" static="true" clipDistance="300" nodeId="18" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="sloupek-decal" rotation="-6.83019e-06 -0 0" clipDistance="100" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="3" name="sloupek" translation="-1.946 0.309503 -21.2286" rotation="-6.83019e-06 -0 0" static="true" clipDistance="300" nodeId="20" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="4" name="sloupek-decal" rotation="-6.83019e-06 -0 0" clipDistance="100" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

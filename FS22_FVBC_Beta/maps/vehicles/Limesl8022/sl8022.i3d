@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="sl8022" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml" />
+    <File fileId="11" filename="$data/shared/assets/assetLibraryDecals_normal.png" />
+    <File fileId="1" filename="$data/shared/assets/wheelChocks/wheelChock02.i3d" />
+    <File fileId="2" filename="$data/shared/assets/wheelChocks/wheelChockSupport01.i3d" />
+    <File fileId="6" filename="$data/shared/default_normal.png" />
+    <File fileId="13" filename="$data/vehicles/grimme/rh2460/rh2460Belt_vmask.png" />
+    <File fileId="12" filename="$data/vehicles/grimme/sl8022/sl8022Belt1_normal.png" />
+    <File fileId="3" filename="$data/vehicles/grimme/sl8022/sl8022Belt_normal.png" />
+    <File fileId="4" filename="$data/vehicles/grimme/sl8022/sl8022Belt_vmask.png" />
+    <File fileId="10" filename="$data/vehicles/grimme/sl8022/sl8022Decal_diffuse.png" />
+    <File fileId="7" filename="$data/vehicles/grimme/sl8022/sl8022Hoses_vmask.png" />
+    <File fileId="8" filename="$data/vehicles/grimme/sl8022/sl8022_normal.png" />
+    <File fileId="9" filename="$data/vehicles/grimme/sl8022/sl8022_vmask.png" />
+  </Files>
+
+  <Materials>
+    <Material name="lambert1" materialId="1" diffuseColor="0.6631 0.6631 0.6631 1">
+    </Material>
+    <Material name="sl8022Belt_mat" materialId="4" diffuseColor="0.344156 0.344156 0.344156 1" customShaderId="5" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat0" value="0.012 0.012 0.012 5"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="sl8022Hoses_mat" materialId="6" diffuseColor="0.5 0.5 0.5 1" customShaderId="5" customShaderVariation="secondUV_colorMask">
+      <CustomParameter name="colorMat0" value="0.012 0.012 0.012 5"/>
+      <Normalmap fileId="6"/>
+      <Glossmap fileId="7"/>
+    </Material>
+    <Material name="sl8022_mat" materialId="2" diffuseColor="0.5 0.5 0.5 1" customShaderId="5" customShaderVariation="colorMask">
+      <CustomParameter name="colorMat3" value="1.0000 0.6524 0.1011 1"/>
+      <CustomParameter name="colorMat2" value="1 1 1 0"/>
+      <CustomParameter name="colorMat0" value="0.4936 0.0008 0.0020 0"/>
+      <CustomParameter name="colorMat4" value="0.7083 0.0156 0.0214 1"/>
+      <Normalmap fileId="8"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="sl8022Decal_mat" materialId="3" alphaBlending="true" customShaderId="5" customShaderVariation="Decal_normalThirdUV">
+      <Texture fileId="10"/>
+      <Normalmap fileId="11"/>
+      <Glossmap fileId="9"/>
+    </Material>
+    <Material name="default_mat" materialId="5" diffuseColor="0.5 0.5 0.5 1" specularColor="0.5 0.5 0.5">
+      <Normalmap fileId="6"/>
+    </Material>
+    <Material name="sl8022Belt2_mat" materialId="7" diffuseColor="0.344156 0.344156 0.344156 1" customShaderId="5" customShaderVariation="uvScroll_colorMask">
+      <CustomParameter name="colorMat0" value="0.012 0.012 0.012 5"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="sl8022.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="sl8022_main_component1" shapeId="1" dynamic="true" compound="true" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" clipDistance="300" nodeId="1">
+      <Shape name="sl8022_vis" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="2" skinBindNodeIds="2 7 13 14 15 25 39 40 68 69 70 71 72" clipDistance="300" nodeId="2">
+        <TransformGroup name="attachable" nodeId="3">
+          <TransformGroup name="attacherJoint" translation="5.40161e-05 0.64512 4.82909" rotation="0 90 0" nodeId="4"/>
+          <TransformGroup name="attacherJointConveyor" translation="-0.000932007 1.85575 4.2148" rotation="0 -90 0" nodeId="5"/>
+        </TransformGroup>
+        <TransformGroup name="wheels" nodeId="6">
+          <TransformGroup name="wheelMountLeft" translation="0.969099 0.811121 -0.030289" collision="false" clipDistance="300" nodeId="7">
+            <TransformGroup name="wheelLeft" translation="0.27394 -0.326707 1.50299e-05" scale="0.6 1 1" collision="false" clipDistance="300" nodeId="8"/>
+            <TransformGroup name="hydraulicSteeringRef" translation="0.0448744 -0.500247 -0.194859" rotation="0 90 0" nodeId="9"/>
+            <TransformGroup name="wheelLeftRepr" translation="0.274 -0.326707 1.50299e-05" nodeId="10"/>
+            <Shape name="sl8022_decalSMALL1" translation="0.29905 -0.683742 0.000330048" shapeId="3" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="11"/>
+            <TransformGroup name="wheelMountLeftJoint" nodeId="12"/>
+          </TransformGroup>
+          <TransformGroup name="wheelMountRight" translation="-0.969099 0.811121 -0.030289" collision="false" clipDistance="300" nodeId="13">
+            <TransformGroup name="hydraulicSteering" translation="-0.045 -0.500247 -0.195" rotation="0 90 0" collision="false" clipDistance="300" nodeId="14">
+              <TransformGroup name="hydraulicSteeringPunch" translation="1.29754e-13 0 2.02795" collision="false" clipDistance="300" nodeId="15"/>
+              <Shape name="sl8022_decalSMALL3" translation="0.0775978 0.00131866 1.27781" rotation="0 -90 0" shapeId="4" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="16"/>
+              <TransformGroup name="hydraulicSteeringJoint" rotation="0 -90 0" nodeId="17"/>
+            </TransformGroup>
+            <TransformGroup name="reprNodeRot" translation="-0.242901 -0.326707 1.50299e-05" nodeId="18">
+              <TransformGroup name="reprNode" nodeId="19"/>
+            </TransformGroup>
+            <TransformGroup name="wheelRightRot1" translation="-0.273901 -0.326707 1.50299e-05" nodeId="20">
+              <TransformGroup name="wheelRightRot2" nodeId="21">
+                <TransformGroup name="wheelRight" scale="0.6 1 1" collision="false" clipDistance="300" nodeId="22"/>
+              </TransformGroup>
+            </TransformGroup>
+            <Shape name="sl8022_decalSMALL2" translation="-0.29905 -0.683742 0.000330048" shapeId="5" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="23"/>
+            <TransformGroup name="wheelMountRightJoint" nodeId="24"/>
+          </TransformGroup>
+          <TransformGroup name="wheelFrontRot" translation="-0.00102203 0.538125 4.37819" collision="false" clipDistance="300" nodeId="25">
+            <TransformGroup name="wheelFront" translation="-0.127222 -0.296478 -0.148752" nodeId="26"/>
+            <TransformGroup name="wheelFront1" translation="0.127 -0.296478 -0.148752" nodeId="27"/>
+            <TransformGroup name="visuals" nodeId="28">
+              <Shape name="sl8022_decalSMALL7" translation="0.00102203 -0.255027 -0.0675237" shapeId="6" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="29"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="rotCenterNode" translation="0 0.484414 -0.030274" nodeId="30"/>
+        </TransformGroup>
+        <TransformGroup name="fillAutoAimTargetNode" translation="0 1.61152 4.20592" nodeId="31"/>
+        <TransformGroup name="cameraRot" translation="-1.13687e-15 0.743375 -1.6817" rotation="-23.7399 180 0" nodeId="32">
+          <Camera name="camera" translation="1.61783e-16 0 10" scale="1 1 1" fov="54.4316" nearClip="0.1" farClip="10000" nodeId="33"/>
+        </TransformGroup>
+        <TransformGroup name="exitPoint" translation="2.32743 0 2.48654" nodeId="34"/>
+        <TransformGroup name="cameraRaycastNode1" translation="0 0 -0.330191" nodeId="35"/>
+        <TransformGroup name="dischargeNodeRotRefFrame" rotation="-90 0 0" nodeId="36"/>
+        <Shape name="exactFillRootNode" translation="0 1.11733 4.10472" visibility="false" shapeId="7" kinematic="true" compound="true" collisionMask="1073741824" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="37"/>
+        <TransformGroup name="movingParts" nodeId="38">
+          <TransformGroup name="bottomArm" translation="-1.52588e-07 0.718503 3.14728" collision="false" clipDistance="300" nodeId="39">
+            <TransformGroup name="topArm" translation="0.0942885 0.0775937 -5.93757" collision="false" clipDistance="300" nodeId="40">
+              <TransformGroup name="dischargeNodeRot" translation="-0.0947812 -0.0878174 -5.64113" rotation="-90 0 0" nodeId="41">
+                <TransformGroup name="dischargeNode" translation="0 -1.57772e-32 0" rotation="96.542 0 0" nodeId="42"/>
+              </TransformGroup>
+              <Shape name="beltTop" translation="-0.0941286 -0.101079 0.398546" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="43">
+                <TransformGroup name="effects" translation="-0.000159779 -0.684223 5.5521" nodeId="44">
+                  <Shape name="pipeUnloadEffect" translation="-0.000184023 0.708374 -11.3481" rotation="90 180 0" scale="1 1 1" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="100" nodeId="45"/>
+                  <Shape name="pipeSmokeEffect" translation="0.0167564 -3.24966 -11.645" rotation="10.9322 90.7939 10.4812" scale="1 1 1" visibility="false" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="100" nodeId="46"/>
+                  <Shape name="effectBeltTop" translation="-0.000184021 0.824229 -6.1501" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="47"/>
+                  <Shape name="effectBeltTop_target" translation="-0.000184021 0.824229 -6.1501" visibility="false" shapeId="12" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" clipDistance="300" nodeId="48"/>
+                </TransformGroup>
+              </Shape>
+              <TransformGroup name="cameraRaycastNode3" translation="-0.0947812 -0.0878174 -5.64113" rotation="-90 0 0" nodeId="49"/>
+              <TransformGroup name="visuals" nodeId="50">
+                <Shape name="sl8022_hoses1" translation="-0.0942883 -0.796097 2.79029" shapeId="13" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="51"/>
+                <Shape name="sl8022_decalSMALL4" translation="-0.0942883 0.000853729 -1.21848" shapeId="14" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="52"/>
+              </TransformGroup>
+              <Shape name="colPart" translation="-0.10143 -2.00331e-16 -0.279049" visibility="false" shapeId="15" compoundChild="true" density="0.001" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="53"/>
+            </TransformGroup>
+            <TransformGroup name="hydraulicMainLeftRef" translation="0.461133 0.818486 -3.59979" rotation="122.231 -25.2469 180" scale="1 1 1" nodeId="54"/>
+            <TransformGroup name="hydraulicMainRightRef" translation="-0.461133 0.818486 -3.59979" rotation="122.231 25.2469 180" scale="1 1 1" nodeId="55"/>
+            <TransformGroup name="cameraRaycastNode2" translation="1.52588e-07 -0.224665 -10.6263" nodeId="56"/>
+            <TransformGroup name="conveyorProtectionRef" translation="1.52588e-07 0.443721 -0.771192" rotation="172.593 9.15571e-06 180" scale="1 1 1" nodeId="57"/>
+            <Shape name="beltBottom" translation="0.000159931 -0.0234849 -5.01726" shapeId="16" castsShadows="true" receiveShadows="true" materialIds="4" clipDistance="300" nodeId="58">
+              <TransformGroup name="effects" translation="-0.000159779 -0.684223 5.03034" nodeId="59">
+                <Shape name="effectBeltBottom" translation="-0.00268701 0.915975 -5.0536" visibility="false" shapeId="17" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="60"/>
+                <Shape name="effectBeltBottom_target" translation="-0.00268701 0.915975 -5.0536" visibility="false" shapeId="18" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" clipDistance="300" nodeId="61"/>
+              </TransformGroup>
+            </Shape>
+            <TransformGroup name="visuals" nodeId="62">
+              <Shape name="sl8022_hoses2" translation="1.52588e-07 -0.718503 -3.14728" shapeId="19" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="63"/>
+              <Shape name="sl8022_decalBIG1" translation="1.52588e-07 -0.02457 -5.29458" shapeId="20" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="64"/>
+              <Shape name="sl8022_decalSMALL5" translation="1.52588e-07 0.231457 -5.62762" shapeId="21" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="65"/>
+            </TransformGroup>
+            <Shape name="colPart" visibility="false" shapeId="22" compoundChild="true" density="0.001" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="66"/>
+            <TransformGroup name="bottomArmJoint" nodeId="67"/>
+          </TransformGroup>
+          <TransformGroup name="hydraulicMainLeft" translation="0.785657 0.3302 0.235673" rotation="122.231 -25.2469 180" scale="1 1 1" collision="false" clipDistance="300" nodeId="68">
+            <TransformGroup name="hydraulicMainLeftPunch" translation="-8.34532e-14 5.84777e-14 1.42662" collision="false" clipDistance="300" nodeId="69"/>
+          </TransformGroup>
+          <TransformGroup name="hydraulicMainRight" translation="-0.785657 0.3302 0.235673" rotation="122.231 25.2469 180" scale="1 1 1" collision="false" clipDistance="300" nodeId="70">
+            <TransformGroup name="hydraulicMainRightPunch" translation="8.35598e-14 5.85487e-14 1.42662" collision="false" clipDistance="300" nodeId="71"/>
+          </TransformGroup>
+          <TransformGroup name="conveyorProtection" translation="-1.52588e-07 1.0376 3.33467" rotation="172.593 9.15571e-06 180" scale="1 1 1" collision="false" clipDistance="300" nodeId="72">
+            <Shape name="sl8022_decalSMALL6" translation="-7.54115e-08 -0.0149233 0.485089" rotation="172.593 -9.0793e-06 -180" scale="1 1 1" shapeId="23" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="73"/>
+          </TransformGroup>
+          <Shape name="beltFront" shapeId="24" castsShadows="true" receiveShadows="true" materialIds="7" clipDistance="300" nodeId="74"/>
+        </TransformGroup>
+        <TransformGroup name="effects" translation="0 0 3.15731" nodeId="75">
+          <Shape name="effectBeltFront" visibility="false" shapeId="25" castsShadows="true" receiveShadows="true" materialIds="5" clipDistance="300" nodeId="76"/>
+          <Shape name="effectBeltFront_target" visibility="false" shapeId="26" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="5" clipDistance="300" nodeId="77"/>
+        </TransformGroup>
+        <TransformGroup name="references" nodeId="78">
+          <TransformGroup name="wheelChock03" translation="-1.06458 0.721589 0.849617" rotation="90 -90 0" scale="0.950015 0.951434 1" referenceId="1" static="true" nodeId="79"/>
+          <TransformGroup name="wheelChock04" translation="-1.06458 0.721589 1.07787" rotation="90 -90 0" scale="0.950015 0.951434 1" referenceId="1" static="true" nodeId="80"/>
+          <TransformGroup name="chockSupport01" translation="-1.06458 0.544137 0.850148" rotation="90 -90 0" referenceId="2" nodeId="81"/>
+          <TransformGroup name="chockSupport02" translation="-1.06458 0.544137 1.0784" rotation="90 -90 0" referenceId="2" nodeId="82"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" nodeId="83">
+          <Shape name="sl8022_hoses" shapeId="27" castsShadows="true" receiveShadows="true" materialIds="6" clipDistance="300" nodeId="84"/>
+          <Shape name="sl8022_decalBIG" translation="1.066 0.536042 0.981771" shapeId="28" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="50" nodeId="85"/>
+          <Shape name="sl8022_decalSMALL" shapeId="29" castsShadows="true" receiveShadows="true" decalLayer="1" materialIds="3" clipDistance="30" nodeId="86"/>
+        </TransformGroup>
+        <TransformGroup name="rootJoint" nodeId="87"/>
+      </Shape>
+      <TransformGroup name="skinnedMeshs" nodeId="88">
+        <Shape name="hoses" shapeId="30" castsShadows="true" receiveShadows="true" materialIds="6" skinBindNodeIds="12 17 24 67 87" clipDistance="300" nodeId="89"/>
+      </TransformGroup>
+      <TransformGroup name="collisions" nodeId="90">
+        <Shape name="colPart" translation="-1.13687e-15 1.64265 3.2547" visibility="false" shapeId="31" compoundChild="true" density="0.001" collisionMask="2109442" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="1" nodeId="91"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="12">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="17">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="24">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="shaderParameter" type="string" value="1.0 1.0 14.0 14.0"/>
+    </UserAttribute>
+    <UserAttribute nodeId="67">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="79">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock02"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="80">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChock02.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="wheelChock02"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="81">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="82">
+      <Attribute name="i3d_referencedLightPath" type="string" value="bin/data/shared/assets/wheelChocks/wheelChockSupport01.ma"/>
+      <Attribute name="i3d_refModel" type="string" value="chockSupport"/>
+      <Attribute name="i3d_refBrand" type="string" value="wheelChocks"/>
+      <Attribute name="i3d_locatorPrefix" type="string" value="locatorRef_"/>
+    </UserAttribute>
+    <UserAttribute nodeId="87">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+  </UserAttributes>
+</i3D>

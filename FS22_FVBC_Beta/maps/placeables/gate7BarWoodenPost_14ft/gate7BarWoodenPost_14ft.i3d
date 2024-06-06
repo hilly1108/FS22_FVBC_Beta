@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+  </Asset>
+
+  <Files>
+    <File fileId="14" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="10" filename="$data/shared/default_specular.png"/>
+    <File fileId="3" filename="textures/gate7bar_normal.dds"/>
+    <File fileId="4" filename="textures/gate7bar_specular.dds"/>
+    <File fileId="11" filename="textures/woodenGatePost_diffuse.dds"/>
+    <File fileId="12" filename="textures/woodenGatePost_normal.dds"/>
+    <File fileId="13" filename="textures/woodenGatePost_specular.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="galvMetalGate_mat" materialId="4" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="RDT" value="0 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="i3d_default_material" materialId="5" diffuseColor="0.8 0.8 0.8 1" specularColor="0.6 1 0">
+    </Material>
+    <Material name="scratchedMetalGate_mat" materialId="6" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="10"/>
+      <CustomParameter name="RDT" value="0 1 0 0"/>
+      <CustomParameter name="dirtColor" value="0.2 0.14 0.08 0"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 1"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 1"/>
+      <CustomParameter name="colorMat2" value="0.1 1 0.1 1"/>
+      <CustomParameter name="colorMat3" value="0.1 0.1 1 1"/>
+      <CustomParameter name="colorMat4" value="1 1 0.1 1"/>
+      <CustomParameter name="colorMat5" value="0.05 0.05 0.05 1"/>
+      <CustomParameter name="colorMat6" value="1 0.1 1 1"/>
+      <CustomParameter name="colorMat7" value="0.1 1 1 1"/>
+    </Material>
+    <Material name="woodenGatePost_mat" materialId="7" customShaderId="14">
+      <Texture fileId="11"/>
+      <Normalmap fileId="12"/>
+      <Glossmap fileId="13"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.12 0 0"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0 0"/>
+      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
+      <CustomParameter name="snowScale" value="1 0 0 0"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="gate7BarWoodenPost_14ft.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="gate7BarWoodenPost_14ft" clipDistance="300" nodeId="20">
+        <TransformGroup name="gateVis" translation="0 0 -2.19" nodeId="21">
+          <Shape shapeId="1" name="playerTrigger" translation="0 0.98 4.33" kinematic="true" trigger="true" collisionMask="1048576" nodeId="22" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="2" name="gateVis" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="hingeBolts" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="gateCaps" translation="1.39698e-09 1.48503 0.08" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="5" name="gate14ftCOL" translation="1.49012e-08 0.8 2.19" kinematic="true" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <TransformGroup name="animationHelper" translation="0 1 4.23" nodeId="27">
+            <Shape shapeId="6" name="gateHandle" translation="4.44089e-16 0 0" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="7" name="springCoil" translation="-4.0569e-10 0 -0.09" clipDistance="5" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <Shape shapeId="8" name="woodenGatePost" translation="5.86086e-08 0 -2.33" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="9" name="metalHingePins" translation="0 0 0.05" nodeId="31" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="10" name="mainCOL" static="true" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <Shape shapeId="11" name="woodenGatePostLatch" translation="-5.49684e-07 0 2.28" nodeId="33" materialIds="7" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="10" name="mainCOL" static="true" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+      </TransformGroup>
+  </Scene>
+<!--
+  <UserAttributes>
+    <UserAttribute nodeId="20">
+      <Attribute name="index" type="string" value="singleLatchGate_neg90"/>
+      <Attribute name="onCreate" type="scriptCallback" value="AnimatedMapObject.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+-->
+</i3D>

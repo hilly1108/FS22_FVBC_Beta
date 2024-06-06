@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="industrialBGA.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.6"/>
+  </Asset>
+
+  <Files>
+    <File fileId="47" filename="$data/maps/mapFR/textures/props/manholeFR_diffuse.png"/>
+    <File fileId="48" filename="$data/maps/mapFR/textures/props/manholeFR_normal.png"/>
+    <File fileId="49" filename="$data/maps/mapFR/textures/props/manholeFR_specular.png"/>
+    <File fileId="19" filename="$data/maps/mapUS/textures/props/backflowUSset_diffuse.png"/>
+    <File fileId="20" filename="$data/maps/mapUS/textures/props/backflowUSset_normal.png"/>
+    <File fileId="21" filename="$data/maps/mapUS/textures/props/backflowUSset_specular.png"/>
+    <File fileId="12" filename="$data/placeables/lizard/biogasStation/biogasStation_diffuse.png"/>
+    <File fileId="13" filename="$data/placeables/lizard/biogasStation/biogasStation_normal.png"/>
+    <File fileId="14" filename="$data/placeables/lizard/biogasStation/biogasStation_specular.png"/>
+    <File fileId="8" filename="$data/placeables/lizard/chargingStation/chargingStationDecals_diffuse.png"/>
+    <File fileId="4" filename="$data/placeables/lizard/chargingStation/chargingStation_diffuse.png"/>
+    <File fileId="5" filename="$data/placeables/lizard/chargingStation/chargingStation_normal.png"/>
+    <File fileId="6" filename="$data/placeables/lizard/chargingStation/chargingStation_specular.png"/>
+    <File fileId="32" filename="$data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02_normal.png"/>
+    <File fileId="33" filename="$data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02_specular.png"/>
+    <File fileId="50" filename="$data/placeables/planET/bga99kw/bgaConcrete_diffuse.png"/>
+    <File fileId="51" filename="$data/placeables/planET/bga99kw/bgaConcrete_normal.png"/>
+    <File fileId="52" filename="$data/placeables/planET/bga99kw/bgaConcrete_specular.png"/>
+    <File fileId="28" filename="$data/placeables/planET/bga99kw/bgaGrid_diffuse.png"/>
+    <File fileId="29" filename="$data/placeables/planET/bga99kw/bgaGrid_normal.png"/>
+    <File fileId="30" filename="$data/placeables/planET/bga99kw/bgaGrid_specular.png"/>
+    <File fileId="25" filename="$data/placeables/planET/bga99kw/bgaProps_diffuse.png"/>
+    <File fileId="26" filename="$data/placeables/planET/bga99kw/bgaProps_normal.png"/>
+    <File fileId="27" filename="$data/placeables/planET/bga99kw/bgaProps_specular.png"/>
+    <File fileId="22" filename="$data/placeables/planET/bga99kw/bgaTile_diffuse.png"/>
+    <File fileId="23" filename="$data/placeables/planET/bga99kw/bgaTile_normal.png"/>
+    <File fileId="24" filename="$data/placeables/planET/bga99kw/bgaTile_specular.png"/>
+    <File fileId="36" filename="$data/placeables/unia/uniaSilos_diffuse.png"/>
+    <File fileId="40" filename="$data/placeables/unia/uniaSilos_mask.png"/>
+    <File fileId="37" filename="$data/placeables/unia/uniaSilos_normal.png"/>
+    <File fileId="38" filename="$data/placeables/unia/uniaSilos_specular.png"/>
+    <File fileId="39" filename="$data/shaders/buildingShader.xml"/>
+    <File fileId="11" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="7" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="15" filename="$data/shaders/placeableShader.xml"/>
+    <File fileId="44" filename="$data/shared/assets/assetLibraryDecals_diffuse.dds"/>
+    <File fileId="45" filename="$data/shared/assets/assetLibraryDecals_normal.dds"/>
+    <File fileId="43" filename="$data/shared/assets/assetLibraryStickers_diffuse.png"/>
+    <File fileId="9" filename="$data/shared/default_normal.png"/>
+    <File fileId="35" filename="$data/shared/default_specular.png"/>
+    <File fileId="17" filename="$data/shared/window02_diffuse.png"/>
+    <File fileId="18" filename="$data/shared/window02_specular.png"/>
+    <File fileId="34" filename="$data/shared/window_diffuse.png"/>
+    <File fileId="31" filename="../../methaneTank/dieselTanksLevel02_diffuse.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="assetLibraryDecals_mat" materialId="5" specularColor="0.439216 1 1" alphaBlending="true" customShaderId="11">
+      <Texture fileId="44"/>
+      <Normalmap fileId="45"/>
+    </Material>
+    <Material name="assetLibraryStickers_mat" materialId="6" customShaderId="15">
+      <Texture fileId="43"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="backflowUSset_mat" materialId="7">
+      <Texture fileId="19"/>
+      <Normalmap fileId="20"/>
+      <Glossmap fileId="21"/>
+    </Material>
+    <Material name="bgaConcrete_mat" materialId="8">
+      <Texture fileId="50"/>
+      <Normalmap fileId="51"/>
+      <Glossmap fileId="52"/>
+    </Material>
+    <Material name="bgaGrid_mat" materialId="9">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="30"/>
+    </Material>
+    <Material name="bgaProps_mat" materialId="10">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="bgaProps_mat" materialId="11" customShaderId="15">
+      <Texture fileId="25"/>
+      <Normalmap fileId="26"/>
+      <Glossmap fileId="27"/>
+    </Material>
+    <Material name="bgaTile_mat" materialId="12">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="biogasStation_mat" materialId="13" customShaderId="15">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="chargingStation_mat" materialId="14">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+    </Material>
+    <Material name="chargingStation_mat1" materialId="15" diffuseColor="0.494118 0.494118 0.494118 1" customShaderId="7" customShaderVariation="baseMap_colorScale_blink">
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="6"/>
+      <CustomParameter name="lightControl" value="1 5 1 7"/>
+      <CustomParameter name="colorScale" value="0 1 0 0"/>
+      <CustomParameter name="blinkOffset" value="0 0.5 1 7"/>
+      <CustomParameter name="blinkSpeed" value="5 1 5 1"/>
+    </Material>
+    <Material name="chargingStationDecals_mat" materialId="16" specularColor="0.494118 1 0" alphaBlending="true" customShaderId="11">
+      <Texture fileId="8"/>
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="dieselTanksDecals_mat" materialId="17" alphaBlending="true">
+      <Normalmap fileId="9"/>
+    </Material>
+    <Material name="dieselTanksLevel02_mat" materialId="18" customShaderId="15">
+      <Texture fileId="31"/>
+      <Normalmap fileId="32"/>
+      <Glossmap fileId="33"/>
+    </Material>
+    <Material name="lambert1" materialId="19" diffuseColor="0.494118 0.494118 0.494118 0.384314">
+    </Material>
+    <Material name="lambert1" materialId="20" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="manholeFR_mat" materialId="21" customShaderId="15">
+      <Texture fileId="47"/>
+      <Normalmap fileId="48"/>
+      <Glossmap fileId="49"/>
+    </Material>
+    <Material name="uniaSilos_mat" materialId="22" customShaderId="39">
+      <Texture fileId="36"/>
+      <Normalmap fileId="37"/>
+      <Glossmap fileId="38"/>
+      <Custommap name="mMaskMap" fileId="40"/>
+      <CustomParameter name="dirtMossSmoothness" value="0.12 0.82 961 1"/>
+      <CustomParameter name="dirtMossMix" value="1 1 0.12 0.82"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="23" diffuseColor="1 1 1 1">
+    </Material>
+    <Material name="window02_mat" materialId="24">
+      <Texture fileId="17"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="18"/>
+    </Material>
+    <Material name="window_mat" materialId="25" alphaBlending="true">
+      <Texture fileId="34"/>
+      <Normalmap fileId="9"/>
+      <Glossmap fileId="35"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="industrialBGA.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="bga" nodeId="66">
+        <TransformGroup name="planET_bga250kw" nodeId="67">
+          <TransformGroup name="clearAreas" nodeId="68">
+            <TransformGroup name="clearArea6Start" translation="-11.8436 0.010213 6.72597" rotation="0 90 0" nodeId="69">
+              <TransformGroup name="clearArea6Width" translation="25.2623 0 -1.30489" rotation="0 -90 0" nodeId="70"/>
+              <TransformGroup name="clearArea6Height" translation="1.87612e-05 -1.65677e-05 34.0221" rotation="0 90 0" nodeId="71"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="levelAreas" nodeId="72">
+            <TransformGroup name="levelArea1Start" translation="-11.8885 0 -13.2001" nodeId="73">
+              <TransformGroup name="levelArea1Width" translation="0 0 18.7978" nodeId="74"/>
+              <TransformGroup name="levelArea1Height" translation="34.112 0 0" nodeId="75"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="paintAreas" nodeId="76">
+            <TransformGroup name="paintArea1Start" nodeId="77">
+              <TransformGroup name="paintArea1Width" translation="0 0 1" nodeId="78"/>
+              <TransformGroup name="paintArea1Height" translation="1 0 0" nodeId="79"/>
+            </TransformGroup>
+            <TransformGroup name="paintArea2Start" nodeId="80">
+              <TransformGroup name="paintArea2Width" translation="0 0 1" nodeId="81"/>
+              <TransformGroup name="paintArea2Height" translation="1 0 0" nodeId="82"/>
+            </TransformGroup>
+            <TransformGroup name="paintArea3Start" nodeId="83">
+              <TransformGroup name="paintArea3Width" translation="0 0 1" nodeId="84"/>
+              <TransformGroup name="paintArea3Height" translation="1 0 0" nodeId="85"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="indoorAreas" nodeId="86">
+            <TransformGroup name="indoorArea1Start" translation="-11.9597 0 -0.0777075" nodeId="87">
+              <TransformGroup name="indoorArea1Width" translation="9.9476e-16 0 3.94622" nodeId="88"/>
+              <TransformGroup name="indoorArea1Height" translation="32.9898 0 -1.77636e-15" nodeId="89"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="testAreas" nodeId="90">
+            <TransformGroup name="testArea1Start" translation="-11.358 0 -16.2149" nodeId="91">
+              <TransformGroup name="testArea1End" translation="22.7628 15.0897 37.9981" nodeId="92"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateAreas" nodeId="93">
+            <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-11.6831 0 -14.1882" nodeId="94">
+              <TransformGroup name="tipOcclusionUpdateArea1End" translation="31.8987 0 23.1245" nodeId="95"/>
+            </TransformGroup>
+          </TransformGroup>
+          <Shape shapeId="1" name="infoTrigger" translation="0 5.49613 -1.28287" static="true" trigger="true" collisionMask="1048576" nodeId="96" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="collisions" nodeId="97">
+            <Shape shapeId="2" name="cone" translation="-9.18848 2.29907 1.23563" rotation="0 -0 180" scale="3.93127 4.02019 2.44253" static="true" nodeId="98" materialIds="23" nonRenderable="true" distanceBlending="false"/>
+            <Shape shapeId="3" name="tipCollision" translation="0 0 -7.26657" visibility="false" static="true" collisionMask="524288" nodeId="99" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="lights" nodeId="100">
+            <TransformGroup name="realLights" nodeId="101">
+              <TransformGroup name="realLightsLow" visibility="false" nodeId="102">
+                <Light name="pointLightLow" clipDistance="75" nodeId="103" type="point" color="0.44 0.4 0.4" emitDiffuse="true" emitSpecular="true" range="7"/>
+              </TransformGroup>
+              <TransformGroup name="realLightsHigh" visibility="false" nodeId="104">
+                <Light name="spotLightHigh" rotation="-90 0 0" clipDistance="75" nodeId="105" type="spot" color="0.55 0.5 0.5" emitDiffuse="true" emitSpecular="true" range="18" coneAngle="120" dropOff="4"/>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="linkedLights" nodeId="106"/>
+            <TransformGroup name="lightSwitch" nodeId="107"/>
+          </TransformGroup>
+          <TransformGroup name="bga250kw_vis" translation="0 0 1.72339e-17" rotation="0 -8 0" nodeId="108" lodDistance="0 130">
+            <TransformGroup name="LOD1" translation="-6.66134e-16 0 5.55112e-17" nodeId="109"/>
+            <TransformGroup name="occluders" translation="6.66134e-16 0 -1.11022e-16" rotation="0 8 0" clipDistance="400" nodeId="110"/>
+          </TransformGroup>
+          <TransformGroup name="hotspotMarker" translation="-1.2256 0 7.53285" nodeId="111"/>
+          <TransformGroup name="teleportNode" translation="6.13368 -4.54747e-15 4.50483" nodeId="112"/>
+          <TransformGroup name="productionPoint" nodeId="113">
+            <TransformGroup name="digestateLoad" translation="5.003 0 -10.1116" nodeId="114">
+              <TransformGroup name="loadTriggerAiNode" translation="-18.106 0 -5.57435" rotation="0 -85.087 0" nodeId="115"/>
+              <TransformGroup name="loadTriggerMarker" translation="-17.768 0.548663 -5.13195" nodeId="116"/>
+              <Shape shapeId="4" name="loadTrigger" translation="-18.492 2.36687 -5.00967" rotation="0 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="117" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="bunker" nodeId="118">
+              <Shape shapeId="5" name="unloadTriggerBunker" translation="-9.2743 2.04487 1.8872" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="119" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadTriggerBunkerMarker" translation="-9.26137 2.62159 1.38204" nodeId="120"/>
+              <Shape shapeId="6" name="baleTriggerBunker" translation="-9.48412 1.7906 0.627433" rotation="0 90 0" kinematic="true" trigger="true" collisionMask="18874368" nodeId="121" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="7" name="bunkerFillVolume" translation="-9.16109 1.35254 1.2431" rotation="0 4.63328 0" clipDistance="200" nodeId="122" materialIds="19" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="additionalUnload" nodeId="123">
+              <Shape shapeId="8" name="unloadTriggerInFront" translation="-8.30909 -0.0603103 4.99979" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="124" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="9" name="baleTriggerInFront" translation="-9.6511 0.100923 5.1901" rotation="0 90 0" kinematic="true" trigger="true" collisionMask="18874368" nodeId="125" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadTriggerInFrontAINode" translation="-28.9302 0 5.43763" rotation="0 -134.594 0" nodeId="126"/>
+            </TransformGroup>
+            <TransformGroup name="liquidManureUnload" translation="5.11941 0 -6.1789" nodeId="127">
+              <Shape shapeId="10" name="unloadTriggerLiquidManure" translation="-14.4938 0 11.1163" kinematic="true" compound="true" collisionMask="1073741824" nodeId="128" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadTriggerLiquidManureMarker" translation="-11.7596 0 11.1163" nodeId="129"/>
+              <TransformGroup name="unloadTriggerLiquidManureAiNode" translation="-11.5762 0 11.8552" rotation="0 -90 0" nodeId="130"/>
+            </TransformGroup>
+            <Shape shapeId="11" name="playerTrigger" translation="6.07943 1.37512 4.89277" rotation="-8.21939e-07 -74.2881 2.81109e-05" kinematic="true" compound="true" trigger="true" collisionMask="1048576" nodeId="131" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <TransformGroup name="playerTriggerMarker" nodeId="132"/>
+            </Shape>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="133"/>
+        <Shape shapeId="12" name="chargingStation" translation="2.63 -0.473446 64.6534" rotation="-180 -86.1113 -180" clipDistance="300" nodeId="134" materialIds="14" castsShadows="true" receiveShadows="true">
+          <Shape shapeId="13" name="chargeTrigger" translation="0 1 0" visibility="false" static="true" trigger="true" collisionMask="2097152" nodeId="135" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="14" name="chargeFlash" translation="0 1.18007 0.150504" clipDistance="300" nodeId="136" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Light name="chargeLight" translation="0 1.03401 0.412838" clipDistance="75" nodeId="137" type="point" color="0 1 0" emitDiffuse="true" emitSpecular="true" range="1"/>
+          <TransformGroup name="chargingAInode" translation="0 0 2.0325" nodeId="138"/>
+          <Shape shapeId="15" name="decal" clipDistance="50" nodeId="139" materialIds="16" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="16" name="collision" translation="0 0.738348 0" static="true" clipDistance="300" nodeId="140" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="17" name="tipCollision" translation="0 0 0.767842" static="true" collisionMask="524288" density="0.0001" nodeId="141" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <TransformGroup name="transform" nodeId="142"/>
+        <TransformGroup name="biogasStation" translation="2.49096 0 2.57815" clipDistance="200" nodeId="143">
+          <TransformGroup name="visuals" nodeId="144">
+            <Shape shapeId="18" name="biogasPump" clipDistance="300" nodeId="145" materialIds="13" castsShadows="true" receiveShadows="true">
+              <Shape shapeId="19" name="glass" clipDistance="50" nodeId="146" materialIds="24" castsShadows="true" receiveShadows="true"/>
+            </Shape>
+            <TransformGroup name="winter" nodeId="147"/>
+          </TransformGroup>
+          <TransformGroup name="collisions" nodeId="148">
+            <Shape shapeId="20" name="collision" translation="0 1.06782 0" visibility="false" static="true" nodeId="149" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="21" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="150" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <Shape shapeId="22" name="fillTrigger" translation="0 0.936836 4.42434" static="true" trigger="true" collisionMask="2097152" nodeId="151" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="teleportNode" translation="1.42362 0 -0.631509" nodeId="152"/>
+        </TransformGroup>
+        <TransformGroup name="bga" translation="677.561 -4 281.589" nodeId="153">
+          <Shape shapeId="23" name="backflowMediumUS" lockedgroup="true" translation="-671.084 3.96252 -283.043" rotation="0 -1.29466 0" clipDistance="100" nodeId="154" materialIds="7" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="24" name="col" translation="0.0089687 0.692853 0" visibility="false" static="true" nodeId="155" materialIds="20" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </Shape>
+          <TransformGroup name="bgaContainer01" translation="-669.593 3.91463 -280.013" rotation="180 -88.6142 180" scale="1.23741 1.045 1.12398" static="true" clipDistance="500" nodeId="156" lodDistance="0 150">
+            <TransformGroup name="LOD0" nodeId="157">
+              <Shape shapeId="25" name="bgaContainer01" translation="0.349646 1.5491 -0.389342" rotation="0 1.2741 0" clipDistance="300" nodeId="158" materialIds="12" castsShadows="true" receiveShadows="true">
+                <Shape shapeId="26" name="details" translation="-0.399631 0.0693948 0.32728" clipDistance="300" nodeId="159" materialIds="11" castsShadows="true" receiveShadows="true"/>
+                <Shape shapeId="27" name="decal" translation="1.1922 0.606437 -1.69661" rotation="0 -1.2741 0" clipDistance="80" nodeId="160" materialIds="9" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="LOD1" nodeId="161">
+              <Shape shapeId="28" name="bgaContainer01" translation="0.214106 1.45599 0.081603" static="true" clipDistance="500" nodeId="162" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="visuals" translation="-667.907 3.93817 -285.58" rotation="180 -88.798 -180" nodeId="163">
+            <Shape shapeId="29" name="dieselTanksLevel02Vis" translation="0 0 -0.997864" clipDistance="200" nodeId="164" materialIds="18" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="glass" translation="-0.314409 1.10866 2.34435" clipDistance="15" nodeId="165" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="31" name="decals" translation="-0.256364 1.0443 2.18888" clipDistance="20" nodeId="166" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <TransformGroup name="visuals" translation="-671.175 3.93817 -285.649" rotation="-3.76484e-05 88.9716 -3.76321e-05" nodeId="167">
+            <Shape shapeId="29" name="dieselTanksLevel02Vis" translation="0 0 1.01032" clipDistance="200" nodeId="168" materialIds="18" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="30" name="glass" translation="-0.314409 1.10866 2.34435" clipDistance="15" nodeId="169" materialIds="25" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="31" name="decals" translation="-0.256364 1.0443 2.18888" clipDistance="20" nodeId="170" materialIds="17" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          </TransformGroup>
+          <Shape shapeId="32" name="uniaKarma22_vis" translation="-686.052 4.00121 -284.342" rotation="-180 -85.1 -180" scale="1 0.8 1" static="true" clipDistance="300" nodeId="171" materialIds="22" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="33" name="stickers" translation="-7.95808e-15 -0.304027 -1.17008e-15" clipDistance="30" nodeId="172" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="34" name="screws" translation="-7.95808e-15 -0.304027 -1.17008e-15" clipDistance="30" nodeId="173" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="35" name="manholeBase" translation="-686.752 4.30906 -280.518" scale="1.81409 1.87043 2.15046" static="true" clipDistance="300" nodeId="174" materialIds="21" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="36" name="manhole" translation="0 0.165 0" clipDistance="300" nodeId="175" materialIds="21" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="37" name="base" translation="-683.489 4.00309 -297.052" rotation="-180 -90 -180" scale="1 1.9412 1" clipDistance="150" nodeId="176" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="38" name="tile" translation="-678.01 7.01479 -280.619" rotation="180 -4.785 180" clipDistance="150" nodeId="177" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="39" name="mixingDrum" translation="-686.661 4.93632 -280.448" rotation="-180 16.6302 -180" clipDistance="150" nodeId="178" materialIds="10" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="134">
+      <Attribute name="mapPositionIndex" type="string" value="5"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

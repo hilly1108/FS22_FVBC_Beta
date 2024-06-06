@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="fertilizerEffects" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+
+  <Files>
+    <File fileId="4" filename="$data/effects/fertilizer/arrays/sharedArray.png" />
+    <File fileId="1" filename="$data/effects/fertilizer/fillTypes/fertilizer/fertilizer8x4_diffuse.png" />
+    <File fileId="5" filename="$data/effects/fertilizer/fillTypes/fertilizer/fertilizer8x4_mask.png" />
+    <File fileId="2" filename="$data/effects/fertilizer/fillTypes/fertilizer/fertilizer8x4_normal.png" />
+    <File fileId="6" filename="fillTypes/lime/lime8x4_diffuse.png" />
+    <File fileId="8" filename="$data/effects/fertilizer/fillTypes/lime/lime8x4_mask.png" />
+    <File fileId="7" filename="$data/effects/fertilizer/fillTypes/lime/lime8x4_normal.png" />
+    <File fileId="9" filename="fillTypes/roadsalt/roadsalt8x4_diffuse.png" />
+    <File fileId="10" filename="$data/effects/fertilizer/fillTypes/roadsalt/roadsalt8x4_mask.png" />
+    <File fileId="3" filename="$data/shaders/motionPathShader.xml" />
+  </Files>
+
+  <Materials>
+    <Material name="fertilizer8x4_mat" materialId="2" specularColor="0 0 0" customShaderId="3" customShaderVariation="subUV_scaleByLife_cosOffsetY_alphaMap">
+      <CustomParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+      <CustomParameter name="sizeScale" value="2.0 10.0 0.0 0.0"/>
+      <Custommap name="shapeArray" fileId="4"/>
+      <Custommap name="alphaMap" fileId="5"/>
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="lime8x4_mat" materialId="1" specularColor="0 0 0" alphaBlending="true" customShaderId="3" customShaderVariation="subUV_scaleByLife_cosOffsetY_alphaMap">
+      <CustomParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+      <CustomParameter name="sizeScale" value="2.0 10.0 0.0 0.0"/>
+      <Custommap name="shapeArray" fileId="4"/>
+      <Custommap name="alphaMap" fileId="8"/>
+      <Texture fileId="6"/>
+      <Normalmap fileId="7"/>
+    </Material>
+    <Material name="roadsalt8x4_mat" materialId="3" specularColor="0 0 0" alphaBlending="true" customShaderId="3" customShaderVariation="subUV_scaleByLife_cosOffsetY_alphaMap">
+      <CustomParameter name="subUVelements" value="8.0 4.0 1.0 1.0"/>
+      <CustomParameter name="sizeScale" value="2.0 10.0 0.0 0.0"/>
+      <Custommap name="shapeArray" fileId="4"/>
+      <Custommap name="alphaMap" fileId="10"/>
+      <Texture fileId="9"/>
+      <Normalmap fileId="7"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="fertilizer.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <TransformGroup name="fertilizerEffects_particleMeshes" nodeId="1">
+      <TransformGroup name="fertilizerEffects_particleMeshes_meshes" nodeId="2">
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr10_rl24_root" nodeId="3">
+          <Shape name="fertilizerEffects_particleMeshes_nr10_rl24_v1" shapeId="1" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="4"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr10_rl24_v2" shapeId="2" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="5"/>
+        </TransformGroup>
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr12_rl24_root" nodeId="6">
+          <Shape name="fertilizerEffects_particleMeshes_nr12_rl24_v1" shapeId="3" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="7"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr12_rl24_v2" shapeId="4" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="8"/>
+        </TransformGroup>
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr12_rl32_root" nodeId="9">
+          <Shape name="fertilizerEffects_particleMeshes_nr12_rl32_v1" shapeId="5" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="10"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr12_rl32_v2" shapeId="6" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="11"/>
+        </TransformGroup>
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr16_rl32_root" nodeId="12">
+          <Shape name="fertilizerEffects_particleMeshes_nr16_rl32_v1" shapeId="7" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="13"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr16_rl32_v2" shapeId="8" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="14"/>
+        </TransformGroup>
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr20_rl32_root" nodeId="15">
+          <Shape name="fertilizerEffects_particleMeshes_nr20_rl32_v1" shapeId="9" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="16"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr20_rl32_v2" shapeId="10" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="17"/>
+        </TransformGroup>
+        <TransformGroup name="fertilizerEffects_particleMeshes_nr22_rl32_root" nodeId="18">
+          <Shape name="fertilizerEffects_particleMeshes_nr22_rl32_v1" shapeId="11" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="19"/>
+          <Shape name="fertilizerEffects_particleMeshes_nr22_rl32_v2" shapeId="12" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="20"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="fertilizerEffects_particleMeshes_materials" nodeId="21">
+        <Shape name="fertilizer" shapeId="13" static="true" castsShadows="true" receiveShadows="true" materialIds="2" nodeId="22"/>
+        <Shape name="lime" shapeId="14" static="true" castsShadows="true" receiveShadows="true" materialIds="1" nodeId="23"/>
+        <Shape name="roadsalt" shapeId="15" static="true" castsShadows="true" receiveShadows="true" materialIds="3" nodeId="24"/>
+      </TransformGroup>
+    </TransformGroup>
+  </Scene>
+
+  <UserAttributes>
+  </UserAttributes>
+</i3D>
