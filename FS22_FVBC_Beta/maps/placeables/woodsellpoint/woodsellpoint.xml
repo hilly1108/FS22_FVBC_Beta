@@ -2,7 +2,7 @@
 <placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>Wood Sell Point</name>
-        <image>$l10n_station_us_sawmill</image>
+        <image>>$data/store/store_empty.png</image>
         <price>1000</price>
         <canBeSold>false</canBeSold>
         <showInStore>false</showInStore>

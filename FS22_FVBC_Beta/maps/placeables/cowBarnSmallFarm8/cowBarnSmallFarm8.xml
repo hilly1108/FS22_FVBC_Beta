@@ -74,7 +74,6 @@
     </foliageAreas>
 
     <triggerMarkers>
-        <triggerMarker node="markerWater" filename="$data/shared/assets/marker/markerIcons.xml" id="WATER" />
         <triggerMarker node="markerFood" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" />
         <triggerMarker node="markerAnimals" filename="$data/shared/assets/marker/markerIcons.xml" id="ANIMALS" />
         <triggerMarker node="markerMilk" filename="$data/shared/assets/marker/markerIcons.xml" id="LOAD" />
@@ -130,11 +129,7 @@
         <milk />
 
         <water automaticWaterSupply="true" >
-            <waterPlane node="waterPlane" minY="0.025" maxY="0.177" />
-            <waterPlaces>
-                <waterPlace node="waterPlace1" />
-                <waterPlace node="waterPlace2" />
-            </waterPlaces>
+
         </water>
 
         

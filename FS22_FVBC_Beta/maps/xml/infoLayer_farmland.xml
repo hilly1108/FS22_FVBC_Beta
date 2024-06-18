@@ -236,9 +236,11 @@
 <farmland id="229"  priceScale="2"    npcName="NPC_US_08" /><!--Nusery-->
 <farmland id="230"  priceScale="5"    npcName="NPC_US_08" /><!--Winery-->
 <farmland id="231"  priceScale="4"    npcName="NPC_US_08" /><!--Ghouses opp Store-->
-<farmland id="232"  priceScale="1.25"    npcName="NPC_US_08" />
-<farmland id="233"  priceScale="4"    npcName="NPC_US_08" />
-
+<farmland id="232"  priceScale="6"    npcName="NPC_US_08" />
+<farmland id="233"  priceScale="0.7"    npcName="NPC_US_08" /><!--Big Chicken Farm Section. Single Barn, Shed and Silo--> 
+<farmland id="234"  priceScale="1.5"    npcName="NPC_US_08" />
+<farmland id="235"  priceScale="1.5"    npcName="NPC_US_08" /><!--Islands-->
+<farmland id="236"  priceScale="1.5"    npcName="NPC_US_08" />
 
 <!--Vacant Potential Production Sites Starts-->
 <farmland id="237"  priceScale="4"    npcName="NPC_US_08" />
@@ -253,7 +255,10 @@
 <farmland id="246"  priceScale="4"    npcName="NPC_US_08" /><!--sawmill house-->
 <farmland id="247"  priceScale="5"    npcName="NPC_US_08" />
 <!--Vacant Potential Production Sites End-->
+
+
 <!--"Other" Starts-->
+<farmland id="248"  priceScale="1.5"    npcName="NPC_US_08" /><!--Grass field near big horses-->
 <farmland id="249"  priceScale="2"     npcName="NPC_US_14" /><!--Hidden Field/Farm-->
 <farmland id="250"  priceScale="3"     npcName="NPC_US_14" /><!--House with big lawn-->
 <farmland id="251"  priceScale="2.5"     npcName="NPC_US_14" /><!--Spare Shed Near 133-->

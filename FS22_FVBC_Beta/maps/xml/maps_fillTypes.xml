@@ -1440,7 +1440,7 @@
             </economy>
             <effects prioritizedEffectType="ParticleEffect" fillSmokeColor="0 0.35 0 1"/>
 				<physics massPerLiter="0.83" maxPhysicalSurfaceAngle="40" />
-				<image      hud     ="maps/VidhosticeHops/hud/hud_chmelSus.png" />
+				<image      hud     ="maps/VidhosticeHops/hud/hud_chmel.png" />
 				<pallet     filename="maps/VidhosticeHops/chmel/paletychmel.xml" />
 				<textures   diffuse ="maps/VidhosticeHops/chmel/chmelSus_diffuse.png"
 							normal  ="maps/VidhosticeHops/chmel/chmel_normal.png"

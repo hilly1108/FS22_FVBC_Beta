@@ -106,7 +106,7 @@
         <loadingStation supportsExtension="true" storageRadius="25" fillTypes="WATER" />
 
         <animals type="HORSE" maxNumAnimals="5" >
-            <navigation rootNode="navigationRootNode" filename="$data/placeables/lizard/horseBarnSmall/navigationMesh.i3d" />
+            <navigation rootNode="navigationRootNode" filename="maps/placeables/horseBarnSmallFarm14-1/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
 
             <deliveryAreas>

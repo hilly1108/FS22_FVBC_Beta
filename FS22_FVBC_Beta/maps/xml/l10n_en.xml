@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<l10n>
+    <translationContributors>sulecsan -Vidhostice components</translationContributors>
+    <languageVersion>1.0.0.0</languageVersion>
+    <texts>
+    <!-- Vidhostice Hops -->
+            <!-- fillTypes -->
+                <text name="fillType_pallets" text="Empty Pallets" />
+                <text name="fillType_CHMEL" text="Hops" />
+                <text name="fillType_CHMELINKA" text="Hop Waste" />
+                <text name="fillType_CHMELSUS" text="Dried Hops" />
+                <text name="fillType_CHMELSIS" text="Raw Hops" />
+                <text name="fillType_MAZUT" text="Propane" /> <!--Mazut = Heating Oil, however that isn't really a thing in Western Canada... to my knowledge.-->
+                <text name="fillType_cesackasus" text="Hops Combing" />
+                <text name="fillType_susarna" text="Hops Dryer" />
+                <text name="fillType_chmelimo" text="Chmelimo Lemonade" />
+            
+            <!-- shopItem -->
+                <text name="shopItem_cesacka" text="Hop Factory" />
+                <text name="shopItem_cesackasusarna" text="Comber and dryer of hops" />
+                <text name="shopItem_mazutnakup" text="Purchase of heating oil/propane" />
+                <text name="shopItem_chmelimo" text="Lemonade production" />
+                <text name="shopItem_hops_vine" text="Hops Vines" />
+                
+                <text name="storeItem_cesacka" text="Hop Factory" />
+                <text name="storeItem_cesackasusarna" text="Comber and dryer of hops" />
+                <text name="storeItem_mazutnakup" text="Purchase of heating oil/propane" />
+        
+            <!-- function -->
+                <text name="function_cesacka" text="Combs Cones from Vines" />
+                <text name="function_cesackasusarna" text="Combs and drys the hops" />
+                <text name="function_chmelimo" text="Malt lemonade with hop flavour." />
+                <text name="function_hopsOrchard" text="The heads of the female flowers (hop cones) are used in brewing to make beer, as they contain bittering agents that give it flavour and aroma." />
+ 
+ 
+ 
+     <!-- fillTypes -->   
+     <text name="$l10n_storeItem_animalBarnChickenSmall01" text="Chicken Pen East" />
+     <text name="$l10n_storeItem_animalBarnChickenSmall02" text="Chicken Pen West" />
+
+
+     <!-- storeItem -->
+     <text name="storeItem_animalBarnChickenSmallNE" text="Chicken Pen NE" />
+     <text name="storeItem_animalBarnChickenSmallSE" text="Chicken Pen SE" />
+     <text name="storeItem_animalBarnChickenSmallNW" text="Chicken Pen NW" />
+     <text name="storeItem_animalBarnChickenSmallSW" text="Chicken Pen SW" />     
+     <text name="storeItem_clayStation" text="Clay Buy Point" />   
+     <text name="storeItem_Cement_Production" text="Cement Production" />   
+     <text name="storeItem_Concrete_Production" text="Concrete Production" />   
+     
+     
+
+     
+     
+     <!-- function -->
+
+        
+        
+        
+        <!-- PRODUCT CHAINS 
+        <text name="gardenstones">
+            <en>Gardenstones</en>
+            <de>Gartensteine</de>
+            <fr>Pierres de Jardin</fr>
+        </text>
+		<text name="seedling">
+            <en>Seedlings</en>
+            <de>Sämlinge</de>
+            <fr>Semis</fr>
+        </text>
+		<text name="wh_hedge">
+            <en>WHemlock Hedge</en>
+            <de>Westliche Hemlockhecke</de>
+            <fr>Haie de pruche de l’Ouest’</fr>
+        </text>
+		<text name="wh_hedge2">
+            <en>WHemlock Hedge</en>
+            <de>Westliche Hemlockhecke</de>
+            <fr>Haie de pruche de l’Ouest’</fr>
+        </text>
+		<text name="gravel">
+            <en>Gravel</en>
+            <de>Kies</de>
+            <fr>Gravier</fr>
+        </text>
+		<text name="sand">
+            <en>Sand</en>
+            <de>Sand</de>
+            <fr>Sable</fr>
+        </text>
+        <text name="fruitdealer">
+            <en>Fruit Dealer</en>
+            <de>Sand</de>
+            <fr>Sable</fr>
+        </text>
+        <text name="fruitdealer2">
+            <en>Fruit Dealer Sml Btch</en>
+            <de>Sand</de>
+            <fr>Sable</fr>
+        </text>
+    -->
+ 
+    </texts>
+</l10n>

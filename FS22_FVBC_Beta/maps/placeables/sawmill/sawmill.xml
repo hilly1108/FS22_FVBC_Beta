@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_station_us_sawmill</name>
-        <image></image>
+        <name>Sawmill</name>
+        <image>$data/store/store_empty.png</image>
         <price>100000</price>
         <canBeSold>true</canBeSold>
         <showInStore>false</showInStore>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="productionPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
   <storeData>
-    <name>$l10n_storeItem_cesackasusarna</name>
+    <name>Hops Comber and Dryer</name>
     <functions>
-      <function>$l10n_function_cesackasusarna</function>
+      <function>Hops Comber and Dryer</function>
     </functions>
     <image>$data/store/store_empty.png</image>
     <price>141000</price>

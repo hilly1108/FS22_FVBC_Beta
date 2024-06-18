@@ -61,7 +61,7 @@
 			</part>
 			
 		</animation>
-		<controls triggerNode="0>0|0" posAction="ACTIVATE_HANDTOOL" posText="action_openGate" negText="action_closeGate" />
+		<controls triggerNode="0>0|0" posAction="ACTIVATE_HANDTOOL" posText="action_closeGate" negText="action_openGate" />
 		<sounds>
 			<moving linkNode="0>0|2" template="fenceMetalLoop" />
 			<posEnd linkNode="0>0|2" template="fenceMetalOpen" />

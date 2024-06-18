@@ -42,7 +42,6 @@
         <trigger position="214 85.3 216"   categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
         <trigger position="235.5 83.3 176" categoryIndex="8" pageIndex="2" /> <!-- build mode -->
         <trigger position="158 88.3 99"    categoryIndex="8" pageIndex="3" /> <!-- carry objects -->
-
         <trigger position="-585 83.3 -261" categoryIndex="6" pageIndex="1" /> <!-- animals -->
         <trigger position="61 86.2 -6"     categoryIndex="8" pageIndex="1" /> <!-- wardrobe -->
         <trigger position="848 86 42"      categoryIndex="1" pageIndex="2" /> <!-- shop -->
@@ -110,32 +109,32 @@
 		
 		<fruitRequirements>
 			<fruitRequirement fruitTypeName="CLOVER" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-				<soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
-				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
-				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
-				<soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+				<soil soilTypeIndex="1" targetLevel="140" reduction="100" yieldPotential="1.2"/>
+				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.4"/>
+				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.4"/>
+				<soil soilTypeIndex="4" targetLevel="200" reduction="180" yieldPotential="1.2"/>
 			</fruitRequirement>
 			
 			<fruitRequirement fruitTypeName="RYE" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-				<soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
-				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
-				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
-				<soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+				<soil soilTypeIndex="1" targetLevel="130" reduction="130" yieldPotential="0.9"/>
+				<soil soilTypeIndex="2" targetLevel="160" reduction="160" yieldPotential="1.1"/>
+				<soil soilTypeIndex="3" targetLevel="190" reduction="180" yieldPotential="1.4"/>
+				<soil soilTypeIndex="4" targetLevel="140" reduction="140" yieldPotential="1"/>
 			</fruitRequirement>
 			
 			<fruitRequirement fruitTypeName="ALFALFA" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-				<soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
-				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
-				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
-				<soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+				<soil soilTypeIndex="1" targetLevel="100" reduction="50" yieldPotential="0.8"/>
+				<soil soilTypeIndex="2" targetLevel="120" reduction="70" yieldPotential="1.0"/>
+				<soil soilTypeIndex="3" targetLevel="120" reduction="70" yieldPotential="1.25"/>
+				<soil soilTypeIndex="4" targetLevel="110" reduction="60" yieldPotential="0.9"/>
 			</fruitRequirement>
 			
 
 			<fruitRequirement fruitTypeName="CHMEL" alwaysAllowFertilization="false" ignoreOverfertilization="false">
-				<soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="0.8"/>
-				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.0"/>
-				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.25"/>
-				<soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.9"/>
+				<soil soilTypeIndex="1" targetLevel="140" reduction="140" yieldPotential="1"/>
+				<soil soilTypeIndex="2" targetLevel="180" reduction="160" yieldPotential="1.1"/>
+				<soil soilTypeIndex="3" targetLevel="200" reduction="180" yieldPotential="1.3"/>
+				<soil soilTypeIndex="4" targetLevel="160" reduction="160" yieldPotential="0.1"/>
 			</fruitRequirement>
 
 			

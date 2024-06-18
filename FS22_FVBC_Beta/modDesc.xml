@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="80">
     <author>HillyFarms</author>
-    <version>0.1.0.1</version>
+    <version>0.1.0.2</version>
     <title>
         <en>Fraser Valley BC (Beta)</en>
     </title>
@@ -18,7 +18,7 @@
                 <en>Fraser Valley BC (Beta)</en>
             </title>
             <description>
-                <en>Issues/Comments/Bugs use the Google Form/Sheets or Discord. Details in README. Thankyou!!</en>
+                <en>More Details/Issues/Comments/Bugs use the Discord/HillyFarms. Thankyou!!</en>
             </description>
             <iconFilename>preview.png</iconFilename>
         </map>
@@ -29,10 +29,10 @@
         <dependency>FS22_animalLimitIncreaser64</dependency>
         <dependency>FS22_ArchedBuildingsPack</dependency>
 		<dependency>FS22_Autoload_Belt</dependency>
-		<dependency>FS22_BigChickenBarn</dependency>
+
         <dependency>FS22_bunkerSiloMediumDirt</dependency>       
 		<dependency>FS22_chainLinkFence</dependency>
-		<dependency>FS22_ChickencoopEuropean</dependency>
+        <dependency>FS22_ChickenBarnXL</dependency>
 		<dependency>FS22_CowBarn_Set</dependency>
 		<dependency>FS22_CowFarmPack</dependency>
 		<dependency>FS22_CowShed42x22</dependency>
@@ -54,6 +54,6 @@
 		<dependency>FS22_storeDeliveries</dependency>-->	
     </dependencies>
 
-    <l10n finlenamePrefix="maps/translations/l10n"/>
+    <l10n finlenamePrefix="maps/xml/l10n_en.xml"/>
    
 </modDesc>

@@ -2,7 +2,7 @@
 <placeable type="cowHusbandryPasture" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>$l10n_storeItem_animalBarnCowSmall</name>
-        <image>$data/placeables/lizard/cowBarnSmall/store_cowBarnSmall.png</image>
+        <image>>$data/store/store_empty.png</image>
         <price>75000</price>
         <functions>
             <function>$l10n_function_animalPenCow</function>

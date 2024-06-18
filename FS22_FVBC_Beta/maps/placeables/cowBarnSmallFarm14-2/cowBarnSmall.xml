@@ -112,7 +112,7 @@
         </loadingStation>
 
         <animals type="COW" maxNumAnimals="15" >
-            <navigation rootNode="navigationRootNode" filename="$data/placeables/lizard/cowBarnSmall/navigationMesh.i3d" />
+            <navigation rootNode="navigationRootNode" filename="maps/placeables/cowBarnSmallFarm14-2/navigationMesh.i3d" />
             <loadingTrigger node="loadingTrigger" />
         </animals>
 

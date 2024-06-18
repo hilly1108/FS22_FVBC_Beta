@@ -146,7 +146,7 @@
 <placeable filename="data/placeables/lizard/dieselTanks/level01/dieselTanksLevel01.xml" id="60" position="-395 2.677042722702 601.5" rotation="0 360.00001001791 0" age="0.000000" price="500.000000" farmId="1">
     <silo>
         <storage index="1" farmId="1">
-            <node fillType="DIESEL" fillLevel="5000.000000"/>
+            <node fillType="DIESEL" fillLevel="0"/>
         </storage>
     </silo>
 </placeable>
@@ -408,16 +408,18 @@
 
 <!--BIG Chicken Farm 7 	-->
 <placeable filename="$moddir$FS22_Steel_Shed_Pack/xml/Ocel_kulna_02.xml"   position="-1867.25 4.63253927 -124.79199982" rotation="0 44.65459442 -0.00001002" price="5000.000000" farmId="1"  />
-<placeable modName="FS22_mhModVehicleShelters" filename="$moddir$FS22_mhModVehicleShelters/vehicleShelter3.xml" id="304" position="-1807.09997559 5.06459999 -129.16200256" rotation="0 134.66300964 0" age="0.000000" price="5000.000000" farmId="1">
-        <animatedObjects>
-            <animatedObject time="0.000000" direction="0"/>
-        </animatedObjects>
-        <colorable>
-            <color>1</color>
-        </colorable>
+	 <placeable filename="data/placeables/lizard/manureHeap/manureHeapExtension.xml" id="302" position="-1882.86999512 5.61549997 -78.42559814" rotation="0 90.000002504478 0" age="0.000000" price="5000.000000" farmId="1">
+        <manureHeap manureToDrop="0" manureToPick="0"/>
     </placeable>
-	    <placeable modName="FS22_BigChickenBarn" filename="$moddir$FS22_BigChickenBarn/chickenBarnBig.xml" id="300" position="-1793 5.4 -79" rotation="0 45.000001252239 0" age="0.000000" price="60000.000000" farmId="1">
-        <animatedObjects>
+    
+        <placeable modName="FS22_OldChickenBarn" filename="$moddir$FS22_OldChickenBarn/ChickenBarn.xml" id="453" position="-1789.86999512 5.30999994 -83.15380096" rotation="0 44.42679977 0" age="0.000000" price="85000.000000" farmId="1">
+         <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
@@ -430,33 +432,47 @@
         </husbandry>
         <husbandryPallets pendingLiters="0.000000"/>
     </placeable>
-    <placeable modName="FS22_ChickencoopEuropean" filename="$moddir$FS22_ChickencoopEuropean/kurnik_manure.xml" id="301" position="-1822.47998047 5.57198 -90.7582016" rotation="180 45 -180" age="0.000000" price="5000.000000" farmId="1">
-        <animatedObjects>
+    
+        <placeable modName="FS22_OldChickenBarn" filename="$moddir$FS22_OldChickenBarn/ChickenBarn.xml" id="453" position="-1809.31005859 5.41673994 -102.98300171" rotation="0 44.42679977 0" age="0.000000" price="85000.000000" farmId="1">
+          <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
-        <productionPoint>
-            <storageFillType>MANURE</storageFillType>
-            <priorityFillType>STRAW 10</priorityFillType>
+        <husbandry globalProductionFactor="0.000000">
             <storage farmId="1"/>
-        </productionPoint>
-    </placeable>  
- <placeable modName="FS22_ChickencoopEuropean" filename="$moddir$FS22_ChickencoopEuropean/kurnik.xml" id="305" position="-1838.18994141 5.60554981 -106.46399689" rotation="180 45 -180" age="0.000000" price="40000.000000" farmId="1">
-        <animatedObjects>
+        </husbandry>
+        <husbandryPallets pendingLiters="0.000000"/>
+    </placeable>
+    
+        <placeable modName="FS22_OldChickenBarn" filename="$moddir$FS22_OldChickenBarn/ChickenBarn.xml" id="453" position="-1828.27001953 5.48999977 -122.33100128" rotation="0 44.42679977 0" age="0.000000" price="85000.000000" farmId="1">
+         <animatedObjects>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
+            <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
             <animatedObject time="0.000000" direction="0"/>
         </animatedObjects>
-        <husbandry globalProductionFactor="0.000000"/>
+        <husbandry globalProductionFactor="0.000000">
+            <storage farmId="1"/>
+        </husbandry>
         <husbandryPallets pendingLiters="0.000000"/>
-    </placeable>	
-	
-
-	 <placeable filename="data/placeables/lizard/manureHeap/manureHeapExtension.xml" id="302" position="-1882.86999512 5.61549997 -78.42559814" rotation="0 90.000002504478 0" age="0.000000" price="5000.000000" farmId="1">
-        <manureHeap manureToDrop="0" manureToPick="0"/>
     </placeable>
 	
 	<placeable filename="data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02.xml" id="61" position="-1880.68005371 5.19140005 -66.07810211" rotation="0 87.63279724 -0.00001888" age="0.000000" price="500.000000" farmId="1">
@@ -514,7 +530,7 @@
 	<placeable modName="FS22_CowShed42x22" filename="$moddir$FS22_CowShed42x22/CowShed.xml" position="-1165.81994629 4.11025 -220.89399719" rotation="0 81.99999237 0" price="50000.000000" farmId="1"/>
 
     <placeable filename="data/placeables/lizard/manureHeap/manureHeap.xml" id="125" position="-1180.25 4.0116729736328 -173.75" rotation="0 0 0" age="1.000000" price="5000.000000" farmId="1">
-    <manureHeap manureToDrop="9" manureToPick="0"/>
+    <manureHeap manureToDrop="0" manureToPick="0"/>
     </placeable>
 
     <placeable modName="FS22_GrainStoragePack" filename="$moddir$FS22_GrainStoragePack/wiata.xml" id="129" position="-1162.75 3.9727625846863 -173.25" rotation="0 90.000002504478 0" age="0.000000" price="5000.000000" farmId="1"/>
@@ -772,7 +788,7 @@
         </colorable>
     </placeable>
     <placeable filename="data/placeables/lizard/manureHeap/manureHeap.xml" id="125" position="-846.78399658 3.12482071 -53.66925812" rotation="0 0 0" age="1.000000" price="5000.000000" farmId="1">
-    <manureHeap manureToDrop="9" manureToPick="0"/>
+    <manureHeap manureToDrop="0" manureToPick="0"/>
     </placeable>
 	<placeable filename="data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02.xml" id="61" position="-807.58502197 3.16507912 -76.69127655" rotation="-180 -88.84159088 179.99996948" age="0.000000" price="500.000000" farmId="1">
     <silo>
@@ -974,7 +990,7 @@
 <!-- Farm13 Narrow Pigs -->
 
 <placeable filename="$mapdir$/maps/placeables/manurePit/manurePitExtension.xml" position="-405.44500732 2.325 -509.29168701" rotation="0 -90 0" age="1.000000" price="5000.000000" farmId="1">
-    <manureHeap manureToDrop="20000" manureToPick="0"/>
+    <manureHeap manureToDrop="0" manureToPick="0"/>
     </placeable>	  
 
 <placeable filename="$mapdir$/maps/placeables/pigBarnBigFixed/pigBarnBigFixed.xml" position="-405.73199463 5.54788017 -517.29699707" rotation="0 180 0" price="50000.000000" farmId="1" >
@@ -1055,10 +1071,10 @@
 		<storage index="1" farmId="1"/>
         </silo>
     </placeable>
-    <placeable filename="$mapdir$/maps/placeables/horseBarnSmallFarm14-1/horseBarnSmall.xml"   position="767.65899658 4.45599985 -1197.18994141" rotation="-180 -2.43548012 -180" price="5000.000000" farmId="1"  />
+    <placeable filename="$mapdir$/maps/placeables/horseBarnSmallFarm14-1/horseBarnSmall.xml"   position="766.3449707 4.45599985 -1198.33032227" rotation="-180 -2.43548012 -180" price="5000.000000" farmId="1"  />
     <placeable filename="$mapdir$/maps/placeables/horseBarnSmallFarm14-2/horseBarnSmall.xml"   position="655.60699463 4.67292023 -1181.04174805" rotation="-180 0.47783712 -179.99998474" price="5000.000000" farmId="1"  />
     <placeable filename="$mapdir$/maps/placeables/cowBarnSmallFarm14-1/cowBarnSmall.xml"   position="727.35498047 5.41056061 -1067.25097656" rotation="0 -0.06505736 0" price="5000.000000" farmId="1"  />
-    <placeable filename="$mapdir$/maps/placeables/cowBarnSmallFarm14-2/cowBarnSmall.xml"   position="719.67901611 4.00386 -1243.01867676" rotation="0 -89.68471527 -0.00002368" price="5000.000000" farmId="1"  />
+    <placeable filename="$mapdir$/maps/placeables/cowBarnSmallFarm14-2/cowBarnSmall.xml"   position="719.690979 4.00386 -1240.9666748" rotation="0 -89.68471527 -0.00002368" price="5000.000000" farmId="1"  />
     <placeable filename="data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02.xml" position="752.28399658 4.63772011 -1178.82995605" rotation="0 -30.35720062 0.00000005" age="0.000000" price="500.000000" farmId="1">
     <placeable filename="$moddir$FS22_PackOfWorkshops/workshop3.xml"   position="735.09399414 4.45188999 -1196.85998535" rotation="-0.145 -30.0902977 0.30484799" price="500.000000" farmId="1"  />
     <silo>
@@ -1901,10 +1917,10 @@
         <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint06.xml" position="-1063.42004395 3.15564156 389.59793091" rotation="0 12.38952446 0" age="0.000000" price="5000.000000" farmId="1"><!--Woodside Bacon & Eggs F5-P,Ch-->
     </placeable>
 
-        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint07.xml" position="-686.50897217 3.7395432 -269.53405762" rotation="90.00099945 -89.69499969 -88.98703003" age="0.000000" price="5000.000000" farmId="1"><!--Cheam Enterprises F6-C,P-->
+        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint07.xml" position="-686.51000977 3.78092527 -269.53359985" rotation="90.00099945 -90 -90.00000763" age="0.000000" price="5000.000000" farmId="1"><!--Cheam Enterprises F6-C,P-->
     </placeable>
 
-        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint08.xml" position="-343.79299927 2.6770401 668.46551514" rotation="0 90 0" age="0.000000" price="5000.000000" farmId="1"><!--Deroche Dairy Farm F8-C-->
+        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint08.xml" position="-340.79299927 2.6770401 664.46551514" rotation="0 90 0" age="0.000000" price="5000.000000" farmId="1"><!--Deroche Dairy Farm F8-C-->
     </placeable>
 
         <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint09.xml" position="-378.70300293 2.67704391 610.34356689" rotation="0 90 0" age="0.000000" price="5000.000000" farmId="1"><!--Nicomeh Dairy F9-C-->
@@ -1923,37 +1939,37 @@
        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint13.xml" position="482.87799072 5.59437037 -618.25244141" rotation="0 90 0" age="0.000000" price="5000.000000" farmId="1"><!--McNair F13-C-->
     </placeable>
 
-       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint14.xml" position="554.19500732 5.99252748 -960.39233398" rotation="177.8730011 -77.61527252 -177.82260132" age="0.000000" price="5000.000000" farmId="1"><!--Brakenridge Dairys F14-C-->
+       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint14.xml" position="554.19500732 6.08076382 -960.39233398" rotation="177.8730011 -77.61527252 -177.82260132" age="0.000000" price="5000.000000" farmId="1"><!--Brakenridge Dairys F14-C-->
     </placeable>
       
-       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint15.xml" position="729.18499756 5.18249321 -1099.48620605" rotation="5.30999994 -87.87486267 -5.15537643" age="0.000000" price="5000.000000" farmId="1"><!--Grace Dairy F15-C-->
+       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint15.xml" position="729.18499756 5.24904919 -1099.48583984" rotation="0 90 0" age="0.000000" price="5000.000000" farmId="1"><!--Grace Dairy F15-C-->
     </placeable>
   
        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint16.xml" position="1030.07104492 2.72345734 446.90527344" rotation="0 -90 0" age="0.000000" price="5000.000000" farmId="1"><!--Waever Co F16-C-->
     </placeable>
   
-       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint17.xml" position="1268.99499512 5.70496464 -713.22943115" rotation="0.074 0.001 -0.59902263" age="0.000000" price="5000.000000" farmId="1"><!--Cartnell Stables F17-H-->
+       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint17.xml" position="1266.04003906 5.79494524 -720.26275635" rotation="0 0 0" age="0.000000" price="5000.000000" farmId="1"><!--Cartnell Stables F17-H-->
     </placeable>
    
-       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint18.xml" position="1634.28405762 5.7921977 -1436.65319824" rotation="0.074 0.001 -0.59902269" age="0.000000" price="5000.000000" farmId="1"><!--Canadian Cheerful Chickens F18-Ch-->
+       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint18.xml" position="1634.28405762 5.86709833 -1436.65319824" rotation="0.074 0.001 -0.59902269" age="0.000000" price="5000.000000" farmId="1"><!--Canadian Cheerful Chickens F18-Ch-->
     </placeable>
 
        <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint19.xml" position="1595.88793945 5.48 -433.62838745" rotation="0.074 0.00064185 -0.49815202" age="0.000000" price="5000.000000" farmId="1"><!--Fraser Sheep F19-Sh-->
     </placeable>
 
-       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint20.xml" position="1351.70996094 4.77113628 -199.47871399" rotation="-0.131 0.00047707 -0.570234" age="0.000000" price="5000.000000" farmId="1"><!--FV Contracting F20-Cont-->
+       <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/farmSellPoint20.xml" position="1351.70996094 4.84587622 -199.47871399" rotation="-0.131 0.00047707 -0.570234" age="0.000000" price="5000.000000" farmId="1"><!--FV Contracting F20-Cont-->
     </placeable>
 
-   <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction1SellPoint.xml" id="434" position="1558.70898438 5.1951828 -303.81408691" rotation="0 0 -0.141" age="0.000000" price="5000.000000" farmId="1">
+   <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction1SellPoint.xml" id="434" position="1558.70898438 5.269 -303.81408691" rotation="0 0 -0.141" age="0.000000" price="5000.000000" farmId="1">
     </placeable>
   
-     <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction2SellPoint.xml" id="434" position="1687.45300293 5.84517956 -1417.85668945" rotation="-0.48300001 38.99987793 -0.90802449" age="0.000000" price="5000.000000" farmId="1">
+     <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction2SellPoint.xml" id="434" position="1687.45300293 5.92 -1417.85668945" rotation="-0.48300001 38.99987793 -0.90802449" age="0.000000" price="5000.000000" farmId="1">
     </placeable>
 
-    <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction3SellPoint.xml" id="434" position="1743.31201172 2.99791646 98.08659363" rotation="-0.67799997 -6.44742918 1.34203172" age="0.000000" price="5000.000000" farmId="1">
+    <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction3SellPoint.xml" id="434" position="1743.31201172 2.953 98.08659363" rotation="-0.67799997 -6.44742918 1.34203172" age="0.000000" price="5000.000000" farmId="1">
     </placeable>
     
-    <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction2SellPoint.xml" id="434" position="1687.45300293 5.84517956 -1417.85668945" rotation="-0.48300001 38.99987793 -0.90802449" age="0.000000" price="5000.000000" farmId="1">
+    <placeable modName="maps" filename="$mapdir$/maps/placeables/farmSellPoints/construction2SellPoint.xml" id="434" position="1687.45300293 5.905 -1417.85668945" rotation="-0.48300001 38.99987793 -0.90802449" age="0.000000" price="5000.000000" farmId="1">
     </placeable>
   
 <!-- Sawmill -->
@@ -1962,13 +1978,8 @@
  
  
  
-<!-- Optional Forestry/Grazing 01 -->
-<!--<placeable filename="$mapdir$/maps/placeables/optionalGrazingYards/optionalGrazingYards.xml"   position="-1118.97998047 15.18130016 -884.58099365" rotation="0 -4.016 0"   />
-    <placeable filename="$mapdir$/maps/placeables/cowBarnSmallOptional/cowBarnSmall.xml" id="461" position="-1027.7724609375 17.891050338745 -920.50524902344" rotation="0 196.02541831137 0" age="0.000000" price="75000.000000" farmId="1">
-        <husbandry globalProductionFactor="0.000000">
-            <storage farmId="1"/>
-        </husbandry>
-    </placeable>-->
+<!-- Optional Forestry/Grazing -->
+
 <placeable filename="$mapdir$/maps/placeables/retractingCowField/retractingCowField.xml"   position="-1027.7724609375 17.891050338745 -920.50524902344" rotation="175.63000488 -16.02545738 -179.99998474" price="50.000000" farmId="1" />
 
 
@@ -2038,7 +2049,7 @@
 
 <!-- FENCES -->
 
-    <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="426" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
+     <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="426" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-428.05233764648 751.24633789063" end="-428.0247691476 747.32143475761" gateIndex="1">
@@ -2759,6 +2770,7 @@
                 <segment start="322.04885864258 -1244.2818603516" end="319.91622924805 -1244.3525390625" first="false"/>
                 <segment start="-1066.3859863281 351.11236572266" end="-1048.4792480469 347.81329345703"/>
                 <segment start="-1048.4792480469 347.81329345703" end="-1037.6353759766 344.19668579102" first="false"/>
+                <segment start="-995.18579101563 437.67965698242" end="-997.01721191406 436.66146850586" first="false" last="false"/>
             </segments>
         </fence>
     </placeable>
@@ -2950,6 +2962,7 @@
                 <segment start="1599.6772460938 -464.59860229492" end="1600.3310546875 -471.28546142578" first="false"/>
                 <segment start="1609.7896611145 -448.56714975788" end="1599.6772460938 -464.59860229492"/>
                 <segment start="1299.6661376953 -1492.9066162109" end="1298.3997802734 -1494.6860351563" first="false"/>
+                <segment start="-998.625 435.57257080078" end="-996.85241699219 437.03408813477"/>
             </segments>
         </fence>
     </placeable>
@@ -4004,7 +4017,6 @@
             </segments>
         </fence>
     </placeable>
-
 
  
 

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <vehicles>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="1" isAbsolute="true" age="3.000000" price="9000.000000" farmId="1" propertyState="1" operatingTime="170.743683" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="1" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="170.743683" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="303.76327514648 16.35990524292 -1395.2279052734" rotation="-179.97679602616 -67.020199872185 -179.77281925678"/>
         <configuration name="motor" id="1"/>
         <configuration name="fillUnit" id="1"/>
@@ -47,7 +47,7 @@
             <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="2" isAbsolute="true" age="3.000000" price="9000.000000" farmId="1" propertyState="1" operatingTime="169.755142" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="2" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="169.755142" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="268.6999206543 11.2570104599 -1396.1956787109" rotation="179.92931255105 -2.2047978706848 -179.94440726911"/>
         <configuration name="motor" id="1"/>
         <configuration name="fillUnit" id="1"/>
@@ -94,7 +94,7 @@
             <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="3" isAbsolute="true" age="3.000000" price="9000.000000" farmId="1" propertyState="1" operatingTime="97.575127" selectedObjectIndex="1" subSelectedObjectIndex="1">
+    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="3" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="97.575127" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="329.7438659668 16.346754074097 -1353.7091064453" rotation="0.2102275797428 23.19327507216 -0.099436135092867"/>
         <configuration name="motor" id="1"/>
         <configuration name="fillUnit" id="1"/>
@@ -665,41 +665,79 @@
             <action name="turnOn" identifier="data/vehicles/kuhn/hr4040/hr4040.xml" lastDirection="-1"/>
         </actionController>
     </vehicle>
-    <vehicle modName="pdlc_forestryPack" filename="$pdlcdir$forestryPack/vehicles/manitou/m504/m504.xml" id="20" isAbsolute="true" age="0.000000" price="58000.000000" farmId="1" propertyState="2" operatingTime="47.890480" selectedObjectIndex="1" subSelectedObjectIndex="1">
-        <component index="1" position="1215.7650146484 2.7779915332794 -33.962135314941" rotation="-178.94786900883 1.7071989528555 -179.91826130497"/>
-        <component index="2" position="1215.7259521484 3.2493133544922 -32.673564910889" rotation="-178.94800561261 1.7072898797488 -179.92305609777"/>
-        <component index="3" position="1215.8115234375 3.596893787384 -35.549034118652" rotation="-178.94786900883 1.7071975654733 -179.91826130497"/>
-        <configuration name="motor" id="1"/>
+
+       <vehicle modName="pdlc_forestryPack" filename="$pdlcdir$forestryPack/vehicles/manitou/m504/m504.xml" id="21" isAbsolute="true" age="0.000000" price="58000.000000" farmId="0" propertyState="0" operatingTime="157.172272" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-166.42820739746 40.714576721191 -1273.0699462891" rotation="-179.22648608545 -89.762612449685 -179.71887442272"/>
+        <component index="2" position="-165.13911437988 41.186012268066 -1273.0645751953" rotation="-179.41510858957 -89.763438902575 -179.53030656011"/>
+        <component index="3" position="-167.94735717773 41.649826049805 -1273.0766601563" rotation="170.77610774242 -89.762612449685 -179.72148355498"/>
         <configuration name="fillUnit" id="1"/>
         <configuration name="wheel" id="BKT_DEFAULT"/>
+        <configuration name="motor" id="1"/>
         <boughtConfiguration name="motor" id="1"/>
-        <boughtConfiguration name="fillUnit" id="1"/>
         <boughtConfiguration name="wheel" id="TRELLEBORG_DEFAULT"/>
         <boughtConfiguration name="wheel" id="BKT_DEFAULT"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
         <washable>
-            <dirtNode amount="0.003127"/>
-            <dirtNode amount="0.003127" snowScale="0.000000"/>
-            <dirtNode amount="0.003127" snowScale="0.000000"/>
-            <dirtNode amount="0.003127" snowScale="0.000000"/>
-            <dirtNode amount="0.003127" snowScale="0.000000"/>
+            <dirtNode amount="0.006732"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
         </washable>
-        <wearable damage="0.000582">
-            <wearNode amount="0.000586"/>
+        <wearable damage="0.001913">
+            <wearNode amount="0.001528"/>
         </wearable>
         <cylindered>
-            <movingTool rotation="0.000000"/>
-            <movingTool animationTime="0.003000"/>
+            <movingTool rotation="-10.000000"/>
+            <movingTool animationTime="0.013130"/>
             <movingTool animationTime="0.700000"/>
         </cylindered>
         <wheels lastWheelConfiguration="2"/>
         <enterable activeCameraIndex="1" isTabbable="true">
-            <camera rotation="-27.41310699649 267.26685707938 0" translation="0 0 5.9000000953674" zoom="5.900010" fovY="1.124554"/>
+            <camera rotation="-17.922388831724 62.248970049684 0" translation="0 0 5.9000000953674" zoom="5.900010" fovY="1.124554"/>
             <camera rotation="-18.999999959541 180.00000500896 0" translation="0 2.2278680801392 -0.27415499091148" zoom="2.244683" fovY="1.221730"/>
         </enterable>
         <fillUnit>
             <unit index="1" fillType="DIESEL" fillLevel="85.000000"/>
         </fillUnit>
         <drivable cruiseControl="22" cruiseControlReverse="22"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+    </vehicle>
+    <vehicle filename="data/vehicles/manitou/mc18/mc18.xml" id="22" isAbsolute="true" age="0.000000" price="37000.000000" farmId="0" propertyState="0" operatingTime="50.732948" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="1108.7677001953 2.7396066188812 -26.270971298218" rotation="179.71368347895 88.157477013597 -179.87961609465"/>
+        <component index="2" position="1107.7105712891 3.186897277832 -26.23699760437" rotation="179.69647140224 88.157477013597 -179.91970930507"/>
+        <component index="3" position="1110.1154785156 3.289363861084 -26.314374923706" rotation="171.25549139951 88.157265277733 -179.87919262292"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="wheel" id="MITAS_DEFAULT"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="wheel" id="MITAS_DEFAULT"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.003343"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000617">
+            <wearNode amount="0.000738"/>
+        </wearable>
+        <cylindered>
+            <movingTool animationTime="0.029360"/>
+            <movingTool rotation="-8.459458"/>
+            <movingTool animationTime="0.700000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-19.064321260595 -76.89831580428 0" translation="0 0 3.1999926914614" zoom="3.200000" fovY="1.124554"/>
+            <camera rotation="-18.000000500896 180.00000500896 0" translation="0 1.8265969753265 -0.076961003243923" zoom="1.828228" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="71.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="25" cruiseControlReverse="15"/>
         <aiFieldWorker lastTurnDirection="false"/>
         <attacherJoints comboDirection="-1"/>
     </vehicle>
