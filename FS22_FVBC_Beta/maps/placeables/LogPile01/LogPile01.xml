@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/LogPile01/LogPile01.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

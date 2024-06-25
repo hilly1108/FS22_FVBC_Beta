@@ -33,8 +33,8 @@
 
     <base>
         <filename>maps/placeables/farmSellPoints/farmSellPoint.i3d</filename>
-                <canBeRenamed>true</canBeRenamed>
-
+              <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

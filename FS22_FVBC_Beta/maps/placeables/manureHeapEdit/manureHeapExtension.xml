@@ -19,6 +19,8 @@
             <function>$l10n_function_manureHeap</function>
         </functions>
         <price>25000</price>
+		   <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <dailyUpkeep>25</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>

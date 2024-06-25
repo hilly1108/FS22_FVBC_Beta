@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/longImplementShed/longImplementShed.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

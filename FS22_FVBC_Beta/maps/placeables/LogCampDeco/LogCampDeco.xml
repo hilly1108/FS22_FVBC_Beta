@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/LogCampDeco/LogCampDeco.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

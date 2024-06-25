@@ -34,6 +34,7 @@
     <base>
         <filename>maps/placeables/farmSellPoints/farmSellPoint.i3d</filename>
                 <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 
     </base>
 

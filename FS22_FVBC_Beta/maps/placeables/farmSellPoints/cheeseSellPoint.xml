@@ -23,6 +23,8 @@
             <category>production</category>
             <tab>sellingPoints</tab>
         </brush>
+		 <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <vertexBufferMemoryUsage>620544</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>69632</indexBufferMemoryUsage>
         <textureMemoryUsage>4063232</textureMemoryUsage>

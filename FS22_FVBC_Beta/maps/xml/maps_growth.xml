@@ -800,10 +800,10 @@
             <period index="6" plantingAllowed="true">
                 <update range="8" add="1" />
             </period>
-            <period index="7" plantingAllowed="true">
+            <period index="7" plantingAllowed="false">
                 <update range="1" add="1" />
             </period>
-            <period index="8" plantingAllowed="true">
+            <period index="8" plantingAllowed="false">
                 <update range="1-2" add="1" />
             </period>
             <period index="9">

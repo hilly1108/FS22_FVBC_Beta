@@ -17,6 +17,8 @@
             <category>production</category>
             <tab>factories</tab>
         </brush>
+		 <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <vertexBufferMemoryUsage>1080832</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>181504</indexBufferMemoryUsage>
         <textureMemoryUsage>4194304</textureMemoryUsage>

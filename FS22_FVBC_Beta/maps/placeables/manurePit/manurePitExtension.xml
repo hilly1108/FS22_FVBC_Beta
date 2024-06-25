@@ -24,6 +24,8 @@
         <rotation>0</rotation>
         <brand>NONE</brand>
         <species>placeable</species>
+		<canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <category>siloExtensions</category>
         <brush>
             <type>placeable</type>

@@ -7,6 +7,8 @@
         </functions>
         <image>$data/placeables/lizard/oldBarn/store_oldBarn.png</image>
         <price>8000</price>
+		 <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <dailyUpkeep>10</dailyUpkeep>
         <lifetime>1000</lifetime>
         <rotation>0</rotation>
@@ -28,6 +30,7 @@
 
     <base>
         <filename>maps/placeables/oldBarn/oldBarn.i3d</filename>
+ <canBeRenamed>true</canBeRenamed>
         <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 

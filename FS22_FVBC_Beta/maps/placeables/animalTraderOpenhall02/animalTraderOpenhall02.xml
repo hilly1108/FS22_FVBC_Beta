@@ -25,7 +25,7 @@
 
     <base>
         <filename>maps/placeables/animalTraderOpenhall02/animalTraderOpenhall02.i3d</filename>
-        
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

@@ -8,6 +8,8 @@
             <function>$l10n_function_animalPenPig</function>
         </functions>
         <lifetime>1000</lifetime>
+		 <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <dailyUpkeep>150</dailyUpkeep>
         <rotation>0</rotation>
         <brand>RUDOLFHOERMANN</brand>

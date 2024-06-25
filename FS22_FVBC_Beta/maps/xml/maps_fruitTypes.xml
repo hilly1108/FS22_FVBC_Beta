@@ -258,7 +258,7 @@
 	<destruction canBeDestroyed="true" filterStart="2" filterEnd="4" state="5"/>
 </fruitType>
         
-		 <fruitType name="clover" shownOnMap="true" useForFieldJob="false">
+		 <fruitType name="clover" shownOnMap="true" useForFieldJob="true">
             <general startStateChannel="0" numStateChannels="4" />
             <cultivation needsSeeding="false" allowsSeeding="true"  directionSnapAngle="0" alignsToSun="false" seedUsagePerSqm="0.03" plantsWeed="false"/>
             <harvest minHarvestingGrowthState="6" maxHarvestingGrowthState="7" cutState="9" allowsPartialGrowthState="true" literPerSqm="3.28"  />

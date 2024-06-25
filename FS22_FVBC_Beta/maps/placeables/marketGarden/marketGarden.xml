@@ -18,6 +18,8 @@
             <category>production</category>
             <tab>greenhouses</tab>
         </brush>
+		<canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <canBeSold>true</canBeSold>
         <vertexBufferMemoryUsage>991744</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>149504</indexBufferMemoryUsage>

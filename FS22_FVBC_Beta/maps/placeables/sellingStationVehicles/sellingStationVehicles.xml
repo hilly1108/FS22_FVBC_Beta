@@ -21,6 +21,8 @@
 
     <base>
         <filename>$data/placeables/lizard/sellingStationVehicles/sellingStationVehicles.i3d</filename>
+		 <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true"/>

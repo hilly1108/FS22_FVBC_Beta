@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/manureGate/manureGate.i3d</filename>
-        
+        	 <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

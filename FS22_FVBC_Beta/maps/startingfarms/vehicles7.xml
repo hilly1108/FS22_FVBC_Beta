@@ -1,0 +1,1631 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<vehicles>
+   
+   
+    <vehicle filename="data/vehicles/johnDeere/series6M/series6M.xml" id="8" isAbsolute="true" age="0.000000" price="116500.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-668.14947509766 3.8933203220367 -266.37408447266" rotation="0.34312554529129 -89.439066388702 0.21492664317006"/>
+        <component index="2" position="-669.11480712891 4.5468859672546 -266.36465454102" rotation="0.30691257600297 -89.439066388702 0.2511410398612"/>
+        <configuration name="motor" id="2"/>
+        <configuration name="cropSensor" id="1"/>
+        <configuration name="wheel" id="MITAS_BROAD"/>
+        <configuration name="frontloader" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="motor" id="2"/>
+        <boughtConfiguration name="cropSensor" id="1"/>
+        <boughtConfiguration name="wheel" id="TRELLEBORG_DEFAULT"/>
+        <boughtConfiguration name="wheel" id="MITAS_BROAD"/>
+        <boughtConfiguration name="frontloader" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.000054"/>
+            <dirtNode amount="0.000054" snowScale="0.000000"/>
+            <dirtNode amount="0.000054" snowScale="0.000000"/>
+            <dirtNode amount="0.000054" snowScale="0.000000"/>
+            <dirtNode amount="0.000054" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000010"/>
+        </wearable>
+        <licensePlates variation="2" characters="HILLYFRMS" colorIndex="7" placementIndex="1"/>
+        <wheels lastWheelConfiguration="17"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-17.499999917799 180.00000500896 0" translation="0 0 6.3000001907349" zoom="6.300010" fovY="1.124554"/>
+            <camera rotation="-18.000000500896 180.00000500896 0" translation="-1.8227000236478e-16 2.5423998832703 -0.98066198825836" zoom="2.724986" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="175.000000"/>
+            <unit index="2" fillType="DEF" fillLevel="19.000000"/>
+            <unit index="3" fillType="AIR" fillLevel="3000.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="41" cruiseControlReverse="22"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="41" fieldSpeedLimit="41" driverName="6120M" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="605" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+    <vehicle filename="data/vehicles/johnDeere/series7810/series7810.xml" id="9" isAbsolute="true" age="0.000000" price="103500.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-668.01531982422 3.9842967987061 -262.46655273438" rotation="0.80774809636435 -89.440814917129 -0.44817033290979"/>
+        <component index="2" position="-669.68206787109 4.6625690460205 -262.45022583008" rotation="0.82489192454193 -89.440459747292 -0.46545540726498"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="cropSensor" id="1"/>
+        <configuration name="wheel" id="MITAS_BROAD_2"/>
+        <configuration name="frontloader" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="cropSensor" id="1"/>
+        <boughtConfiguration name="wheel" id="CONTINENTAL_BROAD"/>
+        <boughtConfiguration name="wheel" id="MITAS_BROAD_2"/>
+        <boughtConfiguration name="frontloader" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.000044"/>
+            <dirtNode amount="0.000044" snowScale="0.000000"/>
+            <dirtNode amount="0.000044" snowScale="0.000000"/>
+            <dirtNode amount="0.000044" snowScale="0.000000"/>
+            <dirtNode amount="0.000044" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000008"/>
+        </wearable>
+        <licensePlates variation="2" characters="HILLYFRMS" colorIndex="7" placementIndex="1"/>
+        <wheels lastWheelConfiguration="19"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-19.999999418186 180.00000500896 0" translation="0 0 6.8000001907349" zoom="6.800010" fovY="1.124554"/>
+            <camera rotation="-22.000000043023 180.00000500896 0" translation="4.6291599941045e-15 2.75 -0.89999997615814" zoom="2.893537" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="344.000000"/>
+            <unit index="2" fillType="AIR" fillLevel="2000.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="42" cruiseControlReverse="20"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="42" fieldSpeedLimit="42" driverName="7810" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="605" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+    <vehicle filename="data/vehicles/johnDeere/series4755/series4755.xml" id="10" isAbsolute="true" age="0.000000" price="112500.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-667.09478759766 3.9870750904083 -257.83590698242" rotation="9.7402322470317 -89.545002622729 -9.8546327929875"/>
+        <component index="2" position="-669.49548339844 4.6350831985474 -257.81625366211" rotation="10.711626873433 -89.543711716975 -10.826059862787"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="wheel" id="MITAS_TWIN_BACK"/>
+        <configuration name="cropSensor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="wheel" id="TRELLEBORG_DEFAULT"/>
+        <boughtConfiguration name="wheel" id="MITAS_TWIN_BACK"/>
+        <boughtConfiguration name="cropSensor" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.000058"/>
+            <dirtNode amount="0.000058" snowScale="0.000000"/>
+            <dirtNode amount="0.000058" snowScale="0.000000"/>
+            <dirtNode amount="0.000058" snowScale="0.000000"/>
+            <dirtNode amount="0.000058" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000011"/>
+        </wearable>
+        <licensePlates variation="2" characters="HILLYFRMS" colorIndex="7" placementIndex="1"/>
+        <wheels lastWheelConfiguration="17"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-19.999999418186 180.00000500896 0" translation="0 0 6.4000000953674" zoom="6.400010" fovY="1.124554"/>
+            <camera rotation="-15.000000417413 180.00000500896 0" translation="0 2.6459469795227 -0.56219398975372" zoom="2.705023" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="386.000000"/>
+            <unit index="2" fillType="AIR" fillLevel="3000.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="32" cruiseControlReverse="22"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="32" fieldSpeedLimit="32" driverName="4755" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="605" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+    <vehicle filename="data/vehicles/johnDeere/series8R/series8R.xml" id="11" isAbsolute="true" age="0.000000" price="316000.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-668.16540527344 3.933589220047 -253.32888793945" rotation="57.742549016882 -88.995910054973 -56.1283909009"/>
+        <configuration name="motor" id="3"/>
+        <configuration name="cropSensor" id="1"/>
+        <configuration name="design" id="2"/>
+        <configuration name="wheel" id="MITAS_WEIGHTS"/>
+        <configuration name="attacherJoint" id="2"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="motor" id="3"/>
+        <boughtConfiguration name="cropSensor" id="1"/>
+        <boughtConfiguration name="design" id="1"/>
+        <boughtConfiguration name="design" id="2"/>
+        <boughtConfiguration name="wheel" id="TRELLEBORG_WEIGHTS"/>
+        <boughtConfiguration name="wheel" id="MITAS_WEIGHTS"/>
+        <boughtConfiguration name="attacherJoint" id="1"/>
+        <boughtConfiguration name="attacherJoint" id="2"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.000057"/>
+            <dirtNode amount="0.000057" snowScale="0.000000"/>
+            <dirtNode amount="0.000057" snowScale="0.000000"/>
+            <dirtNode amount="0.000057" snowScale="0.000000"/>
+            <dirtNode amount="0.000057" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000011"/>
+        </wearable>
+        <licensePlates variation="2" characters="HILLYFRMS" colorIndex="7" placementIndex="1"/>
+        <wheels lastWheelConfiguration="8"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-18.000000500896 180.00000500896 0" translation="0 0 8.0500001907349" zoom="8.050010" fovY="1.124554"/>
+            <camera rotation="-16.000001583605 180.00000500896 0" translation="0 2.9808340072632 -1.5378439426422" zoom="3.354162" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="727.000000"/>
+            <unit index="2" fillType="DEF" fillLevel="37.000000"/>
+            <unit index="3" fillType="AIR" fillLevel="3000.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="53" cruiseControlReverse="22"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="53" fieldSpeedLimit="53" driverName="8R 340" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="605" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+    <vehicle filename="data/vehicles/johnDeere/series9000/series9000.xml" id="12" isAbsolute="true" age="0.000000" price="453500.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-667.98083496094 3.7505097389221 -249.12614440918" rotation="82.30701700832 -87.29115630984 -83.571735816175"/>
+        <component index="2" position="-667.16827392578 4.4883165359497 -249.09606933594" rotation="82.530343703612 -87.210218568176 -83.79569088887"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="pipe" id="3"/>
+        <configuration name="wheel" id="MITAS_BROAD"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="pipe" id="1"/>
+        <boughtConfiguration name="pipe" id="3"/>
+        <boughtConfiguration name="wheel" id="MICHELIN_DEFAULT"/>
+        <boughtConfiguration name="wheel" id="MITAS_BROAD"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.000048"/>
+            <dirtNode amount="0.000048" snowScale="0.000000"/>
+            <dirtNode amount="0.000048" snowScale="0.000000"/>
+            <dirtNode amount="0.000048" snowScale="0.000000"/>
+            <dirtNode amount="0.000048" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000009"/>
+        </wearable>
+        <licensePlates variation="2" characters="HILLYFRMS" colorIndex="7" placementIndex="1"/>
+        <wheels lastWheelConfiguration="6"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-25.500000709602 180.00000500896 0" translation="0 0 9" zoom="9.000010" fovY="1.124554"/>
+            <camera rotation="-18.000000500896 180.00000500896 0" translation="0.045000001788139 3.5550241470337 2.5539429187775" zoom="4.377549" fovY="1.396263"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+            <unit index="2" fillType="DIESEL" fillLevel="1500.000000"/>
+            <unit index="3" fillType="DEF" fillLevel="90.000000"/>
+            <unit index="4" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="41" cruiseControlReverse="15"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <combine workedHectars="0.000000" numAttachedCutters="0"/>
+        <pipe state="1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="41" fieldSpeedLimit="41" driverName="9700" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="605" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+        <actionController lastDirection="-1" numActions="1">
+            <action name="turnOn" identifier="data/vehicles/johnDeere/series9000/series9000.xml" lastDirection="-1"/>
+        </actionController>
+    </vehicle>
+    <vehicle filename="data/vehicles/kemper/plus345/plus345_johnDeere.xml" id="13" isAbsolute="true" age="0.000000" price="60000.000000" farmId="1" propertyState="1" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-667.6640625 3.5957255363464 -244.39154052734" rotation="12.268668386254 -89.439414728349 0.08270932865073"/>
+        <configuration name="inputAttacherJoint" id="7"/>
+        <configuration name="folding" id="1"/>
+        <boughtConfiguration name="inputAttacherJoint" id="7"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <washable>
+            <dirtNode amount="0.000037"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000007"/>
+        </wearable>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="1.000000"/>
+        <actionController lastDirection="-1" numActions="2">
+            <action name="turnOn" identifier="data/vehicles/kemper/plus345/plus345_johnDeere.xml" lastDirection="-1"/>
+        </actionController>
+    </vehicle>
+     <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="1" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="170.743683" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="303.76327514648 16.35990524292 -1395.2279052734" rotation="-179.97679602616 -67.020199872185 -179.77281925678"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="baseMaterial" id="35"/>
+        <configuration name="design" id="2"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="folding" id="1"/>
+        <configuration name="rimColor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="35"/>
+        <boughtConfiguration name="design" id="1"/>
+        <boughtConfiguration name="design" id="2"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="rimColor" id="1"/>
+        <washable>
+            <dirtNode amount="0.002066"/>
+            <dirtNode amount="0.002066" snowScale="0.000000"/>
+            <dirtNode amount="0.002066" snowScale="0.000000"/>
+            <dirtNode amount="0.002066" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.002079">
+            <wearNode amount="0.002913"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="2.647275"/>
+            <movingTool translation="-5.934000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="1.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-29.970807945995 -461.25746815069 0" translation="0 0 14.299996653864" zoom="14.300010" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="5" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="50.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="5" fieldSpeedLimit="5" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="5" name="fieldWorkSpeed"/>
+                <settings currentValue="5" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="5" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="221" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+        <actionController lastDirection="-1" numActions="2">
+            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
+        </actionController>
+    </vehicle>
+    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="2" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="169.755142" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="268.6999206543 11.2570104599 -1396.1956787109" rotation="179.92931255105 -2.2046589190239 -179.94440726911"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="baseMaterial" id="35"/>
+        <configuration name="design" id="2"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="folding" id="1"/>
+        <configuration name="rimColor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="35"/>
+        <boughtConfiguration name="design" id="1"/>
+        <boughtConfiguration name="design" id="2"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="rimColor" id="1"/>
+        <washable>
+            <dirtNode amount="0.008512"/>
+            <dirtNode amount="0.008512" snowScale="0.000000"/>
+            <dirtNode amount="0.008512" snowScale="0.000000"/>
+            <dirtNode amount="0.008512" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.002067">
+            <wearNode amount="0.004625"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="20.000000"/>
+            <movingTool translation="-5.934000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="0.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-45.30776709196 -278.91986910748 0" translation="0 0 17.331934866604" zoom="17.331951" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="5" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="50.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="5" fieldSpeedLimit="5" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="5" name="fieldWorkSpeed"/>
+                <settings currentValue="5" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="5" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="221" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+        <actionController lastDirection="-1" numActions="2">
+            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
+        </actionController>
+    </vehicle>
+    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="3" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="97.575127" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="329.7438659668 16.346754074097 -1353.7091064453" rotation="0.21026191745163 23.193278487254 -0.099396954886632"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="baseMaterial" id="35"/>
+        <configuration name="design" id="2"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="folding" id="1"/>
+        <configuration name="rimColor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="35"/>
+        <boughtConfiguration name="design" id="1"/>
+        <boughtConfiguration name="design" id="2"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="rimColor" id="1"/>
+        <washable>
+            <dirtNode amount="0.000551"/>
+            <dirtNode amount="0.000551" snowScale="0.000000"/>
+            <dirtNode amount="0.000551" snowScale="0.000000"/>
+            <dirtNode amount="0.000551" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.001187">
+            <wearNode amount="0.002200"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="11.986954"/>
+            <movingTool translation="-5.934000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="1.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-34.530916437331 -271.97730606851 0" translation="0 0 31.499981158383" zoom="31.500010" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="5" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="50.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="5" fieldSpeedLimit="5" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="5" name="fieldWorkSpeed"/>
+                <settings currentValue="5" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="5" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="221" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+        <actionController lastDirection="-1" numActions="2">
+            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
+        </actionController>
+    </vehicle>
+    <vehicle modName="pdlc_forestryPack" filename="$pdlcdir$forestryPack/vehicles/manitou/m504/m504.xml" id="4" isAbsolute="true" age="0.000000" price="58000.000000" farmId="0" propertyState="0" operatingTime="158.051834" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="-166.4270324707 40.714580535889 -1273.0699462891" rotation="-179.16267845823 -89.762612449685 -179.78255910654"/>
+        <component index="2" position="-165.13792419434 41.186016082764 -1273.0645751953" rotation="-179.40193998485 -89.762612449685 -179.54329757991"/>
+        <component index="3" position="-167.94618225098 41.649833679199 -1273.0765380859" rotation="170.837798011 -89.762612449685 -179.78305088016"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <configuration name="wheel" id="BKT_DEFAULT"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="wheel" id="TRELLEBORG_DEFAULT"/>
+        <boughtConfiguration name="wheel" id="BKT_DEFAULT"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.006732"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+            <dirtNode amount="0.006732" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.001924">
+            <wearNode amount="0.001528"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="-10.000000"/>
+            <movingTool animationTime="0.013130"/>
+            <movingTool animationTime="0.700000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="2"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-17.922388831724 62.248970049684 0" translation="0 0 5.9000001089477" zoom="5.900010" fovY="1.124554"/>
+            <camera rotation="-18.999999959541 180.00000500896 0" translation="0 2.2278680801392 -0.27415499091148" zoom="2.244683" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="85.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="22" cruiseControlReverse="22"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="22" fieldSpeedLimit="22" driverName="M50-4" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="22" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="221" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+    <vehicle filename="data/vehicles/manitou/mc18/mc18.xml" id="5" isAbsolute="true" age="0.000000" price="37000.000000" farmId="0" propertyState="0" operatingTime="51.099686" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="1108.7668457031 2.7396175861359 -26.271060943604" rotation="179.58113682792 88.177141128218 179.99097549887"/>
+        <component index="2" position="1107.7097167969 3.1868486404419 -26.237411499023" rotation="179.55889773198 88.177031845191 179.95422908114"/>
+        <component index="3" position="1110.1147460938 3.2894501686096 -26.313957214355" rotation="171.12276716356 88.176922562164 179.99119406493"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <configuration name="wheel" id="MITAS_DEFAULT"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="wheel" id="MITAS_DEFAULT"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.003343"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+            <dirtNode amount="0.003343" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000621">
+            <wearNode amount="0.000738"/>
+        </wearable>
+        <cylindered>
+            <movingTool animationTime="0.029360"/>
+            <movingTool rotation="-8.459458"/>
+            <movingTool animationTime="0.700000"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <enterable activeCameraIndex="1" isTabbable="true">
+            <camera rotation="-19.064321260595 -76.89831580428 0" translation="0 0 3.1999926913785" zoom="3.200000" fovY="1.124554"/>
+            <camera rotation="-18.000000500896 180.00000500896 0" translation="0 1.8265969753265 -0.076961003243923" zoom="1.828228" fovY="1.221730"/>
+        </enterable>
+        <fillUnit>
+            <unit index="1" fillType="DIESEL" fillLevel="71.000000"/>
+        </fillUnit>
+        <drivable cruiseControl="25" cruiseControlReverse="15"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <attacherJoints comboDirection="-1"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="25" fieldSpeedLimit="25" driverName="MC 18-4" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" exitField="1" enableParkAtJobFinished="1" avoidFruit="2" shovelWidth="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" useWorkLightsSilo="2" useWorkLightsLoading="2" followDistance="8" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" autoRefuel="2" pipeOffset="41" cornerSpeed="11" callSecondUnloader="1" followOnlyOnField="1" autoTipSide="2" autoTrailerCover="2" ALUnload="1" ALUnloadWaitTime="1" autoRepair="2" parkInField="2" useBeaconLights="1" unloadFillLevel="10" shovelHeight="26" groups="All,0"/>
+        <FS22_Courseplay>
+            <cpVehicleSettings>
+                <settings currentValue="1" name="showCourse"/>
+                <settings currentValue="true" name="openHudWithMouse"/>
+                <settings currentValue="true" name="fuelSave"/>
+                <settings currentValue="true" name="turnOnField"/>
+                <settings currentValue="true" name="avoidFruit"/>
+                <settings currentValue="true" name="allowReversePathfinding"/>
+                <settings currentValue="false" name="allowPathfinderTurns"/>
+                <settings currentValue="true" name="foldImplementAtEnd"/>
+                <settings currentValue="false" name="returnToStart"/>
+                <settings currentValue="false" name="raiseImplementLate"/>
+                <settings currentValue="false" name="lowerImplementEarly"/>
+                <settings currentValue="-1.8790524691781e-14" name="toolOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="baleCollectorOffset"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetX"/>
+                <settings currentValue="-1.8790524691781e-14" name="combineOffsetZ"/>
+                <settings currentValue="85" name="fullThreshold"/>
+                <settings currentValue="false" name="useAdditiveFillUnit"/>
+                <settings currentValue="3" name="bunkerSiloWorkWidth"/>
+                <settings currentValue="-1.3877787807814e-16" name="loadingShovelHeightOffset"/>
+                <settings currentValue="0" name="levelerHeightOffset"/>
+                <settings currentValue="false" name="automaticCutterAttach"/>
+                <settings currentValue="false" name="stopForUnload"/>
+                <settings currentValue="false" name="selfUnload"/>
+                <settings currentValue="false" name="unloadOnFirstHeadland"/>
+                <settings currentValue="2" name="strawSwath"/>
+                <settings currentValue="false" name="ridgeMarkersAutomatic"/>
+                <settings currentValue="true" name="sowingMachineFertilizerEnabled"/>
+                <settings currentValue="false" name="optionalSowingMachineEnabled"/>
+                <settings currentValue="false" name="symmetricLaneChange"/>
+                <settings currentValue="75" name="convoyDistance"/>
+                <settings currentValue="25" name="fieldWorkSpeed"/>
+                <settings currentValue="20" name="fieldSpeed"/>
+                <settings currentValue="8" name="turnSpeed"/>
+                <settings currentValue="5" name="reverseSpeed"/>
+                <settings currentValue="15" name="bunkerSiloSpeed"/>
+                <settings currentValue="false" name="debugActive"/>
+            </cpVehicleSettings>
+            <cpCourseGeneratorSettings>
+                <settings currentValue="0.5" name="workWidth"/>
+                <settings currentValue="1" name="multiTools"/>
+                <settings currentValue="0" name="numberOfHeadlands"/>
+                <settings currentValue="1" name="startOnHeadland"/>
+                <settings currentValue="1" name="headlandCornerType"/>
+                <settings currentValue="1" name="isClockwise"/>
+                <settings currentValue="7" name="headlandOverlapPercent"/>
+                <settings currentValue="1" name="centerMode"/>
+                <settings currentValue="5" name="rowDirection"/>
+                <settings currentValue="0" name="rowsToSkip"/>
+                <settings currentValue="6" name="rowsPerLand"/>
+                <settings currentValue="0" name="manualRowAngleDeg"/>
+                <settings currentValue="3" name="islandBypassMode"/>
+                <settings currentValue="2.1649348980191e-15" name="fieldMargin"/>
+                <vineSettings currentValue="0" name="vineCenterOffset"/>
+                <vineSettings currentValue="1" name="vineMultiTools"/>
+                <vineSettings currentValue="0" name="vineRowsToSkip"/>
+            </cpCourseGeneratorSettings>
+            <cpAIFieldWorker>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="3" name="startAt"/>
+                    <cpJobParameters currentValue="0" name="laneOffset"/>
+                </cpJobStartAtLastWp>
+            </cpAIFieldWorker>
+            <cpAIBaleFinder>
+                <cpJob>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJob>
+                <cpJobStartAtLastWp>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="baleWrapType"/>
+                </cpJobStartAtLastWp>
+            </cpAIBaleFinder>
+            <cpAICombineUnloader>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="fieldPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadTarget"/>
+                    <cpJobParameters currentValue="false" name="useGiantsUnload"/>
+                    <cpJobParameters currentValue="221" name="unloadingStation"/>
+                    <cpJobParameters currentValue="false" name="useFieldUnload"/>
+                    <cpJobParameters name="fieldUnloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadingTipSide"/>
+                </cpJob>
+            </cpAICombineUnloader>
+            <cpAISiloLoaderWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="loadPosition"/>
+                    <cpJobParameters currentValue="1" name="unloadAt"/>
+                    <cpJobParameters name="unloadPosition"/>
+                    <cpJobParameters currentValue="-1" name="unloadStation"/>
+                </cpJob>
+            </cpAISiloLoaderWorker>
+            <cpAIBunkerSiloWorker>
+                <cpJob>
+                    <parameter name="vehicle"/>
+                    <cpJobParameters name="startPosition"/>
+                    <cpJobParameters name="siloPosition"/>
+                    <cpJobParameters currentValue="true" name="drivingForwardsIntoSilo"/>
+                    <cpJobParameters currentValue="false" name="waitAtParkPosition"/>
+                    <cpJobParameters currentValue="false" name="stopWithCompactedSilo"/>
+                </cpJob>
+            </cpAIBunkerSiloWorker>
+        </FS22_Courseplay>
+    </vehicle>
+</vehicles>

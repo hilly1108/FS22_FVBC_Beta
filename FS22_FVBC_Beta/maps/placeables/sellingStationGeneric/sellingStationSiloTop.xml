@@ -26,6 +26,8 @@
 
     <base>
         <filename>maps/placeables/sellingStationGeneric/sellingStationSiloTop.i3d</filename>
+			 <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

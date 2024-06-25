@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <modDesc descVersion="80">
     <author>HillyFarms</author>
-    <version>0.1.0.2</version>
+    <version>0.1.0.3</version>
     <title>
         <en>Fraser Valley BC (Beta)</en>
     </title>
@@ -54,6 +54,83 @@
 		<dependency>FS22_storeDeliveries</dependency>-->	
     </dependencies>
 
-    <l10n finlenamePrefix="maps/xml/l10n_en.xml"/>
+   <l10n> 
+
    
+     <!--PYSF-->
+        <text name="storeItem_startingFarms_1_header">  <en>Map's Starting Farm</en></text>
+        <text name="storeItem_startingFarms_2_header">  <en>Sumas Chickens</en></text>
+        <text name="storeItem_startingFarms_3_header">  <en>Vedder Dairy</en></text>
+        <text name="storeItem_startingFarms_4_header">  <en>Slesse Farm</en></text>
+        <text name="storeItem_startingFarms_5_header">  <en>Rexford Bro's Farm</en></text>
+        <text name="storeItem_startingFarms_6_header">  <en>Woodside Bacon and Eggs</en></text>
+        <text name="storeItem_startingFarms_7_header">  <en>Cheam Enterprises </en></text>
+        <text name="storeItem_startingFarms_8_header">  <en>Wahleach Agistment </en></text>
+        <text name="storeItem_startingFarms_9_header">  <en>Deroche Dairy Farm </en></text>
+        <text name="storeItem_startingFarms_10_header"> <en>Nicomeh Dairy</en></text>
+        <text name="storeItem_startingFarms_11_header"> <en>Isolillock Farms </en></text>
+        <text name="storeItem_startingFarms_12_header"> <en>Urquhart </en></text>
+        <text name="storeItem_startingFarms_13_header"> <en>Limbert Rd Cont.</en></text>
+        <text name="storeItem_startingFarms_14_header"> <en>McNair Family Farm</en></text>
+        <text name="storeItem_startingFarms_15_header"> <en>Brakenridge Dairys </en></text>
+        <text name="storeItem_startingFarms_16_header"> <en>Grace Dairy</en></text>
+        <text name="storeItem_startingFarms_17_header"> <en>Waever Co</en></text>
+        <text name="storeItem_startingFarms_18_header"> <en>Cartnell Stables </en></text>
+        <text name="storeItem_startingFarms_19_header"> <en>Canadian Cheerful Chickens </en></text>
+        <text name="storeItem_startingFarms_20_header"> <en>Fraser Sheep </en></text>
+        <text name="storeItem_startingFarms_21_header"> <en>FV Contracting </en></text>
+        <text name="storeItem_startingFarms_22_header"> <en>Winch Walley Camp</en></text>
+        <text name="storeItem_startingFarms_23_header"> <en>Hunt Rd Grape Farm</en></text>
+        <text name="storeItem_startingFarms_24_header"> <en>Hillbilly Hops</en></text>
+        
+        <text name="storeItem_startingFarms_1_description">
+        <en>Map Start is the default/narrative set-up the map has if you are not using the PYSF mod.</en></text>
+        <text name="storeItem_startingFarms_2_description">
+        <en> A truely massive chicken facilty with state of the art buildings, powerful New Holland equipment, and plenty of convieniently sized fields included. With this much of a head start you'll be looking for something else to invest in soon. The farmyard can even be partially sold to free up capital if you don't want to go all in on chickens.</en></text>
+        <text name="storeItem_startingFarms_3_description">
+        <en> A typical family sized Fraser Valley dairy. This farm features a building layout kinda based on real life and a swampy canal bordering the farmyard. This is a Case farm and comes with most of what you will need. Feeding is by fermenting silos and field sizes either medium or big.</en></text>
+    
+    <text name="storeItem_startingFarms_4_description">
+        <en>A typical family sized Fraser Valley dairy. This farm features a building layout kinda based on real life, a canal running through the farmyard, and a grazing pasture. This farm used Massey Furgusen tractors and forage wagons to fill it's silage bunkers and to make bales. There are several medium sized fields included that are very efficiently shaped.</en></text>
+        <text name="storeItem_startingFarms_5_description">
+        <en>Another typical family sized Fraser Valley dairy. This farm features a building layout kinda based on real life, reskinned Giant's barn and shed and outdoor yards. Feeding is by bales and the included fields are large to medium.</en></text>
+        <text name="storeItem_startingFarms_6_description">
+         <en>A small family farm that grows organic chickens and pigs. The chickens are free range and the pigs have a state of the art sty with drive-in underground manure bunker.</en></text>
+        <text name="storeItem_startingFarms_7_description">
+        <en>Easily the biggest farm in the area. Home to 400 pigs and 300 cows with an outdoor yard and grazing pasture. The pigs manure feeds directly into a farm BGA and could be as profitable as the the pigs themselves. This farm comes loaded with John Deare equipment including a chopper! There is a large amount of shed space that would suit a self-loading mod perfectly. The included fields are nearby and the right sizes.</en></text>
+        <text name="storeItem_startingFarms_8_description"> 
+        <en>A small very comfortable horse stables with grazing field and just the right amount of space to get on the path to being the go-to horse trader in the FV. Perfectly for a small family enterprise or as a productive addition to larger farming business.</en></text> 
+        <text name="storeItem_startingFarms_9_description"> 
+        <en>One of the oldest farms in the area, this farm has a unique field grazing system with temporary fences, lot's of silage bunkers, generous shed space and great fields, and seperate sideyards. It is equiped with a powerful Fendt and Lacotec chopper.</en></text> 
+        <text name="storeItem_startingFarms_10_description">
+        <en>A small family dairy farm with barn and sideyards. It is a small yard but well layed out with a bunker silo and the fields are convieniently located and sized.</en></text> 
+        <text name="storeItem_startingFarms_11_description">
+        <en>A pig farm that is well sized as a starting farm or as an addition to an existing business.</en></text> 
+        <text name="storeItem_startingFarms_12_description">
+        <en>In a beautiful location between the mountains and by the rivers edge this is a small cow farm with greenhouses. This farm comes with several smaller fields. The residential home can be seperatly sold should you wish to add this dairy to an existing farming enterprise.</en></text> 
+        <text name="storeItem_startingFarms_13_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_14_description">
+        <en>Chumpy's </en></text> 
+        <text name="storeItem_startingFarms_15_description">
+        <en>Redbarn Pack</en></text> 
+        <text name="storeItem_startingFarms_16_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_17_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_18_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_19_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_20_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_21_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_22_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_23_description">
+        <en>Farm Description goes here </en></text> 
+        <text name="storeItem_startingFarms_24_description">
+        <en>Farm Description goes here </en></text>                                                       
+      </l10n>
 </modDesc>

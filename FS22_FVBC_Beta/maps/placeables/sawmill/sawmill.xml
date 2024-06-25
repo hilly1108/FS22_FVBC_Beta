@@ -20,6 +20,8 @@
 
     <base>
         <filename>maps/placeables/sawmill/sawmillTriggers.i3d</filename>
+		 <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" />

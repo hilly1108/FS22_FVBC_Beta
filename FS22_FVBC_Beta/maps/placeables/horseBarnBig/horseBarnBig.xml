@@ -7,6 +7,7 @@
         <functions>
             <function>$l10n_function_animalPenHorse</function>
         </functions>
+
         <lifetime>1000</lifetime>
         <dailyUpkeep>150</dailyUpkeep>
         <rotation>0</rotation>

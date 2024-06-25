@@ -9,7 +9,7 @@
         <price>1000</price>
         <lifetime>1000</lifetime>
         <dailyUpkeep>40</dailyUpkeep>
-                <canBeSold>false</canBeSold>
+                <canBeSold>true</canBeSold>
         <showInStore>false</showInStore>
         <rotation>0</rotation>
         <brand>NONE</brand>

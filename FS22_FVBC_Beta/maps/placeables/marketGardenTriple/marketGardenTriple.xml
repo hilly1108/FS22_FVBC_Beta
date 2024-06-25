@@ -19,6 +19,7 @@
             <tab>greenhouses</tab>
         </brush>
         <canBeSold>true</canBeSold>
+		   <showInStore>false</showInStore>
         <vertexBufferMemoryUsage>991744</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>149504</indexBufferMemoryUsage>
         <textureMemoryUsage>5177344</textureMemoryUsage>

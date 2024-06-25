@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/longerImplementShedFullSize/longerImplementShedFullSize.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

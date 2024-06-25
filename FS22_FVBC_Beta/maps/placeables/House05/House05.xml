@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/House05/House05.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

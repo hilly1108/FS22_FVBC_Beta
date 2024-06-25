@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/optionalGrazingYards/optionalGrazingYards.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 

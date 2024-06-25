@@ -18,6 +18,8 @@
             <category>buildings</category>
             <tab>sheds</tab>
         </brush>
+		  <canBeSold>true</canBeSold>
+        <showInStore>false</showInStore>
         <vertexBufferMemoryUsage>590336</vertexBufferMemoryUsage>
         <indexBufferMemoryUsage>79872</indexBufferMemoryUsage>
         <textureMemoryUsage>3211264</textureMemoryUsage>
@@ -28,6 +30,7 @@
 
     <base>
         <filename>maps/placeables/oldBarn/oldBarn.i3d</filename>
+       <canBeRenamed>true</canBeRenamed>
         <boughtWithFarmland>true</boughtWithFarmland>
     </base>
 

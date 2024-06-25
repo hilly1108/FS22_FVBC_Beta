@@ -25,7 +25,8 @@
 
     <base>
         <filename>maps/placeables/House06WhiteSml/House06WhiteSml.i3d</filename>
-        
+         <canBeRenamed>true</canBeRenamed>
+        <boughtWithFarmland>true</boughtWithFarmland>
 		
     </base>
 
