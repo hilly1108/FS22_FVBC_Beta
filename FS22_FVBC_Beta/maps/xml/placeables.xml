@@ -1587,36 +1587,6 @@
 <placeable filename="$mapdir$/maps/placeables/sheepPenChickens/sheepPenChickens.xml"   position="1286.34301758 2.17011309 -1512.71728516" rotation="-180 63.40951157 -179.99998474" price="50.000000" farmId="0"  />
 
 
-    
-  
-<!--Houses -->  
-    <placeable filename="$mapdir$/maps/placeables/House01/House01Green.xml"   position="-350.6539917 2.70472002 751.43701172" rotation="0 90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="-357.14099121 2.29715991 746.59802246" rotation="0 90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-343.11700439 2.67916989 628.55200195" rotation="180 0 -180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-354.09698486 2.71887994 620.46099854" rotation="0 90 -0.00002732" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House04/House04Green.xml"   position="-813.25897217 2.61477995 420.88101196" rotation="0 89.6713028 -0.00002765" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House08/House08y.xml"   position="-346.32400513 1.69799995 944.98999023" rotation="180 -90 -180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House08/House08y.xml"   position="-346.32400513 1.69799995 941.06799316" rotation="180 -90 -180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House05/House05.xml" id="150" position="-993.82098389 2.61477995 357.08999634" rotation="0 49.49079895 0.00000952" farmId="0"  />
-   	<placeable filename="$mapdir$/maps/placeables/House01/House01Brown.xml"   position="-1761.5 5.39468002 -160.57800293" rotation="0 45 0" farmId="0"  />
-	<placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="-1762.51000977 5.04500008 -168.72599792" rotation="0 45 0" farmId="0"  />
-	<placeable filename="$mapdir$/maps/placeables/HouseTrailer01/HouseTrailer01.xml"   position="-1749.5 5.3548398 -184.93800354" rotation="180 -44.69900131 180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Green.xml" id="123"  position="-1110.14001465 4.04606009 -211.58299255" rotation="180 -81.99999237 180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House03/House03.xml"   position="191.14199829 2.91839004 1643.58996582" rotation="0 0 0" farmId="0"  />
-	<placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="204.40600586 2.90272999 1648.69897461" rotation="-180 0 -180" farmId="0"  />
-	<placeable filename="$mapdir$/maps/placeables/House06/House06.xml"   position="202.44099426 2.89658999 1641.79797363" rotation="0 0 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House05/House05.xml"   position="-897.83197021 3.7750001 -163.63699341" rotation="-180 5.04417992 -180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-679.5 3.96499991 -195.86599731" rotation="0 0 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-686.45098877 3.96499991 -195.9024353" rotation="0 90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-309.51400757 5.71047974 -533.13299561" rotation="0 90 0.00004217" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-309.52600098 5.66910982 -524.07598877" rotation="0 -90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-320.95800781 5.48746014 -514.71099854" rotation="180 0 -180" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/horsefarmHouse/horsefarmHouse.xml"   position="0 0 0" rotation="0 0 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06Green.xml"   position="1142.06994629 5.82102013 -689.24798584" rotation="0 90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06Green.xml"   position="1140.77001953 5.82102013 -700.35101318" rotation="0 -90 0" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House07White/House07White.xml"   position="1084.90002441 5.82101011 -697.71600342" rotation="0 53.55733109 -0.00001231" farmId="0"  />
-    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="1108.17004395 5.82101011 -704.67498779" rotation="0 90 0.00010395" farmId="0"  />
-
 <!--Hops Dryers -->
 <!--1 FARM-->
 	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" >
@@ -1733,6 +1703,33 @@
         <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false"/>
     </placeable>
  
+ <!--Houses -->  
+    <placeable filename="$mapdir$/maps/placeables/House01/House01Green.xml"   position="-350.6539917 2.70472002 751.43701172" rotation="0 90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="-357.14099121 2.29715991 746.59802246" rotation="0 90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-343.11700439 2.67916989 628.55200195" rotation="180 0 -180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-354.09698486 2.71887994 620.46099854" rotation="0 90 -0.00002732" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House04/House04Green.xml"   position="-813.25897217 2.61477995 420.88101196" rotation="0 89.6713028 -0.00002765" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House08/House08y.xml"   position="-346.32400513 1.69799995 944.98999023" rotation="180 -90 -180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House08/House08y.xml"   position="-346.32400513 1.69799995 941.06799316" rotation="180 -90 -180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House05/House05.xml" id="150" position="-993.82098389 2.61477995 357.08999634" rotation="0 49.49079895 0.00000952" farmId="0"  />
+   	<placeable filename="$mapdir$/maps/placeables/House01/House01Brown.xml"   position="-1761.5 5.39468002 -160.57800293" rotation="0 45 0" farmId="0"  />
+	<placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="-1762.51000977 5.04500008 -168.72599792" rotation="0 45 0" farmId="0"  />
+	<placeable filename="$mapdir$/maps/placeables/HouseTrailer01/HouseTrailer01.xml"   position="-1749.5 5.3548398 -184.93800354" rotation="180 -44.69900131 180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Green.xml" id="123"  position="-1110.14001465 4.04606009 -211.58299255" rotation="180 -81.99999237 180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House03/House03.xml"   position="191.14199829 2.91839004 1643.58996582" rotation="0 0 0" farmId="0"  />
+	<placeable filename="$mapdir$/maps/placeables/HouseGarageDoor01/HouseGarageDoor01.xml"   position="204.40600586 2.90272999 1648.69897461" rotation="-180 0 -180" farmId="0"  />
+	<placeable filename="$mapdir$/maps/placeables/House06/House06.xml"   position="202.44099426 2.89658999 1641.79797363" rotation="0 0 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House05/House05.xml"   position="-897.83197021 3.7750001 -163.63699341" rotation="-180 5.04417992 -180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-679.5 3.96499991 -195.86599731" rotation="0 0 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House02Green/House02Red.xml"   position="-686.45098877 3.96499991 -195.9024353" rotation="0 90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-309.51400757 5.71047974 -533.13299561" rotation="0 90 0.00004217" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-309.52600098 5.66910982 -524.07598877" rotation="0 -90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="-320.95800781 5.48746014 -514.71099854" rotation="180 0 -180" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/horsefarmHouse/horsefarmHouse.xml"   position="0 0 0" rotation="0 0 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06Green.xml"   position="1142.06994629 5.82102013 -689.24798584" rotation="0 90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06Green.xml"   position="1140.77001953 5.82102013 -700.35101318" rotation="0 -90 0" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House07White/House07White.xml"   position="1084.90002441 6.03229856 -697.71600342" rotation="0 233.5 -0.00001231" farmId="0"  />
+    <placeable filename="$mapdir$/maps/placeables/House06White/House06White.xml"   position="1108.17004395 5.82101011 -704.67498779" rotation="0 90 0.00010395" farmId="0"  />
  
 <!--Decoration Farms/Houses/etc -->
 <placeable filename="$mapdir$/maps/placeables/House02/House02.xml"   position="-1464.38000488 13.55200005 -781.53302002" rotation="180 0 180" farmId="0"  />
