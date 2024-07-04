@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="bga1mw_mixers.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="3" filename="$data/fillPlanes/silage_diffuse.dds"/>
+    <File fileId="4" filename="$data/fillPlanes/silage_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="lambert1" materialId="5">
+      <Texture fileId="3"/>
+      <Normalmap fileId="4"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.439216 0.439216 0.439216 1">
+    </Material>
+    <Material name="UnnamedMaterial" materialId="40" diffuseColor="1 1 1 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="bga1mw_mixers.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <TransformGroup name="bga1mw" rotation="0 0 -2.21e-06" clipDistance="400" nodeId="23">
+        <TransformGroup name="transform" nodeId="24"/>
+        <Shape shapeId="1" name="infoTrigger" translation="-13.347 0 -10.1831" kinematic="true" compound="true" trigger="true" collisionMask="1048576" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+          <Shape shapeId="2" name="infoTriggerUnloading" translation="16.08 -6.92644e-15 -27.6534" rotation="-2.91496e-13 38.0022 -1.29162e-13" compoundChild="true" trigger="true" collisionMask="1048576" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="3" name="infoTriggerLoading" translation="75.2113 0 -29.8218" rotation="0 19.0032 0" compoundChild="true" trigger="true" collisionMask="1048576" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        </Shape>
+        <TransformGroup name="productionPoint" translation="0 -4.54747e-15 0" nodeId="28">
+          <TransformGroup name="transform" translation="0 4.54747e-15 0" nodeId="29"/>
+          <TransformGroup name="bunker2" nodeId="30">
+            <TransformGroup name="bottom" nodeId="31">
+              <Shape shapeId="4" name="unloadTriggerBunker2" translation="-0.945671 2.03643 -19.3422" rotation="0 90 0" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadTriggerMarker2" translation="-0.85185 3.41179 -19.2564" rotation="0 180.892 0" clipDistance="150" nodeId="33"/>
+              <Shape shapeId="5" name="baleTriggerBunker2" translation="-0.911686 2.03643 -19.3422" rotation="0 90 0" kinematic="true" trigger="true" collisionMask="18874368" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+            <TransformGroup name="top" nodeId="35">
+              <Shape shapeId="6" name="unloadTriggerBunker2top" translation="-4.70018 2.93364 -19.2817" rotation="0 90 0" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="7" name="baleTriggerBunker2top" translation="-4.47986 2.31725 -19.2856" rotation="0 90 0" kinematic="true" trigger="true" collisionMask="18874368" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <TransformGroup name="unloadTriggerBunker2topAINode" translation="-9.31456 1.85 -15.6863" rotation="0 186 0" nodeId="38"/>
+              <Shape shapeId="8" name="unloadTriggerBunker2topAISpline" translation="-11.8168 1.99419 -19.6065" rotation="0 5.99494 0" nodeId="39"/>
+            </TransformGroup>
+          </TransformGroup>
+          <TransformGroup name="slurryUnloading" translation="51.5826 8.05649e-07 18.485" rotation="180 71.6336 180" nodeId="41">
+            <TransformGroup name="unloadTriggerLiquidManureMarker" translation="65.5408 4.54747e-15 -37.8747" nodeId="42"/>
+            <TransformGroup name="unloadTriggerLiquidManureAINode" translation="65.6076 4.54747e-15 -39.4947" rotation="0 90 0" nodeId="43"/>
+            <Shape shapeId="9" name="unloadingLiquidManureAISpline" translation="61.3054 0.399485 -45.5309" rotation="7.03555e-13 -5.98394 1.40398e-05" nodeId="44"/>
+            <Shape shapeId="10" name="unloadTriggerLiquidManure" translation="65.5408 4.54747e-15 -38.2769" kinematic="true" compound="true" collisionMask="1073741824" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          </TransformGroup>
+          <TransformGroup name="digestateLoading" translation="17.8913 0.519249 4.78722" rotation="-1.12318e-11 64.2051 -4.67782e-13" nodeId="46">
+            <Shape shapeId="11" name="loadTrigger" translation="61.323 2 22.4729" rotation="0 19.1907 0" static="true" trigger="true" collisionMask="1073741824" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="loadTriggerMarker" translation="61.323 2 22.4729" rotation="0 19.1907 0" nodeId="48"/>
+            <TransformGroup name="loadTriggerAiNode" translation="61.3628 4.54747e-15 22.7841" rotation="0 109.434 0" nodeId="49"/>
+          </TransformGroup>
+          <Shape shapeId="12" name="playerTrigger" translation="-27.6329 0.5 -38.2495" kinematic="true" compound="true" trigger="true" collisionMask="1048576" nodeId="50" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <TransformGroup name="playerTriggerMarker" nodeId="51"/>
+          </Shape>
+          <Shape shapeId="13" name="fillPlaneBunkers" translation="-0.930724 2.53993 -18.2732" rotation="-2.10774e-06 1.14052 6.2391e-07" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="hotspotNode" translation="-11.7159 0 -15.3382" nodeId="53"/>
+        <TransformGroup name="teleportNode" translation="-11.4264 1.15365 -13.9986" nodeId="54"/>
+        <TransformGroup name="collisions" nodeId="55">
+          <Shape shapeId="14" name="tipCollision" visibility="false" static="true" collisionMask="524288" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="tipOcclusionUpdateAreas" nodeId="57">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-6.22283 9.09495e-15 -29.9584" nodeId="58">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="16.2581 0 23.5288" nodeId="59"/>
+          </TransformGroup>
+          <TransformGroup name="tipOcclusionUpdateArea2Start" translation="-6.22283 9.09495e-15 4.18454" nodeId="60">
+            <TransformGroup name="tipOcclusionUpdateArea2End" translation="16.2581 0 23.5288" nodeId="61"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="indoorAreas" nodeId="62">
+          <TransformGroup name="indoorArea1Start" translation="-1.86201 0 10.7185" nodeId="63">
+            <TransformGroup name="indoorArea1Width" translation="2.42813 0 -4.54747e-15" nodeId="64"/>
+            <TransformGroup name="indoorArea1Height" translation="2.84217e-16 0 12.3357" nodeId="65"/>
+          </TransformGroup>
+          <TransformGroup name="indoorArea2Start" translation="-2.17248 0 -25.6952" nodeId="66">
+            <TransformGroup name="indoorArea2Width" translation="2.49711 0 4.54747e-15" nodeId="67"/>
+            <TransformGroup name="indoorArea2Height" translation="2.84217e-16 0 12.5105" nodeId="68"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="aiUpdateAreas" nodeId="69">
+          <TransformGroup name="aiUpdateArea1Start" translation="52.9414 0 -46.2244" nodeId="70">
+            <TransformGroup name="aiUpdateArea1End" translation="24.3706 0 17.529" nodeId="71"/>
+          </TransformGroup>
+          <TransformGroup name="aiUpdateArea2Start" translation="50.1325 0 17.7481" rotation="0 19.5471 0" nodeId="72">
+            <TransformGroup name="aiUpdateArea2End" translation="18.4059 0 15.5783" nodeId="73"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="soundNode" translation="32.1166 0 0" nodeId="74"/>
+      </TransformGroup>
+  </Scene>
+
+</i3D>

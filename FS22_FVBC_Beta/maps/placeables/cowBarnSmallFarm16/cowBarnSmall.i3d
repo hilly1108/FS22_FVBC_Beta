@@ -18,10 +18,10 @@
     <File fileId="14" filename="$data/shared/fakeWater_diffuse.png"/>
     <File fileId="15" filename="$data/shared/fakeWater_normal.png"/>
     <File fileId="16" filename="$data/shared/fakeWater_specular.png"/>
-    <File fileId="3" filename="placeables/FS22_feedingRacks_prefab/textures/Aluminium_diffuse.dds"/>
-    <File fileId="4" filename="placeables/FS22_feedingRacks_prefab/textures/Aluminium_normal.dds"/>
-    <File fileId="5" filename="placeables/FS22_feedingRacks_prefab/textures/Aluminium_specular.dds"/>
-    <File fileId="7" filename="placeables/FS22_feedingRacks_prefab/textures/FeedingRack_mask.dds"/>
+    <File fileId="3" filename="Aluminium_diffuse.dds"/>
+    <File fileId="4" filename="Aluminium_normal.dds"/>
+    <File fileId="5" filename="Aluminium_specular.dds"/>
+    <File fileId="7" filename="FeedingRack_mask.dds"/>
   </Files>
 
 

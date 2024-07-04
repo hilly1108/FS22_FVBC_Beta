@@ -27,31 +27,31 @@
 
 
   <Materials>
-    <Material name="bigRocksBigClump01LOD1_mat" materialId="63" customShaderId="7" customShaderVariation="BILLBOARD">
+    <Material name="bigRocksBigClump01LOD1_mat" materialId="5" customShaderId="7" customShaderVariation="BILLBOARD">
       <Texture fileId="16"/>
       <Normalmap fileId="17"/>
       <Custommap name="alphaMap" fileId="18"/>
       <CustomParameter name="snowScale" value="0.4 0 0 60"/>
     </Material>
-    <Material name="bigRocksBigClump02LOD1_mat" materialId="64" customShaderId="7" customShaderVariation="BILLBOARD">
+    <Material name="bigRocksBigClump02LOD1_mat" materialId="6" customShaderId="7" customShaderVariation="BILLBOARD">
       <Texture fileId="5"/>
       <Normalmap fileId="6"/>
       <Custommap name="alphaMap" fileId="9"/>
       <CustomParameter name="snowScale" value="0.4 0 0 60"/>
     </Material>
-    <Material name="bigRocksBigClump03LOD1_mat" materialId="65" customShaderId="7" customShaderVariation="BILLBOARD">
+    <Material name="bigRocksBigClump03LOD1_mat" materialId="7" customShaderId="7" customShaderVariation="BILLBOARD">
       <Texture fileId="13"/>
       <Normalmap fileId="14"/>
       <Custommap name="alphaMap" fileId="15"/>
       <CustomParameter name="snowScale" value="0.4 0 0 60"/>
     </Material>
-    <Material name="bigRocksBigClump04LOD1_mat" materialId="66" customShaderId="7" customShaderVariation="BILLBOARD">
+    <Material name="bigRocksBigClump04LOD1_mat" materialId="8" customShaderId="7" customShaderVariation="BILLBOARD">
       <Texture fileId="10"/>
       <Normalmap fileId="11"/>
       <Custommap name="alphaMap" fileId="12"/>
       <CustomParameter name="snowScale" value="0.4 0 0 60"/>
     </Material>
-    <Material name="groundFoliageStonesBig_mat" materialId="67" customShaderId="4">
+    <Material name="groundFoliageStonesBig_mat" materialId="9" customShaderId="4">
       <Texture fileId="1"/>
       <Normalmap fileId="2"/>
       <Glossmap fileId="3"/>
@@ -68,23 +68,22 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="stone" nodeId="77">
-        <TransformGroup name="bigRocks" nodeId="78">
-          <TransformGroup name="LOD0" nodeId="79">
-            <Shape shapeId="1" name="bigClump_02" clipDistance="500" nodeId="80" materialIds="67" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="2" name="bigClump_04" clipDistance="500" nodeId="81" materialIds="67" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="bigClump_03" clipDistance="500" nodeId="82" materialIds="67" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="bigClump_01" clipDistance="500" nodeId="83" materialIds="67" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="stone" nodeId="19">
+        <TransformGroup name="bigRocks" nodeId="20">
+          <TransformGroup name="LOD0" nodeId="21">
+            <Shape shapeId="1" name="bigClump_02" clipDistance="500" nodeId="22" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="2" name="bigClump_04" clipDistance="500" nodeId="23" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="bigClump_03" clipDistance="500" nodeId="24" materialIds="9" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="bigClump_01" clipDistance="500" nodeId="25" materialIds="9" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
-          <TransformGroup name="LOD1" nodeId="84">
-            <Shape shapeId="5" name="bigClump_02" clipDistance="500" nodeId="85" materialIds="64" receiveShadows="true"/>
-            <Shape shapeId="6" name="bigClump_04" clipDistance="500" nodeId="86" materialIds="66" receiveShadows="true"/>
-            <Shape shapeId="7" name="bigClump_03" clipDistance="500" nodeId="87" materialIds="65" receiveShadows="true"/>
-            <Shape shapeId="8" name="bigClump_01" clipDistance="500" nodeId="88" materialIds="63" receiveShadows="true"/>
+          <TransformGroup name="LOD1" nodeId="26">
+            <Shape shapeId="5" name="bigClump_02" clipDistance="500" nodeId="27" materialIds="6" receiveShadows="true"/>
+            <Shape shapeId="6" name="bigClump_04" clipDistance="500" nodeId="28" materialIds="8" receiveShadows="true"/>
+            <Shape shapeId="7" name="bigClump_03" clipDistance="500" nodeId="29" materialIds="7" receiveShadows="true"/>
+            <Shape shapeId="8" name="bigClump_01" clipDistance="500" nodeId="30" materialIds="5" receiveShadows="true"/>
           </TransformGroup>
         </TransformGroup>
       </TransformGroup>
-      <Light name="light" rotation="-40 0 -30" nodeId="90" type="directional" color="1 1 1" emitDiffuse="true" emitSpecular="true" castShadowMap="true" depthMapBias="0.0012" depthMapSlopeScaleBias="2" depthMapSlopeClamp="0.0005" depthMapResolution="1024" shadowFarDistance="1000" shadowExtrusionDistance="200" pcssLightSize="50.7906" pcssLightDistance="0.66" pcssDepthBiasFactor="1" pcssMaxPenumbraSize="1" shadowPerspective="false" numShadowMapSplits="5" shadowMapSplitDistancesParameter="0.9" range="500"/>
   </Scene>
 
 </i3D>

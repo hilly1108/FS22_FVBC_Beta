@@ -2,7 +2,7 @@
 <placeable type="sellingStation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
         <name>
-            <en>Cheam Enterprises F6-C,P</en>
+            <en>Cheam Enterprises</en>
 
 	</name>
         <functions>

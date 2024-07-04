@@ -2,8 +2,8 @@
 
 <storeItems>
 
-	<!-- <storeItem xmlFilename="maps/placeables/decocows1/decocows1.xml"/>	-->
-	<StoreItem xmlFilename="maps/placeables/bga/bga500kw.xml"/>
+    <storeItem xmlFilename="maps/placeables/decocows1/decocows1.xml"/>
+	<StoreItem xmlFilename="maps/placeables/bga/bga1mw.xml"/>
 	<StoreItem xmlFilename="maps/placeables/chickenBarnSmallSE/chickenBarnSmall.xml"/>
 	<StoreItem xmlFilename="maps/placeables/chickenBarnSmallSW/chickenBarnSmall.xml"/>
 	<StoreItem xmlFilename="maps/placeables/cowBarnMedium/cowBarnMedium.xml"/>
@@ -103,8 +103,8 @@
 	<storeItem xmlFilename="maps/placeables/marketGardenTriple/marketGardenTriple.xml"/>
 	<storeItem xmlFilename="maps/placeables/oldBarn/oldBarn.xml"/>	
 	<storeItem xmlFilename="maps/placeables/optionalGrazingYards/optionalGrazingYards.xml"/>
+    <storeItem xmlFilename="maps/placeables/retractingCowField/retractingCowField.xml"/>
 	<storeItem xmlFilename="maps/placeables/partialFarm01_Deco/partialFarm01_Deco.xml"/>
-	<storeItem xmlFilename="maps/placeables/retractingCowField/retractingCowField.xml"/>		
 	<storeItem xmlFilename="maps/placeables/singleBarrier/singleBarrier.xml"/>
 	<storeItem xmlFilename="maps/placeables/smlShed/smlShed.xml"/>	
 	<storeItem xmlFilename="maps/placeables/smlShed/smlShed1.xml"/>	
@@ -174,7 +174,6 @@
     <storeItem xmlFilename="maps/placeables/horseBarnSmallFarm14-2/horseBarnSmall.xml"/>
     <storeItem xmlFilename="maps/placeables/horseBarnSmallL/horseBarnSmall.xml"/>
     <storeItem xmlFilename="maps/placeables/manurePit/manurePitExtension.xml"/>	
-    <storeItem xmlFilename="maps/placeables/oldOldBarn/oldOldBarn.xml"/>
     <storeItem xmlFilename="maps/placeables/pigBarnBigFixed/pigBarnBigFixed.xml"/>
     <storeItem xmlFilename="maps/placeables/pigBarnBigFixed02/pigBarnBigFixed02.xml"/>
     <storeItem xmlFilename="maps/placeables/sawmill/sawmill.xml"/>

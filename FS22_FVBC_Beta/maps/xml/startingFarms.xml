@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <RDM_StartFarm>	
-        <farm header="storeItem_startingFarms_1_header" description="storeItem_startingFarms_1_description" image1="startingFarms/pic2a.dds" image2="startingFarms/pic2b.dds">
+        <farm header="storeItem_startingFarms_1_header" description="storeItem_startingFarms_1_description" image1="startingfarms/pic2a.dds" image2="startingfarms/pic2b.dds">
              <placeables></placeables>
-            <vehicles>startingFarms/vehicles1.xml</vehicles>
+            <vehicles>startingfarms/vehicles1.xml</vehicles>
             <money1>200000</money1>
             <money2>100000</money2>
             <money3>5000</money3>
@@ -15,7 +15,7 @@
         </farm>
         <farm header="storeItem_startingFarms_2_header" description="storeItem_startingFarms_2_description" image1="startingFarms/pic2a.dds" image2="startingFarms/pic2b.dds">
              <placeables></placeables>
-            <vehicles>startingFarms/vehicles2.xml</vehicles>
+            <vehicles>startingfarms/vehicles2.xml</vehicles>
             <money1>200000</money1>
             <money2>100000</money2>
             <money3>5000</money3>

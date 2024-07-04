@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
-<i3D name="Maik Map" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+<i3D name="optionalGrazingYards.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
   <Asset>
-    <Export program="GIANTS Editor 64bit" version="9.0.3"/>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
   </Asset>
 
   <Files>
@@ -20,28 +20,24 @@
 
 
   <Materials>
-    <Material name="boardStackSet_mat" materialId="4" customShaderId="8">
+    <Material name="boardStackSet_mat" materialId="5" customShaderId="8">
       <Texture fileId="10"/>
       <Normalmap fileId="11"/>
       <Glossmap fileId="12"/>
-      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
-      <CustomParameter name="snowScale" value="1 0 0 0"/>
     </Material>
-    <Material name="fenceThickTubesSet_mat" materialId="5" customShaderId="8">
+    <Material name="fenceThickTubesSet_mat" materialId="6" customShaderId="8">
       <Texture fileId="5"/>
       <Normalmap fileId="6"/>
       <Glossmap fileId="7"/>
-      <CustomParameter name="placeableColorScale" value="0 1 0 0"/>
-      <CustomParameter name="snowScale" value="1 0 0 0"/>
     </Material>
-    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
     </Material>
-    <Material name="loadingChute_mat" materialId="7">
+    <Material name="loadingChute_mat" materialId="8">
       <Texture fileId="2"/>
       <Normalmap fileId="3"/>
       <Glossmap fileId="4"/>
     </Material>
-    <Material name="UnnamedMaterial" materialId="8" diffuseColor="1 1 1 1">
+    <Material name="UnnamedMaterial" materialId="9" diffuseColor="1 1 1 1">
     </Material>
   </Materials>
 
@@ -54,120 +50,120 @@
   </Dynamics>
 
   <Scene>
-      <TransformGroup name="optionalGrazingYards1" translation="0.975946 -1.60762e-07 0.287699" rotation="180 -6.11907 180" nodeId="17">
-        <TransformGroup name="optionalGrazingYards1" nodeId="18">
-          <TransformGroup name="optionalGrazingYards1" kinematic="true" nodeId="19">
-            <Shape shapeId="1" name="loadingChute" lockedgroup="true" translation="12.042 -2.10788 -26.6904" rotation="-25.2049 -82.8902 25.1299" kinematic="true" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="2" name="visual" clipDistance="150" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      <TransformGroup name="optionalGrazingYards1" translation="0 -1.60762e-07 0" nodeId="18">
+        <TransformGroup name="optionalGrazingYards1" nodeId="19">
+          <TransformGroup name="optionalGrazingYards1" kinematic="true" nodeId="20">
+            <Shape shapeId="1" name="loadingChute" lockedgroup="true" translation="12.042 -2.10788 -26.6904" rotation="-25.2049 -82.8902 25.1299" kinematic="true" nodeId="21" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="2" name="visual" clipDistance="150" nodeId="22" materialIds="8" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.961 -2.44681 -20.804" clipDistance="80" nodeId="22" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="12.9696 -1.71027 -20.7153" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="24" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.961 -2.44681 -20.804" clipDistance="80" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="12.9696 -1.71027 -20.7153" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.0435 -1.39922 -16.7354" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.0435 -1.39922 -16.7354" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="26" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.1168 -1.03507 -12.7836" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.1168 -1.03507 -12.7836" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="28" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.1896 -0.654599 -8.86316" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.1896 -0.654599 -8.86316" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="30" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.0431 -2.06367 -16.8333" clipDistance="80" nodeId="31" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1176 -1.65761 -12.9162" clipDistance="80" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.6701 -1.87693 -24.6568" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="34" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.0431 -2.06367 -16.8333" clipDistance="80" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1176 -1.65761 -12.9162" clipDistance="80" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.6701 -1.87693 -24.6568" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.7981 -1.5803 -20.6576" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="36" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.7981 -1.5803 -20.6576" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="37" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.9254 -2.11087 -16.7428" clipDistance="80" nodeId="37" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.9251 -1.24861 -16.6883" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="39" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.9254 -2.11087 -16.7428" clipDistance="80" nodeId="38" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.9251 -1.24861 -16.6883" rotation="-52.799 -86.9735 52.7931" kinematic="true" density="0.0001" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="12.0519 -0.863086 -12.728" rotation="-171.73 -72.9993 172.119" kinematic="true" density="0.0001" nodeId="40" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="41" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="12.0519 -0.863086 -12.728" rotation="-171.73 -72.9993 172.119" kinematic="true" density="0.0001" nodeId="41" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="42" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="10.9026 -0.628 -8.94944" rotation="-0.897 -0 1.01778e-13" clipDistance="80" nodeId="42" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.1951 -2.43247 -25.384" rotation="-177.588 -1.71613 179.96" kinematic="true" density="0.0001" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="44" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="10.9026 -0.628 -8.94944" rotation="-0.897 -0 1.01778e-13" clipDistance="80" nodeId="43" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.1951 -2.43247 -25.384" rotation="-177.588 -1.71613 179.96" kinematic="true" density="0.0001" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="45" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.1833 -2.3796 -25.4362" rotation="0 -0 1.01778e-13" clipDistance="80" nodeId="45" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="10.9246 -1.9768 -28.8086" rotation="0 -0 1.01778e-13" clipDistance="80" nodeId="46" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.101 -1.91252 -27.3567" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="47" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.2099 -2.06503 -26.4167" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="48" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.21246 -2.44534 -25.264" rotation="-175.393 -58.4178 176.106" kinematic="true" density="0.0001" nodeId="49" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="50" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.1833 -2.3796 -25.4362" rotation="0 -0 1.01778e-13" clipDistance="80" nodeId="46" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="10.9246 -1.9768 -28.8086" rotation="0 -0 1.01778e-13" clipDistance="80" nodeId="47" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.101 -1.91252 -27.3567" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="48" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="11.2099 -2.06503 -26.4167" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="49" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.21246 -2.44534 -25.264" rotation="-175.393 -58.4178 176.106" kinematic="true" density="0.0001" nodeId="50" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="5.13324 -2.13934 -21.8812" rotation="-175.393 -58.4178 176.106" kinematic="true" density="0.0001" nodeId="51" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="52" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="5.13324 -2.13934 -21.8812" rotation="-175.393 -58.4178 176.106" kinematic="true" density="0.0001" nodeId="52" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="10.9059 -0.703 -8.91099" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="53" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="54" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="10.9059 -0.703 -8.91099" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="54" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="55" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-0.10346 -0.446 -4.23026" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.2618 -0.232 -4.96956" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="57" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-0.10346 -0.446 -4.23026" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="56" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="13.2618 -0.232 -4.96956" rotation="-113.789 87.366 -113.778" kinematic="true" density="0.0001" nodeId="57" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="58" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1902 -0.628578 -8.98635" rotation="-0.897 -0 1.01778e-13" clipDistance="80" nodeId="58" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="3.0489 -1.93486 -18.4733" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="59" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.3916 -0.0839764 -1.42656" rotation="-5.15742 62.1081 -4.52754" kinematic="true" density="0.0001" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="61" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1902 -0.628578 -8.98635" rotation="-0.897 -0 1.01778e-13" clipDistance="80" nodeId="59" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="3.0489 -1.93486 -18.4733" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="60" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="11.3916 -0.0839764 -1.42656" rotation="-5.15742 62.1081 -4.52754" kinematic="true" density="0.0001" nodeId="61" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.39234 -0.0729672 -1.10953" rotation="-2.41727 4.40615 -0.152375" kinematic="true" density="0.0001" nodeId="62" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="63" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.39234 -0.0729672 -1.10953" rotation="-2.41727 4.40615 -0.152375" kinematic="true" density="0.0001" nodeId="63" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.41147 -0.0927545 -1.52445" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="64" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="65" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.41147 -0.0927545 -1.52445" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="65" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-0.533348 -0.234562 -1.9179" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="66" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="67" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-0.533348 -0.234562 -1.9179" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="67" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="68" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-4.51022 -0.35963 -2.31529" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="68" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="69" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-4.51022 -0.35963 -2.31529" rotation="-2.42241 -5.76977 0.277115" kinematic="true" density="0.0001" nodeId="69" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="70" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.05259 -1.94232 -18.4914" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="70" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="71" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.05259 -1.94232 -18.4914" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="71" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="72" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="0.122148 -1.73764 -15.8234" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="72" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="73" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="0.122148 -1.73764 -15.8234" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="73" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-2.80654 -1.54215 -13.1567" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="74" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="75" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-2.80654 -1.54215 -13.1567" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="75" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="76" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-5.74921 -1.43087 -10.4736" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="76" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="77" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-5.74921 -1.43087 -10.4736" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="77" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-8.6679 -1.076 -7.82282" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="78" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="79" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-8.6679 -1.076 -7.82282" rotation="-176.738 -42.3378 177.834" kinematic="true" density="0.0001" nodeId="79" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-11.6604 -0.602 -5.09817" rotation="-176.118 -51.5926 176.99" kinematic="true" density="0.0001" nodeId="80" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="81" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-11.6604 -0.602 -5.09817" rotation="-176.118 -51.5926 176.99" kinematic="true" density="0.0001" nodeId="81" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="82" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-14.1583 -0.458116 -1.94164" rotation="-2.82 -0 1.01778e-13" clipDistance="80" nodeId="82" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-11.6073 -0.964 -5.12312" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="83" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-11.6073 -0.964 -5.12312" rotation="-2.98081 18.8763 -0.965149" clipDistance="80" nodeId="84" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-4.57874 -0.652096 -2.36251" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="85" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.22832 -0.639636 -7.35262" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="87" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-14.1583 -0.458116 -1.94164" rotation="-2.82 -0 1.01778e-13" clipDistance="80" nodeId="83" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-11.6073 -0.964 -5.12312" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="84" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-11.6073 -0.964 -5.12312" rotation="-2.98081 18.8763 -0.965149" clipDistance="80" nodeId="85" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-4.57874 -0.652096 -2.36251" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="86" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="7.22832 -0.639636 -7.35262" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="87" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.56109 -0.576318 -5.79864" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="88" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="89" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="3.56109 -0.576318 -5.79864" rotation="-177.382 -22.9616 179.011" kinematic="true" density="0.0001" nodeId="89" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="90" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-4.59556 -0.368714 -2.28925" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="90" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-4.59649 -0.489156 -2.29269" rotation="-177.572 6.88159 -179.675" kinematic="true" density="0.0001" nodeId="91" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
-              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="92" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-4.59556 -0.368714 -2.28925" rotation="-2.82037 -0 1.01778e-13" clipDistance="80" nodeId="91" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="4" name="fenceThickTubesCover4m" lockedgroup="true" translation="-4.59649 -0.489156 -2.29269" rotation="-177.572 6.88159 -179.675" kinematic="true" density="0.0001" nodeId="92" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+              <Shape shapeId="5" name="visual" translation="-3.25405e-08 0 0" clipDistance="120" nodeId="93" materialIds="6" castsShadows="true" receiveShadows="true"/>
             </Shape>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-8.54458 -0.536671 -2.74626" rotation="-2.82 -0 1.01778e-13" clipDistance="80" nodeId="93" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="barBeamShort" lockedgroup="true" translation="-7.60898 -0.653521 -3.13614" rotation="1.60184e-05 -16.3845 97.7552" clipDistance="30" nodeId="94" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.8977 -1.92136 -24.6915" rotation="-2.31658 -0 -1.27222e-13" clipDistance="80" nodeId="95" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="6" name="barBeamShort" lockedgroup="true" translation="-13.6229 -0.817653 -1.83429" rotation="-41.67 16.5508 96.5484" clipDistance="30" nodeId="96" materialIds="4" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1157 -1.12468 -12.8227" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="97" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.046 -1.46836 -16.7221" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="98" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.9691 -1.8148 -20.6889" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="99" materialIds="5" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="7.21299 -2.63925 -25.2352" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="100" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="-8.54458 -0.536671 -2.74626" rotation="-2.82 -0 1.01778e-13" clipDistance="80" nodeId="94" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="barBeamShort" lockedgroup="true" translation="-7.60898 -0.653521 -3.13614" rotation="1.60184e-05 -16.3845 97.7552" clipDistance="30" nodeId="95" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.8977 -1.92136 -24.6915" rotation="-2.31658 -0 -1.27222e-13" clipDistance="80" nodeId="96" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="6" name="barBeamShort" lockedgroup="true" translation="-13.6229 -0.817653 -1.83429" rotation="-41.67 16.5508 96.5484" clipDistance="30" nodeId="97" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.1157 -1.12468 -12.8227" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="98" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="13.046 -1.46836 -16.7221" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="99" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="12.9691 -1.8148 -20.6889" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="100" materialIds="6" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="3" name="fenceThickTubesPole01" lockedgroup="true" translation="7.21299 -2.63925 -25.2352" rotation="-3.14441 -0 1.01778e-13" clipDistance="80" nodeId="101" materialIds="6" castsShadows="true" receiveShadows="true"/>
           </TransformGroup>
-          <Shape shapeId="7" name="trigger" translation="10.1344 -0.566586 3.56308" rotation="2.11876e-10 85.592 4.50236e-10" scale="10.9482 6.87049 3.2973" static="true" trigger="true" collisionMask="3145728" nodeId="101" materialIds="8" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="7" name="trigger" translation="10.1344 -0.566586 3.56308" rotation="2.11876e-10 85.592 4.50236e-10" scale="10.9482 6.87049 3.2973" static="true" trigger="true" collisionMask="3145728" nodeId="102" materialIds="9" nonRenderable="true" distanceBlending="false"/>
         </TransformGroup>
       </TransformGroup>
   </Scene>

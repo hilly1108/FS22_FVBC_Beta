@@ -462,9 +462,9 @@
             </economy>
             <image      hud     ="maps/huds/hud_fill_rye.png" />
             <pallet     filename="$data/objects/pallets/fillablePallet/fillablePallet.xml" />
-            <textures   diffuse ="maps/fillPlanes/barley_diffuse.png"
-                        normal  ="maps/fillPlanes/barley_normal.png"
-                        specular="maps/fillPlanes/barley_specular.png"
+            <textures   diffuse ="$data/fillPlanes/barley_diffuse.png"
+                        normal  ="$data/fillPlanes/barley_normal.png"
+                        specular="$data/fillPlanes/barley_specular.png"
                         distance="$data/fillPlanes/distance/barleyDistance_diffuse.png" />
 		</fillType>
 
@@ -1549,7 +1549,7 @@
             <economy pricePerLiter="0.05" />
             <image      hud     ="maps/fillPlanesTP/fruit_tp_hud/hud_fill_clay.png" />
              <textures   diffuse ="maps/fillPlanesTP/fruit_tp_ground_texture/clay_diffuse.dds"
-                        normal  ="maps/fillPlanesTP/fruit_tp_ground_texture/clay_normal.dds"
+                        normal  ="$data/fillPlanes/stone_normal.dds"
                         specular="$data/fillPlanes/stone_specular.png"
                         distance="maps/fillPlanesTP/fruit_tp_ground_texture/clayDistance_diffuse.dds" />
         </fillType>		

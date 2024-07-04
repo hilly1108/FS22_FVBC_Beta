@@ -219,7 +219,7 @@
 
     <husbandry saveId="Animals_PIG" hasStatistics="false">
         <storage node="storage" fillTypes="LIQUIDMANURE STRAW MANURE" isExtension="false">
-            <capacity fillType="LIQUIDMANURE" capacity="100000" />
+            <capacity fillType="LIQUIDMANURE" capacity="1000" />
             <capacity fillType="STRAW" capacity="45000" />
             <capacity fillType="MANURE" capacity="0" />
         </storage>
@@ -259,14 +259,6 @@
 
         <water automaticWaterSupply="true" />
 
-  <!--      <fences>
-            <fence filename="$data/placeables/lizard/fencesFarm/level03/fencesFarmLevel03Singleton.xml" hasStartPole="true" hasEndPole="true">
-                <node node="fence1Node1" />
-                <node node="fence1Node2" />
-                <node node="fence1Node3" />
-                <node node="fence1Node4" />
-            </fence>
-        </fences>-->
     </husbandry>
 
     <colorable>

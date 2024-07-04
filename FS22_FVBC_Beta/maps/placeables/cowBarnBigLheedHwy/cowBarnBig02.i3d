@@ -57,8 +57,8 @@
     <File fileId="53" filename="$data/shared/fakeWater_diffuse.png"/>
     <File fileId="54" filename="$data/shared/fakeWater_normal.png"/>
     <File fileId="55" filename="$data/shared/fakeWater_specular.png"/>
-    <File fileId="2" filename="chickenBarnBig01_diffuse.dds"/>
-    <File fileId="30" filename="garageBig02_diffuse02.dds"/>
+    <File fileId="2" filename="chickenBarnBig0X1_diffuse.dds"/>
+    <File fileId="30" filename="garageBig0X2_diffuse02.dds"/>
   </Files>
 
 

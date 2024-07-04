@@ -8,7 +8,7 @@
         <functions>
             <function>$l10n_function_sellingPoint</function>
         </functions>
-        <image>$data/placeables/mapUS/farmBuildings/farmShed/store_farmShed.png</image>
+        <image>$data/store/store_empty.pngs</image>
         <price>5000</price>
         <dailyUpkeep>25</dailyUpkeep>
         <canBeSold>false</canBeSold>
@@ -34,7 +34,7 @@
     <base>
         <filename>maps/placeables/farmSellPoints/farmSellPoint.i3d</filename>
 		        <canBeRenamed>true</canBeRenamed>
-        <boughtWithFarmland>true</boughtWithFarmland>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

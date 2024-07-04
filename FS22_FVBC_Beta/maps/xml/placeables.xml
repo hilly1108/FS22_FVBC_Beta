@@ -857,10 +857,12 @@
     </placeable>
 <placeable filename="data/placeables/lizard/manureHeap/manureHeap.xml"  position="-758.65301514 3.81145 -237.24899292" rotation="180 7.8894906 -180" age="1.000000" price="5000.000000" farmId="0">
     <manureHeap manureToDrop="0" manureToPick="0"/>
-    </placeable>
-	   <placeable filename="data/placeables/lizard/liquidManureTank/baseTank/baseTank.xml" id="227" position="-653.34802246 4 -285.79000854" rotation="180 -150 -179.99998474" age="0.000000" price="5000.000000" farmId="0">
+    
+</placeable>
+	   <placeable filename="data/placeables/lizard/liquidManureTank/extensionSmall/extensionSmall.xml" id="227" position="-653.34802246 4 -285.79000854" rotation="180 -150 -179.99998474" age="0.000000" price="5000.000000" farmId="0">
         <siloExtension farmId="0"/>
     </placeable>
+    
 <placeable filename="$mapdir$/maps/placeables/cowBarnSmallFarm11/cowBarnSmallFarm11.xml"   position="-771.5 4.08855009 -259.96398926" rotation="180 -82.76509857 -180" price="10000.000000" farmId="0" >
 </placeable>
 <placeable filename="data/placeables/lizard/dieselTanks/level02/dieselTanksLevel02.xml" id="61" position="-662.92901611 3.56808996 -225.90899658" rotation="-180 -82.45200348 180" age="0.000000" price="500.000000" farmId="0">
@@ -1744,7 +1746,7 @@
 <placeable filename="$mapdir$/maps/placeables/hayLoft22c/hayLoftc.xml" position="172.18499756 3.84500003 -131.40112305" rotation="180 -0.212227 180" farmId="0"  />
 <placeable modName="FS22_hugeAmericanFarmPack" filename="$moddir$FS22_hugeAmericanFarmPack/residentialHouse08Blue.xml" id="394" position="1495.14001465 5.39723015 -427.08999634" rotation="0 0 0" age="0.000000" price="6900.000000" farmId="0"/>
 <placeable modName="FS22_hugeAmericanFarmPack" filename="$moddir$FS22_hugeAmericanFarmPack/farmHouse03.xml" position="1306.57897949 5.03605652 -299.34085083" rotation="0 0 0" age="0.000000" price="50000.000000" farmId="0"/>
-  
+
  
 <!--Lougheed/Cameron-->
 <placeable filename="$mapdir$/maps/placeables/House02Green/House02GreenBrown.xml"   position="-391.49700928 2.74523234 231.02288818" rotation="-180 0 179.99987793" farmId="0"  />
@@ -1806,7 +1808,7 @@
         <bunkerSilo state="0" fillLevel="0.000000" compactedFillLevel="0.000000" fermentingTime="0.000000" openedAtFront="false" openedAtBack="false"/>
     </placeable>
 	
-	<placeable filename="$mapdir$/maps/placeables/bga/bga500kw.xml"   position="1232.64697266 2.79272485 -22.01988029" rotation="0 -87.22100067 0.00000638"  />
+	<placeable filename="$mapdir$/maps/placeables/bga/bga1mw.xml"   position="1773.10998535 5.54738998 -1404.63000488" rotation="0 72.46459961 -0.00000221"  />
     
     
     
@@ -1983,13 +1985,12 @@
  
 <!-- Optional Forestry/Grazing -->
 
-<placeable filename="$mapdir$/maps/placeables/retractingCowField/retractingCowField.xml"   position="-1027.7724609375 17.891050338745 -920.50524902344" rotation="175.63000488 -16.02545738 -179.99998474" price="50.000000" farmId="0" />
-
-
 <placeable filename="$moddir$FS22_GrainStoragePack/wiata.xml"   position="-1122.25 14.73858643 -888.940979" rotation="0 88.49962616 0.00000001"  farmId="0"  />
+<placeable filename="$mapdir$/maps/placeables/optionalGrazingYards/optionalGrazingYards.xml"   position="-1118.0970459 15 -884.2645874" rotation="-180 -1.11592472 -179.99998474"  farmId="1"  />
+<placeable filename="$mapdir$/maps/placeables/retractingCowField/retractingCowField.xml"   position="-1028.93005371 17.91828728 -918.88238525" rotation="175.6269989 -30.50145531 -179.99998474" price="50.000000" farmId="0" />
 
 
-<!-- Deco Farm 1 Central
+<!-- Deco Farm 1 Central-->
 
 
 <placeable filename="$mapdir$/maps/placeables/decocows1/decocows1.xml" position="-16.93799973 2.53307343 1004.37609863" rotation="0 90 0">
@@ -2027,7 +2028,7 @@
             </clusters>
         </husbandryAnimals>
 </placeable>
--->
+
 
 <!--Utility Poles-->
 
@@ -2038,9 +2039,8 @@
 
 
 <!-- FENCES -->
-
-     <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="426" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
-        <fence>
+ <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="427" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
+       <fence>
             <segments>
                 <segment start="-428.05233764648 751.24633789063" end="-428.0247691476 747.32143475761" gateIndex="1">
                     <animatedObject time="0.000000" direction="0"/>
@@ -2274,7 +2274,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel03Singleton.xml" id="427" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel03Singleton.xml" id="428" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-364.54907226563 744.99945068359" end="-364.72027587891 761.33959960938"/>
@@ -2458,7 +2458,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level03/fencesFarmLevel03Singleton.xml" id="428" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level03/fencesFarmLevel03Singleton.xml" id="429" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-6.3571815490723 1019.5447387695" end="43.745582580566 1019.3641967773"/>
@@ -2544,7 +2544,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/level04/fencesResidentialLevel04Singleton.xml" id="429" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/level04/fencesResidentialLevel04Singleton.xml" id="430" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="20.773115158081 958.4375" end="23.609966278076 960.17584228516"/>
@@ -2585,7 +2585,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="430" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level05/fencesFarmLevel05Singleton.xml" id="431" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-328.15747070313 971.45739746094" end="-322.21502197104 971.28324204882" gateIndex="2">
@@ -2603,7 +2603,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level01/fencesFarmLevel01Singleton.xml" id="431" position="100 -101 0" rotation="0 0 0" age="0.000000" price="75.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level01/fencesFarmLevel01Singleton.xml" id="432" position="100 -101 0" rotation="0 0 0" age="0.000000" price="75.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-768.38793945313 385.53948974609" end="-768.30434808956 410.80175315361"/>
@@ -2650,9 +2650,8 @@
                 <segment start="493.6155090332 681.54119873047" end="503.49111938477 673.64099121094" first="false"/>
                 <segment start="503.49111938477 673.64099121094" end="511.16326904297 677.95129394531" first="false"/>
                 <segment start="415.66253662109 769.12615966797" end="402.15466308594 783.36474609375"/>
-                <segment start="-950.61931371342 -934.26625733844" end="-868.64532470703 -956.72271728516"/>
                 <segment start="-868.64532470703 -956.72271728516" end="-818.46099853516 -1016.0666503906" first="false"/>
-                <segment start="-818.46099853516 -1016.0666503906" end="-760.88500976563 -1103.4642333984" first="false"/>
+                <segment start="-818.46099853516 -1016.0666503906" end="-817.36073106033 -1017.7368035224" first="false"/>
                 <segment start="176.56289672852 84.670227050781" end="187.43618774414 130.92492675781"/>
                 <segment start="131.12034606934 85.692779541016" end="137.72871398926 105.29444885254"/>
                 <segment start="137.72871398926 105.29444885254" end="138.5509185791 122.48785400391" first="false"/>
@@ -2723,10 +2722,24 @@
                 <segment start="1696.3297119141 -607.81677246094" end="1657.82421875 -609.58087158203" first="false"/>
                 <segment start="1657.82421875 -609.58087158203" end="1655.8090820313 -658.30743408203" first="false"/>
                 <segment start="1655.8090820313 -658.30743408203" end="1512.1606445313 -660.75524902344" first="false"/>
+                <segment start="-805.25778883714 -1036.1084879728" end="-760.88500976563 -1103.4642333984"/>
+                <segment start="-809.46014404297 -1032.2766113281" end="-809.14354023299 -1028.2540517206" gateIndex="1">
+                    <animatedObject time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-817.36071777344 -1017.7368164063" end="-809.1435546875 -1028.2540283203" first="false" last="false"/>
+                <segment start="-809.46014404297 -1032.2766113281" end="-805.2578125 -1036.1085205078" first="false" last="false"/>
+                <segment start="-760.88500976563 -1103.4642333984" end="-755.93951416016 -1155.3468017578" first="false"/>
+                <segment start="-925.54322931552 -941.13575450123" end="-868.64532470703 -956.72271728516"/>
+                <segment start="-929.40112304688 -940.07891845703" end="-925.54321289063 -941.1357421875" first="false" last="false"/>
+                <segment start="-933.2589475918 -939.02206306652" end="-929.40108845366 -940.07890878388"/>
+                <segment start="-933.25903320313 -939.02203369141" end="-936.96076089381 -940.62778456642" gateIndex="1" first="false">
+                    <animatedObject time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-936.96069335938 -940.62780761719" end="-950.72973632813 -935.82904052734" first="false"/>
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/alpsFence04/fencesFarmAlpsLevel04Singleton.xml" id="432" position="100 -101 0" rotation="0 0 0" age="0.000000" price="75.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/alpsFence04/fencesFarmAlpsLevel04Singleton.xml" id="433" position="100 -101 0" rotation="0 0 0" age="0.000000" price="75.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-972.39556884766 378.99841308594" end="-974.11573689923 444.97599277688"/>
@@ -2764,7 +2777,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/level03/fencesResidentialLevel03Singleton.xml" id="433" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/level03/fencesResidentialLevel03Singleton.xml" id="434" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-983.23547363281 378.50155639648" end="-982.21795654297 378.5827331543"/>
@@ -2916,7 +2929,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence01/fencesResidentialAlpsLevel01Singleton.xml" id="434" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence01/fencesResidentialAlpsLevel01Singleton.xml" id="435" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-323.8733215332 333.7063293457" end="-323.87405395508 330.31311035156"/>
@@ -2934,7 +2947,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/sheepNetFence/sheepNetFenceSingleton.xml" id="435" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/sheepNetFence/sheepNetFenceSingleton.xml" id="436" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-1134.873046875 -789.16986083984" end="-1134.9089355469 -790.79663085938"/>
@@ -2956,7 +2969,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable modName="FS22_meadowFence_placeables" filename="$moddir$FS22_meadowFence_placeables/meadowFenceSingleton.xml" id="436" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable modName="FS22_meadowFence_placeables" filename="$moddir$FS22_meadowFence_placeables/meadowFenceSingleton.xml" id="437" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-1133.9946289063 -770.03149414063" end="-1134.2547607422 -780.08020019531"/>
@@ -3346,10 +3359,18 @@
                 <segment start="1538.5180664063 -451.03033447266" end="1519.0416259766 -452.53826904297" first="false"/>
                 <segment start="1519.0416259766 -452.53826904297" end="1514.5335693359 -466.71795654297" first="false"/>
                 <segment start="1514.5335693359 -466.71795654297" end="1501.990234375 -489.46795654297" first="false" last="false"/>
+                <segment start="-760.28790283203 -1107.4530029297" end="-720.28873628795 -1107.1947863953"/>
+                <segment start="-497.20190429688 -1105.7546386719" end="-512.57769775391 -1049.6929931641" first="false"/>
+                <segment start="-512.57769775391 -1049.6929931641" end="-557.78527832031 -1001.9058227539" first="false"/>
+                <segment start="-717.74914550781 -1106.9479980469" end="-713.54396298533 -1105.8349216241" gateIndex="1">
+                    <animatedObject time="0.000000" direction="0"/>
+                </segment>
+                <segment start="-684.28948639827 -1106.9623915143" end="-497.20190429688 -1105.7546386719"/>
+                <segment start="-684.28948974609 -1106.9624023438" end="-713.5439453125 -1105.8349609375" first="false" last="false"/>
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/level01/fencesResidentialLevel01Singleton.xml" id="437" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/level01/fencesResidentialLevel01Singleton.xml" id="438" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-1134.7453613281 -785.02905273438" end="-1134.6687011719 -786.17614746094"/>
@@ -3377,7 +3398,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level02/fencesFarmLevel02Singleton.xml" id="438" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level02/fencesFarmLevel02Singleton.xml" id="439" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="98.548400878906 1479.5565185547" end="86.548407724861 1479.5437004864"/>
@@ -3406,7 +3427,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence03/fencesResidentialAlpsLevel03Singleton.xml" id="439" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence03/fencesResidentialAlpsLevel03Singleton.xml" id="440" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-381.82873535156 247.76976013184" end="-381.90299803506 221.76986618871"/>
@@ -3416,7 +3437,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable modName="FS22_chainLinkFence" filename="$moddir$FS22_chainLinkFence/fenceLevel01Singleton.xml" id="440" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable modName="FS22_chainLinkFence" filename="$moddir$FS22_chainLinkFence/fenceLevel01Singleton.xml" id="441" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="192.55978393555 82.795333862305" end="172.51498413086 84.883010864258"/>
@@ -3712,7 +3733,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/chickenNetFence/chickenNetFenceSingleton.xml" id="441" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/chickenNetFence/chickenNetFenceSingleton.xml" id="442" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="519.72888183594 -541.46173095703" end="525.72607421875 -565.2861328125"/>
@@ -3728,7 +3749,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/level05/fencesResidentialLevel05Singleton.xml" id="442" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/level05/fencesResidentialLevel05Singleton.xml" id="443" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="1208.0338134766 -420.77777099609" end="1145.328125 -423.18463134766"/>
@@ -3748,7 +3769,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/level02/fencesResidentialLevel02Singleton.xml" id="443" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/level02/fencesResidentialLevel02Singleton.xml" id="444" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="992.08911132813 -669.24658203125" end="992.07415771484 -670.70227050781"/>
@@ -3761,7 +3782,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel01Singleton.xml" id="444" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel01Singleton.xml" id="445" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="1164.7806396484 -656.71166992188" end="1135.9411621094 -656.44287109375"/>
@@ -3769,8 +3790,8 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence02/fencesResidentialAlpsLevel02Singleton.xml" id="445" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0"/>
-    <placeable filename="data/placeables/lizard/fencesFarm/cowFence/cowFenceSingleton.xml" id="446" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence02/fencesResidentialAlpsLevel02Singleton.xml" id="446" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1"/>
+    <placeable filename="data/placeables/lizard/fencesFarm/cowFence/cowFenceSingleton.xml" id="447" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="324.74987792969 -936.5419921875" end="480.99938964844 -936.9951171875"/>
@@ -3783,7 +3804,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel02Singleton.xml" id="447" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel02Singleton.xml" id="448" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="630.5 -878.75" end="630.5 -870.75"/>
@@ -3798,7 +3819,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel03Singleton.xml" id="448" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/hedges/fencesResidentialHedgeLevel03Singleton.xml" id="449" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="625.25163165416 -981.6142390956" end="611.75 -982"/>
@@ -3818,7 +3839,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level04/fencesFarmLevel04Singleton.xml" id="449" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level04/fencesFarmLevel04Singleton.xml" id="450" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-912.05310058594 -177.86981201172" end="-881.75982666016 -174.78829956055"/>
@@ -3989,7 +4010,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesFarm/level04/fencesFarmLevel04Singleton.xml" id="450" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesFarm/level04/fencesFarmLevel04Singleton.xml" id="451" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="-912.05310058594 -177.86981201172" end="-881.75982666016 -174.78829956055"/>
@@ -3997,7 +4018,7 @@
             </segments>
         </fence>
     </placeable>
-    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence04/fencesResidentialAlpsLevel04Singleton.xml" id="451" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="0">
+    <placeable filename="data/placeables/lizard/fencesResidential/alpsFence04/fencesResidentialAlpsLevel04Singleton.xml" id="452" position="100 -101 0" rotation="0 0 0" age="0.000000" price="0.000000" farmId="1">
         <fence>
             <segments>
                 <segment start="1684.2009277344 -1333.6026611328" end="1690.1103525951 -1377.204022325"/>
@@ -4007,8 +4028,6 @@
             </segments>
         </fence>
     </placeable>
-
- 
 
 
 </placeables>

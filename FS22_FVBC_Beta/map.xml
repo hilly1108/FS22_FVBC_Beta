@@ -37,18 +37,6 @@
     <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
     <collectibles filename="maps/xml/collectibles.xml" />
 
-    <helpline filename="$dataS/helpLine.xml">
-        <trigger position="161 85.7 146"   categoryIndex="2" pageIndex="1" /> <!-- buying fields and farming -->
-        <trigger position="214 85.3 216"   categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
-        <trigger position="235.5 83.3 176" categoryIndex="8" pageIndex="2" /> <!-- build mode -->
-        <trigger position="158 88.3 99"    categoryIndex="8" pageIndex="3" /> <!-- carry objects -->
-        <trigger position="-585 83.3 -261" categoryIndex="6" pageIndex="1" /> <!-- animals -->
-        <trigger position="61 86.2 -6"     categoryIndex="8" pageIndex="1" /> <!-- wardrobe -->
-        <trigger position="848 86 42"      categoryIndex="1" pageIndex="2" /> <!-- shop -->
-        <trigger position="980 88.25 422"  categoryIndex="4" pageIndex="7" /> <!-- grape -->
-    </helpline>
-
-    <gameplayHints filename="$dataS/gameplayHints.xml" />
 
     <hotspots>
         <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="1896.29003906 93.88359833" teleportWorldPosition="1896.29003906 4.01556015 93.88359833" />
@@ -63,7 +51,7 @@
     <densityMapHeightTypes filename="maps/xml/maps_densityMapHeightTypes.xml" /> 
 
     <motionPathEffects filename="maps/xml/motionPathEffects.xml"/>
-    <bales filename="maps/xml/maps_bales.xml"/>
+    <bales filename="$data/maps/maps_bales.xml"/>
 
     <additionalFiles>
         <additionalFile filename="$data/shared/materialHolders/tensionBeltMaterialHolder.i3d" />

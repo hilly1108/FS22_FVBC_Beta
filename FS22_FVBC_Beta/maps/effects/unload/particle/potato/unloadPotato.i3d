@@ -6,9 +6,9 @@
   </Asset>
 
   <Files>
-    <File fileId="1" filename="potato_diffuse.png"/>
-    <File fileId="2" filename="potato_normal.png"/>
-    <File fileId="3" filename="potato_specular.png"/>
+    <File fileId="1" filename="potato_diffuseX.png"/>
+    <File fileId="2" filename="potato_normalX.png"/>
+    <File fileId="3" filename="potato_specularX.png"/>
     <File fileId="4" filename="$data/shaders/psColorShader.xml"/>
   </Files>
 

@@ -6,9 +6,9 @@
   </Asset>
 
   <Files>
-    <File fileId="1" filename="sugarBeet_diffuse.png"/>
-    <File fileId="2" filename="sugarBeet_normal.png"/>
-    <File fileId="3" filename="sugarBeet_specular.png"/>
+    <File fileId="1" filename="sugarBeet_diffuseX.png"/>
+    <File fileId="2" filename="sugarBeet_normalX.png"/>
+    <File fileId="3" filename="sugarBeet_specularX.png"/>
     <File fileId="4" filename="$data/shaders/psColorShader.xml"/>
   </Files>
 

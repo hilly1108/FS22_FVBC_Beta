@@ -164,7 +164,7 @@
 <farmland id="157"  priceScale="6"    npcName="NPC_US_14" /><!--20000-->
 <farmland id="158"  priceScale="3"    npcName="NPC_US_10" /><!--20000-->
 <farmland id="159"  priceScale="2"    npcName="NPC_US_09" /><!--60000-->
-<farmland id="160"  priceScale="4"    npcName="NPC_US_09" /><!--10000-->
+<farmland id="160"  priceScale="3"    npcName="NPC_US_09" /><!--10000-->
 <farmland id="161"  priceScale="3"    npcName="NPC_US_03" /><!--197000-->
 <farmland id="162"  priceScale="2"    npcName="NPC_US_03" /><!--251000-->
 <farmland id="163"  priceScale="4"    npcName="NPC_US_02" /><!--5000-->
@@ -230,7 +230,7 @@
 <farmland id="223"  priceScale="100"    npcName="NPC_US_08" /><!--Commercial Lease 3-->
 <farmland id="224"  priceScale="1"    npcName="NPC_US_08" /><!--Sawmill-->
 <farmland id="225"  priceScale="0.12"    npcName="NPC_US_08" /><!--Cement Factory Mine-->
-<farmland id="226"  priceScale="8"    npcName="NPC_US_08" /><!--BGA-->
+<farmland id="226"  priceScale="1.5"    npcName="NPC_US_08" /><!--BGA-->
 <farmland id="227"  priceScale="8"    npcName="NPC_US_08" /><!--Hops Dryer/Processor 1-->
 <farmland id="228"  priceScale="8"    npcName="NPC_US_08" /><!--Hops Dryer/Processor 2-->
 <farmland id="229"  priceScale="2"    npcName="NPC_US_08" /><!--Nusery-->
@@ -267,21 +267,6 @@
 <farmland id="254"  priceScale="0.001"     npcName="NPC_US_14" /><!--Lawn Mowing-->
 <farmland id="255"  priceScale="0"     npcName="NPC_US_14" />
 
-   
-   
-   
-	 <!-- USE showOnFarmlandsScreen="false" for BGA, farmland bought via placeable -->
-
-	 <!-- 
-       
-	
-
-        
-     
-       
-	   
-        
-         -->
 	
     </farmlands>
 </map>

@@ -46,8 +46,8 @@
     <File fileId="18" filename="$data/shared/fakeWater_normal.png"/>
     <File fileId="19" filename="$data/shared/fakeWater_specular.png"/>
     <File fileId="34" filename="$data/shared/window_diffuse.png"/>
-    <File fileId="43" filename="horseBarnMedium01_diffuse.png"/>
-    <File fileId="21" filename="horseBarnMedium02_diffuse.png"/>
+    <File fileId="43" filename="horseBarnMedium0X1_diffuse.png"/>
+    <File fileId="21" filename="horseBarnMedium0X2_diffuse.png"/>
   </Files>
 
 

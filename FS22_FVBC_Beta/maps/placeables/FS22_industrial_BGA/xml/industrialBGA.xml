@@ -166,7 +166,7 @@
                 </outputs>
             </production>			
  
-			<production id="biogasSilageslurry" name="$l10n_SilageAndSlurry" cyclesPerHour="120" costsPerActiveHour="2.5">
+			<production id="biogasSilageslurry" name="Silage And Slurry" cyclesPerHour="120" costsPerActiveHour="2.5">
                 <inputs>
                     <input fillType="SILAGE" amount="2120" />
                     <input fillType="LIQUIDMANURE" amount="505" />
@@ -178,7 +178,7 @@
                     <output fillType="DIGESTATE"      amount="1000" />
                 </outputs>
             </production>				
-            <production id="biogasStrawslurry" name="$l10n_StrawAndSlurry" cyclesPerHour="120" costsPerActiveHour="2.5">
+            <production id="biogasStrawslurry" name="Straw And Slurry" cyclesPerHour="120" costsPerActiveHour="2.5">
                 <inputs>
                     <input fillType="straw" amount="1680" />
                     <input fillType="LIQUIDMANURE" amount="505" />
@@ -224,7 +224,7 @@
   
 		</loadingStation>
 
-        <storage isExtension="false" fillLevelSyncThreshold="100">
+        <storage isExtension="true" fillLevelSyncThreshold="100">
             <capacity fillType="SILAGE"        capacity="500000" />
             <capacity fillType="MANURE"        capacity="500000" />
             <capacity fillType="SUGARBEET_CUT" capacity="90000" />
