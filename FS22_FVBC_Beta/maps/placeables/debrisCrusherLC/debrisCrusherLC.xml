@@ -91,7 +91,7 @@
                 </outputs>
             </production>          
           
-            <production id="Lime Production" name="Lime Production" cyclesPerHour="10" costsPerActiveHour="200"><!--INCREASE THIS?-->
+            <production id="Lime Production" name="Lime Production" cyclesPerHour="50" costsPerActiveHour="200"><!--INCREASE THIS?-->
                 <inputs>
                     <input fillType="LIMESTONECRUSHED" amount="1000" />
 					
@@ -102,7 +102,7 @@
                 </outputs>
             </production>          
 
-            <production id="Lime Production Direct" name="Lime Production Direct" cyclesPerHour="10" costsPerActiveHour="1000">
+            <production id="Lime Production Direct" name="Lime Production Direct" cyclesPerHour="50" costsPerActiveHour="300">
                 <inputs>
                     <input fillType="LIMESTONE" amount="1000" />
 					

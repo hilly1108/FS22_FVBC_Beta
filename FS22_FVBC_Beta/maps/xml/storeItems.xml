@@ -101,6 +101,9 @@
 	<storeItem xmlFilename="maps/placeables/marketGarden/marketGarden.xml"/>	
 	<storeItem xmlFilename="maps/placeables/marketGarden3x3/marketGarden3x3.xml"/>	
 	<storeItem xmlFilename="maps/placeables/marketGardenTriple/marketGardenTriple.xml"/>
+    <storeItem xmlFilename="maps/placeables/marketGarden3x3/marketGarden3x311.xml"/>	
+	<storeItem xmlFilename="maps/placeables/marketGardenTriple/marketGardenTriple5.xml"/>
+    <storeItem xmlFilename="maps/placeables/marketGardenTriple/marketGardenTriple7.xml"/>
 	<storeItem xmlFilename="maps/placeables/oldBarn/oldBarn.xml"/>	
 	<storeItem xmlFilename="maps/placeables/optionalGrazingYards/optionalGrazingYards.xml"/>
     <storeItem xmlFilename="maps/placeables/retractingCowField/retractingCowField.xml"/>
@@ -144,7 +147,9 @@
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction1SellPoint.xml"/>  
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction2SellPoint.xml"/>  
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction3SellPoint.xml"/>  
-    <StoreItem xmlFilename="maps/placeables/farmSellPoints/gardenSellPoint.xml"/>  
+        <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction4SellPoint.xml"/>  
+    <StoreItem xmlFilename="maps/placeables/farmSellPoints/gardenSellPoint.xml"/> 
+     <StoreItem xmlFilename="maps/placeables/farmSellPoints/lgsSellPoint.xml"/> 
     <StoreItem xmlFilename="maps/placeables/gasStation/gasStation.xml"/>   
     <StoreItem xmlFilename="maps/placeables/sellingStationGeneric/fruitDealer.xml"/>   
     <StoreItem xmlFilename="maps/placeables/sellingStationGeneric/fruitDealerHidden.xml"/>   
@@ -179,6 +184,11 @@
     <storeItem xmlFilename="maps/placeables/sawmill/sawmill.xml"/>
     <storeItem xmlFilename="maps/placeables/sellingStationGeneric/carpenterUS.xml"/>
     <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge.xml"/>
+        <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge6.xml"/>
+            <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge8.xml"/>
+                <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge10.xml"/>
+                    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge9.xml"/>
+                        <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge12.xml"/>
     <storeItem xmlFilename="maps/placeables/sheepBarnSmallL/sheepBarnSmall.xml"/>
     <storeItem xmlFilename="maps/placeables/weighbridge/weighbridge.xml"/>
     <storeItem xmlFilename="maps/placeables/weighbridgeGates/weighbridgeGates.xml"/>

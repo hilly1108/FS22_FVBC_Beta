@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="chickenHusbandry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>$l10n_storeItem_animalBarnChickenSmallSE</name>
+        <name>Free-range Chickens</name>
         <image>$data/placeables/lizard/chickenBarnSmall/store_chickenBarnSmall.png</image>
         <price>6000</price>
         <functions>

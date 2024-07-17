@@ -37,7 +37,20 @@
     <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
     <collectibles filename="maps/xml/collectibles.xml" />
 
+    <helpline filename="$dataS/helpLine.xml">
+        <trigger position="0 0 0"   categoryIndex="2" pageIndex="1" /> <!-- buying fields and farming -->
+        <trigger position="0 0 0"  categoryIndex="3" pageIndex="1" /> <!-- improving yield -->
+        <trigger position="0 0 0"  categoryIndex="8" pageIndex="2" /> <!-- build mode -->
+        <trigger position="0 0 0"  categoryIndex="8" pageIndex="3" /> <!-- carry objects -->
 
+        <trigger position="0 0 0"  categoryIndex="6" pageIndex="1" /> <!-- animals -->
+        <trigger position="0 0 0"  categoryIndex="8" pageIndex="1" /> <!-- wardrobe -->
+        <trigger position="0 0 0"  categoryIndex="1" pageIndex="2" /> <!-- shop -->
+        <trigger position="0 0 0"  categoryIndex="4" pageIndex="7" /> <!-- grape -->
+    </helpline>
+
+    <gameplayHints filename="$dataS/gameplayHints.xml" />
+    
     <hotspots>
         <placeableHotspot type="SHOP_ANIMAL" text="$l10n_animals_dealer" worldPosition="1896.29003906 93.88359833" teleportWorldPosition="1896.29003906 4.01556015 93.88359833" />
         <placeableHotspot type="SHOP" text="$l10n_vehicle_shop" worldPosition="1209.41003418 -60.61905289" teleportWorldPosition="1209.41003418 2.97998905 -60.61905289" />
@@ -63,9 +76,13 @@
 
     <!-- add all foliage layers that are not fruits. You need to define these foliage layers to be able to remove them with a cultivator or plow -->
     <decoFoliages>
-        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="false"/>
-        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="false"/>
-        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" mowable="false" />
+        <decoFoliage layerName="decoFoliage" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoForest" startChannel="0" numChannels="4" mowable="true"/>
+        <decoFoliage layerName="decoBush" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="brwnDecoBush" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="bigBranches" startChannel="0" numChannels="4" mowable="true" />
+        <decoFoliage layerName="boulders" startChannel="0" numChannels="4" mowable="true" />
+
 
         <mapping name="grassShort" layerName="decoFoliage" state="9" />
     </decoFoliages>
@@ -75,6 +92,7 @@
         <paintableFoliage layerName="meadow" startChannel="0" numStateChannels="4" />
         <paintableFoliage layerName="decoBush" startChannel="0" numStateChannels="4" />
         <paintableFoliage layerName="decoFoliage" startChannel="0" numStateChannels="4" />
+        <decoFoliage layerName="brwnDecoBush" startChannel="0" numChannels="4" mowable="true" />
     </paintableFoliages>
 
     <!-- paintable ground types - need to be defined in map.i3d node TerrainTransformGroup|CombinedLayer -->

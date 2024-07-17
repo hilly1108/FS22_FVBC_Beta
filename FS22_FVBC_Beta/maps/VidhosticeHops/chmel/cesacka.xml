@@ -55,7 +55,7 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-        <production id="cescka" name="%s" params="$l10n_fillType_cesackasus" cyclesPerHour="150" costsPerActiveHour="10">
+        <production id="cescka" name="%s" params="Hops Comber" cyclesPerHour="150" costsPerActiveHour="10">
             <inputs>
                <input fillType="CHMEL" amount="100" />
             </inputs>

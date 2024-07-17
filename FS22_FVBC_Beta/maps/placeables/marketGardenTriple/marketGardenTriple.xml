@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeable type="greenhouse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../shared/xml/schema/placeable.xsd">
     <storeData>
-        <name>Nursery Bed 3x7</name>
+        <name>Nursery Area 3. 3x7</name>
         <functions>
             <function>$l10n_function_productionPoint</function>
         </functions>
@@ -109,57 +109,54 @@
 
   <productionPoint>
         <productions>
-            <production id="wh_hedge" name="WH HEDGE (Seedlings)" cyclesPerHour="40" costsPerActiveHour="0.1">
+            <production id="wh_hedge" name="WH HEDGE from Seedlings" cyclesPerHour="42" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="5" />
+                    
 					<input fillType="SEEDLINGS" amount="1" />
-					<input fillType="MANURE" amount="3" />
-                    <input fillType="GRAVEL" amount="2" />
-					<input fillType="STRAW" amount="3" />	
+					<input fillType="MANURE" amount="4" />
+                   	<input fillType="STRAW" amount="4" />	
                 </inputs>
                 <outputs>
                     <output fillType="WESTERN_HEMLOCK_HEDGE" amount="10" />
                 </outputs>
             </production>
 			
-			<production id="wh_hedge2" name="WH HEDGE (Seeds)" cyclesPerHour="40" costsPerActiveHour="0.1">
+			<production id="wh_hedge2" name="WH HEDGE from Seeds" cyclesPerHour="42" costsPerActiveHour="0.1">
                 <inputs>
-                    <input fillType="WATER" amount="5" />
-					<input fillType="SEEDS" amount="1" />
-					<input fillType="MANURE" amount="3" />
-					<input fillType="LIQUIDFERTILIZER" amount="1" />
-                    <input fillType="GRAVEL" amount="2" />                    
-					<input fillType="STRAW" amount="3" />	
-                </inputs>
-                <outputs>
-                    <output fillType="WESTERN_HEMLOCK_HEDGE" amount="7" />
-                </outputs>
-            </production>
-		
-          <production id="designer_plants" name="Designer Plants" cyclesPerHour="15" costsPerActiveHour="0.2">
-                <inputs>
-                    <input fillType="WATER" amount="7" />
+                    
 					<input fillType="SEEDS" amount="2" />
 					<input fillType="MANURE" amount="4" />
-					<input fillType="LIQUIDFERTILIZER" amount="2" />
-                    <input fillType="GRAVEL" amount="3" />                    
+					<input fillType="LIQUIDFERTILIZER" amount="1" />
 					<input fillType="STRAW" amount="4" />	
+                </inputs>
+                <outputs>
+                    <output fillType="WESTERN_HEMLOCK_HEDGE" amount="8.5" />
+                </outputs>
+            </production>
+            
+            <production id="designer_plants" name="Designer Plants" cyclesPerHour="31.5" costsPerActiveHour="0.2">
+                <inputs>
+                   
+					<input fillType="SEEDS" amount="2" />
+					<input fillType="MANURE" amount="5" />
+					<input fillType="LIQUIDFERTILIZER" amount="2" />
+					<input fillType="STRAW" amount="5" />	
                 </inputs>
                 <outputs>
                     <output fillType="DESIGNER_PLANTS" amount="10" />
                 </outputs>
-            </production>
+            </production>        
           
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
-            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="WATER" aiNode="unloadTriggerAINode" />
+
 			<unloadTrigger exactFillRootNode="unloadTriggerSeedlings" fillTypes="SEEDLINGS" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerSeeds" fillTypes="SEEDS" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerManure" fillTypes="MANURE" aiNode="unloadTriggerAINode02" />
 			<unloadTrigger exactFillRootNode="unloadTriggerLiqFert" fillTypes="LIQUIDFERTILIZER" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerStraw" fillTypes="STRAW" aiNode="unloadTriggerAINode" />
-           <unloadTrigger exactFillRootNode="unloadTriggerGravel" fillTypes="GRAVEL" aiNode="unloadTriggerAINode" />
+      
 	
         </sellingStation>
 
@@ -171,16 +168,15 @@
             </spawnPlaces>
         </palletSpawner>
 
-        <storage node="storage" isExtension="false" fillTypes="WATER SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW GRAVEL" fillLevelSyncThreshold="20" >
-            <capacity fillType="WATER"      capacity="10000" />
-			<capacity fillType="SEEDLINGS"      capacity="10000" />
-			<capacity fillType="SEEDS"      capacity="2000" />
-			<capacity fillType="MANURE"      capacity="10000" />
-			<capacity fillType="LIQUIDFERTILIZER"      capacity="2000" />
-			<capacity fillType="STRAW"      capacity="10000" />
-            <capacity fillType="GRAVEL"     capacity="10000" />
-            <capacity fillType="WESTERN_HEMLOCK_HEDGE"     capacity="2000" />
-            <capacity fillType="DESIGNER_PLANTS"     capacity="2000" />
+        <storage node="storage" isExtension="false" fillTypes="SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW" fillLevelSyncThreshold="20" >
+         
+			<capacity fillType="SEEDLINGS"      capacity="30000" />
+			<capacity fillType="SEEDS"      capacity="6000" />
+			<capacity fillType="MANURE"      capacity="30000" />
+			<capacity fillType="LIQUIDFERTILIZER"      capacity="6000" />
+			<capacity fillType="STRAW"      capacity="30000" />
+            <capacity fillType="WESTERN_HEMLOCK_HEDGE"     capacity="6000" />
+            <capacity fillType="DESIGNER_PLANTS"     capacity="6000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />

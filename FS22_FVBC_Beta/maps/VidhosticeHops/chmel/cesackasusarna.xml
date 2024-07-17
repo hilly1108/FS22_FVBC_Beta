@@ -58,7 +58,7 @@
 
     <productionPoint>
         <productions sharedThroughputCapacity="false">
-        <production id="cescka" name="%s" params="$l10n_fillType_cesackasus" cyclesPerHour="150" costsPerActiveHour="50">
+        <production id="cescka" name="%s" params="Hops Comber" cyclesPerHour="150" costsPerActiveHour="50">
             <inputs>
                <input fillType="CHMEL" amount="100" />
             </inputs>
@@ -67,7 +67,7 @@
                <output fillType="CHMELINKA" amount="80" />
             </outputs>
         </production>
-		<production id="susarna" name="%s" params="$l10n_fillType_susarna" cyclesPerHour="100" costsPerActiveHour="20">
+		<production id="susarna" name="%s" params="Hops Cone Dryer (O)" cyclesPerHour="100" costsPerActiveHour="20">
                 <inputs>
                    <input fillType="CHMELSIS" amount="100" />
                    <input fillType="MAZUT" amount="30" />
@@ -77,7 +77,7 @@
                    <output fillType="CHMELSUS" amount="100" />
             </outputs>
         </production>
-        <production id="susarna1" name="%s" params="$l10n_fillType_susarna1" cyclesPerHour="100" costsPerActiveHour="20">
+        <production id="susarna1" name="%s" params="Hops Cone Dryer (P)" cyclesPerHour="100" costsPerActiveHour="20">
                 <inputs>
                    <input fillType="CHMELSIS" amount="100" />
                    <input fillType="PROPANE" amount="30" />

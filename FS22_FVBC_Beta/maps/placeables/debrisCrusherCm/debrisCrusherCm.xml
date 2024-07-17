@@ -80,9 +80,9 @@
 	
 	<productionPoint>
 		<productions sharedThroughputCapacity="false"> 
-			<production id="Cement Production" name="Cement Production" cyclesPerHour="100" costsPerActiveHour="5">
+			<production id="Cement Production" name="Cement Production" cyclesPerHour="300" costsPerActiveHour="5">
                 <inputs>
-                    <input fillType="LIME" amount="200" />
+                    <input fillType="LIME" amount="100" />
                     <input fillType="SAND" amount="500" />
                     <input fillType="CLAY" amount="300" />
 					
@@ -115,7 +115,7 @@
 
     <sellingStation appearsOnStats="true" node="sellingStation" supportsExtension="true" >
         <unloadTrigger exactFillRootNode="unloadTriggerUpper" fillTypes="LIME SAND CLAY"  /><!--LIMESTONECRUSHED GRAVEL-->
-        <fillType name="LIME"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="LIME"         priceScale="0.1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SAND"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CLAY"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
       <!--  <fillType name="LIMESTONECRUSHED"          priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />

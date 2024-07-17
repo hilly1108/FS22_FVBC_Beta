@@ -80,7 +80,7 @@
 	
 	<productionPoint>
 		<productions sharedThroughputCapacity="false"> 
-			<production id="Concrete Production" name="Concrete Production" cyclesPerHour="1" costsPerActiveHour="5">
+			<production id="Concrete Production" name="Concrete Production" cyclesPerHour="50" costsPerActiveHour="5">
                 <inputs>
                     <input fillType="CEMENT" amount="100" />
                     <input fillType="GRAVEL" amount="300" />
@@ -88,7 +88,7 @@
 					
                 </inputs>
                 <outputs>
-                    <output fillType="CONCRETE" amount="650" />
+                    <output fillType="CONCRETE" amount="400" />
                    
                 </outputs>
             </production>

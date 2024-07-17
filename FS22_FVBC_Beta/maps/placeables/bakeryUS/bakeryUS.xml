@@ -13,6 +13,7 @@
                 <canBeSold>true</canBeSold>
         <species>placeable</species>
         <category>productionPoints</category>
+        <showInStore>false</showInStore>
         <brush>
             <type>placeable</type>
             <category>production</category>
@@ -33,7 +34,7 @@
     <base>
         <filename>maps/placeables/bakeryUS/bakeryUS.i3d</filename>
         <canBeRenamed>true</canBeRenamed>
-        <boughtWithFarmland>true</boughtWithFarmland>
+        <boughtWithFarmland>FALSE</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" >

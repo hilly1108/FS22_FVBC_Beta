@@ -62,15 +62,23 @@
     </triggerMarkers>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48" >
-         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="GRAVEL SAND CONCRETE WESTERN_HEMLOCK_HEDGE BOARDS"/>
+         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="GRAVEL SAND CONCRETE WESTERN_HEMLOCK_HEDGE BOARDS FLOORTILES PICTUREFRAME PLANKSLONG PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM"/>
       
    
-        <fillType name="GRAVEL"                                  priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="SAND"                                  priceScale="0.9" supportsGreatDemand="true" disablePriceDrop="false" />
- <fillType name="WESTERN_HEMLOCK_HEDGE"                                  priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
- <fillType name="BOARDS"                                  priceScale="0.9" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="CONCRETE"                                  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
- 
+        <fillType name="GRAVEL"                                  priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SAND"                                  priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WESTERN_HEMLOCK_HEDGE"                                  priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BOARDS"                                  priceScale="2" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CONCRETE"                                  priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FLOORTILES"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+         <fillType name="PICTUREFRAME"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PLANKSLONG"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PREFABWALL"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SHINGLE"                priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STAIRCASERAILING"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="TABLE"                 priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOODBEAM"             priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+
  
     </sellingStation>
 

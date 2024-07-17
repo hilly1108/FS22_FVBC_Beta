@@ -23,7 +23,7 @@
     <base>
         <filename>maps/placeables/gasStation/gasStation.i3d</filename>
 		 <canBeRenamed>true</canBeRenamed>
-        <boughtWithFarmland>true</boughtWithFarmland>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" />

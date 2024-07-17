@@ -1499,7 +1499,7 @@
         
           <fillType name="DESIGNER_PLANTS" title="Designer Plants" showOnPriceTable="true" >
             <physics massPerLiter="0.5" maxPhysicalSurfaceAngle="38" />
-            <economy pricePerLiter="1.2" />
+            <economy pricePerLiter="3" />
             <image      hud     ="maps/fillPlanesTP/fruit_tp_hud/orchid.png" />
             <pallet     filename="maps/objects/pallets/designerPlantsPallet/designerPlantsPallet.xml" />
         </fillType>	  

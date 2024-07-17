@@ -62,7 +62,7 @@
     </triggerMarkers>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48" >
-         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="POTATO FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL SUGAR STRAWBERRY LETTUCE TOMATO GRAPE GRAPEJUICE EGG RAISINS CEREAL HONEY STRAW DRYGRASS_WINDROW SILAGE SUGARBEET_CUT PALLETS">
+         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="POTATO FLOUR SUNFLOWER_OIL CANOLA_OIL OLIVE_OIL SUGAR STRAWBERRY LETTUCE TOMATO GRAPE GRAPEJUICE EGG RAISINS CEREAL HONEY STRAW DRYGRASS_WINDROW SILAGE SUGARBEET_CUT PALLETS BUCKET ARMOIRE BARREL BATHTUB BIRDHOUSE CARTONROLL CATTREE CHAIR DOGHOUSE EASEL FLOORTILES PAPERROLL PEPPERGRIDER PICTUREFRAME PLANKSLONG PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM">
            <baleTrigger triggerNode="baleTrigger" deleteLitersPerSecond="10000"/>
         </unloadTrigger>
         <fillType name="POTATO"         priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
@@ -83,7 +83,29 @@
         <fillType name="STRAW"              priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="DRYGRASS_WINDROW"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="PALLETS"   priceScale="1" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BUCKET"                  priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="ARMOIRE"                 priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BARREL"                 priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BATHTUB"               priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="BIRDHOUSE"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CARTONROLL"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CATTREE"              priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="CHAIR"                  priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="DOGHOUSE"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="EASEL"               priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="FLOORTILES"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PAPERROLL"              priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PEPPERGRIDER"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PICTUREFRAME"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PLANKSLONG"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="PREFABWALL"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="SHINGLE"                priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="STAIRCASERAILING"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="TABLE"                 priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+        <fillType name="WOODBEAM"             priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
     </sellingStation>
+          
+    
 
     <clearAreas>
         <clearArea startNode="0>0|0|0" widthNode="0>0|0|0|0" heightNode="0>0|0|0|1"/>

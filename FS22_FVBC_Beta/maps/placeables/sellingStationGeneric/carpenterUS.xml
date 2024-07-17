@@ -112,12 +112,12 @@
 
     <productionPoint>
         <productions>
-            <production id="pallets" name="%s (%s)" params="$l10n_fillType_wood|$l10n_fillType_pallets" cyclesPerHour="150" costsPerActiveHour="2">
+            <production id="pallets" name="Pallets" cyclesPerHour="150" costsPerActiveHour="2">
                 <inputs>
-                    <input fillType="WOOD" amount="1.5" />
+                    <input fillType="WOOD" amount="2" />
                 </inputs>
                 <outputs>
-                    <output fillType="PALLETS" amount="5.5" />
+                    <output fillType="PALLETS" amount="5" />
                     <output fillType="WOODCHIPS" amount="0.25" />
                 </outputs>
             </production>

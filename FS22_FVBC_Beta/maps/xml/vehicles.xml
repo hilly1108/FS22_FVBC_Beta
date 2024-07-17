@@ -1,190 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <vehicles>
-    <vehicle filename="data/vehicles/meridian/conveyAll1690/conveyAll1690.xml" id="22" isAbsolute="true" age="0.000000" price="25500.000000" farmId="1" propertyState="1" operatingTime="71.702263" selectedObjectIndex="1" subSelectedObjectIndex="1">
-        <component index="1" position="1467.4448242188 3.7031931877136 121.34607696533" rotation="-9.8780518041042 -88.838726911603 17.605178000828"/>
-        <component index="2" position="1469.9449462891 3.7961158752441 121.29705047607" rotation="-28.686845740472 -88.837381364337 17.484951303511"/>
-        <component index="3" position="1461.6937255859 3.772515296936 121.45672607422" rotation="-17.217018350297 -88.847865704713 18.300996692334"/>
-        <component index="4" position="1465.052734375 3.4073760509491 120.6921005249" rotation="-162.49524103421 78.364358611822 -177.0670944586"/>
-        <component index="5" position="1465.4078369141 2.935741186142 120.61169433594" rotation="2.4892673522096 11.633931222722 7.0755445060384"/>
-        <configuration name="motor" id="1"/>
-        <configuration name="wheel" id="1"/>
-        <configuration name="fillUnit" id="1"/>
-        <boughtConfiguration name="motor" id="1"/>
-        <boughtConfiguration name="wheel" id="1"/>
-        <boughtConfiguration name="fillUnit" id="1"/>
-        <washable>
-            <dirtNode amount="0.004901"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-            <dirtNode amount="0.004901" snowScale="0.000000"/>
-        </washable>
-        <wearable damage="0.000872">
-            <wearNode amount="0.001199"/>
-        </wearable>
-        <cylindered>
-            <movingTool animationTime="0.317434"/>
-            <movingTool animationTime="0.023589"/>
-        </cylindered>
-        <wheels lastWheelConfiguration="1"/>
-        <attacherJoints comboDirection="-1"/>
-        <fillUnit>
-            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
-        </fillUnit>
-        <enterable activeCameraIndex="1" isTabbable="false">
-            <camera rotation="-11.33435700926 300.87354078561 0" translation="0 0 18.599993088196" zoom="18.600010" fovY="1.124554"/>
-        </enterable>
-        <drivable cruiseControl="5" cruiseControlReverse="5"/>
-        <aiFieldWorker lastTurnDirection="false"/>
-        <aiConveyorBelt currentAngle="45.000000"/>
-        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="5" fieldSpeedLimit="5" driverName="ConveyAll 1690" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" avoidFruit="2" autoTipSide="2" autoTrailerCover="2" shovelWidth="1" enableParkAtJobFinished="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" shovelHeight="26" autoRefuel="2" autoRepair="2" cornerSpeed="11" followDistance="8" useWorkLightsLoading="2" ALUnloadWaitTime="1" ALUnload="1" pipeOffset="41" useWorkLightsSilo="2" callSecondUnloader="1" parkInField="2" unloadFillLevel="10" useBeaconLights="1" exitField="1" followOnlyOnField="1" groups="All,0"/>
-     
-    </vehicle>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="1" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="170.743683" selectedObjectIndex="1" subSelectedObjectIndex="1">
-        <component index="1" position="303.76327514648 16.35990524292 -1395.2279052734" rotation="-179.97679602616 -67.020199872185 -179.77281925678"/>
-        <configuration name="motor" id="1"/>
-        <configuration name="fillUnit" id="1"/>
-        <configuration name="wheel" id="1"/>
-        <configuration name="folding" id="1"/>
-        <configuration name="rimColor" id="1"/>
-        <configuration name="baseMaterial" id="35"/>
-        <configuration name="design" id="2"/>
-        <boughtConfiguration name="motor" id="1"/>
-        <boughtConfiguration name="fillUnit" id="1"/>
-        <boughtConfiguration name="wheel" id="1"/>
-        <boughtConfiguration name="design" id="1"/>
-        <boughtConfiguration name="design" id="2"/>
-        <boughtConfiguration name="rimColor" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="35"/>
-        <boughtConfiguration name="folding" id="1"/>
-        <washable>
-            <dirtNode amount="0.002066"/>
-            <dirtNode amount="0.002066" snowScale="0.000000"/>
-            <dirtNode amount="0.002066" snowScale="0.000000"/>
-            <dirtNode amount="0.002066" snowScale="0.000000"/>
-        </washable>
-        <wearable damage="0.002079">
-            <wearNode amount="0.002913"/>
-        </wearable>
-        <cylindered>
-            <movingTool rotation="2.647275"/>
-            <movingTool translation="-5.934000"/>
-        </cylindered>
-        <wheels lastWheelConfiguration="1"/>
-        <attacherJoints comboDirection="-1"/>
-        <foldable foldAnimTime="1.000000"/>
-        <fillUnit>
-            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
-        </fillUnit>
-        <enterable activeCameraIndex="1" isTabbable="false">
-            <camera rotation="-29.970807945995 -461.25746815069 0" translation="0 0 14.299996653864" zoom="14.300010" fovY="1.124544"/>
-        </enterable>
-        <drivable cruiseControl="5" cruiseControlReverse="5"/>
-        <aiFieldWorker lastTurnDirection="false"/>
-        <aiConveyorBelt currentAngle="50.000000"/>
-        <actionController lastDirection="-1" numActions="2">
-            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
-        </actionController>
-    </vehicle>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="2" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="169.755142" selectedObjectIndex="1" subSelectedObjectIndex="1">
-        <component index="1" position="268.6999206543 11.2570104599 -1396.1956787109" rotation="179.92931255105 -2.2047978706848 -179.94440726911"/>
-        <configuration name="motor" id="1"/>
-        <configuration name="fillUnit" id="1"/>
-        <configuration name="wheel" id="1"/>
-        <configuration name="folding" id="1"/>
-        <configuration name="rimColor" id="1"/>
-        <configuration name="baseMaterial" id="35"/>
-        <configuration name="design" id="2"/>
-        <boughtConfiguration name="motor" id="1"/>
-        <boughtConfiguration name="fillUnit" id="1"/>
-        <boughtConfiguration name="wheel" id="1"/>
-        <boughtConfiguration name="design" id="1"/>
-        <boughtConfiguration name="design" id="2"/>
-        <boughtConfiguration name="rimColor" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="35"/>
-        <boughtConfiguration name="folding" id="1"/>
-        <washable>
-            <dirtNode amount="0.008512"/>
-            <dirtNode amount="0.008512" snowScale="0.000000"/>
-            <dirtNode amount="0.008512" snowScale="0.000000"/>
-            <dirtNode amount="0.008512" snowScale="0.000000"/>
-        </washable>
-        <wearable damage="0.002067">
-            <wearNode amount="0.004625"/>
-        </wearable>
-        <cylindered>
-            <movingTool rotation="20.000000"/>
-            <movingTool translation="-5.934000"/>
-        </cylindered>
-        <wheels lastWheelConfiguration="1"/>
-        <attacherJoints comboDirection="-1"/>
-        <foldable foldAnimTime="0.000000"/>
-        <fillUnit>
-            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
-        </fillUnit>
-        <enterable activeCameraIndex="1" isTabbable="false">
-            <camera rotation="-45.30776709196 -278.91986910748 0" translation="0 0 17.331934866604" zoom="17.331951" fovY="1.124544"/>
-        </enterable>
-        <drivable cruiseControl="5" cruiseControlReverse="5"/>
-        <aiFieldWorker lastTurnDirection="false"/>
-        <aiConveyorBelt currentAngle="50.000000"/>
-        <actionController lastDirection="-1" numActions="2">
-            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
-        </actionController>
-    </vehicle>
-    <vehicle modName="FS22_Autoload_Belt" filename="$moddir$FS22_Autoload_Belt/sl8022.xml" id="3" isAbsolute="true" age="3.000000" price="9000.000000" farmId="0" propertyState="0" operatingTime="97.575127" selectedObjectIndex="1" subSelectedObjectIndex="1">
-        <component index="1" position="329.7438659668 16.346754074097 -1353.7091064453" rotation="0.2102275797428 23.19327507216 -0.099436135092867"/>
-        <configuration name="motor" id="1"/>
-        <configuration name="fillUnit" id="1"/>
-        <configuration name="wheel" id="1"/>
-        <configuration name="folding" id="1"/>
-        <configuration name="rimColor" id="1"/>
-        <configuration name="baseMaterial" id="35"/>
-        <configuration name="design" id="2"/>
-        <boughtConfiguration name="motor" id="1"/>
-        <boughtConfiguration name="fillUnit" id="1"/>
-        <boughtConfiguration name="wheel" id="1"/>
-        <boughtConfiguration name="design" id="1"/>
-        <boughtConfiguration name="design" id="2"/>
-        <boughtConfiguration name="rimColor" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="1"/>
-        <boughtConfiguration name="baseMaterial" id="35"/>
-        <boughtConfiguration name="folding" id="1"/>
-        <washable>
-            <dirtNode amount="0.000551"/>
-            <dirtNode amount="0.000551" snowScale="0.000000"/>
-            <dirtNode amount="0.000551" snowScale="0.000000"/>
-            <dirtNode amount="0.000551" snowScale="0.000000"/>
-        </washable>
-        <wearable damage="0.001187">
-            <wearNode amount="0.002200"/>
-        </wearable>
-        <cylindered>
-            <movingTool rotation="11.986954"/>
-            <movingTool translation="-5.934000"/>
-        </cylindered>
-        <wheels lastWheelConfiguration="1"/>
-        <attacherJoints comboDirection="-1"/>
-        <foldable foldAnimTime="1.000000"/>
-        <fillUnit>
-            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
-        </fillUnit>
-        <enterable activeCameraIndex="1" isTabbable="false">
-            <camera rotation="-34.530916437331 -271.97730606851 0" translation="0 0 31.499981158383" zoom="31.500010" fovY="1.124544"/>
-        </enterable>
-        <drivable cruiseControl="5" cruiseControlReverse="5"/>
-        <aiFieldWorker lastTurnDirection="false"/>
-        <aiConveyorBelt currentAngle="50.000000"/>
-        <actionController lastDirection="-1" numActions="2">
-            <action name="turnOn" identifier="C:/Users/Brad/SynologyDrive/mods/FS22_Autoload_Belt/sl8022.xml" lastDirection="-1"/>
-        </actionController>
-    </vehicle>
+   
+  
     <vehicle filename="data/vehicles/fendt/favorit500/favorit500.xml" id="4" isAbsolute="true" age="3.000000" price="79500.000000" farmId="1" propertyState="1" operatingTime="772.341980" selectedObjectIndex="1" subSelectedObjectIndex="1">
         <component index="1" position="982.48596191406 5.7704620361328 -628.65930175781" rotation="176.21207771792 -88.391260728508 -176.45102505584"/>
         <component index="2" position="981.13800048828 6.3835515975952 -628.69598388672" rotation="176.63026288004 -88.391875445534 -176.86963368969"/>
@@ -791,4 +608,178 @@
     <attachments rootVehicleId="12">
         <attachment attachmentId="7" inputJointDescIndex="1" jointIndex="1" moveDown="false"/>
     </attachments>
+     
+     <vehicle filename="data/vehicles/meridian/conveyAll1690/conveyAll1690.xml" id="22" isAbsolute="true" age="0.000000" price="25500.000000" farmId="0" propertyState="0" operatingTime="71.702263" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="1467.4448242188 3.7031931877136 121.34607696533" rotation="-9.8780518041042 -88.838726911603 17.605178000828"/>
+        <component index="2" position="1469.9449462891 3.7961158752441 121.29705047607" rotation="-28.686845740472 -88.837381364337 17.484951303511"/>
+        <component index="3" position="1461.6937255859 3.772515296936 121.45672607422" rotation="-17.217018350297 -88.847865704713 18.300996692334"/>
+        <component index="4" position="1465.052734375 3.4073760509491 120.6921005249" rotation="-162.49524103421 78.364358611822 -177.0670944586"/>
+        <component index="5" position="1465.4078369141 2.935741186142 120.61169433594" rotation="2.4892673522096 11.633931222722 7.0755445060384"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="fillUnit" id="1"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <washable>
+            <dirtNode amount="0.004901"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+            <dirtNode amount="0.004901" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000872">
+            <wearNode amount="0.001199"/>
+        </wearable>
+        <cylindered>
+            <movingTool animationTime="0.317434"/>
+            <movingTool animationTime="0.023589"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-11.33435700926 300.87354078561 0" translation="0 0 18.599993088196" zoom="18.600010" fovY="1.124554"/>
+        </enterable>
+        <drivable cruiseControl="5" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="45.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="5" fieldSpeedLimit="5" driverName="ConveyAll 1690" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" avoidFruit="2" autoTipSide="2" autoTrailerCover="2" shovelWidth="1" enableParkAtJobFinished="1" preCallLevel="7" rotateTargets="1" useHazardLightReverse="2" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" shovelHeight="26" autoRefuel="2" autoRepair="2" cornerSpeed="11" followDistance="8" useWorkLightsLoading="2" ALUnloadWaitTime="1" ALUnload="1" pipeOffset="41" useWorkLightsSilo="2" callSecondUnloader="1" parkInField="2" unloadFillLevel="10" useBeaconLights="1" exitField="1" followOnlyOnField="1" groups="All,0"/>
+     
+    </vehicle>
+    <vehicle modName="FS22_MKII_Conveyor_Pack" filename="$moddir$FS22_MKII_Conveyor_Pack/FS22_sl8022_edit/sl8022.xml" id="20" isAbsolute="true" age="0.000000" price="48100.000000" farmId="0" propertyState="0" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="330.81314086914 16.345918655396 -1354.5131835938" rotation="0.15390737397139 10.323113760611 -0.056514859492643"/>
+        <configuration name="fillUnit" id="1"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="baseMaterial" id="34"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="14"/>
+        <boughtConfiguration name="baseMaterial" id="34"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <washable>
+            <dirtNode amount="0.001702"/>
+            <dirtNode amount="0.001702" snowScale="0.000000"/>
+            <dirtNode amount="0.001702" snowScale="0.000000"/>
+            <dirtNode amount="0.001702" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.000319"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="0.000000"/>
+            <movingTool translation="-5.937570"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="0.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-19.999999418186 180.00000500896 0" translation="0 0 11.10000038147" zoom="11.100010" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="15" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="50.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="15" fieldSpeedLimit="15" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" shovelHeight="26" autoRefuel="2" cornerSpeed="11" callSecondUnloader="1" useBeaconLights="1" autoTipSide="2" autoTrailerCover="2" followDistance="8" useWorkLightsLoading="2" pipeOffset="41" parkInField="2" unloadFillLevel="10" exitField="1" useHazardLightReverse="2" useWorkLightsSilo="2" avoidFruit="2" ALUnloadWaitTime="1" ALUnload="1" enableParkAtJobFinished="1" shovelWidth="1" autoRepair="2" followOnlyOnField="1" preCallLevel="7" rotateTargets="1" groups="All,0"/>
+        <actionController lastDirection="-1" numActions="1"/>
+    </vehicle>
+    <vehicle modName="FS22_MKII_Conveyor_Pack" filename="$moddir$FS22_MKII_Conveyor_Pack/FS22_sl8022_edit/sl8022.xml" id="21" isAbsolute="true" age="0.000000" price="48100.000000" farmId="0" propertyState="0" operatingTime="0.000000" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="270.04605102539 11.256966590881 -1393.685546875" rotation="179.91379436125 -17.268716052124 -179.94193474063"/>
+        <configuration name="fillUnit" id="1"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="baseMaterial" id="34"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="14"/>
+        <boughtConfiguration name="baseMaterial" id="34"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <washable>
+            <dirtNode amount="0.005348"/>
+            <dirtNode amount="0.005348" snowScale="0.000000"/>
+            <dirtNode amount="0.005348" snowScale="0.000000"/>
+            <dirtNode amount="0.005348" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.000000">
+            <wearNode amount="0.001003"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="0.000000"/>
+            <movingTool translation="-5.937570"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="0.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-19.999999418186 180.00000500896 0" translation="0 0 11.10000038147" zoom="11.100010" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="15" cruiseControlReverse="5"/>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="50.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="15" fieldSpeedLimit="15" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" shovelHeight="26" autoRefuel="2" cornerSpeed="11" callSecondUnloader="1" useBeaconLights="1" autoTipSide="2" autoTrailerCover="2" followDistance="8" useWorkLightsLoading="2" pipeOffset="41" parkInField="2" unloadFillLevel="10" exitField="1" useHazardLightReverse="2" useWorkLightsSilo="2" avoidFruit="2" ALUnloadWaitTime="1" ALUnload="1" enableParkAtJobFinished="1" shovelWidth="1" autoRepair="2" followOnlyOnField="1" preCallLevel="7" rotateTargets="1" groups="All,0"/>
+        <actionController lastDirection="-1" numActions="1"/>
+    </vehicle>
+    <vehicle modName="FS22_MKII_Conveyor_Pack" filename="$moddir$FS22_MKII_Conveyor_Pack/FS22_sl8022_edit/sl8022.xml" id="22" isAbsolute="true" age="0.000000" price="48100.000000" farmId="0" propertyState="0" operatingTime="104.329170" selectedObjectIndex="1" subSelectedObjectIndex="1">
+        <component index="1" position="303.62454223633 16.359857559204 -1395.8104248047" rotation="179.82184635465 -77.478701642525 -179.5801396203"/>
+        <configuration name="fillUnit" id="1"/>
+        <configuration name="wheel" id="1"/>
+        <configuration name="baseMaterial" id="34"/>
+        <configuration name="motor" id="1"/>
+        <configuration name="folding" id="1"/>
+        <boughtConfiguration name="fillUnit" id="1"/>
+        <boughtConfiguration name="wheel" id="1"/>
+        <boughtConfiguration name="baseMaterial" id="14"/>
+        <boughtConfiguration name="baseMaterial" id="34"/>
+        <boughtConfiguration name="motor" id="1"/>
+        <boughtConfiguration name="folding" id="1"/>
+        <washable>
+            <dirtNode amount="0.002991"/>
+            <dirtNode amount="0.002991" snowScale="0.000000"/>
+            <dirtNode amount="0.002991" snowScale="0.000000"/>
+            <dirtNode amount="0.002991" snowScale="0.000000"/>
+        </washable>
+        <wearable damage="0.001269">
+            <wearNode amount="0.000561"/>
+        </wearable>
+        <cylindered>
+            <movingTool rotation="0.000000"/>
+            <movingTool translation="-5.937570"/>
+        </cylindered>
+        <wheels lastWheelConfiguration="1"/>
+        <attacherJoints comboDirection="-1"/>
+        <foldable foldAnimTime="1.000000"/>
+        <fillUnit>
+            <unit index="1" fillType="UNKNOWN" fillLevel="0.000000"/>
+        </fillUnit>
+        <enterable activeCameraIndex="1" isTabbable="false">
+            <camera rotation="-33.942300025006 -108.473387595 0" translation="0 0 39.899974435548" zoom="39.900009" fovY="1.124544"/>
+        </enterable>
+        <drivable cruiseControl="15" cruiseControlReverse="5"/>
+        <aiJobVehicle>
+            <lastJob type="CONVEYOR">
+                <parameter name="vehicle" vehicleId="22"/>
+            </lastJob>
+        </aiJobVehicle>
+        <aiFieldWorker lastTurnDirection="false"/>
+        <aiConveyorBelt currentAngle="5.000000"/>
+        <AutoDrive mode="1" fillType="1" selectedFillTypes="" loadByFillLevel="true" loopCounter="0" speedLimit="15" fieldSpeedLimit="15" driverName="SL 80-22 Quantum" lastActive="false" AIVElastActive="false" bunkerUnloadType="1" maxTriggerDistanceVehicle="0" activeUnloading="2" restrictToField="1" shovelHeight="26" autoRefuel="2" cornerSpeed="11" callSecondUnloader="1" useBeaconLights="1" autoTipSide="2" autoTrailerCover="2" followDistance="8" useWorkLightsLoading="2" pipeOffset="41" parkInField="2" unloadFillLevel="10" exitField="1" useHazardLightReverse="2" useWorkLightsSilo="2" avoidFruit="2" ALUnloadWaitTime="1" ALUnload="1" enableParkAtJobFinished="1" shovelWidth="1" autoRepair="2" followOnlyOnField="1" preCallLevel="7" rotateTargets="1" groups="All,0"/>
+        <actionController lastDirection="-1" numActions="1"/>
+    </vehicle>
+    
 </vehicles>

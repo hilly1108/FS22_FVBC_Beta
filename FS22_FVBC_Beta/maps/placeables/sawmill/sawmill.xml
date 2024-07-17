@@ -21,7 +21,7 @@
     <base>
         <filename>maps/placeables/sawmill/sawmillTriggers.i3d</filename>
 		 <canBeRenamed>true</canBeRenamed>
-        <boughtWithFarmland>true</boughtWithFarmland>
+        <boughtWithFarmland>false</boughtWithFarmland>
     </base>
 
     <placement useRandomYRotation="false" useManualYRotation="true" />
@@ -61,9 +61,9 @@
                     <output fillType="WOODCHIPS" amount="0.15" />
                 </outputs>
             </production>
-             <production id="pallets" name="%s (%s)" params="$l10n_fillType_wood|$l10n_fillType_pallets" cyclesPerHour="150" costsPerActiveHour="2">
+             <production id="pallets" name="Pallets" cyclesPerHour="150" costsPerActiveHour="2">
                 <inputs>
-                    <input fillType="WOOD" amount="2" />
+                    <input fillType="WOOD" amount="3" />
                 </inputs>
                 <outputs>
                     <output fillType="PALLETS" amount="5" />

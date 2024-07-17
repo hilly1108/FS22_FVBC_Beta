@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <animatedObjects>
 	<animatedObject index="VratacesackaA01">
-        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="Open" negText="Close" />
             <sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -20,7 +20,7 @@
         </animation>
     </animatedObject>
 	<animatedObject index="VratacesackaA02">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -34,7 +34,7 @@
 		</animation>
 	</animatedObject>
 	<animatedObject index="VratacesackaA03">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -48,7 +48,7 @@
 		</animation>
 	</animatedObject>
 		<animatedObject index="VratacesackaA04">
-        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="Open" negText="Close" />
             <sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -67,7 +67,7 @@
         </animation>
     </animatedObject>
 	<animatedObject index="VratacesackaA05">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -81,7 +81,7 @@
 		</animation>
 	</animatedObject>
 	<animatedObject index="VratacesackaA06">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -95,7 +95,7 @@
 		</animation>
 	</animatedObject>
     		<animatedObject index="VratacesackaA07">
-        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="Open" negText="Close" />
             <sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -114,7 +114,7 @@
         </animation>
     </animatedObject>
 	<animatedObject index="VratacesackaA08">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -128,7 +128,7 @@
 		</animation>
 	</animatedObject>
 	<animatedObject index="VratacesackaA09">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -142,7 +142,7 @@
 		</animation>
 	</animatedObject>
         		<animatedObject index="VratacesackaA10">
-        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+        <controls posAction="ACTIVATE_HANDTOOL"  triggerNode="0" posText="Open" negText="Close" />
             <sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -161,7 +161,7 @@
         </animation>
     </animatedObject>
 	<animatedObject index="VratacesackaA11">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />
@@ -175,7 +175,7 @@
 		</animation>
 	</animatedObject>
 	<animatedObject index="VratacesackaA12">
-		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="action_closedText_Open" negText="action_closedText_Closed" />
+		<controls posAction="ACTIVATE_HANDTOOL" triggerNode="0" posText="Open" negText="Close" />
 			<sounds>
                 <moving linkNode="0" template="metalDoorsLoop" />
                 <posEnd linkNode="0" template="metalDoorsOpen" />

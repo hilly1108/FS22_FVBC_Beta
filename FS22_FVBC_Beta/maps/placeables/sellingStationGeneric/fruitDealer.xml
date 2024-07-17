@@ -92,7 +92,7 @@
         <fillType name="OLIVE"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="CHMELSUS"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="PALLETS"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
-
+       
 
         <sounds>
             <idle template="storeTemplate"/>
