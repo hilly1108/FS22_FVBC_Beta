@@ -1593,7 +1593,7 @@
 
 <!--Hops Dryers -->
 <!--1 FARM-->
-	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" >
+	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" boughtWithFarmland="true" position="1025.5880127 4.834 -1205.65490723" rotation="0 89.22499847 -0.00002602" >
         <productionPoint productionCostsToClaim="0">
 
             <storage farmId="0"/>
@@ -1609,14 +1609,14 @@
         </animatedObjects>
     </placeable>
 <!--2 TOWN-->
-	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" >
+	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" boughtWithFarmland="true" position="1590.17797852 2.88700008 31.75915527" rotation="0 0 0">
         <productionPoint productionCostsToClaim="0">
  
             <storage farmId="0"/>
         </productionPoint>
     </placeable> 
 <!--3 HILLS-->
-	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" >
+	<placeable mapBoundId="productionPoint" filename="$mapdir$/maps/VidhosticeHops/chmel/cesackasusarna.xml" farmId="0" boughtWithFarmland="true" position="-1146.04394531 45.47290802 -1318.95751953" rotation="0 69.4509964 0.00000374">
         <productionPoint productionCostsToClaim="0">
 
             <storage farmId="0"/>
