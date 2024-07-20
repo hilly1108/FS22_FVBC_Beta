@@ -20,7 +20,7 @@
             <description>
                 <en>More Details/Issues/Comments/Bugs use the Discord/HillyFarms. Thankyou!!</en>
             </description>
-            <iconFilename>preview.png</iconFilename>
+            <iconFilename>preview.png</iconFilename> 
         </map>
     </maps>
     
@@ -28,12 +28,10 @@
         <dependency>FS22_americanFermentingSilos</dependency>
         <dependency>FS22_animalLimitIncreaser64</dependency>
         <dependency>FS22_ArchedBuildingsPack</dependency>
-		<!--<dependency>FS22_Autoload_Belt</dependency>-->
         <dependency>FS22_MKII_Conveyor_Pack</dependency>
-
         <dependency>FS22_bunkerSiloMediumDirt</dependency>       
 		<dependency>FS22_chainLinkFence</dependency>
-        <dependency>FS22_ChickenBarnXL</dependency>
+        <dependency>FS22_OldChickenBarn</dependency>
 		<dependency>FS22_CowBarn_Set</dependency>
 		<dependency>FS22_CowFarmPack</dependency>
 		<dependency>FS22_CowShed42x22</dependency>
