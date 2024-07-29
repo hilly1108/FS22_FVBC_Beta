@@ -88,6 +88,7 @@
 		<triggerMarker node="unloadTriggerMarkerManure" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
 		<triggerMarker node="unloadTriggerMarkerLiqFert" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
 		<triggerMarker node="unloadTriggerMarkerStraw" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+        <triggerMarker node="unloadTriggerPallets" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
     </triggerMarkers>
 
     <greenhouse>
@@ -113,10 +114,10 @@
         <productions>
             <production id="wh_hedge" name="WH HEDGE from Seedlings" cyclesPerHour="14.7" costsPerActiveHour="0.1">
                 <inputs>
-                    
 					<input fillType="SEEDLINGS" amount="1" />
 					<input fillType="MANURE" amount="4" />
                    	<input fillType="STRAW" amount="4" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="WESTERN_HEMLOCK_HEDGE" amount="10" />
@@ -125,11 +126,11 @@
 			
 			<production id="wh_hedge2" name="WH HEDGE from Seeds" cyclesPerHour="14.7" costsPerActiveHour="0.1">
                 <inputs>
-                    
 					<input fillType="SEEDS" amount="2" />
 					<input fillType="MANURE" amount="4" />
 					<input fillType="LIQUIDFERTILIZER" amount="1" />
 					<input fillType="STRAW" amount="4" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="WESTERN_HEMLOCK_HEDGE" amount="8.5" />
@@ -138,11 +139,11 @@
             
             <production id="designer_plants" name="Designer Plants" cyclesPerHour="10.5" costsPerActiveHour="0.2">
                 <inputs>
-                   
 					<input fillType="SEEDS" amount="2" />
 					<input fillType="MANURE" amount="5" />
 					<input fillType="LIQUIDFERTILIZER" amount="2" />
 					<input fillType="STRAW" amount="5" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="DESIGNER_PLANTS" amount="10" />
@@ -159,6 +160,7 @@
 			<unloadTrigger exactFillRootNode="unloadTriggerManure" fillTypes="MANURE" aiNode="unloadTriggerAINode02" />
 			<unloadTrigger exactFillRootNode="unloadTriggerLiqFert" fillTypes="LIQUIDFERTILIZER" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerStraw" fillTypes="STRAW" aiNode="unloadTriggerAINode" />
+            <unloadTrigger exactFillRootNode="unloadTriggerPallets" fillTypes="PALLETS" aiNode="unloadTriggerAINode" />
 
 	
         </sellingStation>
@@ -171,12 +173,13 @@
             </spawnPlaces>
         </palletSpawner>
 
-        <storage node="storage" isExtension="false" fillTypes="SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW" fillLevelSyncThreshold="20" >
+        <storage node="storage" isExtension="false" fillTypes="SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW PALLETS" fillLevelSyncThreshold="20" >
 			<capacity fillType="SEEDLINGS"      capacity="10000" />
 			<capacity fillType="SEEDS"      capacity="2000" />
 			<capacity fillType="MANURE"      capacity="10000" />
 			<capacity fillType="LIQUIDFERTILIZER"      capacity="2000" />
 			<capacity fillType="STRAW"      capacity="10000" />
+            <capacity fillType="PALLETS"      capacity="10000" />
           
             <capacity fillType="WESTERN_HEMLOCK_HEDGE"     capacity="2000" />
             <capacity fillType="DESIGNER_PLANTS"     capacity="2000" />
@@ -210,8 +213,8 @@
         <i3dMapping id="unloadTriggerStraw" node="0>0|3|8" />
         <i3dMapping id="unloadTriggerMarkerStraw" node="0>0|3|9" />
         
-        <i3dMapping id="unloadTriggerGravel" node="0>0|3|16" />
-        <i3dMapping id="unloadTriggerMarkerGravel" node="0>0|3|17" />
+        <i3dMapping id="unloadTriggerPallets" node="0>0|3|16" />
+        <i3dMapping id="unloadTriggerMarkerPallets" node="0>0|3|17" />
             
         <i3dMapping id="unloadTriggerSeeds" node="0>0|3|10" />
         <i3dMapping id="unloadTriggerMarkerSeeds" node="0>0|3|11" />       

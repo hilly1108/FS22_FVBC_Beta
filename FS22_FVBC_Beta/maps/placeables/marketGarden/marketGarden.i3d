@@ -942,7 +942,7 @@
             <Shape shapeId="4" name="unloadTriggerSeedlings" translation="31.512 0.149835 3.01098" scale="59.7217 1.17441 6.5" static="true" trigger="true" collisionMask="1073741824" nodeId="852" materialIds="16" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerSeedlings" translation="31.512 0.149835 3.01098" rotation="0 0.0873235 0" nodeId="853"/>
             <Shape shapeId="3" name="unloadTriggerManure" translation="65.606 0.325849 1.05055" rotation="180 90 180" static="true" trigger="true" collisionMask="1073741824" nodeId="854" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            <TransformGroup name="unloadTriggerMarkerManure" translation="65.606 0.325849 1.05055" nodeId="940"/>
+            <TransformGroup name="unloadTriggerMarkerManure" translation="65.606 0.325849 1.05055" nodeId="855"/>
             <Shape shapeId="3" name="unloadTriggerLiqFert" translation="-3.723 0.325646 2.63235" rotation="180 90 180" scale="1 0.106409 1.21568" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="856" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerLiqFert" translation="-2.55 1.39579 2.68014" nodeId="857"/>
             <Shape shapeId="3" name="unloadTriggerStraw" translation="65.8716 0.380705 5.26543" rotation="0 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="858" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
@@ -953,104 +953,104 @@
             <TransformGroup name="unloadTriggerAINode02" translation="65.2459 0.05 2.44472" rotation="0 90 0" nodeId="863"/>
             <Shape shapeId="5" name="PlaneManure" translation="63.3141 0.129 3.11022" scale="2.532 0.136044 4.62356" clipDistance="100" nodeId="864" materialIds="8" castsShadows="true" receiveShadows="true"/>
             <Shape shapeId="5" name="PlaneStraw" translation="63.3141 0.129 3.11022" scale="2.532 0.136044 4.62356" clipDistance="100" nodeId="865" materialIds="8" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="unloadTriggerGravel" translation="65.606 0.325849 2.99586" rotation="4.07111e-13 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="939" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            <TransformGroup name="unloadTriggerMarkerGravel" translation="65.606 0.325849 2.99586" nodeId="855"/>
+            <Shape shapeId="3" name="unloadTriggerGravel" translation="65.8281 0.325849 2.99586" rotation="4.07111e-13 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="866" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <TransformGroup name="unloadTriggerMarkerGravel" translation="65.606 0.325849 2.99586" nodeId="867"/>
           </TransformGroup>
-          <TransformGroup name="storage" translation="30.2054 -0.0299942 3.22317" nodeId="866"/>
-          <Shape shapeId="6" name="playerTrigger" translation="-3.058 1.07768 -1.94929" rotation="-180 0 -180" scale="4.54933 1 2.12775" static="true" trigger="true" collisionMask="1048576" nodeId="867" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <TransformGroup name="playerTriggerMarker" translation="-3.058 1.07768 -1.94929" nodeId="868"/>
-          <TransformGroup name="palletSpawner" translation="0 -0.0299942 0" nodeId="869">
-            <TransformGroup name="spawnPlace1Start" translation="1.31643 0 7.55" rotation="0 -90 0" nodeId="870">
-              <TransformGroup name="spawnPlace1End" translation="-6.82121e-15 0 -59.8888" nodeId="871"/>
+          <TransformGroup name="storage" translation="30.2054 -0.0299942 3.22317" nodeId="868"/>
+          <Shape shapeId="6" name="playerTrigger" translation="-3.058 1.07768 -1.94929" rotation="-180 0 -180" scale="4.54933 1 2.12775" static="true" trigger="true" collisionMask="1048576" nodeId="869" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="playerTriggerMarker" translation="-3.058 1.07768 -1.94929" nodeId="870"/>
+          <TransformGroup name="palletSpawner" translation="0 -0.0299942 0" nodeId="871">
+            <TransformGroup name="spawnPlace1Start" translation="1.31643 0 7.55" rotation="0 -90 0" nodeId="872">
+              <TransformGroup name="spawnPlace1End" translation="-6.82121e-15 0 -59.8888" nodeId="873"/>
             </TransformGroup>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="transform" nodeId="872"/>
-        <TransformGroup name="clearAreas" translation="0 0.0299942 0" nodeId="873">
-          <TransformGroup name="clearArea1Start" translation="-3.57008 4.54747e-15 -1.0703" nodeId="874">
-            <TransformGroup name="clearArea1Width" translation="70.6063 -4.44089e-18 6.82121e-15" nodeId="875"/>
-            <TransformGroup name="clearArea1Height" translation="-5.68434e-16 4.44089e-18 7.66988" nodeId="876"/>
+        <TransformGroup name="transform" nodeId="874"/>
+        <TransformGroup name="clearAreas" translation="0 0.0299942 0" nodeId="875">
+          <TransformGroup name="clearArea1Start" translation="-3.57008 4.54747e-15 -1.0703" nodeId="876">
+            <TransformGroup name="clearArea1Width" translation="70.6063 -4.44089e-18 6.82121e-15" nodeId="877"/>
+            <TransformGroup name="clearArea1Height" translation="-5.68434e-16 4.44089e-18 7.66988" nodeId="878"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="levelAreas" translation="0 0.0299942 0" nodeId="877">
-          <TransformGroup name="levelArea1Start" translation="-3.20527 0 -0.978495" nodeId="878">
-            <TransformGroup name="levelArea1Width" translation="69.3494 -8.88178e-18 7.95808e-15" nodeId="879"/>
-            <TransformGroup name="levelArea1Height" translation="-2.27374e-15 0 7.69815" nodeId="880"/>
+        <TransformGroup name="levelAreas" translation="0 0.0299942 0" nodeId="879">
+          <TransformGroup name="levelArea1Start" translation="-3.20527 0 -0.978495" nodeId="880">
+            <TransformGroup name="levelArea1Width" translation="69.3494 -8.88178e-18 7.95808e-15" nodeId="881"/>
+            <TransformGroup name="levelArea1Height" translation="-2.27374e-15 0 7.69815" nodeId="882"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="indoorAreas" translation="0 0.0299942 0" nodeId="881">
-          <TransformGroup name="indoorArea1Start" translation="-3.31105 0 -0.375752" nodeId="882">
-            <TransformGroup name="indoorArea1Width" translation="69.2689 0 3.41061e-15" nodeId="883"/>
-            <TransformGroup name="indoorArea1Height" translation="-1.7053e-15 0 6.65148" nodeId="884"/>
+        <TransformGroup name="indoorAreas" translation="0 0.0299942 0" nodeId="883">
+          <TransformGroup name="indoorArea1Start" translation="-3.31105 0 -0.375752" nodeId="884">
+            <TransformGroup name="indoorArea1Width" translation="69.2689 0 3.41061e-15" nodeId="885"/>
+            <TransformGroup name="indoorArea1Height" translation="-1.7053e-15 0 6.65148" nodeId="886"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="testAreas" translation="0 0.0299942 0" nodeId="885">
-          <TransformGroup name="testArea1Start" translation="-3.14145 0 -0.307463" nodeId="886">
-            <TransformGroup name="testArea1End" translation="65.2375 3.52161 9.29556" nodeId="887"/>
+        <TransformGroup name="testAreas" translation="0 0.0299942 0" nodeId="887">
+          <TransformGroup name="testArea1Start" translation="-3.14145 0 -0.307463" nodeId="888">
+            <TransformGroup name="testArea1End" translation="65.2375 3.52161 9.29556" nodeId="889"/>
           </TransformGroup>
         </TransformGroup>
-        <TransformGroup name="tipOcclusionUpdateAreas" translation="-2.74503 0.0299942 0" nodeId="888">
-          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-3.95364 0 -1.26792" nodeId="889">
-            <TransformGroup name="tipOcclusionUpdateArea1End" translation="71.0354 0 10.7605" nodeId="890"/>
+        <TransformGroup name="tipOcclusionUpdateAreas" translation="-2.74503 0.0299942 0" nodeId="890">
+          <TransformGroup name="tipOcclusionUpdateArea1Start" translation="-3.95364 0 -1.26792" nodeId="891">
+            <TransformGroup name="tipOcclusionUpdateArea1End" translation="71.0354 0 10.7605" nodeId="892"/>
           </TransformGroup>
         </TransformGroup>
-        <Shape shapeId="7" name="infoTrigger" translation="-2.22054 0 -1.28656" scale="0.600466 0.457307 0.121118" static="true" trigger="true" collisionMask="1048576" nodeId="891" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-        <TransformGroup name="warningStripes" nodeId="892">
-          <Shape shapeId="8" name="markerEggsDecal1" translation="0.374158 0 6.18006" clipDistance="100" nodeId="893" materialIds="17" receiveShadows="true" decalLayer="1"/>
-          <Shape shapeId="8" name="markerEggsDecal1" translation="0.374158 0 8.80792" rotation="0 90 0" clipDistance="100" nodeId="894" materialIds="17" receiveShadows="true" decalLayer="1"/>
-          <Shape shapeId="8" name="markerEggsDecal1" translation="62.009 0 8.8079" rotation="0 180 0" clipDistance="100" nodeId="895" materialIds="17" receiveShadows="true" decalLayer="1"/>
-          <Shape shapeId="8" name="markerEggsDecal1" translation="62.035 0 6.18006" rotation="-0 -90 0" clipDistance="100" nodeId="896" materialIds="17" receiveShadows="true" decalLayer="1"/>
+        <Shape shapeId="7" name="infoTrigger" translation="-2.22054 0 -1.28656" scale="0.600466 0.457307 0.121118" static="true" trigger="true" collisionMask="1048576" nodeId="893" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="warningStripes" nodeId="894">
+          <Shape shapeId="8" name="markerEggsDecal1" translation="0.374158 0 6.18006" clipDistance="100" nodeId="895" materialIds="17" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="8" name="markerEggsDecal1" translation="0.374158 0 8.80792" rotation="0 90 0" clipDistance="100" nodeId="896" materialIds="17" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="8" name="markerEggsDecal1" translation="62.009 0 8.8079" rotation="0 180 0" clipDistance="100" nodeId="897" materialIds="17" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="8" name="markerEggsDecal1" translation="62.035 0 6.18006" rotation="-0 -90 0" clipDistance="100" nodeId="898" materialIds="17" receiveShadows="true" decalLayer="1"/>
         </TransformGroup>
-        <TransformGroup name="visuals" translation="0 0.074 0" nodeId="897">
-          <TransformGroup name="transform" nodeId="898"/>
-          <Shape shapeId="9" name="screwsDecal" translation="0 -0.13901 -0.0390552" visibility="false" clipDistance="30" nodeId="899" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
-          <Shape shapeId="10" name="greenhousesLarge" translation="0 -0.13901 -0.0390552" visibility="false" clipDistance="300" nodeId="900" materialIds="12" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="11" name="visual" visibility="false" clipDistance="200" nodeId="901" materialIds="5" castsShadows="true" receiveShadows="true"/>
-          <Shape shapeId="12" name="pallet_vis" translation="-1.16627 -2.77152e-10 4.87449" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="902" materialIds="10" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="13" name="seedBags" nodeId="903" materialIds="14" castsShadows="true" receiveShadows="true"/>
-            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="904">
-              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="905" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="906" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="907" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="908" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="909" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="910" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            </TransformGroup>
-          </Shape>
-          <TransformGroup name="visible" translation="-0.819641 5.12307e-08 3.63064" rotation="-180 89.8417 180" nodeId="911">
-            <Shape shapeId="15" name="fertilizerTank_vis" translation="0.114478 0 -0.378985" nodeId="912" materialIds="11" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="16" name="cortevaConfiguration" translation="0.130485 0 -0.381052" clipDistance="60" nodeId="913" materialIds="7" castsShadows="true" receiveShadows="true"/>
-          </TransformGroup>
-          <Shape shapeId="12" name="pallet_vis" translation="-1.16706 0.768522 4.91401" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="914" materialIds="10" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="13" name="seedBags" nodeId="915" materialIds="14" castsShadows="true" receiveShadows="true"/>
-            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="916">
-              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="917" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="918" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="919" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="920" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="921" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="922" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="visuals" translation="0 0.074 0" nodeId="899">
+          <TransformGroup name="transform" nodeId="900"/>
+          <Shape shapeId="9" name="screwsDecal" translation="0 -0.13901 -0.0390552" visibility="false" clipDistance="30" nodeId="901" materialIds="6" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="10" name="greenhousesLarge" translation="0 -0.13901 -0.0390552" visibility="false" clipDistance="300" nodeId="902" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="visual" visibility="false" clipDistance="200" nodeId="903" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="pallet_vis" translation="-1.16627 -2.77152e-10 4.87449" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="904" materialIds="10" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="13" name="seedBags" nodeId="905" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="906">
+              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="907" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="908" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="909" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="910" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="911" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="912" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             </TransformGroup>
           </Shape>
-          <Shape shapeId="12" name="pallet_vis" translation="-2.16906 -2.90512e-10 4.87415" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="923" materialIds="10" castsShadows="true" receiveShadows="true">
-            <Shape shapeId="13" name="seedBags" nodeId="924" materialIds="14" castsShadows="true" receiveShadows="true"/>
-            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="925">
-              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="926" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="927" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="928" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="929" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="930" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="931" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <TransformGroup name="visible" translation="-0.819641 5.12307e-08 3.63064" rotation="-180 89.8417 180" nodeId="913">
+            <Shape shapeId="15" name="fertilizerTank_vis" translation="0.114478 0 -0.378985" nodeId="914" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="16" name="cortevaConfiguration" translation="0.130485 0 -0.381052" clipDistance="60" nodeId="915" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="12" name="pallet_vis" translation="-1.16706 0.768522 4.91401" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="916" materialIds="10" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="13" name="seedBags" nodeId="917" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="918">
+              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="919" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="920" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="921" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="922" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="923" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="924" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             </TransformGroup>
           </Shape>
-          <Shape shapeId="17" name="sawmillContainer" translation="63.3269 -0.0612202 3.02451" rotation="180 90 -180" scale="1 0.488203 0.886496" static="true" clipDistance="300" nodeId="932" materialIds="15" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="pallet_vis" translation="-2.16906 -2.90512e-10 4.87415" rotation="-8.30577e-06 88.8531 -8.3034e-06" nodeId="925" materialIds="10" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="13" name="seedBags" nodeId="926" materialIds="14" castsShadows="true" receiveShadows="true"/>
+            <TransformGroup name="fillCollisions" translation="0 0.118392 0" visibility="false" nodeId="927">
+              <Shape shapeId="14" name="fillCollision01" translation="0 0.094759 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="928" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision02" translation="0 0.187222 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="929" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision03" translation="0 0.283555 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="930" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision04" translation="0 0.373 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="931" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision05" translation="0 0.469573 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="932" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+              <Shape shapeId="14" name="fillCollision06" translation="0 0.567467 0" compoundChild="true" collisionMask="2109442" density="0.001" nodeId="933" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            </TransformGroup>
+          </Shape>
+          <Shape shapeId="17" name="sawmillContainer" translation="63.3269 -0.0612202 3.02451" rotation="180 90 -180" scale="1 0.488203 0.886496" static="true" clipDistance="300" nodeId="934" materialIds="15" castsShadows="true" receiveShadows="true"/>
         </TransformGroup>
-        <TransformGroup name="collisions" translation="0 0.0737776 0" nodeId="933">
-          <Shape shapeId="18" name="plane" translation="31.0868 0.35584 3.01719" scale="62.2269 1 5.81325" static="true" nodeId="934" materialIds="16" nonRenderable="true" distanceBlending="false"/>
-          <Shape shapeId="19" name="tipCollision" translation="24.7353 0 4.5932" scale="6.19297 1 0.49712" static="true" collisionMask="524288" nodeId="935" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-          <Shape shapeId="4" name="cube" translation="-1.2815 0.7755 4.19289" scale="1.50306 1.39336 2.75109" static="true" nodeId="936" materialIds="16" nonRenderable="true" distanceBlending="false"/>
+        <TransformGroup name="collisions" translation="0 0.0737776 0" nodeId="935">
+          <Shape shapeId="18" name="plane" translation="31.0868 0.35584 3.01719" scale="62.2269 1 5.81325" static="true" nodeId="936" materialIds="16" nonRenderable="true" distanceBlending="false"/>
+          <Shape shapeId="19" name="tipCollision" translation="24.7353 0 4.5932" scale="6.19297 1 0.49712" static="true" collisionMask="524288" nodeId="937" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+          <Shape shapeId="4" name="cube" translation="-1.2815 0.7755 4.19289" scale="1.50306 1.39336 2.75109" static="true" nodeId="938" materialIds="16" nonRenderable="true" distanceBlending="false"/>
         </TransformGroup>
-        <TransformGroup name="teleportNode" translation="-7.08075 2.27374e-15 3.38312" rotation="0 -162.851 0" nodeId="937"/>
+        <TransformGroup name="teleportNode" translation="-7.08075 2.27374e-15 3.38312" rotation="0 -162.851 0" nodeId="939"/>
       </TransformGroup>
   </Scene>
 

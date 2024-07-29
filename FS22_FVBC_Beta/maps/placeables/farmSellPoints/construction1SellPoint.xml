@@ -72,7 +72,7 @@
         <fillType name="CONCRETE"                                  priceScale="1.1" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="FLOORTILES"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
          <fillType name="PICTUREFRAME"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
-        <fillType name="PLANKSLONG"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
+     
         <fillType name="PREFABWALL"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="SHINGLE"                priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />
         <fillType name="STAIRCASERAILING"          priceScale="0.95" supportsGreatDemand="true" disablePriceDrop="false" />

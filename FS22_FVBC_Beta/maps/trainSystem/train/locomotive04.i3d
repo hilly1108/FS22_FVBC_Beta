@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="locomotive04.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="22" filename="$data/maps/textures/shared/props/billboards/billboards_diffuse.png"/>
+    <File fileId="23" filename="$data/maps/textures/shared/props/billboards/billboards_normal.png"/>
+    <File fileId="24" filename="$data/maps/textures/shared/props/billboards/billboards_specular.png"/>
+    <File fileId="16" filename="$data/shaders/decalShader.xml"/>
+    <File fileId="15" filename="$data/shaders/glowShader.xml"/>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="12" filename="$data/vehicles/train/locomotive04/locomotiveUSInterior_diffuse.png"/>
+    <File fileId="13" filename="$data/vehicles/train/locomotive04/locomotiveUSInterior_normal.png"/>
+    <File fileId="14" filename="$data/vehicles/train/locomotive04/locomotiveUSInterior_specular.png"/>
+    <File fileId="2" filename="$data/vehicles/train/locomotive04/locomotiveUSTransparent_diffuse.png"/>
+    <File fileId="3" filename="$data/vehicles/train/locomotive04/locomotiveUSTransparent_normal.png"/>
+    <File fileId="4" filename="$data/vehicles/train/locomotive04/locomotiveUSTransparent_specular.png"/>
+    <File fileId="20" filename="$data/vehicles/train/locomotive04/locomotiveUS_diffuse.png"/>
+    <File fileId="18" filename="$data/vehicles/train/locomotive04/locomotiveUS_normal.png"/>
+    <File fileId="19" filename="$data/vehicles/train/locomotive04/locomotiveUS_specular.png"/>
+    <File fileId="9" filename="$data/vehicles/train/trainConnection_diffuse.png"/>
+    <File fileId="10" filename="$data/vehicles/train/trainConnection_normal.png"/>
+    <File fileId="11" filename="$data/vehicles/train/trainConnection_specular.png"/>
+    <File fileId="21" filename="../../textures/CN_Railway_logo.png"/>
+    <File fileId="25" filename="../../textures/CN_Railway_logo2.png"/>
+    <File fileId="17" filename="../../textures/locomotiveUS_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="billboards_mat" materialId="5">
+      <Texture fileId="22"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+    </Material>
+    <Material name="lambert1" materialId="6">
+      <Texture fileId="21"/>
+    </Material>
+    <Material name="lambert1" materialId="7" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="locomotiveUS_mat" materialId="8">
+      <Texture fileId="17"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+    </Material>
+    <Material name="locomotiveUS_mat1" materialId="9" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="20"/>
+      <Normalmap fileId="18"/>
+      <Glossmap fileId="19"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+    </Material>
+    <Material name="locomotiveUSInterior_mat" materialId="10">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="locomotiveUSInterior_mat1" materialId="11" customShaderId="15">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+      <CustomParameter name="lightControl" value="0.3 0 0 0"/>
+    </Material>
+    <Material name="locomotiveUSTransparent_mat" materialId="12" alphaBlending="true" customShaderId="16">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+    </Material>
+    <Material name="locomotiveUSTransparent_mat1" materialId="13" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="colorMat0" value="1 1 1 2"/>
+      <CustomParameter name="colorMat1" value="0.5 0 0 1"/>
+    </Material>
+    <Material name="trainConnection_mat" materialId="14">
+      <Texture fileId="9"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="11"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="124">
+      <Texture fileId="25"/>
+    </Material>
+    <Material name="UnnamedMaterial" materialId="15">
+      <Texture fileId="17"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="locomotive04.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="locomotive04_main_component1" translation="-7.26954e-16 0 5.93603" kinematic="true" compound="true" collisionMask="2109442" clipDistance="300" nodeId="44" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="dollyFront" clipDistance="300" nodeId="45">
+          <TransformGroup name="wheel01" translation="7.26954e-16 0.42797 1.03611" clipDistance="300" nodeId="46"/>
+          <TransformGroup name="wheel02" translation="1.52588e-07 0.42797 -1.03624" clipDistance="300" nodeId="47"/>
+        </TransformGroup>
+        <TransformGroup name="dollyBack" translation="1.4523e-15 7.10543e-17 -11.8589" clipDistance="300" nodeId="48">
+          <TransformGroup name="wheel03" translation="-7.25344e-16 0.42797 1.03611" clipDistance="300" nodeId="49"/>
+          <TransformGroup name="wheel04" translation="1.52588e-07 0.42797 -1.03624" clipDistance="300" nodeId="50"/>
+        </TransformGroup>
+        <TransformGroup name="cameras" translation="7.26954e-16 0 -5.93603" nodeId="51">
+          <TransformGroup name="outdoorCameraTarget" translation="-9.33022e-31 2.5 7.6187e-15" rotation="-24 180 0" nodeId="52">
+            <Camera name="outdoorCamera" translation="3.93873 3.38538 -3.94901" rotation="59.4066 66.0023 91.0565" nodeId="53" fov="54.4322" nearClip="0.3" farClip="5000" orthographicHeight="1"/>
+          </TransformGroup>
+          <Camera name="indoorCamera" translation="-0.583694 3.55787 4.75934" rotation="0 180 0" nodeId="54" fov="60" nearClip="0.1" farClip="5000" orthographicHeight="1"/>
+          <TransformGroup name="cameraRaycastNode1" translation="0 3.37267 9.73624" nodeId="55"/>
+          <TransformGroup name="cameraRaycastNode2" translation="0 4.34429 -0.386409" nodeId="56"/>
+          <TransformGroup name="cameraRaycastNode3" translation="0 2.42022 -10.1701" nodeId="57"/>
+        </TransformGroup>
+        <TransformGroup name="lights" translation="7.26954e-16 0 -5.93603" nodeId="58">
+          <Shape shapeId="2" name="frontLightStatic" translation="0 2.92472 8.04984" clipDistance="300" nodeId="59" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="3" name="frontBeamStatic" translation="0.000427877 1.29787 9.53937" clipDistance="300" nodeId="60" materialIds="13" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="4" name="selfIllumGlassBack" clipDistance="300" nodeId="61" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Light name="frontLightLow" translation="5.6798e-31 2.89191 8.27036" rotation="165 0 -180" clipDistance="75" nodeId="62" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="20" coneAngle="80" dropOff="3"/>
+          <Light name="highBeamLow" translation="1.36698e-15 2.89191 8.27036" rotation="-10 180 0" clipDistance="75" nodeId="63" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="30" coneAngle="70" dropOff="2"/>
+          <Light name="frontLightHigh" translation="-3.2685e-15 2.89191 8.27036" rotation="165 8 180" clipDistance="75" nodeId="64" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3">
+            <Light name="frontLightHigh1" translation="9.34409e-32 0 -8.69758e-33" rotation="0 16 0" clipDistance="75" nodeId="65" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3"/>
+          </Light>
+          <Light name="highBeamHigh" translation="0 2.892 8.27" rotation="170 5 180" clipDistance="75" nodeId="66" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="35" coneAngle="50" dropOff="2.5">
+            <Light name="highBeamHigh1" rotation="0 10 0" clipDistance="75" nodeId="67" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="35" coneAngle="50" dropOff="2.5"/>
+          </Light>
+        </TransformGroup>
+        <TransformGroup name="playerRoot" translation="7.26954e-16 0 -5.93603" nodeId="68">
+          <TransformGroup name="playerFrontSkin" translation="-0.610501 2.8743 5.05673" nodeId="69"/>
+          <TransformGroup name="playerFrontRightFoot" translation="-0.793459 2.17438 5.29537" rotation="0 -10 0" nodeId="70"/>
+          <TransformGroup name="playerFrontLeftFoot" translation="-0.427542 2.17438 5.29537" rotation="0 10 0" nodeId="71"/>
+          <TransformGroup name="playerFrontLeftHand" translation="-0.255245 3.12529 5.56227" rotation="398.004 -75.3248 -385.249" nodeId="72"/>
+          <TransformGroup name="playerFrontRightHand" translation="-0.635067 3.15083 5.51662" rotation="152.109 72.1658 146.665" nodeId="73"/>
+        </TransformGroup>
+        <Shape shapeId="5" name="shadowFocusBox" translation="7.26954e-16 3.12925 -0.717167" visibility="false" clipDistance="150" nodeId="74" materialIds="7" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+        <TransformGroup name="attacherJoint" translation="0.00271486 0.885511 4.00676" nodeId="75">
+          <Shape shapeId="6" name="inputAttacherJointNode" translation="-0.00232478 -0.0380244 -0.339536" clipDistance="75" nodeId="76" materialIds="14" castsShadows="true" receiveShadows="true" skinBindNodeIds="76 78 79 80"/>
+        </TransformGroup>
+        <TransformGroup name="trailerAttacherJoint" translation="0.00271486 0.896961 -15.8711" nodeId="77">
+          <TransformGroup name="trailerAttacherJointNode" translation="0 8.88178e-18 0" clipDistance="75" nodeId="78">
+            <TransformGroup name="linkArm" clipDistance="75" nodeId="79">
+              <TransformGroup name="linkArmTrans" translation="0 0 1.13687e-15" clipDistance="75" nodeId="80">
+                <TransformGroup name="referenceNode" translation="1.70974e-16 0 -1.39468" nodeId="81"/>
+              </TransformGroup>
+            </TransformGroup>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="exitPoint" translation="2.53437 -2.34479e-15 3.07166" nodeId="82"/>
+        <TransformGroup name="surfaceSoundNode" translation="7.26954e-16 0 -5.93603" nodeId="83"/>
+        <TransformGroup name="frontNode" translation="7.26954e-16 0 4.32832" nodeId="84"/>
+        <TransformGroup name="backNode" translation="7.26954e-16 0 -16.4561" nodeId="85"/>
+        <Shape shapeId="7" name="dashboardLight" translation="7.26954e-16 0 -5.93603" clipDistance="20" nodeId="86" materialIds="11" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="engineFans" translation="7.26954e-16 0 -5.93603" nodeId="87">
+          <TransformGroup name="engineFan01" translation="-1.52588e-07 4.26313 -0.212853" clipDistance="300" nodeId="88"/>
+          <TransformGroup name="engineFan02" translation="-1.52588e-07 4.26313 -1.68847" clipDistance="300" nodeId="89"/>
+          <TransformGroup name="engineFan03" translation="-3.05176e-07 4.26313 -3.09351" clipDistance="300" nodeId="90"/>
+          <TransformGroup name="engineFan04" translation="0 4.26313 -5.23212" clipDistance="300" nodeId="91"/>
+          <TransformGroup name="engineFan05" translation="0 4.26313 -6.63717" clipDistance="300" nodeId="92"/>
+        </TransformGroup>
+        <TransformGroup name="numbersTime" translation="-0.521652 3.2676 0.0357924" rotation="139.184 3.53113e-31 180" clipDistance="30" nodeId="93">
+          <Shape shapeId="8" name="numberFloat2Decal" translation="0.0234119 -0.000197626 0.00119442" rotation="1.51076e-14 0 4.77083e-15" clipDistance="20" nodeId="94" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="9" name="numberFloat1Decal" translation="0.0129784 -0.000161506 0.00113207" rotation="1.51076e-14 0 4.77083e-15" clipDistance="20" nodeId="95" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="10" name="numberOneDecal" translation="-0.00185203 -0.000161506 0.00113207" rotation="1.51076e-14 0 4.77083e-15" clipDistance="20" nodeId="96" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="11" name="numberTenDecal" translation="-0.0129784 -0.000161506 0.00113207" rotation="1.51076e-14 0 4.77083e-15" clipDistance="20" nodeId="97" materialIds="7" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="7.26954e-16 0 -5.93603" nodeId="98">
+          <Shape shapeId="12" name="decalsExterior" clipDistance="200" nodeId="99" materialIds="12" castsShadows="true" receiveShadows="true" decalLayer="1"/>
+          <Shape shapeId="13" name="lLocomotiveUS01" clipDistance="300" nodeId="100" materialIds="8" castsShadows="true" receiveShadows="true" skinBindNodeIds="100 45 46 47 48 49 50 88 89 90 91 92"/>
+          <TransformGroup name="interior" clipDistance="100" nodeId="101" lodDistance="0 20">
+            <Shape shapeId="14" name="interiorLOD0" nodeId="102" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="15" name="interiorLOD1" clipDistance="300" nodeId="103" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <Shape shapeId="16" name="selfIllum" clipDistance="150" nodeId="104" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="17" name="selfIllumBack" clipDistance="150" nodeId="105" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="18" name="selfIllumFront" clipDistance="150" nodeId="106" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="19" name="transparent1" translation="-0.652343 3.43695 6.34821" clipDistance="300" nodeId="107" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="20" name="transparent2" translation="0.652343 3.43695 6.34821" clipDistance="300" nodeId="108" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="21" name="transparent3" translation="1.41102 3.39723 5.06275" clipDistance="300" nodeId="109" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="22" name="transparent4" translation="-1.41102 3.39723 5.06275" clipDistance="300" nodeId="110" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="23" name="transparent5" translation="1.11909 3.37822 4.00741" clipDistance="300" nodeId="111" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="24" name="transparent6" translation="-1.11909 3.37822 4.00741" clipDistance="300" nodeId="112" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="25" name="plane" translation="-0.841396 2.75245 -1.47487" rotation="90 -90 0" scale="3 1 3" nodeId="113" materialIds="6" distanceBlending="false"/>
+          <Shape shapeId="25" name="plane" translation="0.838774 2.75245 -1.47487" rotation="-90.0001 90 180" scale="3 1 3" nodeId="114" materialIds="6" distanceBlending="false"/>
+          <Shape shapeId="25" name="plane" translation="0.838096 2.49115 7.21039" rotation="89.9999 90 0" nodeId="115" materialIds="6" distanceBlending="false"/>
+          <Shape shapeId="25" name="plane" translation="-0.839988 2.4547 7.18555" rotation="-90.0003 -89.926 -180" nodeId="116" materialIds="6" distanceBlending="false"/>
+          <Shape shapeId="26" name="agAgInst" lockedgroup="true" translation="1.39412 2.77048 5.11782" rotation="-180 89.9115 -180" scale="0.209589 0.137112 0.35" kinematic="true" density="0.0001" clipDistance="350" nodeId="117" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="27" name="billboard3x2Vis" translation="0 0.0195319 -9.15527e-07" clipDistance="350" nodeId="118" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="plane" translation="24.4286 -20.206 -3.96061" rotation="180 -89.8506 180" scale="2.85715 7.29331 4.77124" nodeId="119" materialIds="15" distanceBlending="false"/>
+            <Shape shapeId="25" name="plane" translation="0.203593 0.0327377 0.142703" rotation="90 -0.0529853 -1.18267e-08" scale="4.77124 2.85715 7.29331" nodeId="123" materialIds="124" distanceBlending="false"/>
+          </Shape>
+          <Shape shapeId="26" name="agAgInst" lockedgroup="true" translation="-1.38682 2.77048 5.12236" rotation="3.64218e-06 -90 0" scale="0.209589 0.137112 0.35" kinematic="true" density="0.0001" clipDistance="350" nodeId="120" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+            <Shape shapeId="27" name="billboard3x2Vis" translation="0 0.0195319 -9.15527e-07" clipDistance="350" nodeId="121" materialIds="5" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="25" name="plane" translation="0.075564 0.0327377 0.140514" rotation="90 -8.18019e-06 2.69682e-11" scale="4.77124 2.85714 7.29331" nodeId="125" materialIds="124" distanceBlending="false"/>
+          </Shape>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

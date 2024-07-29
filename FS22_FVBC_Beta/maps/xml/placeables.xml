@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
 <placeables>
+<placeable filename="$mapdir$/maps/trainSystem/trainSystem.xml"   position="0 0 0" rotation="0 0 0" price="500.000000" farmId="0"  />
 
 <!--Farm1-->
 <placeable filename="$moddir$FS22_Steel_Shed_Pack/xml/Ocel_kulna_03.xml"   position="-393.21499634 2.71267009 750.80401611" rotation="0 0 0" price="5000.000000" farmId="0"  />

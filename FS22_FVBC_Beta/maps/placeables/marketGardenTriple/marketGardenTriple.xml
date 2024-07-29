@@ -86,6 +86,7 @@
 		<triggerMarker node="unloadTriggerMarkerManure" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
 		<triggerMarker node="unloadTriggerMarkerLiqFert" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
 		<triggerMarker node="unloadTriggerMarkerStraw" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
+        <triggerMarker node="unloadTriggerPallets" filename="$data/shared/assets/marker/markerIcons.xml" id="UNLOAD" adjustToGround="true"/>
     </triggerMarkers>
 
     <greenhouse>
@@ -115,6 +116,7 @@
 					<input fillType="SEEDLINGS" amount="1" />
 					<input fillType="MANURE" amount="4" />
                    	<input fillType="STRAW" amount="4" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="WESTERN_HEMLOCK_HEDGE" amount="10" />
@@ -128,6 +130,7 @@
 					<input fillType="MANURE" amount="4" />
 					<input fillType="LIQUIDFERTILIZER" amount="1" />
 					<input fillType="STRAW" amount="4" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="WESTERN_HEMLOCK_HEDGE" amount="8.5" />
@@ -141,6 +144,7 @@
 					<input fillType="MANURE" amount="5" />
 					<input fillType="LIQUIDFERTILIZER" amount="2" />
 					<input fillType="STRAW" amount="5" />	
+                    <input fillType="PALLETS" amount="1" />	
                 </inputs>
                 <outputs>
                     <output fillType="DESIGNER_PLANTS" amount="10" />
@@ -150,12 +154,12 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="true">
-
 			<unloadTrigger exactFillRootNode="unloadTriggerSeedlings" fillTypes="SEEDLINGS" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerSeeds" fillTypes="SEEDS" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerManure" fillTypes="MANURE" aiNode="unloadTriggerAINode02" />
 			<unloadTrigger exactFillRootNode="unloadTriggerLiqFert" fillTypes="LIQUIDFERTILIZER" aiNode="unloadTriggerAINode" />
 			<unloadTrigger exactFillRootNode="unloadTriggerStraw" fillTypes="STRAW" aiNode="unloadTriggerAINode" />
+            <unloadTrigger exactFillRootNode="unloadTriggerPallets" fillTypes="PALLETS" aiNode="unloadTriggerAINode" />
       
 	
         </sellingStation>
@@ -168,8 +172,7 @@
             </spawnPlaces>
         </palletSpawner>
 
-        <storage node="storage" isExtension="false" fillTypes="SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW" fillLevelSyncThreshold="20" >
-         
+        <storage node="storage" isExtension="false" fillTypes="SEEDS SEEDLINGS MANURE LIQUIDFERTILIZER STRAW PALLETS" fillLevelSyncThreshold="20" >
 			<capacity fillType="SEEDLINGS"      capacity="30000" />
 			<capacity fillType="SEEDS"      capacity="6000" />
 			<capacity fillType="MANURE"      capacity="30000" />
@@ -177,6 +180,7 @@
 			<capacity fillType="STRAW"      capacity="30000" />
             <capacity fillType="WESTERN_HEMLOCK_HEDGE"     capacity="6000" />
             <capacity fillType="DESIGNER_PLANTS"     capacity="6000" />
+            <capacity fillType="PALLETS"     capacity="10000" />
         </storage>
 
         <playerTrigger node="playerTrigger" />
@@ -198,7 +202,7 @@
         <i3dMapping id="unloadTriggerManure" node="0>0|3|8" />
         <i3dMapping id="unloadTriggerLiqFert" node="0>0|3|9" />
         <i3dMapping id="unloadTriggerStraw" node="0>0|3|10" />
-        <i3dMapping id="unloadTriggerGravel" node="0>0|3|15" />
+        <i3dMapping id="unloadTriggerPallets" node="0>0|3|15" />
         <i3dMapping id="unloadTriggerMarkerGravel" node="0>0|3|14" />
         <i3dMapping id="unloadTriggerAINode02" node="0>0|3|11" />
         <i3dMapping id="storage" node="0>0|4" />

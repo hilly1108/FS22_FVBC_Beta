@@ -107,10 +107,9 @@
             <production id="seedling" name="Seedlings" cyclesPerHour="40" costsPerActiveHour="0.1">
                 <inputs>
 					<input fillType="SEEDS" amount="1" />
-					<input fillType="MANURE" amount="3" />
-					<input fillType="STRAW" amount="3" />
 					<input fillType="LIQUIDFERTILIZER" amount="0.5" />	
 					<input fillType="HERBICIDE" amount="0.5" />	
+                    <input fillType="PALLETS" amount="0.5" />	
  
                 </inputs>
                 <outputs>
@@ -119,15 +118,17 @@
             </production>
    
             
-              <production id="designer_plants" name="Designer Plants" cyclesPerHour="10" costsPerActiveHour="0.2">
+         <production id="designer_plants" name="Designer Plants" cyclesPerHour="10" costsPerActiveHour="0.2">
                 <inputs>
                   
-					<input fillType="SEEDS" amount="2" />
-					<input fillType="MANURE" amount="4" />
-					<input fillType="STRAW" amount="4" />	
+					<input fillType="SEEDS" amount="4" />
+                    <input fillType="LIQUIDFERTILIZER" amount="1.5" />	
+					<input fillType="HERBICIDE" amount="1.5" />	
+                    <input fillType="PALLETS" amount="0.5" />	
+
                 </inputs>
                 <outputs>
-                    <output fillType="DESIGNER_PLANTS" amount="15" />
+                    <output fillType="DESIGNER_PLANTS" amount="5" />
                 </outputs>
             </production>
           
@@ -136,7 +137,7 @@
         </productions>
 
         <sellingStation node="sellingStation" appearsOnStats="true" supportsExtension="false">
-            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="LIQUIDFERTILIZER HERBICIDE SEEDS MANURE STRAW" aiNode="unloadTriggerAINode" />
+            <unloadTrigger exactFillRootNode="unloadTrigger" fillTypes="LIQUIDFERTILIZER HERBICIDE SEEDS PALLETS" aiNode="unloadTriggerAINode" />
         </sellingStation>
 		
 		   <palletSpawner node="palletSpawner">
@@ -145,14 +146,15 @@
             </spawnPlaces>
         </palletSpawner>
 		
-		   <storage node="storage" isExtension="false" fillTypes="SEEDLINGS SEEDS MANURE LIQUIDFERTILIZER HERBICIDE STRAW" fillLevelSyncThreshold="20" >
+		   <storage node="storage" isExtension="false" fillTypes="SEEDLINGS SEEDS LIQUIDFERTILIZER HERBICIDE PALLETS" fillLevelSyncThreshold="20" >
 
 		    <capacity fillType="SEEDLINGS"     capacity="20000" />
 			<capacity fillType="SEEDS"      capacity="20000" />
-			<capacity fillType="MANURE"      capacity="20000" />
+
 			<capacity fillType="LIQUIDFERTILIZER"      capacity="20000" />
 			<capacity fillType="HERBICIDE"      capacity="20000" />
-			<capacity fillType="STRAW"      capacity="20000" />
+
+            <capacity fillType="PALLETS"      capacity="20000" />
           
             <capacity fillType="DESIGNER_PLANTS"      capacity="20000" />
           

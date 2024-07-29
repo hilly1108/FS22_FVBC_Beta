@@ -147,9 +147,9 @@
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction1SellPoint.xml"/>  
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction2SellPoint.xml"/>  
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction3SellPoint.xml"/>  
-        <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction4SellPoint.xml"/>  
+    <StoreItem xmlFilename="maps/placeables/farmSellPoints/construction4SellPoint.xml"/>  
     <StoreItem xmlFilename="maps/placeables/farmSellPoints/gardenSellPoint.xml"/> 
-     <StoreItem xmlFilename="maps/placeables/farmSellPoints/lgsSellPoint.xml"/> 
+    <StoreItem xmlFilename="maps/placeables/farmSellPoints/lgsSellPoint.xml"/> 
     <StoreItem xmlFilename="maps/placeables/gasStation/gasStation.xml"/>   
     <StoreItem xmlFilename="maps/placeables/sellingStationGeneric/fruitDealer.xml"/>   
     <StoreItem xmlFilename="maps/placeables/sellingStationGeneric/fruitDealerHidden.xml"/>   
@@ -184,11 +184,11 @@
     <storeItem xmlFilename="maps/placeables/sawmill/sawmill.xml"/>
     <storeItem xmlFilename="maps/placeables/sellingStationGeneric/carpenterUS.xml"/>
     <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge.xml"/>
-        <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge6.xml"/>
-            <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge8.xml"/>
-                <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge10.xml"/>
-                    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge9.xml"/>
-                        <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge12.xml"/>
+    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge6.xml"/>
+    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge8.xml"/>
+    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge10.xml"/>
+    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge9.xml"/>
+    <storeItem xmlFilename="maps/placeables/seedlinghouseLarge/seedlinghouseLarge12.xml"/>
     <storeItem xmlFilename="maps/placeables/sheepBarnSmallL/sheepBarnSmall.xml"/>
     <storeItem xmlFilename="maps/placeables/weighbridge/weighbridge.xml"/>
     <storeItem xmlFilename="maps/placeables/weighbridgeGates/weighbridgeGates.xml"/>
@@ -196,6 +196,13 @@
     <storeItem xmlFilename="maps/placeables/woodsellpoint/woodsellpoint.xml"/>
     <storeItem xmlFilename="maps/placeables/limePayStation/limePayStation.xml"/>    
     <storeItem xmlFilename="maps/VidhosticeHops/chmel/mazutnakup.xml"/>
+    <storeItem xmlFilename="maps/trainSystem/trainSystem.xml"/>
+    <storeItem xmlFilename="maps/trainSystem/train/locomotive04.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonGrain/wagonGrain.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonWoodChips/wagonWoodChips.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonTimber/wagonTimber.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonSugarbeets/wagonSugarbeets.xml" />
+    <storeItem xmlFilename="$data/vehicles/train/wagonVehicles/wagonVehicles.xml" />
 
 
 <!--	<storeItem xmlFilename="maps/placeables/marketGarden1x3/marketGarden1x3.xml"/>-->

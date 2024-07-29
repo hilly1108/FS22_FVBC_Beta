@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Jeep.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="7" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="11" filename="$data/shared/clearGlass_diffuse.dds"/>
+    <File fileId="5" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="12" filename="$data/vehicles/cars/driver_diffuse.png"/>
+    <File fileId="13" filename="$data/vehicles/cars/driver_normal.png"/>
+    <File fileId="14" filename="$data/vehicles/cars/driver_specular.png"/>
+    <File fileId="4" filename="17in.dds"/>
+    <File fileId="2" filename="tire.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="driver_mat" materialId="107">
+      <Texture fileId="12"/>
+      <Normalmap fileId="13"/>
+      <Glossmap fileId="14"/>
+    </Material>
+    <Material name="lambert1" materialId="102" diffuseColor="0.498039 0.498039 0.498039 1">
+    </Material>
+    <Material name="mat_0000_17in" materialId="5">
+      <Texture fileId="4"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="mat_0001_tire" materialId="6">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="mat_0010_light" materialId="7" customShaderId="7" customShaderVariation="staticLight">
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat1" value="1 0.35 0 29"/>
+    </Material>
+    <Material name="Material.001" materialId="8" diffuseColor="0.8 0.8 0.8 1" customShaderId="7" customShaderVariation="colorMask">
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 40"/>
+      <CustomParameter name="colorMat1" value="0.05 0.05 0.05 0"/>
+      <CustomParameter name="colorMat2" value="1 1 1 3"/>
+      <CustomParameter name="colorMat6" value="1 1 1 29"/>
+    </Material>
+    <Material name="Material.003" materialId="9" alphaBlending="true" customShaderId="7" customShaderVariation="colorMask">
+      <Texture fileId="11"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 1 1 1"/>
+    </Material>
+    <Material name="Material.006" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="7" customShaderVariation="staticLight">
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 1 1 29"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 29"/>
+      <CustomParameter name="colorMat2" value="1 0.35 0 29"/>
+    </Material>
+    <Material name="Material.007" materialId="11" alphaBlending="true" customShaderId="7" customShaderVariation="staticLight">
+      <Texture fileId="11"/>
+      <Normalmap fileId="5"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 29"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Jeep.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Jeep" kinematic="true" compound="true" collisionMask="28704" clipDistance="350" nodeId="124" materialIds="102" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="wheels" translation="0 0 1.54288" nodeId="24">
+          <Shape shapeId="2" name="FL" translation="0.733071 0.335719 1.374" nodeId="25" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="LF" translation="-0.019214 1.40062e-09 3.03249e-06" nodeId="26" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="4" name="FR" translation="-0.732655 0.335719 1.374" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="RF" translation="0.0194659 -4.70027e-09 -3.03249e-06" nodeId="28" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="2" name="FL" translation="0.733653 0.335544 -1.236" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="LF" translation="-0.019214 1.40062e-09 3.03249e-06" nodeId="30" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="4" name="FR" translation="-0.732825 0.335544 -1.236" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="RF" translation="0.0194659 -4.70027e-09 -3.03249e-06" nodeId="32" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="lights" translation="0 0 1.54288" nodeId="33">
+          <TransformGroup name="static" nodeId="34">
+            <Shape shapeId="6" name="Lights" nodeId="35" materialIds="10,10,10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="BrakeLights" nodeId="36" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="BlinkerL" nodeId="37" materialIds="7" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="BlinkerR" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="realLights" translation="0 0 -1.54288" nodeId="136">
+            <Light name="frontLightLow" translation="-8.40965e-09 0.809263 3.63701" rotation="165 0 -180" clipDistance="75" nodeId="137" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="20" coneAngle="80" dropOff="3"/>
+            <Light name="frontLightHigh1" translation="-0.601402 0.753933 3.50339" rotation="165 8 180" clipDistance="75" nodeId="138" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3">
+              <Light name="frontLightHigh2" translation="-1.16107 -0.0483985 0.151014" rotation="0.575673 15.441 4.24443" clipDistance="75" nodeId="139" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3"/>
+              <Light name="backLightHigh1" translation="0.703931 -1.00808 3.89083" rotation="149.859 -7.72571 -177.917" clipDistance="75" nodeId="140" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2">
+                <Light name="backLightHigh2" translation="1.46349 -1.42109e-16 1.42109e-16" clipDistance="75" nodeId="141" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2"/>
+              </Light>
+            </Light>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="0 0 1.54288" nodeId="39">
+          <Shape shapeId="10" name="Jeep" nodeId="40" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="Interior" nodeId="41" materialIds="8" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="Windows" nodeId="42" materialIds="9" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="trafficCollisionNode" translation="0 1 3.63674" nodeId="142"/>
+        <Shape shapeId="13" name="driver" translation="0.352691 0.995707 1.79657" scale="0.799508 0.8 1" clipDistance="200" nodeId="143" materialIds="107" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="licensePlates" nodeId="149">
+          <TransformGroup name="licensePlateFront" translation="0 0.551868 3.606" nodeId="150"/>
+          <TransformGroup name="licensePlateBack" translation="-1.33e-06 0.790549 -0.483" rotation="0 180 0" nodeId="151"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>

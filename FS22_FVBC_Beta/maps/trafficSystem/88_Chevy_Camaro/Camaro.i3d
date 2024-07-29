@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="Camaro.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="9.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="11" filename="$data/shared/clearGlass_diffuse.dds"/>
+    <File fileId="10" filename="$data/shared/default_normal.dds"/>
+    <File fileId="3" filename="$data/shared/default_specular.dds"/>
+    <File fileId="13" filename="$data/vehicles/cars/driver_diffuse.png"/>
+    <File fileId="14" filename="$data/vehicles/cars/driver_normal.png"/>
+    <File fileId="15" filename="$data/vehicles/cars/driver_specular.png"/>
+    <File fileId="12" filename="base.dds"/>
+    <File fileId="2" filename="tire.dds"/>
+    <File fileId="4" filename="wheel.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="driver_mat" materialId="5">
+      <Texture fileId="13"/>
+      <Normalmap fileId="14"/>
+      <Glossmap fileId="15"/>
+    </Material>
+    <Material name="lambert1" materialId="6" diffuseColor="0.494118 0.494118 0.494118 1">
+    </Material>
+    <Material name="mat_0000_wheel" materialId="7" customShaderId="5">
+      <Texture fileId="4"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="mat_0001_tire" materialId="8">
+      <Texture fileId="2"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="mat_0004_base" materialId="9">
+      <Texture fileId="12"/>
+      <Glossmap fileId="3"/>
+    </Material>
+    <Material name="Material.001" materialId="10" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="staticLight">
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 1 1 29"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 29"/>
+      <CustomParameter name="colorMat2" value="1 0.35 0 29"/>
+      <CustomParameter name="colorMat3" value="1 1 1 29"/>
+    </Material>
+    <Material name="Material.002" materialId="11" alphaBlending="true" customShaderId="5" customShaderVariation="staticLight">
+      <Texture fileId="11"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat1" value="1 0.1 0.1 29"/>
+    </Material>
+    <Material name="Material.004" materialId="12" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="staticLight">
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat1" value="1 0.35 0 29"/>
+    </Material>
+    <Material name="Material.005" materialId="13" diffuseColor="0.8 0.8 0.8 1" customShaderId="5" customShaderVariation="colorMask">
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="0.8 0.55 0.05 40"/>
+      <CustomParameter name="colorMat1" value="0.02 0.02 0.02 0"/>
+      <CustomParameter name="colorMat2" value="0.1 0.1 0.1 18"/>
+      <CustomParameter name="colorMat7" value="1 1 1 29"/>
+    </Material>
+    <Material name="Material.006" materialId="14" alphaBlending="true" customShaderId="5" customShaderVariation="colorMask">
+      <Texture fileId="11"/>
+      <Normalmap fileId="10"/>
+      <Glossmap fileId="3"/>
+      <CustomParameter name="colorMat0" value="1 1 1 1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="Camaro.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+      <Shape shapeId="1" name="Camaro" kinematic="true" compound="true" collisionMask="28704" clipDistance="350" nodeId="29" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true">
+        <TransformGroup name="wheels" translation="0 0 1.47251" nodeId="30">
+          <Shape shapeId="2" name="FL" translation="0.78 0.33413 1.272" scale="1 0.95 0.95" nodeId="31" materialIds="8" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="RimL" scale="1 1.05263 1.05263" nodeId="32" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="4" name="FR" translation="-0.78 0.334323 1.272" scale="1 0.95 0.95" nodeId="33" materialIds="8" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="RimR" scale="1 1.05263 1.05263" nodeId="34" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="2" name="FL" translation="0.8 0.33428 -1.3" scale="1 0.95 0.95" nodeId="35" materialIds="8" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="3" name="RimL" scale="1 1.05263 1.05263" nodeId="36" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+          <Shape shapeId="4" name="FR" translation="-0.8 0.334131 -1.3" scale="1 0.95 0.95" nodeId="37" materialIds="8" castsShadows="true" receiveShadows="true">
+            <Shape shapeId="5" name="RimR" scale="1 1.05263 1.05263" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+          </Shape>
+        </TransformGroup>
+        <TransformGroup name="lights" translation="0 0 1.47251" nodeId="39">
+          <TransformGroup name="static" nodeId="40">
+            <Shape shapeId="6" name="Lights" rotation="180 5.00896e-06 -180" nodeId="41" materialIds="10" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="7" name="Brake Lights" nodeId="42" materialIds="11" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="8" name="BlinkerL" nodeId="43" materialIds="12" castsShadows="true" receiveShadows="true"/>
+            <Shape shapeId="9" name="BlinkerR" nodeId="44" materialIds="12" castsShadows="true" receiveShadows="true"/>
+          </TransformGroup>
+          <TransformGroup name="realLights" translation="0 0 -1.22721" nodeId="45">
+            <Light name="frontLightLow" translation="7.03579e-09 0.68048 3.92389" rotation="165 0 -180" clipDistance="75" nodeId="46" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="20" coneAngle="80" dropOff="3"/>
+            <Light name="frontLightHigh1" translation="-0.774739 0.655858 3.77433" rotation="165 8 180" clipDistance="75" nodeId="47" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3">
+              <Light name="frontLightHigh2" translation="-1.55311 -0.0623953 0.232862" rotation="0.575673 15.441 4.24443" clipDistance="75" nodeId="48" type="spot" color="0.85 0.85 1" emitDiffuse="true" emitSpecular="true" range="25" coneAngle="70" dropOff="3"/>
+              <Light name="backLightHigh1" translation="0.55064 -1.34579 4.94641" rotation="149.859 -7.72571 -177.917" clipDistance="75" nodeId="49" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2">
+                <Light name="backLightHigh2" translation="1.26347 0 0" clipDistance="75" nodeId="50" type="spot" color="0.5 0 0" emitDiffuse="true" emitSpecular="true" range="2.5" coneAngle="130" dropOff="2"/>
+              </Light>
+            </Light>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="visuals" translation="0 0 1.47251" nodeId="51">
+          <Shape shapeId="10" name="Camaro" nodeId="52" materialIds="13" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="11" name="Interior" nodeId="53" materialIds="9" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="12" name="windows" nodeId="54" materialIds="14" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="trafficCollisionNode" translation="0 0.811488 3.89665" nodeId="55"/>
+        <Shape shapeId="13" name="driver" translation="0.44594 0.638172 1.54125" clipDistance="200" nodeId="56" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        <TransformGroup name="licensePlates" translation="0 0 0.245296" nodeId="57">
+          <TransformGroup name="licensePlateFront" translation="0 0.434473 3.547" rotation="-1.949 0 0" nodeId="58"/>
+          <TransformGroup name="licensePlateBack" translation="-1.48e-06 0.74439 -1.009" rotation="166.983 -1.867e-05 -180" scale="1.1 1.1 1.1" nodeId="59"/>
+        </TransformGroup>
+      </Shape>
+  </Scene>
+
+</i3D>
