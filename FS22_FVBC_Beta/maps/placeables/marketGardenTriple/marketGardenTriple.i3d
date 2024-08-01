@@ -2352,7 +2352,7 @@
             <Shape shapeId="3" name="unloadTriggerSeeds" translation="-3.338 1.39579 6.35869" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="2269" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerSeeds" translation="-3.338 1.39579 6.35869" nodeId="2270"/>
             <TransformGroup name="unloadTriggerMarkerGravel" translation="65.606 0.375849 2.99586" nodeId="2271"/>
-            <Shape shapeId="4" name="unloadTriggerPallets" translation="65.8083 0.375849 2.99586" rotation="4.07111e-13 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="2272" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="unloadTriggerPallets" translation="65.8083 0.375849 2.99586" rotation="4.07111e-13 90 0" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="2272" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </TransformGroup>
           <TransformGroup name="storage" translation="-0.106808 -0.0299942 8.232" nodeId="2273"/>
           <Shape shapeId="5" name="playerTrigger" translation="-3.677 1.07768 1.361" static="true" trigger="true" collisionMask="1048576" nodeId="2274" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>

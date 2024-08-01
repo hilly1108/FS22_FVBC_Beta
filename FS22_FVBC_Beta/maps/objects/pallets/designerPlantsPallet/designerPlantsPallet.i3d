@@ -58,8 +58,8 @@
           <Shape shapeId="3" name="dynamicMountTrigger" translation="0 0.0904753 0" visibility="false" kinematic="true" trigger="true" collisionMask="134217728" nodeId="23" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           <TransformGroup name="dischargeNode" nodeId="24"/>
           <TransformGroup name="collisions" clipDistance="10" nodeId="25">
-            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
-            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" compoundChild="true" collisionMask="16781578" staticFriction="1" dynamicFriction="1" density="0.0001" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision01" translation="0.3 0 0" kinematic="true" nodeId="26" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="floorCollision02" translation="-0.3 0 0" kinematic="true" nodeId="27" materialIds="6" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
           </TransformGroup>
           <TransformGroup name="content" rotation="0 90 0" nodeId="28">
             <Shape shapeId="5" name="townPlant01_vis" translation="-0.202175 0.171459 0.425929" rotation="-0 -90 0" scale="1.05922 1 1" clipDistance="40" nodeId="29" materialIds="8" castsShadows="true" receiveShadows="true">

@@ -67,7 +67,7 @@
             <vehicle xmlFilename="$data/vehicles/train/wagonWoodChips/wagonWoodChips.xml" />
             <vehicle xmlFilename="$data/vehicles/train/wagonTimber/wagonTimber.xml" />
             <vehicle xmlFilename="$data/vehicles/train/wagonTimber/wagonTimber.xml" />
-            <vehicle xmlFilename="$data/vehicles/train/wagonVehicles/wagonVehicles.xml" />
+            <vehicle xmlFilename="$data/vehicles/train/wagonVehicles/wagonVehicles.xml" />            
         </train>
 
         <railroadCallers>
@@ -79,15 +79,15 @@
         <railroadCrossings>
             <!-- EAST -->
             <railroadCrossing rootNode="0>5">
-                <activation startDistance="200" endDistance="200" />
+                <activation startDistance="300" endDistance="200" />
                 <gates>
-                    <gate node="0>5|0|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2" />
+                    <gate node="0>5|0|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2"/>
                     <gate node="0>5|1|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2"/>
-                </gates>
+                </gates><!--
                 <trafficBlockers>
                     <blocker node="0>5|0|1" />
                     <blocker node="0>5|1|1" />
-                </trafficBlockers>
+                </trafficBlockers>-->
                 <signals>
                     <signal node="0>5|0|2|0" alternatingLights="true" />
                     <signal node="0>5|1|2|0" alternatingLights="true" />
@@ -99,15 +99,15 @@
 
             <!-- MIDDLE -->
             <railroadCrossing rootNode="0>6">
-                <activation startDistance="200" endDistance="200" />
+                <activation startDistance="300" endDistance="200" />
                 <gates>
-                    <gate node="0>6|0|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2" />
+                    <gate node="0>6|0|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2"/>
                     <gate node="0>6|1|0" startRot="0 0 0"   endRot="90 0 0"    duration="4" closingOffset="2"/>
-                </gates>
+                </gates><!--
                 <trafficBlockers>
                     <blocker node="0>6|0|1" />
                     <blocker node="0>6|1|1" />
-                </trafficBlockers>
+                </trafficBlockers>-->
                 <signals>
                     <signal node="0>6|0|2|0" alternatingLights="true" />
                     <signal node="0>6|1|2|0" alternatingLights="true" />

@@ -953,7 +953,7 @@
             <TransformGroup name="unloadTriggerAINode02" translation="65.2459 0.05 2.44472" rotation="0 90 0" nodeId="863"/>
             <Shape shapeId="5" name="PlaneManure" translation="63.3141 0.129 3.11022" scale="2.532 0.136044 4.62356" clipDistance="100" nodeId="864" materialIds="8" castsShadows="true" receiveShadows="true"/>
             <Shape shapeId="5" name="PlaneStraw" translation="63.3141 0.129 3.11022" scale="2.532 0.136044 4.62356" clipDistance="100" nodeId="865" materialIds="8" castsShadows="true" receiveShadows="true"/>
-            <Shape shapeId="3" name="unloadTriggerGravel" translation="65.8281 0.325849 2.99586" rotation="4.07111e-13 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="866" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="3" name="unloadTriggerGravel" translation="65.8281 0.325849 2.99586" rotation="4.07111e-13 90 0" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="866" materialIds="13" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerGravel" translation="65.606 0.325849 2.99586" nodeId="867"/>
           </TransformGroup>
           <TransformGroup name="storage" translation="30.2054 -0.0299942 3.22317" nodeId="868"/>

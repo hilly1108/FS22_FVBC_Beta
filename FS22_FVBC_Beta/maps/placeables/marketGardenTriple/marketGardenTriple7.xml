@@ -203,7 +203,6 @@
         <i3dMapping id="unloadTriggerLiqFert" node="0>0|3|9" />
         <i3dMapping id="unloadTriggerStraw" node="0>0|3|10" />
         <i3dMapping id="unloadTriggerPallets" node="0>0|3|15" />
-        <i3dMapping id="unloadTriggerMarkerGravel" node="0>0|3|14" />
         <i3dMapping id="unloadTriggerAINode02" node="0>0|3|11" />
         <i3dMapping id="storage" node="0>0|4" />
         <i3dMapping id="playerTrigger" node="0>0|5" />

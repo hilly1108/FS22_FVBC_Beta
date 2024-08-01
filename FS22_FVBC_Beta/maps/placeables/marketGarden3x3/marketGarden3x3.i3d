@@ -1115,7 +1115,7 @@
             <TransformGroup name="unloadTriggerAINode02" translation="65.5344 0.05 3.21295" rotation="0 90 0" nodeId="1036"/>
             <Shape shapeId="3" name="unloadTriggerSeeds" translation="-3.338 1.39579 6.35869" kinematic="true" compound="true" trigger="true" collisionMask="1073741824" nodeId="1037" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerSeeds" translation="-3.338 1.39579 6.35869" nodeId="1038"/>
-            <Shape shapeId="4" name="unloadTriggerPallets" translation="30.5928 0.375849 2.99586" rotation="4.07111e-13 90 0" static="true" trigger="true" collisionMask="1073741824" nodeId="1039" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
+            <Shape shapeId="4" name="unloadTriggerPallets" translation="30.5928 0.375849 2.99586" rotation="4.07111e-13 90 0" kinematic="true" trigger="true" collisionMask="1073741824" nodeId="1039" materialIds="12" castsShadows="true" receiveShadows="true" nonRenderable="true"/>
             <TransformGroup name="unloadTriggerMarkerGravel" translation="30.554 0.375849 2.99586" nodeId="1040"/>
           </TransformGroup>
           <TransformGroup name="storage" translation="-0.106808 -0.0299942 8.232" nodeId="1041"/>

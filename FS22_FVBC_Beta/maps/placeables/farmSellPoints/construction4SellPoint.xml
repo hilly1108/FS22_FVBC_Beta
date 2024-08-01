@@ -63,7 +63,7 @@
     </triggerMarkers>
 
     <sellingStation supportsExtension="false" litersForFullPriceDrop="100000" fullPriceRecoverHours="48" >
-         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="GRAVEL SAND CONCRETE WESTERN_HEMLOCK_HEDGE BOARDS FLOORTILES PICTUREFRAME PLANKSLONG PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM"/>
+         <unloadTrigger exactFillRootNode="unloadTrigger" aiNode="aiNode" fillTypes="GRAVEL SAND CONCRETE WESTERN_HEMLOCK_HEDGE BOARDS FLOORTILES PICTUREFRAME PREFABWALL SHINGLE STAIRCASERAILING TABLE WOODBEAM"/>
       
    
         <fillType name="GRAVEL"                                  priceScale="1.2" supportsGreatDemand="true" disablePriceDrop="false" />

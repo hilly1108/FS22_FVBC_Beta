@@ -34,7 +34,7 @@
 
     <missionVehicles filename="$dataS/missionVehicles.xml" />
 
-    <licensePlates filename="$data/maps/mapUS/licensePlates/licensePlatesUS.xml"/>
+    <licensePlates filename="maps/licensePlates/licensePlatesBC.xml"/>
     <collectibles filename="maps/xml/collectibles.xml" />
 
     <helpline filename="$dataS/helpLine.xml">
